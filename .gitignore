@@ -10,8 +10,12 @@
 [Ll]ogs/
 [Mm]emoryCaptures/
 
+
 # Addressables cache
 [Aa]ssets/[Aa]ddressableAssetsData/*/*.bin*
+[Aa]ssets/[Aa]ddressableAssetsData/*/*.json
+[Aa]ssets/[Aa]ddressableAssetsData/*/*.hash
+
 
 ########################################
 # USER & IDE FILES
@@ -58,6 +62,8 @@ sysinfo.txt
 *.app
 *.exe
 *.ipa
+*.slnx
+
 
 ########################################
 # TESTS / COVERAGE
