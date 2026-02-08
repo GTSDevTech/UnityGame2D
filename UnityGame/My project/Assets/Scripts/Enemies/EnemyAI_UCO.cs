@@ -4,25 +4,30 @@ using UnityEngine;
 public class EnemyAI_Shooter : MonoBehaviour
 {
     [Header("Referencias")]
-    public Transform player;                 // si está vacío, busca por Tag "Player"
+    public Transform player;
     public Animator animator;
 
+    [Header("Checks")]
+    public Transform wallCheck;              // arrastra tu hijo WallCheck aquí
+    public float wallCheckDistance = 0.25f;  // distancia del raycast
+    public LayerMask wallLayer;              // capa Ground/Wall/etc.
+
     [Header("Animator Params (exactos)")]
-    public string speedParam = "Speed";      // Float
-    public string shootBool = "IsShooting";  // Bool
+    public string speedParam = "Speed";
+    public string shootBool = "IsShooting";
 
     [Header("Velocidades")]
     public float walkSpeed = 1.5f;
     public float runSpeed = 3.5f;
-    public float backOffSpeed = 2.0f;        // velocidad para alejarse si está muy cerca
+    public float backOffSpeed = 2.0f;
 
     [Header("Detección")]
     public float visionRange = 7f;
 
     [Header("Distancias de combate")]
-    public float stopDistance = 3.0f;        // distancia a la que quiere quedarse
-    public float tooCloseDistance = 2.2f;    // si está más cerca que esto, se aleja
-    public float shootDistance = 3.5f;       // si está dentro de esto, puede disparar
+    public float stopDistance = 3.0f;
+    public float tooCloseDistance = 2.2f;
+    public float shootDistance = 3.5f;
 
     [Header("Disparo (animación)")]
     public float shootDuration = 0.6f;
@@ -46,6 +51,13 @@ public class EnemyAI_Shooter : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         if (animator == null) animator = GetComponent<Animator>();
         patrolStart = rb.position;
+
+        // Si no asignas wallCheck, intentamos encontrar uno con ese nombre
+        if (wallCheck == null)
+        {
+            var wc = transform.Find("WallCheck");
+            if (wc != null) wallCheck = wc;
+        }
     }
 
     void Start()
@@ -56,7 +68,6 @@ public class EnemyAI_Shooter : MonoBehaviour
             if (go != null) player = go.transform;
         }
 
-        // Seguridad: asegura relaciones lógicas
         if (tooCloseDistance > stopDistance) tooCloseDistance = stopDistance * 0.75f;
         if (shootDistance < stopDistance) shootDistance = stopDistance;
     }
@@ -69,6 +80,12 @@ public class EnemyAI_Shooter : MonoBehaviour
 
         // Forzar animación de disparo según timer
         SetShootingBool(shootTimer > 0f);
+
+        // Si hay pared delante (en cualquier modo excepto disparando), girar
+        if (shootTimer <= 0f && IsHittingWall())
+        {
+            TurnAround();
+        }
 
         // Sin player -> patrulla
         if (player == null)
@@ -103,22 +120,25 @@ public class EnemyAI_Shooter : MonoBehaviour
             return;
         }
 
-        // Si está DEMASIADO cerca -> alejarse (no dispara a bocajarro)
+        // Muy cerca -> alejarse
         if (dist <= tooCloseDistance)
         {
             StopShooting();
-            int awayDir = (player.position.x >= rb.position.x) ? -1 : 1; // dirección opuesta al player
+
+            // Si al alejarse hay pared, gira primero
+            int awayDir = (player.position.x >= rb.position.x) ? -1 : 1;
+            if (IsHittingWall(awayDir)) awayDir *= -1;
+
             rb.linearVelocity = new Vector2(awayDir * backOffSpeed, rb.linearVelocity.y);
             UpdateAnimator();
             return;
         }
 
-        // Si está dentro de la zona de parada (cerca pero no demasiado) -> quedarse y disparar
+        // Zona de parada -> quedarse y disparar
         if (dist <= stopDistance)
         {
             rb.linearVelocity = Vector2.zero;
 
-            // Solo dispara si además está dentro de shootDistance (normalmente sí)
             if (dist <= shootDistance && cooldownTimer <= 0f)
                 StartShooting();
 
@@ -126,12 +146,37 @@ public class EnemyAI_Shooter : MonoBehaviour
             return;
         }
 
-        // Si está entre stopDistance y lejos -> acercarse (correr)
+        // Lejos -> acercarse corriendo
         StopShooting();
         rb.linearVelocity = new Vector2(dir * runSpeed, rb.linearVelocity.y);
         UpdateAnimator();
     }
 
+    // --------- Wall detection ----------
+    bool IsHittingWall()
+    {
+        return IsHittingWall(dir);
+    }
+
+    bool IsHittingWall(int checkDir)
+    {
+        if (wallCheck == null) return false;
+
+        Vector2 origin = wallCheck.position;
+        Vector2 direction = Vector2.right * checkDir;
+
+        RaycastHit2D hit = Physics2D.Raycast(origin, direction, wallCheckDistance, wallLayer);
+        return hit.collider != null;
+    }
+
+    void TurnAround()
+    {
+        dir *= -1;
+        patrolStart = rb.position; // para que no se quede rebotando en el mismo sitio
+        ApplyFlip();
+    }
+
+    // --------- Shooting ----------
     void StartShooting()
     {
         shootTimer = shootDuration;
@@ -143,6 +188,7 @@ public class EnemyAI_Shooter : MonoBehaviour
         shootTimer = 0f;
     }
 
+    // --------- Patrol ----------
     void Patrol()
     {
         rb.linearVelocity = new Vector2(dir * walkSpeed, rb.linearVelocity.y);
@@ -150,12 +196,11 @@ public class EnemyAI_Shooter : MonoBehaviour
         float dx = rb.position.x - patrolStart.x;
         if (Mathf.Abs(dx) >= patrolDistance)
         {
-            dir *= -1;
-            patrolStart = rb.position;
-            ApplyFlip();
+            TurnAround();
         }
     }
 
+    // --------- Visual / Animator ----------
     void ApplyFlip()
     {
         if (!flipWithDirection) return;
@@ -189,5 +234,13 @@ public class EnemyAI_Shooter : MonoBehaviour
 
         Gizmos.color = Color.magenta;
         Gizmos.DrawWireSphere(transform.position, shootDistance);
+
+        // Raycast wall check
+        if (wallCheck != null)
+        {
+            Gizmos.color = Color.cyan;
+            Vector3 to = wallCheck.position + Vector3.right * dir * wallCheckDistance;
+            Gizmos.DrawLine(wallCheck.position, to);
+        }
     }
 }
