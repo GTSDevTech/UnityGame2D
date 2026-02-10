@@ -1,184 +1,184 @@
 fileFormatVersion: 2
-guid: 7b0e3473fe89fab439dacc63273239f9
+guid: cc33dc83ed5ba984fbb22f468aad9427
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1685836164277722976
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_0
+      213: 44206760428858403
+    second: chaqueta-1_0
   - first:
-      213: -4781373147762255641
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_1
+      213: 3273625921297385759
+    second: chaqueta-1_1
   - first:
-      213: 2469913742282243425
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_2
+      213: 7256357700134765019
+    second: chaqueta-1_2
   - first:
-      213: 3833488592891973055
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_3
+      213: -2799802851221855350
+    second: chaqueta-1_3
   - first:
-      213: 8435692760255934518
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_4
+      213: -7977241320639434021
+    second: chaqueta-1_4
   - first:
-      213: -5961335381899603216
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_5
+      213: -1007793355543258050
+    second: chaqueta-1_5
   - first:
-      213: -4227687179080005667
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_6
+      213: -7613708062505285785
+    second: chaqueta-1_6
   - first:
-      213: -3207140147222003221
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_7
+      213: -990390754676024784
+    second: chaqueta-1_7
   - first:
-      213: 5891076334021097989
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_8
+      213: 1251311755256352201
+    second: chaqueta-1_8
   - first:
-      213: 1649313307402750842
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_9
+      213: -6648643132414308060
+    second: chaqueta-1_9
   - first:
-      213: -5891550342932452184
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_10
+      213: -4405696644477770482
+    second: chaqueta-1_10
   - first:
-      213: 307830138354519933
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_11
+      213: -7295525171818779311
+    second: chaqueta-1_11
   - first:
-      213: 6943750462318570249
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_12
+      213: 4475124012698104052
+    second: chaqueta-1_12
   - first:
-      213: -5723567465245140631
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_13
+      213: 2993903639109174831
+    second: chaqueta-1_13
   - first:
-      213: -570021925450907648
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_14
+      213: -1434469317245685977
+    second: chaqueta-1_14
   - first:
-      213: -883126315768186039
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_15
+      213: 8600370378231898914
+    second: chaqueta-1_15
   - first:
-      213: -2440929858659534910
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_16
+      213: 819221117735203458
+    second: chaqueta-1_16
   - first:
-      213: 348443684658768442
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_17
+      213: 3574690382234060261
+    second: chaqueta-1_17
   - first:
-      213: -3416721487621873183
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_18
+      213: -3493958556909307164
+    second: chaqueta-1_18
   - first:
-      213: -7892811364795439237
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_19
+      213: -5742692111212961490
+    second: chaqueta-1_19
   - first:
-      213: -5984758728075038176
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_20
+      213: 4797929181368072668
+    second: chaqueta-1_20
   - first:
-      213: -7390141296465645248
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_21
+      213: 6447195313788944237
+    second: chaqueta-1_21
   - first:
-      213: 3420988261329296454
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_22
+      213: 4213967555386233769
+    second: chaqueta-1_22
   - first:
-      213: -2683476817418086406
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_23
+      213: -2836506425579530662
+    second: chaqueta-1_23
   - first:
-      213: -8386569731660453093
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_24
+      213: -888576225024704410
+    second: chaqueta-1_24
   - first:
-      213: -4306139413736060789
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_25
+      213: -3727508731515849242
+    second: chaqueta-1_25
   - first:
-      213: -8377366984504472362
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_26
+      213: 6269976515576588053
+    second: chaqueta-1_26
   - first:
-      213: -458171213625879282
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_27
+      213: -5576441095484264440
+    second: chaqueta-1_27
   - first:
-      213: 4319682030203348342
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_28
+      213: -8401364175512595656
+    second: chaqueta-1_28
   - first:
-      213: 9168443095142556079
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_29
+      213: -3009995505961073486
+    second: chaqueta-1_29
   - first:
-      213: 1839098010448304525
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_30
+      213: -8805236152961709819
+    second: chaqueta-1_30
   - first:
-      213: 6040065265859764730
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_31
+      213: 8893723672296317054
+    second: chaqueta-1_31
   - first:
-      213: -6328249800381666562
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_32
+      213: 3789766251032735636
+    second: chaqueta-1_32
   - first:
-      213: 1898377708517727991
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_33
+      213: -940817576141689325
+    second: chaqueta-1_33
   - first:
-      213: 5371658221101328993
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_34
+      213: 8513520596014503081
+    second: chaqueta-1_34
   - first:
-      213: -9168332025150486610
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_35
+      213: 7400065568981105577
+    second: chaqueta-1_35
   - first:
-      213: -6959349998848647344
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_36
+      213: -7963669227977336388
+    second: chaqueta-1_36
   - first:
-      213: -8509852904896004100
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_37
+      213: -5146246648874580949
+    second: chaqueta-1_37
   - first:
-      213: 5282265345564763937
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_38
+      213: 6527996464847811872
+    second: chaqueta-1_38
   - first:
-      213: -284939997883893424
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_39
+      213: -2308598899861913646
+    second: chaqueta-1_39
   - first:
-      213: -5271252021847480034
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_40
+      213: 4349785120541148620
+    second: chaqueta-1_40
   - first:
-      213: 8802882355207287857
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_41
+      213: -1396136697629582042
+    second: chaqueta-1_41
   - first:
-      213: 7730731784452637803
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_42
+      213: -5046455654068669660
+    second: chaqueta-1_42
   - first:
-      213: 9099612999461013565
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_43
+      213: 4803101441715976084
+    second: chaqueta-1_43
   - first:
-      213: -4697692685375134419
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_44
+      213: -1732540407072704461
+    second: chaqueta-1_44
   - first:
-      213: 6747980245535407288
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_45
+      213: -1111304478806544583
+    second: chaqueta-1_45
   - first:
-      213: 753213305651998110
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_46
+      213: -3623845073485310982
+    second: chaqueta-1_46
   - first:
-      213: 6787366975325547458
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_47
+      213: 4588955254060637362
+    second: chaqueta-1_47
   - first:
-      213: -2400718032470467532
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_48
+      213: -3543490773608754155
+    second: chaqueta-1_48
   - first:
-      213: 8450829900146257356
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_49
+      213: -793971241114139245
+    second: chaqueta-1_49
   - first:
-      213: 2954810438719730329
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_50
+      213: -6260014615156196741
+    second: chaqueta-1_50
   - first:
-      213: 4279694129490219480
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_51
+      213: 8755887429783271200
+    second: chaqueta-1_51
   - first:
-      213: -4969527567903250941
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_52
+      213: -9040178525142733225
+    second: chaqueta-1_52
   - first:
-      213: 7935268553211021369
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_53
+      213: -668094935112138751
+    second: chaqueta-1_53
   - first:
-      213: 8373609487194924111
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_54
+      213: 2131183906095536191
+    second: chaqueta-1_54
   - first:
-      213: 1722247523223387086
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_55
+      213: 2235377475627516393
+    second: chaqueta-1_55
   - first:
-      213: 5183343179405717169
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_56
+      213: -6695334275191404812
+    second: chaqueta-1_56
   - first:
-      213: -3230006948169566403
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_57
+      213: 5529463656708427198
+    second: chaqueta-1_57
   - first:
-      213: -3785097606175560807
-    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_58
+      213: -4036427369590768984
+    second: chaqueta-1_58
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -287,7 +287,95 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_4
+      name: chaqueta-1_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 849
+        width: 7
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c680c70dd0d9000800000000000000
+      internalID: 44206760428858403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 849
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1901765e614e6d20800000000000000
+      internalID: 3273625921297385759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 849
+        width: 16
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd104b7e1e2c3b460800000000000000
+      internalID: 7256357700134765019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_3
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 849
+        width: 18
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83abcb042a1529d0800000000000000
+      internalID: -2799802851221855350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_4
       rect:
         serializedVersion: 2
         x: 252
@@ -295,21 +383,21 @@ TextureImporter:
         width: 52
         height: 120
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 630b3690fd9911570800000000000000
-      internalID: 8435692760255934518
+      spriteID: bd2f7bbb8452b4190800000000000000
+      internalID: -7977241320639434021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_5
+      name: chaqueta-1_5
       rect:
         serializedVersion: 2
         x: 415
@@ -317,21 +405,21 @@ TextureImporter:
         width: 52
         height: 120
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f218eefd05154da0800000000000000
-      internalID: -5961335381899603216
+      spriteID: e3c58db58499302f0800000000000000
+      internalID: -1007793355543258050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_6
+      name: chaqueta-1_6
       rect:
         serializedVersion: 2
         x: 578
@@ -339,21 +427,21 @@ TextureImporter:
         width: 52
         height: 120
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd7867de8ec3455c0800000000000000
-      internalID: -4227687179080005667
+      spriteID: 76748d63bdca65690800000000000000
+      internalID: -7613708062505285785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_7
+      name: chaqueta-1_7
       rect:
         serializedVersion: 2
         x: 742
@@ -361,21 +449,21 @@ TextureImporter:
         width: 52
         height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be140fb3703fd73d0800000000000000
-      internalID: -3207140147222003221
+      spriteID: 03a54be1bdc6142f0800000000000000
+      internalID: -990390754676024784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_8
+      name: chaqueta-1_8
       rect:
         serializedVersion: 2
         x: 908
@@ -383,21 +471,21 @@ TextureImporter:
         width: 52
         height: 123
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 50ab90aa6be41c150800000000000000
-      internalID: 5891076334021097989
+      spriteID: 9cd4353696d8d5110800000000000000
+      internalID: 1251311755256352201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_9
+      name: chaqueta-1_9
       rect:
         serializedVersion: 2
         x: 1071
@@ -405,21 +493,21 @@ TextureImporter:
         width: 51
         height: 123
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a7bc013f6b983e610800000000000000
-      internalID: 1649313307402750842
+      spriteID: 421da1e0c464bb3a0800000000000000
+      internalID: -6648643132414308060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_10
+      name: chaqueta-1_10
       rect:
         serializedVersion: 2
         x: 1234
@@ -427,21 +515,131 @@ TextureImporter:
         width: 51
         height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ac2e298d220d3ea0800000000000000
-      internalID: -5891550342932452184
+      spriteID: e05a5c58e32dbd2c0800000000000000
+      internalID: -4405696644477770482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_16
+      name: chaqueta-1_11
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 651
+        width: 7
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d22d3728611ca90800000000000000
+      internalID: -7295525171818779311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 651
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0f0be4495da1e30800000000000000
+      internalID: 4475124012698104052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_13
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 651
+        width: 15
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f260ad45f7b7c8920800000000000000
+      internalID: 2993903639109174831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_14
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 651
+        width: 18
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72faf5091cdb71ce0800000000000000
+      internalID: -1434469317245685977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_15
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 651
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 223ed43da47aa5770800000000000000
+      internalID: 8600370378231898914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_16
       rect:
         serializedVersion: 2
         x: 252
@@ -449,21 +647,21 @@ TextureImporter:
         width: 52
         height: 120
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c734f4e933102ed0800000000000000
-      internalID: -2440929858659534910
+      spriteID: 282fa1324457e5b00800000000000000
+      internalID: 819221117735203458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_17
+      name: chaqueta-1_17
       rect:
         serializedVersion: 2
         x: 415
@@ -471,21 +669,21 @@ TextureImporter:
         width: 53
         height: 120
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3a60506fabe5d400800000000000000
-      internalID: 348443684658768442
+      spriteID: 5e5011f86f9db9130800000000000000
+      internalID: 3574690382234060261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_18
+      name: chaqueta-1_18
       rect:
         serializedVersion: 2
         x: 583
@@ -493,21 +691,21 @@ TextureImporter:
         width: 52
         height: 120
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e1aad9d8ed5590d0800000000000000
-      internalID: -3416721487621873183
+      spriteID: 4eafb7b4437f28fc0800000000000000
+      internalID: -3493958556909307164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_19
+      name: chaqueta-1_19
       rect:
         serializedVersion: 2
         x: 742
@@ -515,21 +713,21 @@ TextureImporter:
         width: 53
         height: 120
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b77a332b1e9177290800000000000000
-      internalID: -7892811364795439237
+      spriteID: e21a6b073fbdd40b0800000000000000
+      internalID: -5742692111212961490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_20
+      name: chaqueta-1_20
       rect:
         serializedVersion: 2
         x: 906
@@ -537,21 +735,21 @@ TextureImporter:
         width: 52
         height: 120
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0223baa35add1fca0800000000000000
-      internalID: -5984758728075038176
+      spriteID: cd9bce08b2ba59240800000000000000
+      internalID: 4797929181368072668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_21
+      name: chaqueta-1_21
       rect:
         serializedVersion: 2
         x: 1069
@@ -559,21 +757,21 @@ TextureImporter:
         width: 52
         height: 123
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 041783045a1f07990800000000000000
-      internalID: -7390141296465645248
+      spriteID: d6ff3fbaaf9097950800000000000000
+      internalID: 6447195313788944237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_22
+      name: chaqueta-1_22
       rect:
         serializedVersion: 2
         x: 1232
@@ -581,21 +779,21 @@ TextureImporter:
         width: 52
         height: 123
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64c5051d2bac97f20800000000000000
-      internalID: 3420988261329296454
+      spriteID: 9a351d14a250b7a30800000000000000
+      internalID: 4213967555386233769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_23
+      name: chaqueta-1_23
       rect:
         serializedVersion: 2
         x: 1395
@@ -603,21 +801,109 @@ TextureImporter:
         width: 52
         height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af79cce5d0062cad0800000000000000
-      internalID: -2683476817418086406
+      spriteID: a5618343f64b2a8d0800000000000000
+      internalID: -2836506425579530662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_28
+      name: chaqueta-1_24
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 463
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6608b8791a42ba3f0800000000000000
+      internalID: -888576225024704410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_25
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 463
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5b4d0de8a354cc0800000000000000
+      internalID: -3727508731515849242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_26
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 463
+        width: 16
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517ebf0db6e630750800000000000000
+      internalID: 6269976515576588053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_27
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 463
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80035c07e508c92b0800000000000000
+      internalID: -5576441095484264440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_28
       rect:
         serializedVersion: 2
         x: 252
@@ -625,21 +911,21 @@ TextureImporter:
         width: 61
         height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 675a8e87be792fb30800000000000000
-      internalID: 4319682030203348342
+      spriteID: 83311e17bcb586b80800000000000000
+      internalID: -8401364175512595656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_29
+      name: chaqueta-1_29
       rect:
         serializedVersion: 2
         x: 412
@@ -647,21 +933,21 @@ TextureImporter:
         width: 64
         height: 120
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa1ea552b6adc3f70800000000000000
-      internalID: 9168443095142556079
+      spriteID: 2b40ba3f8095a36d0800000000000000
+      internalID: -3009995505961073486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_30
+      name: chaqueta-1_30
       rect:
         serializedVersion: 2
         x: 578
@@ -669,21 +955,21 @@ TextureImporter:
         width: 54
         height: 120
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8916e385e9c58910800000000000000
-      internalID: 1839098010448304525
+      spriteID: 5094a4bfe548dc580800000000000000
+      internalID: -8805236152961709819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_31
+      name: chaqueta-1_31
       rect:
         serializedVersion: 2
         x: 759
@@ -691,21 +977,21 @@ TextureImporter:
         width: 31
         height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af12fbf8b5f92d350800000000000000
-      internalID: 6040065265859764730
+      spriteID: e7064b91f8adc6b70800000000000000
+      internalID: 8893723672296317054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_32
+      name: chaqueta-1_32
       rect:
         serializedVersion: 2
         x: 912
@@ -713,21 +999,21 @@ TextureImporter:
         width: 45
         height: 124
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: efa6056c55a8d28a0800000000000000
-      internalID: -6328249800381666562
+      spriteID: 49fe1968354f79430800000000000000
+      internalID: 3789766251032735636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_33
+      name: chaqueta-1_33
       rect:
         serializedVersion: 2
         x: 1056
@@ -735,21 +1021,21 @@ TextureImporter:
         width: 60
         height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7fe18b5c774685a10800000000000000
-      internalID: 1898377708517727991
+      spriteID: 31e61af266b81f2f0800000000000000
+      internalID: -940817576141689325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_34
+      name: chaqueta-1_34
       rect:
         serializedVersion: 2
         x: 1219
@@ -757,21 +1043,21 @@ TextureImporter:
         width: 62
         height: 120
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 16a2d8b11b6fb8a40800000000000000
-      internalID: 5371658221101328993
+      spriteID: 9a49a6120e9162670800000000000000
+      internalID: 8513520596014503081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_35
+      name: chaqueta-1_35
       rect:
         serializedVersion: 2
         x: 1393
@@ -779,21 +1065,87 @@ TextureImporter:
         width: 54
         height: 120
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ea7411a599a83c080800000000000000
-      internalID: -9168332025150486610
+      spriteID: 9abb7b18d6052b660800000000000000
+      internalID: 7400065568981105577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_39
+      name: chaqueta-1_36
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 282
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb993bdc70d5b7190800000000000000
+      internalID: -7963669227977336388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_37
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 282
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b24494750fbd498b0800000000000000
+      internalID: -5146246648874580949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_38
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 282
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025724ea23a189a50800000000000000
+      internalID: 6527996464847811872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_39
       rect:
         serializedVersion: 2
         x: 251
@@ -801,21 +1153,21 @@ TextureImporter:
         width: 68
         height: 120
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 05974d3e490bb0cf0800000000000000
-      internalID: -284939997883893424
+      spriteID: 2df7fd4388536ffd0800000000000000
+      internalID: -2308598899861913646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_40
+      name: chaqueta-1_40
       rect:
         serializedVersion: 2
         x: 412
@@ -823,21 +1175,21 @@ TextureImporter:
         width: 74
         height: 119
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e19a834e630c8d6b0800000000000000
-      internalID: -5271252021847480034
+      spriteID: cc5822f558a8d5c30800000000000000
+      internalID: 4349785120541148620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_41
+      name: chaqueta-1_41
       rect:
         serializedVersion: 2
         x: 559
@@ -845,21 +1197,21 @@ TextureImporter:
         width: 94
         height: 110
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1343fa5ccde1a2a70800000000000000
-      internalID: 8802882355207287857
+      spriteID: 62dd6ef021def9ce0800000000000000
+      internalID: -1396136697629582042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_42
+      name: chaqueta-1_42
       rect:
         serializedVersion: 2
         x: 726
@@ -867,21 +1219,21 @@ TextureImporter:
         width: 86
         height: 117
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b640f1a4993194b60800000000000000
-      internalID: 7730731784452637803
+      spriteID: 423b974e15367f9b0800000000000000
+      internalID: -5046455654068669660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_43
+      name: chaqueta-1_43
       rect:
         serializedVersion: 2
         x: 893
@@ -889,21 +1241,21 @@ TextureImporter:
         width: 67
         height: 119
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d38866aafc1584e70800000000000000
-      internalID: 9099612999461013565
+      spriteID: 497b5a5305b08a240800000000000000
+      internalID: 4803101441715976084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_44
+      name: chaqueta-1_44
       rect:
         serializedVersion: 2
         x: 1077
@@ -911,21 +1263,21 @@ TextureImporter:
         width: 64
         height: 120
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d25a34064617eceb0800000000000000
-      internalID: -4697692685375134419
+      spriteID: 338bb6ddda7c4f7e0800000000000000
+      internalID: -1732540407072704461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_45
+      name: chaqueta-1_45
       rect:
         serializedVersion: 2
         x: 1233
@@ -933,21 +1285,21 @@ TextureImporter:
         width: 72
         height: 119
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8bcbd7ee744a5ad50800000000000000
-      internalID: 6747980245535407288
+      spriteID: 93f6f67e67ad390f0800000000000000
+      internalID: -1111304478806544583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_46
+      name: chaqueta-1_46
       rect:
         serializedVersion: 2
         x: 1375
@@ -955,21 +1307,109 @@ TextureImporter:
         width: 91
         height: 110
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e9d2c73c283f37a00800000000000000
-      internalID: 753213305651998110
+      spriteID: af3dbd90b1485bdc0800000000000000
+      internalID: -3623845073485310982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_51
+      name: chaqueta-1_47
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 97
+        width: 13
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc52708d7e3faf30800000000000000
+      internalID: 4588955254060637362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_48
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 101
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5141d266aedf2dec0800000000000000
+      internalID: -3543490773608754155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_49
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 101
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3950483ec5f3bf4f0800000000000000
+      internalID: -793971241114139245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_50
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 101
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a7cdedfd5ff19a0800000000000000
+      internalID: -6260014615156196741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chaqueta-1_51
       rect:
         serializedVersion: 2
         x: 255
@@ -977,21 +1417,21 @@ TextureImporter:
         width: 53
         height: 115
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d1d69fc227846b30800000000000000
-      internalID: 4279694129490219480
+      spriteID: 0273a890a39238970800000000000000
+      internalID: 8755887429783271200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_52
+      name: chaqueta-1_52
       rect:
         serializedVersion: 2
         x: 413
@@ -999,21 +1439,21 @@ TextureImporter:
         width: 62
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 306ad95b101b80bb0800000000000000
-      internalID: -4969527567903250941
+      spriteID: 75ea0ce3785da8280800000000000000
+      internalID: -9040178525142733225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_53
+      name: chaqueta-1_53
       rect:
         serializedVersion: 2
         x: 572
@@ -1021,21 +1461,21 @@ TextureImporter:
         width: 57
         height: 125
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 938887fc4bcbf1e60800000000000000
-      internalID: 7935268553211021369
+      spriteID: 100476c32337ab6f0800000000000000
+      internalID: -668094935112138751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_54
+      name: chaqueta-1_54
       rect:
         serializedVersion: 2
         x: 727
@@ -1043,21 +1483,21 @@ TextureImporter:
         width: 79
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f44281c9679053470800000000000000
-      internalID: 8373609487194924111
+      spriteID: f389ad9987c739d10800000000000000
+      internalID: 2131183906095536191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_55
+      name: chaqueta-1_55
       rect:
         serializedVersion: 2
         x: 893
@@ -1065,21 +1505,21 @@ TextureImporter:
         width: 76
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ecbb60d5ff6a6e710800000000000000
-      internalID: 1722247523223387086
+      spriteID: 9e100b578f7a50f10800000000000000
+      internalID: 2235377475627516393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_56
+      name: chaqueta-1_56
       rect:
         serializedVersion: 2
         x: 1062
@@ -1087,21 +1527,21 @@ TextureImporter:
         width: 74
         height: 130
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1beeb6db82feee740800000000000000
-      internalID: 5183343179405717169
+      spriteID: 4f608ba33f46513a0800000000000000
+      internalID: -6695334275191404812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_57
+      name: chaqueta-1_57
       rect:
         serializedVersion: 2
         x: 1223
@@ -1109,21 +1549,21 @@ TextureImporter:
         width: 88
         height: 127
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d373f404bc5bc23d0800000000000000
-      internalID: -3230006948169566403
+      spriteID: ebdc98046e99cbc40800000000000000
+      internalID: 5529463656708427198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_58
+      name: chaqueta-1_58
       rect:
         serializedVersion: 2
         x: 1377
@@ -1131,15 +1571,15 @@ TextureImporter:
         width: 89
         height: 129
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 99b69bf08c1a87bc0800000000000000
-      internalID: -3785097606175560807
+      spriteID: 8aab0e971babbf7c0800000000000000
+      internalID: -4036427369590768984
       vertices: []
       indices: 
       edges: []
@@ -1148,7 +1588,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ae9b16f537e76d9408128135fc061622
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -1158,65 +1598,65 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_0: 1685836164277722976
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_1: -4781373147762255641
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_10: -5891550342932452184
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_11: 307830138354519933
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_12: 6943750462318570249
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_13: -5723567465245140631
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_14: -570021925450907648
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_15: -883126315768186039
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_16: -2440929858659534910
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_17: 348443684658768442
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_18: -3416721487621873183
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_19: -7892811364795439237
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_2: 2469913742282243425
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_20: -5984758728075038176
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_21: -7390141296465645248
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_22: 3420988261329296454
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_23: -2683476817418086406
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_24: -8386569731660453093
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_25: -4306139413736060789
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_26: -8377366984504472362
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_27: -458171213625879282
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_28: 4319682030203348342
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_29: 9168443095142556079
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_3: 3833488592891973055
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_30: 1839098010448304525
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_31: 6040065265859764730
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_32: -6328249800381666562
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_33: 1898377708517727991
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_34: 5371658221101328993
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_35: -9168332025150486610
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_36: -6959349998848647344
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_37: -8509852904896004100
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_38: 5282265345564763937
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_39: -284939997883893424
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_4: 8435692760255934518
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_40: -5271252021847480034
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_41: 8802882355207287857
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_42: 7730731784452637803
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_43: 9099612999461013565
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_44: -4697692685375134419
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_45: 6747980245535407288
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_46: 753213305651998110
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_47: 6787366975325547458
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_48: -2400718032470467532
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_49: 8450829900146257356
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_5: -5961335381899603216
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_50: 2954810438719730329
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_51: 4279694129490219480
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_52: -4969527567903250941
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_53: 7935268553211021369
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_54: 8373609487194924111
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_55: 1722247523223387086
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_56: 5183343179405717169
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_57: -3230006948169566403
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_58: -3785097606175560807
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_6: -4227687179080005667
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_7: -3207140147222003221
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_8: 5891076334021097989
-      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack6-1536x1024 (1)_9: 1649313307402750842
+      chaqueta-1_0: 44206760428858403
+      chaqueta-1_1: 3273625921297385759
+      chaqueta-1_10: -4405696644477770482
+      chaqueta-1_11: -7295525171818779311
+      chaqueta-1_12: 4475124012698104052
+      chaqueta-1_13: 2993903639109174831
+      chaqueta-1_14: -1434469317245685977
+      chaqueta-1_15: 8600370378231898914
+      chaqueta-1_16: 819221117735203458
+      chaqueta-1_17: 3574690382234060261
+      chaqueta-1_18: -3493958556909307164
+      chaqueta-1_19: -5742692111212961490
+      chaqueta-1_2: 7256357700134765019
+      chaqueta-1_20: 4797929181368072668
+      chaqueta-1_21: 6447195313788944237
+      chaqueta-1_22: 4213967555386233769
+      chaqueta-1_23: -2836506425579530662
+      chaqueta-1_24: -888576225024704410
+      chaqueta-1_25: -3727508731515849242
+      chaqueta-1_26: 6269976515576588053
+      chaqueta-1_27: -5576441095484264440
+      chaqueta-1_28: -8401364175512595656
+      chaqueta-1_29: -3009995505961073486
+      chaqueta-1_3: -2799802851221855350
+      chaqueta-1_30: -8805236152961709819
+      chaqueta-1_31: 8893723672296317054
+      chaqueta-1_32: 3789766251032735636
+      chaqueta-1_33: -940817576141689325
+      chaqueta-1_34: 8513520596014503081
+      chaqueta-1_35: 7400065568981105577
+      chaqueta-1_36: -7963669227977336388
+      chaqueta-1_37: -5146246648874580949
+      chaqueta-1_38: 6527996464847811872
+      chaqueta-1_39: -2308598899861913646
+      chaqueta-1_4: -7977241320639434021
+      chaqueta-1_40: 4349785120541148620
+      chaqueta-1_41: -1396136697629582042
+      chaqueta-1_42: -5046455654068669660
+      chaqueta-1_43: 4803101441715976084
+      chaqueta-1_44: -1732540407072704461
+      chaqueta-1_45: -1111304478806544583
+      chaqueta-1_46: -3623845073485310982
+      chaqueta-1_47: 4588955254060637362
+      chaqueta-1_48: -3543490773608754155
+      chaqueta-1_49: -793971241114139245
+      chaqueta-1_5: -1007793355543258050
+      chaqueta-1_50: -6260014615156196741
+      chaqueta-1_51: 8755887429783271200
+      chaqueta-1_52: -9040178525142733225
+      chaqueta-1_53: -668094935112138751
+      chaqueta-1_54: 2131183906095536191
+      chaqueta-1_55: 2235377475627516393
+      chaqueta-1_56: -6695334275191404812
+      chaqueta-1_57: 5529463656708427198
+      chaqueta-1_58: -4036427369590768984
+      chaqueta-1_6: -7613708062505285785
+      chaqueta-1_7: -990390754676024784
+      chaqueta-1_8: 1251311755256352201
+      chaqueta-1_9: -6648643132414308060
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
