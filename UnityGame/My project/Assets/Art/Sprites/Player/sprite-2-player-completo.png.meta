@@ -1,0 +1,1690 @@
+fileFormatVersion: 2
+guid: e91740730ac491c4c8eed5187ec72122
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7955427382035516777
+    second: sprite-2-player-completo_0
+  - first:
+      213: 7284821301590078452
+    second: sprite-2-player-completo_1
+  - first:
+      213: -8606991443529492981
+    second: sprite-2-player-completo_2
+  - first:
+      213: 9090087720749289865
+    second: sprite-2-player-completo_3
+  - first:
+      213: -1600903371105726047
+    second: sprite-2-player-completo_4
+  - first:
+      213: 1837671633598240848
+    second: sprite-2-player-completo_5
+  - first:
+      213: 693142811245392218
+    second: sprite-2-player-completo_6
+  - first:
+      213: -4015318038383330242
+    second: sprite-2-player-completo_7
+  - first:
+      213: -7447959484923193984
+    second: sprite-2-player-completo_8
+  - first:
+      213: -7290911172766913661
+    second: sprite-2-player-completo_9
+  - first:
+      213: -2785395294256664030
+    second: sprite-2-player-completo_10
+  - first:
+      213: 6311121959625387424
+    second: sprite-2-player-completo_11
+  - first:
+      213: -2077438919654145677
+    second: sprite-2-player-completo_12
+  - first:
+      213: -3396519562765212092
+    second: sprite-2-player-completo_13
+  - first:
+      213: -6283528402307661355
+    second: sprite-2-player-completo_14
+  - first:
+      213: 8259581220420927004
+    second: sprite-2-player-completo_15
+  - first:
+      213: 6728368423694485822
+    second: sprite-2-player-completo_16
+  - first:
+      213: 603489713874005487
+    second: sprite-2-player-completo_17
+  - first:
+      213: 2745319525284567821
+    second: sprite-2-player-completo_18
+  - first:
+      213: -517486743085330711
+    second: sprite-2-player-completo_19
+  - first:
+      213: 3901821841395214821
+    second: sprite-2-player-completo_20
+  - first:
+      213: 679292313869585898
+    second: sprite-2-player-completo_21
+  - first:
+      213: 7094200218876661862
+    second: sprite-2-player-completo_22
+  - first:
+      213: -6308541141939164522
+    second: sprite-2-player-completo_23
+  - first:
+      213: 7025232950940782714
+    second: sprite-2-player-completo_24
+  - first:
+      213: 2421652936613649808
+    second: sprite-2-player-completo_25
+  - first:
+      213: 8125397450644343817
+    second: sprite-2-player-completo_26
+  - first:
+      213: -9054995881259035014
+    second: sprite-2-player-completo_27
+  - first:
+      213: -6070934645503583159
+    second: sprite-2-player-completo_28
+  - first:
+      213: -8688349333784437990
+    second: sprite-2-player-completo_29
+  - first:
+      213: 3997236697296777863
+    second: sprite-2-player-completo_30
+  - first:
+      213: -7890813629622887433
+    second: sprite-2-player-completo_31
+  - first:
+      213: 1241246041745311278
+    second: sprite-2-player-completo_32
+  - first:
+      213: 1326644663118498157
+    second: sprite-2-player-completo_33
+  - first:
+      213: -1755917757300767996
+    second: sprite-2-player-completo_34
+  - first:
+      213: -4494983114139629434
+    second: sprite-2-player-completo_35
+  - first:
+      213: -2041803284654364615
+    second: sprite-2-player-completo_36
+  - first:
+      213: -4636794251274936403
+    second: sprite-2-player-completo_37
+  - first:
+      213: -4834234976277449184
+    second: sprite-2-player-completo_38
+  - first:
+      213: -955559859202655548
+    second: sprite-2-player-completo_39
+  - first:
+      213: -6206589455251487588
+    second: sprite-2-player-completo_40
+  - first:
+      213: 3618202574145224492
+    second: sprite-2-player-completo_41
+  - first:
+      213: 8626995581820222815
+    second: sprite-2-player-completo_42
+  - first:
+      213: -4036732351201327813
+    second: sprite-2-player-completo_43
+  - first:
+      213: -281565986666465207
+    second: sprite-2-player-completo_44
+  - first:
+      213: -6350056997646081296
+    second: sprite-2-player-completo_45
+  - first:
+      213: -8248856331073117458
+    second: sprite-2-player-completo_46
+  - first:
+      213: -6890128987399226946
+    second: sprite-2-player-completo_47
+  - first:
+      213: 7842141065825396634
+    second: sprite-2-player-completo_48
+  - first:
+      213: 768329184753117817
+    second: sprite-2-player-completo_49
+  - first:
+      213: -5154561717559497769
+    second: sprite-2-player-completo_50
+  - first:
+      213: -4598236023849368287
+    second: sprite-2-player-completo_51
+  - first:
+      213: 116802483934620574
+    second: sprite-2-player-completo_52
+  - first:
+      213: 2087183984040077102
+    second: sprite-2-player-completo_53
+  - first:
+      213: -3109592432853724727
+    second: sprite-2-player-completo_54
+  - first:
+      213: 7039529274646187662
+    second: sprite-2-player-completo_55
+  - first:
+      213: 8012263297609213662
+    second: sprite-2-player-completo_56
+  - first:
+      213: 7047382074933476532
+    second: sprite-2-player-completo_57
+  - first:
+      213: 5157187784192044975
+    second: sprite-2-player-completo_58
+  - first:
+      213: 4043045431483764714
+    second: sprite-2-player-completo_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite-2-player-completo_0
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 849
+        width: 69
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7927b5912f4a89190800000000000000
+      internalID: -7955427382035516777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_1
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 849
+        width: 41
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3b97d8062e81560800000000000000
+      internalID: 7284821301590078452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_2
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 849
+        width: 61
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b06199742e2dd8880800000000000000
+      internalID: -8606991443529492981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_3
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 849
+        width: 98
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981d664ee9a762e70800000000000000
+      internalID: 9090087720749289865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_4
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 849
+        width: 98
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a1948dadd278c9e0800000000000000
+      internalID: -1600903371105726047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_5
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 849
+        width: 102
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0585f664d98b08910800000000000000
+      internalID: 1837671633598240848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_6
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 849
+        width: 91
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a51b5e2e6b98e9900800000000000000
+      internalID: 693142811245392218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_7
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 943
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c71f5a489b648c0800000000000000
+      internalID: -4015318038383330242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_8
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 849
+        width: 86
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085d6a73f4883a890800000000000000
+      internalID: -7447959484923193984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_9
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 948
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b2d42daea71da90800000000000000
+      internalID: -7290911172766913661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_10
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 928
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22279ceccb94859d0800000000000000
+      internalID: -2785395294256664030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_11
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 936
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad63a90cfb959750800000000000000
+      internalID: 6311121959625387424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_12
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 928
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371817f2f447b23e0800000000000000
+      internalID: -2077438919654145677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_13
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 937
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446e6b404732dd0d0800000000000000
+      internalID: -3396519562765212092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_14
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 849
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1cf5ca53c6cc8a0800000000000000
+      internalID: -6283528402307661355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_15
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 849
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e3dacdb5def9270800000000000000
+      internalID: 8259581220420927004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_16
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 849
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39c344de67ff5d50800000000000000
+      internalID: 6728368423694485822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_17
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 849
+        width: 18
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fedef0582b6006800800000000000000
+      internalID: 603489713874005487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_18
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 651
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0bd78b1095591620800000000000000
+      internalID: 2745319525284567821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 651
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eecc668c8481d8f0800000000000000
+      internalID: -517486743085330711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_20
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 651
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e9e831ca4e062630800000000000000
+      internalID: 3901821841395214821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 651
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed89daa2c45d6900800000000000000
+      internalID: 679292313869585898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_22
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 651
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66054ab2389a37260800000000000000
+      internalID: 7094200218876661862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_23
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 651
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a67c7614f8378a0800000000000000
+      internalID: -6308541141939164522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_24
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 651
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70d139c524ae7160800000000000000
+      internalID: 7025232950940782714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_25
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 651
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09d5320f3807b9120800000000000000
+      internalID: 2421652936613649808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_26
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 651
+        width: 72
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c45806ee533c070800000000000000
+      internalID: 8125397450644343817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_27
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 651
+        width: 60
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a761eeea831365280800000000000000
+      internalID: -9054995881259035014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_28
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 651
+        width: 56
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c9528ea15bfbba0800000000000000
+      internalID: -6070934645503583159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_29
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 651
+        width: 59
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1bd6435058cc6780800000000000000
+      internalID: -8688349333784437990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_30
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 651
+        width: 60
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 782b7811999097730800000000000000
+      internalID: 3997236697296777863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_31
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 651
+        width: 63
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb5489afc23e7290800000000000000
+      internalID: -7890813629622887433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_32
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 463
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26c615d2bac93110800000000000000
+      internalID: 1241246041745311278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_33
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 463
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d698850da40396210800000000000000
+      internalID: 1326644663118498157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_34
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 463
+        width: 18
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403894d5a1ab1a7e0800000000000000
+      internalID: -1755917757300767996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_35
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 463
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68804525cac9e91c0800000000000000
+      internalID: -4494983114139629434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_36
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 463
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93863f40bbe0aa3e0800000000000000
+      internalID: -2041803284654364615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_37
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 463
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf1f2cf13cc6afb0800000000000000
+      internalID: -4636794251274936403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_38
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 463
+        width: 74
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 026b636e6e859ecb0800000000000000
+      internalID: -4834234976277449184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_39
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 463
+        width: 70
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca7a9eee5b2db2f0800000000000000
+      internalID: -955559859202655548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_40
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 463
+        width: 96
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c94cc0d36c3cdd9a0800000000000000
+      internalID: -6206589455251487588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_41
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 463
+        width: 71
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f74553210763230800000000000000
+      internalID: 3618202574145224492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_42
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 463
+        width: 66
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5d324d16ce39b770800000000000000
+      internalID: 8626995581820222815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_43
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 282
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3541596055aaf7c0800000000000000
+      internalID: -4036732351201327813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_44
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 282
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 948b9e71a3da71cf0800000000000000
+      internalID: -281565986666465207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_45
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 282
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f262dffdc010e7a0800000000000000
+      internalID: -6350056997646081296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_46
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 282
+        width: 18
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2a7270fdc268d80800000000000000
+      internalID: -8248856331073117458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_47
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 282
+        width: 74
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9727101385160a0800000000000000
+      internalID: -6890128987399226946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_48
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 282
+        width: 76
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a97a60bffb1e4dc60800000000000000
+      internalID: 7842141065825396634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_49
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 282
+        width: 91
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a66cf9257a9aa00800000000000000
+      internalID: 768329184753117817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_50
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 282
+        width: 91
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dbe90c8d615778b0800000000000000
+      internalID: -5154561717559497769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_51
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 101
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125cd05e2b8cf20c0800000000000000
+      internalID: -4598236023849368287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_52
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 101
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b6ec38d37fe9100800000000000000
+      internalID: 116802483934620574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_53
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 101
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e27e79d66ca27fc10800000000000000
+      internalID: 2087183984040077102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_54
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 101
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c1d28b582288d4d0800000000000000
+      internalID: -3109592432853724727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_55
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 101
+        width: 49
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ecf39049e61b160800000000000000
+      internalID: 7039529274646187662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_56
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 101
+        width: 47
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed6a5e4b407413f60800000000000000
+      internalID: 8012263297609213662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_57
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 93
+        width: 82
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bc7dd498a45dc160800000000000000
+      internalID: 7047382074933476532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_58
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 96
+        width: 103
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faf20cc37f2029740800000000000000
+      internalID: 5157187784192044975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-2-player-completo_59
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 96
+        width: 111
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef0b522668cb1830800000000000000
+      internalID: 4043045431483764714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprite-2-player-completo_0: -7955427382035516777
+      sprite-2-player-completo_1: 7284821301590078452
+      sprite-2-player-completo_10: -2785395294256664030
+      sprite-2-player-completo_11: 6311121959625387424
+      sprite-2-player-completo_12: -2077438919654145677
+      sprite-2-player-completo_13: -3396519562765212092
+      sprite-2-player-completo_14: -6283528402307661355
+      sprite-2-player-completo_15: 8259581220420927004
+      sprite-2-player-completo_16: 6728368423694485822
+      sprite-2-player-completo_17: 603489713874005487
+      sprite-2-player-completo_18: 2745319525284567821
+      sprite-2-player-completo_19: -517486743085330711
+      sprite-2-player-completo_2: -8606991443529492981
+      sprite-2-player-completo_20: 3901821841395214821
+      sprite-2-player-completo_21: 679292313869585898
+      sprite-2-player-completo_22: 7094200218876661862
+      sprite-2-player-completo_23: -6308541141939164522
+      sprite-2-player-completo_24: 7025232950940782714
+      sprite-2-player-completo_25: 2421652936613649808
+      sprite-2-player-completo_26: 8125397450644343817
+      sprite-2-player-completo_27: -9054995881259035014
+      sprite-2-player-completo_28: -6070934645503583159
+      sprite-2-player-completo_29: -8688349333784437990
+      sprite-2-player-completo_3: 9090087720749289865
+      sprite-2-player-completo_30: 3997236697296777863
+      sprite-2-player-completo_31: -7890813629622887433
+      sprite-2-player-completo_32: 1241246041745311278
+      sprite-2-player-completo_33: 1326644663118498157
+      sprite-2-player-completo_34: -1755917757300767996
+      sprite-2-player-completo_35: -4494983114139629434
+      sprite-2-player-completo_36: -2041803284654364615
+      sprite-2-player-completo_37: -4636794251274936403
+      sprite-2-player-completo_38: -4834234976277449184
+      sprite-2-player-completo_39: -955559859202655548
+      sprite-2-player-completo_4: -1600903371105726047
+      sprite-2-player-completo_40: -6206589455251487588
+      sprite-2-player-completo_41: 3618202574145224492
+      sprite-2-player-completo_42: 8626995581820222815
+      sprite-2-player-completo_43: -4036732351201327813
+      sprite-2-player-completo_44: -281565986666465207
+      sprite-2-player-completo_45: -6350056997646081296
+      sprite-2-player-completo_46: -8248856331073117458
+      sprite-2-player-completo_47: -6890128987399226946
+      sprite-2-player-completo_48: 7842141065825396634
+      sprite-2-player-completo_49: 768329184753117817
+      sprite-2-player-completo_5: 1837671633598240848
+      sprite-2-player-completo_50: -5154561717559497769
+      sprite-2-player-completo_51: -4598236023849368287
+      sprite-2-player-completo_52: 116802483934620574
+      sprite-2-player-completo_53: 2087183984040077102
+      sprite-2-player-completo_54: -3109592432853724727
+      sprite-2-player-completo_55: 7039529274646187662
+      sprite-2-player-completo_56: 8012263297609213662
+      sprite-2-player-completo_57: 7047382074933476532
+      sprite-2-player-completo_58: 5157187784192044975
+      sprite-2-player-completo_59: 4043045431483764714
+      sprite-2-player-completo_6: 693142811245392218
+      sprite-2-player-completo_7: -4015318038383330242
+      sprite-2-player-completo_8: -7447959484923193984
+      sprite-2-player-completo_9: -7290911172766913661
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
