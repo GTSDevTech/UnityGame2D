@@ -914,12 +914,21 @@ MonoBehaviour:
   groundedParam: isGrounded
   runParam: Run
   attackTrigger: Attack
+  shootTrigger: Shoot
+  hurtTrigger: Hurt
+  dieTrigger: Die
+  deadBool: IsDead
   attackDuration: 0.35
   freezeMovementWhileAttacking: 1
+  shootPoint: {fileID: 1173560215}
+  bulletPrefab: {fileID: 3145217710079279033, guid: dca6a6eccdb9dd54a8b7b6b9eba9534b, type: 3}
+  bulletSpeed: 12
+  shootCooldown: 0.21
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   debugHUD: 1
+  debugLogs: 0
 --- !u!114 &286508634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -992,9 +1001,6 @@ MonoBehaviour:
   deadBool: IsDead
   useIFrames: 1
   iFrameTime: 0.4
-  isDead: 0
-  invulnerable: 0
-  movement: {fileID: 0}
 --- !u!1 &318956641
 GameObject:
   m_ObjectHideFlags: 0
@@ -2496,6 +2502,15 @@ MonoBehaviour:
     m_Bits: 0
   speedParam: Speed
   shootBool: IsShooting
+  hurtTrigger: Hurt
+  dieTrigger: Die
+  deadBool: IsDead
+  maxHealth: 3
+  hurtStunTime: 0.25
+  shootPoint: {fileID: 229813468}
+  projectilePrefab: {fileID: 3145217710079279033, guid: dca6a6eccdb9dd54a8b7b6b9eba9534b, type: 3}
+  projectileSpeed: 8
+  projectileDamage: 1
   walkSpeed: 1.5
   runSpeed: 4
   backOffSpeed: 5
@@ -2507,6 +2522,7 @@ MonoBehaviour:
   shootCooldown: 0.8
   patrolDistance: 5
   flipWithDirection: 1
+  deathDisableDelay: 1.5
 --- !u!1 &1358981285
 GameObject:
   m_ObjectHideFlags: 0

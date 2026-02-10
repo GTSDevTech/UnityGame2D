@@ -24,43 +24,57 @@ public class PlayerMovement2D : MonoBehaviour
     public bool flipWithDirection = true;
 
     [Header("Animator Params")]
-    public string speedParam = "Speed";          // float 0..1
-    public string groundedParam = "isGrounded";  // bool
-    public string runParam = "Run";              // bool
-    public string attackTrigger = "Attack";      // trigger
+    public string speedParam = "Speed";
+    public string groundedParam = "isGrounded";
+    public string runParam = "Run";
+    public string attackTrigger = "Attack";
+    public string shootTrigger = "Shoot";
+    public string hurtTrigger = "Hurt";
+    public string dieTrigger = "Die";
+    public string deadBool = "IsDead";
 
-    [Header("Ataque")]
-    public float attackDuration = 0.35f;         // ajusta a la duración real del clip
+    [Header("Ataque melee")]
+    public float attackDuration = 0.35f;
     public bool freezeMovementWhileAttacking = true;
+
+    [Header("Shoot")]
+    public Transform shootPoint;
+    public GameObject bulletPrefab;
+    public float bulletSpeed = 12f;
+    public float shootCooldown = 0.25f;
 
     [Header("Ground")]
     public LayerMask groundLayer;
 
     [Header("Debug")]
     public bool debugHUD = false;
+    public bool debugLogs = false;
 
     // Components
-    private Rigidbody2D rb;
-    private Collider2D col;
-    private PlayerInput playerInput;
+    Rigidbody2D rb;
+    Collider2D col;
+    PlayerInput playerInput;
 
     // Input Actions
-    private InputAction moveAction;
-    private InputAction jumpAction;
-    private InputAction sprintAction;
-    private InputAction attackAction;
+    InputAction moveAction;
+    InputAction jumpAction;
+    InputAction sprintAction;
+    InputAction attackAction;
+    InputAction shootAction;
 
     // State
-    private Vector2 moveInput;
-    private bool isRunning;
-    private bool isGrounded;
-    private bool isAttacking;
+    Vector2 moveInput;
+    bool isRunning;
+    bool isGrounded;
+    bool isAttacking;
+    bool isDead;
+    bool canShoot = true;
 
     // Jump helpers
-    private float coyoteCounter;
-    private float jumpBufferCounter;
+    float coyoteCounter;
+    float jumpBufferCounter;
 
-    private Coroutine attackRoutine;
+    Coroutine attackRoutine;
 
     void Awake()
     {
@@ -71,28 +85,41 @@ public class PlayerMovement2D : MonoBehaviour
         if (animator == null)
             animator = GetComponent<Animator>();
 
-        // Nombres EXACTOS del Input Action Asset
-        moveAction = playerInput.actions["Move"];
-        jumpAction = playerInput.actions["Jump"];
+        // Auto-asignar ShootPoint si existe como hijo
+        if (shootPoint == null)
+        {
+            var sp = transform.Find("ShootPoint");
+            if (sp != null) shootPoint = sp;
+        }
+
+        // Input Actions (nombres exactos)
+        moveAction   = playerInput.actions["Move"];
+        jumpAction   = playerInput.actions["Jump"];
         sprintAction = playerInput.actions["Sprint"];
         attackAction = playerInput.actions["Attack"];
+        shootAction  = playerInput.actions["Shoot"];
 
-        Debug.Log($"[INPUT] ActionMap activo: {playerInput.currentActionMap?.name}");
-        Debug.Log($"[INPUT] Attack action encontrada: {(attackAction != null ? attackAction.name : "NO")}");
+        if (debugLogs)
+        {
+            Debug.Log($"[INPUT] Map: {playerInput.currentActionMap?.name}");
+            Debug.Log($"[INPUT] Attack: {(attackAction != null ? "OK" : "NO")}, Shoot: {(shootAction != null ? "OK" : "NO")}");
+            Debug.Log($"[SHOOT] shootPoint={(shootPoint ? shootPoint.name : "NULL")} prefab={(bulletPrefab ? bulletPrefab.name : "NULL")}");
+        }
     }
 
     void OnEnable()
     {
-        // Habilitar actions (más correcto que hacerlo solo en Awake)
         playerInput.currentActionMap?.Enable();
         moveAction?.Enable();
         jumpAction?.Enable();
         sprintAction?.Enable();
         attackAction?.Enable();
+        shootAction?.Enable();
     }
 
     void OnDisable()
     {
+        shootAction?.Disable();
         attackAction?.Disable();
         sprintAction?.Disable();
         jumpAction?.Disable();
@@ -102,7 +129,9 @@ public class PlayerMovement2D : MonoBehaviour
 
     void Update()
     {
-        // --- INPUT ---
+        if (isDead) return;
+
+        // Input
         moveInput = moveAction != null ? moveAction.ReadValue<Vector2>() : Vector2.zero;
 
         bool sprintPressed = sprintAction != null && sprintAction.IsPressed();
@@ -112,22 +141,20 @@ public class PlayerMovement2D : MonoBehaviour
             jumpBufferCounter = jumpBufferTime;
 
         if (!isAttacking && attackAction != null && attackAction.WasPressedThisFrame())
-        {
-            Debug.Log("[INPUT] ATTACK PRESSED");
             TryStartAttack();
-        }
 
-        // --- GROUND ---
+        if (shootAction != null && shootAction.WasPressedThisFrame())
+            TryStartShoot();
+
+        // Ground
         isGrounded = col.IsTouchingLayers(groundLayer);
 
-        // Coyote time
         if (isGrounded) coyoteCounter = coyoteTime;
         else coyoteCounter -= Time.deltaTime;
 
-        // Jump buffer timer
         jumpBufferCounter -= Time.deltaTime;
 
-        // --- ANIMATOR ---
+        // Animator
         if (animator != null)
         {
             float maxSpeed = isRunning ? runSpeed : walkSpeed;
@@ -136,9 +163,10 @@ public class PlayerMovement2D : MonoBehaviour
             animator.SetFloat(speedParam, speed01);
             animator.SetBool(groundedParam, isGrounded);
             animator.SetBool(runParam, isRunning);
+            if (!string.IsNullOrEmpty(deadBool)) animator.SetBool(deadBool, isDead);
         }
 
-        // --- FLIP ---
+        // Flip
         if (flipWithDirection && Mathf.Abs(moveInput.x) > 0.01f)
         {
             Vector3 scale = transform.localScale;
@@ -149,14 +177,13 @@ public class PlayerMovement2D : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (isDead) return;
+
         float targetSpeed = isRunning ? runSpeed : walkSpeed;
 
         if (!(freezeMovementWhileAttacking && isAttacking))
         {
-            rb.linearVelocity = new Vector2(
-                moveInput.x * targetSpeed,
-                rb.linearVelocity.y
-            );
+            rb.linearVelocity = new Vector2(moveInput.x * targetSpeed, rb.linearVelocity.y);
         }
 
         TryConsumeJump();
@@ -164,9 +191,6 @@ public class PlayerMovement2D : MonoBehaviour
 
     void TryConsumeJump()
     {
-        // Si quieres impedir saltar mientras atacas:
-        // if (isAttacking) return;
-
         if (jumpBufferCounter > 0f && coyoteCounter > 0f)
         {
             if (resetVerticalVelocityBeforeJump)
@@ -181,7 +205,7 @@ public class PlayerMovement2D : MonoBehaviour
 
     void TryStartAttack()
     {
-        if (isAttacking) return;
+        if (isAttacking || isDead) return;
 
         if (attackRoutine != null)
             StopCoroutine(attackRoutine);
@@ -205,13 +229,91 @@ public class PlayerMovement2D : MonoBehaviour
         attackRoutine = null;
     }
 
+    void TryStartShoot()
+    {
+        if (isDead) return;
+        if (!canShoot) return;
+
+        if (animator != null && !string.IsNullOrEmpty(shootTrigger))
+            animator.SetTrigger(shootTrigger);
+
+        StartCoroutine(ShootCooldownRoutine());
+    }
+
+    IEnumerator ShootCooldownRoutine()
+    {
+        canShoot = false;
+        yield return new WaitForSeconds(shootCooldown);
+        canShoot = true;
+    }
+
+    // ✅ Animation Event recomendado: pon esto en el clip (evita “Not Supported”)
+    public void Anim_FireBullet()
+    {
+        SpawnBullet();
+    }
+
+    // ✅ Si el clip llama FireBullet()
+    public void FireBullet()
+    {
+        SpawnBullet();
+    }
+
+    // ✅ Si el clip llama FireProjectile() (como el enemigo)
+    public void FireProjectile()
+    {
+        SpawnBullet();
+    }
+
+    void SpawnBullet()
+    {
+        if (isDead) return;
+        if (bulletPrefab == null || shootPoint == null)
+        {
+            if (debugLogs) Debug.LogWarning("[SHOOT] Falta bulletPrefab o shootPoint");
+            return;
+        }
+
+        GameObject b = Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity);
+        var rbB = b.GetComponent<Rigidbody2D>();
+        if (rbB != null)
+        {
+            float facing = Mathf.Sign(transform.localScale.x);
+            rbB.linearVelocity = new Vector2(facing * bulletSpeed, 0f);
+        }
+    }
+
+    // ✅ Estos 2 métodos son los que tu PlayerHealth espera
+    public void OnHurt()
+    {
+        if (isDead) return;
+        if (animator != null && !string.IsNullOrEmpty(hurtTrigger))
+            animator.SetTrigger(hurtTrigger);
+    }
+
+    public void OnDie()
+    {
+        if (isDead) return;
+
+        isDead = true;
+        rb.linearVelocity = Vector2.zero;
+
+        // Bloquea input
+        playerInput.currentActionMap?.Disable();
+
+        if (animator != null)
+        {
+            if (!string.IsNullOrEmpty(deadBool)) animator.SetBool(deadBool, true);
+            if (!string.IsNullOrEmpty(dieTrigger)) animator.SetTrigger(dieTrigger);
+        }
+    }
+
+    public bool IsDead() => isDead;
+
     void OnGUI()
     {
         if (!debugHUD) return;
-
         GUI.Label(new Rect(10, 10, 500, 20), $"Grounded: {isGrounded}");
-        GUI.Label(new Rect(10, 30, 500, 20), $"Run: {isRunning}  Attacking: {isAttacking}");
-        GUI.Label(new Rect(10, 50, 500, 20), $"SpeedX: {Mathf.Abs(rb.linearVelocity.x):F2}  VelY: {rb.linearVelocity.y:F2}");
-        GUI.Label(new Rect(10, 70, 500, 20), $"Coyote: {coyoteCounter:F2}  Buffer: {jumpBufferCounter:F2}");
+        GUI.Label(new Rect(10, 30, 500, 20), $"Run: {isRunning}  Attacking: {isAttacking}  Dead: {isDead}");
     }
 }
