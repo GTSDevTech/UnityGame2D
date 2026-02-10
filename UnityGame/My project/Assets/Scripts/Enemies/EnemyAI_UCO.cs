@@ -62,7 +62,7 @@ public class EnemyAI_Shooter : MonoBehaviour
     public float deathDisableDelay = 1.5f;
 
     [Header("Fix visual muerte (si “flota”)")]
-    public float deathVisualYOffset = -0.25f; // ajusta a ojo (ya te funcionó)
+    public float deathVisualYOffset = -0f; // ajusta a ojo (ya te funcionó)
     Vector3 visualStartLocalPos;
 
     Rigidbody2D rb;
@@ -71,6 +71,7 @@ public class EnemyAI_Shooter : MonoBehaviour
 
     float shootTimer = 0f;
     float cooldownTimer = 0f;
+    float deathLockedY;
 
     int health;
     bool isDead = false;
@@ -254,10 +255,18 @@ public class EnemyAI_Shooter : MonoBehaviour
             if (!string.IsNullOrEmpty(dieTrigger)) animator.SetTrigger(dieTrigger);
         }
 
-        // dejar que caiga (NO kinematic)
+        // parar física
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
-        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+        // 🔒 guardar Y exacta al morir
+        deathLockedY = rb.position.y;
+
+        // 🔒 bloquear Y + rotación (evita hundirse y rebotar)
+        rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+
+        // forzar posición una vez (evita corrección tardía)
+        rb.position = new Vector2(rb.position.x, deathLockedY);
 
         // collider sólido para que apoye en el suelo
         var col = GetComponent<Collider2D>();
