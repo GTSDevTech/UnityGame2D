@@ -6,7 +6,12 @@ public class EnemyAI_Shooter : MonoBehaviour
 {
     [Header("Referencias")]
     public Transform player;
+
+    [Tooltip("Animator (si lo tienes en un hijo Visual, asígnalo aquí o se auto-busca)")]
     public Animator animator;
+
+    [Tooltip("Hijo que contiene Sprite/Animator (opcional). Si existe, se baja al morir para que no “flote”.")]
+    public Transform visual;
 
     [Header("Checks")]
     public Transform wallCheck;
@@ -17,16 +22,16 @@ public class EnemyAI_Shooter : MonoBehaviour
     public string speedParam = "Speed";
     public string shootBool = "IsShooting";
     public string hurtTrigger = "Hurt";
-    public string dieTrigger = "Die";
-    public string deadBool = "IsDead"; // opcional
+    public string dieTrigger = "Die";     // opcional (si lo usas)
+    public string deadBool = "IsDead";    // recomendado
 
     [Header("Vida")]
     public int maxHealth = 3;
     public float hurtStunTime = 0.25f;
 
     [Header("Disparo (proyectil)")]
-    public Transform shootPoint;              // un child “ShootPoint”
-    public GameObject projectilePrefab;       // prefab bala
+    public Transform shootPoint;
+    public GameObject projectilePrefab;
     public float projectileSpeed = 8f;
     public int projectileDamage = 1;
 
@@ -54,7 +59,11 @@ public class EnemyAI_Shooter : MonoBehaviour
     public bool flipWithDirection = true;
 
     [Header("Muerte")]
-    public float deathDisableDelay = 1.5f; // pon aquí lo que dure tu animación de morir
+    public float deathDisableDelay = 1.5f;
+
+    [Header("Fix visual muerte (si “flota”)")]
+    public float deathVisualYOffset = -0.25f; // ajusta a ojo (ya te funcionó)
+    Vector3 visualStartLocalPos;
 
     Rigidbody2D rb;
     Vector2 patrolStart;
@@ -71,10 +80,24 @@ public class EnemyAI_Shooter : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        if (animator == null) animator = GetComponent<Animator>();
         patrolStart = rb.position;
-
         health = maxHealth;
+
+        // Auto asignar Visual
+        if (visual == null)
+        {
+            var v = transform.Find("Visual");
+            if (v != null) visual = v;
+        }
+        if (visual != null)
+            visualStartLocalPos = visual.localPosition;
+
+        // Auto asignar Animator (si está en Visual o en el mismo GO)
+        if (animator == null)
+        {
+            animator = (visual != null) ? visual.GetComponent<Animator>() : GetComponent<Animator>();
+            if (animator == null) animator = GetComponentInChildren<Animator>();
+        }
 
         if (wallCheck == null)
         {
@@ -105,7 +128,7 @@ public class EnemyAI_Shooter : MonoBehaviour
     {
         if (isDead) return;
 
-        // “stun” breve al recibir daño
+        // stun breve al recibir daño
         if (isStunned)
         {
             rb.linearVelocity = Vector2.zero;
@@ -199,12 +222,10 @@ public class EnemyAI_Shooter : MonoBehaviour
             return;
         }
 
-        // IMPORTANTE: cortar disparo y movimiento para que se vea la animación Hurt
         StopShooting();
         SetShootingBool(false);
         rb.linearVelocity = Vector2.zero;
 
-        // Hurt
         if (animator != null && !string.IsNullOrEmpty(hurtTrigger))
             animator.SetTrigger(hurtTrigger);
 
@@ -221,9 +242,7 @@ public class EnemyAI_Shooter : MonoBehaviour
     void Die()
     {
         if (isDead) return;
-
         isDead = true;
-        rb.linearVelocity = Vector2.zero;
 
         StopShooting();
         SetShootingBool(false);
@@ -231,17 +250,31 @@ public class EnemyAI_Shooter : MonoBehaviour
         if (animator != null)
         {
             if (!string.IsNullOrEmpty(deadBool)) animator.SetBool(deadBool, true);
+            // si usas trigger, ok:
             if (!string.IsNullOrEmpty(dieTrigger)) animator.SetTrigger(dieTrigger);
         }
 
-        // Desactiva colisiones (para que no siga recibiendo hits)
+        // dejar que caiga (NO kinematic)
+        rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+        // collider sólido para que apoye en el suelo
         var col = GetComponent<Collider2D>();
-        if (col) col.enabled = false;
+        if (col) col.isTrigger = false;
 
-        // Desactiva física si quieres que no se mueva nada
-        rb.bodyType = RigidbodyType2D.Kinematic;
+        // ajuste collider para "tumbado" (si lo estabas usando)
+        var box = GetComponent<BoxCollider2D>();
+        if (box != null)
+        {
+            box.size = new Vector2(box.size.x * 1.4f, box.size.y * 0.35f);
+            box.offset = new Vector2(box.offset.x, box.offset.y - 0.35f);
+        }
 
-        // Espera a que termine la animación de morir antes de apagar la IA
+        // ✅ Fix visual: baja SOLO el hijo Visual (evita “flotar” visualmente)
+        if (visual != null)
+            visual.localPosition = visualStartLocalPos + new Vector3(0f, deathVisualYOffset, 0f);
+
         if (deathRoutine != null) StopCoroutine(deathRoutine);
         deathRoutine = StartCoroutine(DisableAfterDeath());
     }
@@ -250,10 +283,8 @@ public class EnemyAI_Shooter : MonoBehaviour
     {
         yield return new WaitForSeconds(deathDisableDelay);
         this.enabled = false;
-
-        // Alternativas:
-        // Destroy(gameObject);
-        // gameObject.SetActive(false);
+        // (si quieres) gameObject.SetActive(false);
+        // (si quieres) Destroy(gameObject);
     }
 
     // ---------- DISPARO ----------
@@ -261,23 +292,27 @@ public class EnemyAI_Shooter : MonoBehaviour
     {
         shootTimer = shootDuration;
         cooldownTimer = shootCooldown;
-        //FireProjectile(); // <-- FORZAR disparo
+        // si NO usas Animation Event: FireProjectile();
     }
 
     // Llama a este método desde un Animation Event en el clip de disparo
-    // justo en el frame donde sale la bala.
     public void FireProjectile()
     {
         if (isDead) return;
         if (projectilePrefab == null || shootPoint == null) return;
 
         GameObject b = Instantiate(projectilePrefab, shootPoint.position, Quaternion.identity);
+
         var rbB = b.GetComponent<Rigidbody2D>();
         if (rbB != null)
             rbB.linearVelocity = new Vector2(dir * projectileSpeed, 0f);
 
         var p = b.GetComponent<Projectile>();
-        if (p != null) p.damage = projectileDamage;
+        if (p != null)
+        {
+            p.damage = projectileDamage;
+            p.shooterTag = "Enemy";
+        }
     }
 
     void StopShooting() => shootTimer = 0f;

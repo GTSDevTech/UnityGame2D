@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4130178891385802061}
   - component: {fileID: 8757680126770338216}
   - component: {fileID: 7492005377145515749}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -181,3 +181,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
   damage: 1
   lifeTime: 3
+  shooterTag: 

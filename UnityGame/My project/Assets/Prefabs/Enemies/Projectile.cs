@@ -4,9 +4,7 @@ public class Projectile : MonoBehaviour
 {
     public int damage = 1;
     public float lifeTime = 3f;
-
-    // Quién disparó ("Player" o "Enemy")
-    public string shooterTag;
+    public string shooterTag; // "Player" o "Enemy"
 
     void Start()
     {
@@ -15,33 +13,29 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // No pegarle al que disparó
+        // Ignorar al que disparó
         if (!string.IsNullOrEmpty(shooterTag) && other.CompareTag(shooterTag))
             return;
 
-        // PLAYER
+        // Daño al Player
         if (other.CompareTag("Player"))
         {
-            PlayerHealth ph = other.GetComponent<PlayerHealth>();
-            if (ph != null)
-                ph.TakeDamage(damage);
-
+            var ph = other.GetComponent<PlayerHealth>();
+            if (ph != null) ph.TakeDamage(damage);
             Destroy(gameObject);
             return;
         }
 
-        // ENEMY
+        // Daño al Enemy
         if (other.CompareTag("Enemy"))
         {
-            EnemyAI_Shooter enemy = other.GetComponent<EnemyAI_Shooter>();
-            if (enemy != null)
-                enemy.TakeDamage(damage);
-
+            var eh = other.GetComponent<EnemyAI_Shooter>();
+            if (eh != null) eh.TakeDamage(damage);
             Destroy(gameObject);
             return;
         }
 
-        // SUELO / PAREDES
+        // Pared/Suelo
         if (other.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
             Destroy(gameObject);
