@@ -1,0 +1,1136 @@
+fileFormatVersion: 2
+guid: 419f6cdb26388294ebaee8ff64c6cc42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4962387131237401191
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_0
+  - first:
+      213: 4733948271176498368
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_1
+  - first:
+      213: 3656950774421332829
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_2
+  - first:
+      213: 5050330812045621549
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_3
+  - first:
+      213: -4429146662916517563
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_4
+  - first:
+      213: 5600851967179559811
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_5
+  - first:
+      213: 4018284461156121573
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_6
+  - first:
+      213: -5371497246918586990
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_7
+  - first:
+      213: -7680305648357392843
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_8
+  - first:
+      213: -4751729606905793150
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_9
+  - first:
+      213: -5145856343303975596
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_10
+  - first:
+      213: 7983315234793075313
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_11
+  - first:
+      213: -2476735142183534124
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_12
+  - first:
+      213: 1435887893241797449
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_13
+  - first:
+      213: -2719285151640878647
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_14
+  - first:
+      213: -2647758579449617991
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_15
+  - first:
+      213: 7616199452983678294
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_16
+  - first:
+      213: 598631694854142704
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_17
+  - first:
+      213: -3863890567910649607
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_18
+  - first:
+      213: 5962395539777646092
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_19
+  - first:
+      213: 678387223707994790
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_20
+  - first:
+      213: -7501404187420895834
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_21
+  - first:
+      213: -3285320156380969193
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_22
+  - first:
+      213: -5846753059303571776
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_23
+  - first:
+      213: -4326336432831144987
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_24
+  - first:
+      213: -7525911617050445707
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_25
+  - first:
+      213: 440729716409119863
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_26
+  - first:
+      213: -7467744824336285793
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_27
+  - first:
+      213: -1854612695058416220
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_28
+  - first:
+      213: 6056519963981722133
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_29
+  - first:
+      213: 7948932006870470401
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_30
+  - first:
+      213: 5465035387254089636
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_31
+  - first:
+      213: 1118630655885654334
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_32
+  - first:
+      213: 5206988258028673601
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_33
+  - first:
+      213: 6936742171522584095
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_34
+  - first:
+      213: 3904677021714312794
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_35
+  - first:
+      213: -9063474005701565434
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_36
+  - first:
+      213: 8022626622437100933
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_37
+  - first:
+      213: -8597141470275078083
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_38
+  - first:
+      213: 4089388393855003257
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_39
+  - first:
+      213: -1731603698156758533
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_40
+  - first:
+      213: 6742404479799908399
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_41
+  - first:
+      213: 4650257948685422944
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_42
+  - first:
+      213: -4482756846178515267
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_43
+  - first:
+      213: 1023287657030915280
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_44
+  - first:
+      213: -6875685361708790798
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_45
+  - first:
+      213: 5273388122703814421
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_46
+  - first:
+      213: -5840947660631280396
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_47
+  - first:
+      213: -3479927506592643579
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_48
+  - first:
+      213: 6433868238443581275
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_49
+  - first:
+      213: 2121932956577170649
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_50
+  - first:
+      213: -1282375924770129015
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_51
+  - first:
+      213: 6152227207577818780
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_52
+  - first:
+      213: 1660867722716146340
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_53
+  - first:
+      213: 3740170332197294912
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_54
+  - first:
+      213: -4346638743936727043
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_55
+  - first:
+      213: 579679754047233560
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_56
+  - first:
+      213: 5369655373322142138
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_57
+  - first:
+      213: -2723073513455548503
+    second: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_58
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_4
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 849
+        width: 59
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54111c2a3928882c0800000000000000
+      internalID: -4429146662916517563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_5
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 849
+        width: 58
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383194780393abd40800000000000000
+      internalID: 5600851967179559811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_6
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 848
+        width: 59
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ebbea97d60d3c730800000000000000
+      internalID: 4018284461156121573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_7
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 849
+        width: 59
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29dcd6d96bb9475b0800000000000000
+      internalID: -5371497246918586990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_8
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 849
+        width: 59
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e3b3f64b21a6590800000000000000
+      internalID: -7680305648357392843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_9
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 849
+        width: 59
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2857ca729177e0eb0800000000000000
+      internalID: -4751729606905793150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_10
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 849
+        width: 59
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d0d207bee3698b0800000000000000
+      internalID: -5145856343303975596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_15
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 651
+        width: 64
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1a9e4b995414bd0800000000000000
+      internalID: -2647758579449617991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_16
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 651
+        width: 56
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 655dd95dc0d22b960800000000000000
+      internalID: 7616199452983678294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_17
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 651
+        width: 49
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa3213da54ce4800800000000000000
+      internalID: 598631694854142704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_18
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 651
+        width: 37
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f014b01004b06ac0800000000000000
+      internalID: -3863890567910649607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_19
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 651
+        width: 38
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ee1de372faeb250800000000000000
+      internalID: 5962395539777646092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_20
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 651
+        width: 48
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa4741f59d1a6900800000000000000
+      internalID: 678387223707994790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_21
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 651
+        width: 60
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a5562cb2a8a5e790800000000000000
+      internalID: -7501404187420895834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_22
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 651
+        width: 57
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7174b7169b23862d0800000000000000
+      internalID: -3285320156380969193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_26
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 463
+        width: 56
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 774368c8759cd1600800000000000000
+      internalID: 440729716409119863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_27
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 463
+        width: 76
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f7c28e5ad3d5890800000000000000
+      internalID: -7467744824336285793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_28
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 480
+        width: 89
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4adfc1b74971346e0800000000000000
+      internalID: -1854612695058416220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_29
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 463
+        width: 77
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 512313481d41d0450800000000000000
+      internalID: 6056519963981722133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_30
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 463
+        width: 59
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f4f358b87405e60800000000000000
+      internalID: 7948932006870470401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_31
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 463
+        width: 48
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7283ecab4b7db40800000000000000
+      internalID: 5465035387254089636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_32
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 463
+        width: 59
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e393dee97ac268f00800000000000000
+      internalID: 1118630655885654334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_33
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 463
+        width: 70
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14add6d9b30f24840800000000000000
+      internalID: 5206988258028673601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_38
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 282
+        width: 49
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d387974e161d0b880800000000000000
+      internalID: -8597141470275078083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_39
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 282
+        width: 49
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a2554e31d60c830800000000000000
+      internalID: 4089388393855003257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_40
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 282
+        width: 54
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf91d976c9b18f7e0800000000000000
+      internalID: -1731603698156758533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_41
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 282
+        width: 112
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28d97ec625d19d50800000000000000
+      internalID: 6742404479799908399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_42
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 306
+        width: 81
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 061d45957f8098040800000000000000
+      internalID: 4650257948685422944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_43
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 295
+        width: 64
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db64419266c0ac1c0800000000000000
+      internalID: -4482756846178515267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_44
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 286
+        width: 61
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d49e54d3b2733e00800000000000000
+      internalID: 1023287657030915280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_45
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 282
+        width: 69
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fb8efba798a490a0800000000000000
+      internalID: -6875685361708790798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_46
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 101
+        width: 94
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f5688de86de2940800000000000000
+      internalID: 5273388122703814421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_47
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 101
+        width: 106
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f47c60ac09c0fea0800000000000000
+      internalID: -5840947660631280396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_48
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 101
+        width: 118
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5064f65ce50d4bfc0800000000000000
+      internalID: -3479927506592643579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_50
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 101
+        width: 129
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d40af118ce927d10800000000000000
+      internalID: 2121932956577170649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 749724b2d6c750046915655d82be48c1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_0: 4962387131237401191
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_1: 4733948271176498368
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_10: -5145856343303975596
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_11: 7983315234793075313
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_12: -2476735142183534124
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_13: 1435887893241797449
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_14: -2719285151640878647
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_15: -2647758579449617991
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_16: 7616199452983678294
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_17: 598631694854142704
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_18: -3863890567910649607
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_19: 5962395539777646092
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_2: 3656950774421332829
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_20: 678387223707994790
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_21: -7501404187420895834
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_22: -3285320156380969193
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_23: -5846753059303571776
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_24: -4326336432831144987
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_25: -7525911617050445707
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_26: 440729716409119863
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_27: -7467744824336285793
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_28: -1854612695058416220
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_29: 6056519963981722133
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_3: 5050330812045621549
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_30: 7948932006870470401
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_31: 5465035387254089636
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_32: 1118630655885654334
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_33: 5206988258028673601
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_34: 6936742171522584095
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_35: 3904677021714312794
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_36: -9063474005701565434
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_37: 8022626622437100933
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_38: -8597141470275078083
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_39: 4089388393855003257
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_4: -4429146662916517563
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_40: -1731603698156758533
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_41: 6742404479799908399
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_42: 4650257948685422944
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_43: -4482756846178515267
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_44: 1023287657030915280
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_45: -6875685361708790798
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_46: 5273388122703814421
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_47: -5840947660631280396
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_48: -3479927506592643579
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_49: 6433868238443581275
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_5: 5600851967179559811
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_50: 2121932956577170649
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_51: -1282375924770129015
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_52: 6152227207577818780
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_53: 1660867722716146340
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_54: 3740170332197294912
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_55: -4346638743936727043
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_56: 579679754047233560
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_57: 5369655373322142138
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_58: -2723073513455548503
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_6: 4018284461156121573
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_7: -5371497246918586990
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_8: -7680305648357392843
+      SWAT-2D-Pixel-Art-Character-Sprite-Pack2-1536x1024 (1)_9: -4751729606905793150
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

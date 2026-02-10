@@ -1,0 +1,1016 @@
+fileFormatVersion: 2
+guid: 2839f1e7b630d2943ab431f9950c809f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6150362276000548369
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_0
+  - first:
+      213: 6225365211747264698
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_1
+  - first:
+      213: 3460162953870756417
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_2
+  - first:
+      213: 7265676367008166365
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_3
+  - first:
+      213: -6301506774082649264
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_4
+  - first:
+      213: -3557222841010356186
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_5
+  - first:
+      213: 8350644301825967153
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_6
+  - first:
+      213: 6124564299878575639
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_7
+  - first:
+      213: -5773227273507499175
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_8
+  - first:
+      213: 1329023212124788145
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_9
+  - first:
+      213: 5342933806596068704
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_10
+  - first:
+      213: 6595673481824760517
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_11
+  - first:
+      213: -826342126334576244
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_12
+  - first:
+      213: -581270062542810268
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_13
+  - first:
+      213: 8112588292037424534
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_14
+  - first:
+      213: 2232766935387434626
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_15
+  - first:
+      213: 2590560255948397278
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_16
+  - first:
+      213: -5568126682495293407
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_17
+  - first:
+      213: 4232553751075167327
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_18
+  - first:
+      213: 3163782292143210800
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_19
+  - first:
+      213: -8110817443373661033
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_20
+  - first:
+      213: -7147647206944430787
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_21
+  - first:
+      213: -5403491613071196284
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_22
+  - first:
+      213: 3346375940125610879
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_23
+  - first:
+      213: 5566327308813069055
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_24
+  - first:
+      213: 1731255521734121376
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_25
+  - first:
+      213: 6250159079842689644
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_26
+  - first:
+      213: 2904098441848989133
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_27
+  - first:
+      213: -6697093698674614438
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_28
+  - first:
+      213: 6769851801312107098
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_29
+  - first:
+      213: 6939085426172402320
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_30
+  - first:
+      213: 6673806681388527675
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_31
+  - first:
+      213: 7965365085071194911
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_32
+  - first:
+      213: 5569944133485888394
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_33
+  - first:
+      213: 1036621567791298265
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_34
+  - first:
+      213: 5251951329139678298
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_35
+  - first:
+      213: 6954804178205073629
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_36
+  - first:
+      213: 355768882472510627
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_37
+  - first:
+      213: 6690247232153028160
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_38
+  - first:
+      213: -4561959849430526511
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_39
+  - first:
+      213: 2843691879646805030
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_40
+  - first:
+      213: -2502860030736105988
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_41
+  - first:
+      213: -3499253896287679533
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_42
+  - first:
+      213: 905763668826386529
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_43
+  - first:
+      213: -5822039648832210548
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_44
+  - first:
+      213: -6331538448290502275
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_45
+  - first:
+      213: 5677291449236515788
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_46
+  - first:
+      213: 4242637309494707900
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_47
+  - first:
+      213: 3449960757725203092
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_48
+  - first:
+      213: 1886771871878982420
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_49
+  - first:
+      213: 3613697487396319162
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_50
+  - first:
+      213: 7425022506060544978
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_51
+  - first:
+      213: 8680085837406188777
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_52
+  - first:
+      213: 9171476840806128104
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_53
+  - first:
+      213: 8294801161296644632
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_54
+  - first:
+      213: 1279724669798149880
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_55
+  - first:
+      213: -4807397623021126405
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_56
+  - first:
+      213: -1725196942531410004
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_57
+  - first:
+      213: 2986766660743697057
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_58
+  - first:
+      213: 7341028963504778590
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_59
+  - first:
+      213: -3518081347307894956
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_60
+  - first:
+      213: -1218894432180417114
+    second: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_61
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_0
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 849
+        width: 50
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe93603981685aaa0800000000000000
+      internalID: -6150362276000548369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_1
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 849
+        width: 33
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab8254b3da0f46650800000000000000
+      internalID: 6225365211747264698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_2
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 849
+        width: 59
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14ace62bfd7f40030800000000000000
+      internalID: 3460162953870756417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_3
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 849
+        width: 98
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd1f87c192ed4d460800000000000000
+      internalID: 7265676367008166365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_4
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 849
+        width: 98
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 053061dc9fc8c88a0800000000000000
+      internalID: -6301506774082649264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_5
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 849
+        width: 102
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6200cae4ca432aec0800000000000000
+      internalID: -3557222841010356186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_6
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 849
+        width: 126
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1340af7bfb273e370800000000000000
+      internalID: 8350644301825967153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_8
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 849
+        width: 127
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9531df2f16061efa0800000000000000
+      internalID: -5773227273507499175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_26
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 651
+        width: 69
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c62b4bf71960db650800000000000000
+      internalID: 6250159079842689644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_27
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 651
+        width: 60
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc5ac23752e6d4820800000000000000
+      internalID: 2904098441848989133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_28
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 651
+        width: 56
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f1ef683c42f03a0800000000000000
+      internalID: -6697093698674614438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_29
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 651
+        width: 57
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a1f37585853fd50800000000000000
+      internalID: 6769851801312107098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_30
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 651
+        width: 57
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a98152e659c4060800000000000000
+      internalID: 6939085426172402320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_31
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 651
+        width: 62
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30bacf31df1e9c50800000000000000
+      internalID: 6673806681388527675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_32
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 463
+        width: 67
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1bb7f1b759aa8e60800000000000000
+      internalID: 7965365085071194911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_33
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 463
+        width: 62
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a838237bdaa6c4d40800000000000000
+      internalID: 5569944133485888394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_34
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 463
+        width: 77
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d675bad2d1d26e00800000000000000
+      internalID: 1036621567791298265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_36
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 463
+        width: 64
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0e05c4d8d648060800000000000000
+      internalID: 6954804178205073629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_37
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 463
+        width: 63
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a469e5e9e1ffe400800000000000000
+      internalID: 355768882472510627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_44
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 282
+        width: 74
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89bd1f29c5f33fa0800000000000000
+      internalID: -5822039648832210548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_45
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 282
+        width: 71
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79aae3c35bd128a0800000000000000
+      internalID: -6331538448290502275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_46
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 282
+        width: 78
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccbea165e7ac9ce40800000000000000
+      internalID: 5677291449236515788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_47
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 282
+        width: 83
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb6404f8720e0ea30800000000000000
+      internalID: 4242637309494707900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_48
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 370
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a8f3dc709b0ef20800000000000000
+      internalID: 3449960757725203092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_57
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 101
+        width: 48
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca743d0758ede08e0800000000000000
+      internalID: -1725196942531410004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_58
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 101
+        width: 47
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a29b901470237920800000000000000
+      internalID: 2986766660743697057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_59
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 101
+        width: 82
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d6e87a2f290e560800000000000000
+      internalID: 7341028963504778590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_60
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 101
+        width: 103
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45709ca77a34d2fc0800000000000000
+      internalID: -3518081347307894956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_61
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 101
+        width: 111
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad4f2fc8fd951fe0800000000000000
+      internalID: -1218894432180417114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: de39e864c579e67409dc94744ddbf36c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_0: -6150362276000548369
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_1: 6225365211747264698
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_10: 5342933806596068704
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_11: 6595673481824760517
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_12: -826342126334576244
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_13: -581270062542810268
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_14: 8112588292037424534
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_15: 2232766935387434626
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_16: 2590560255948397278
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_17: -5568126682495293407
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_18: 4232553751075167327
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_19: 3163782292143210800
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_2: 3460162953870756417
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_20: -8110817443373661033
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_21: -7147647206944430787
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_22: -5403491613071196284
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_23: 3346375940125610879
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_24: 5566327308813069055
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_25: 1731255521734121376
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_26: 6250159079842689644
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_27: 2904098441848989133
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_28: -6697093698674614438
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_29: 6769851801312107098
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_3: 7265676367008166365
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_30: 6939085426172402320
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_31: 6673806681388527675
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_32: 7965365085071194911
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_33: 5569944133485888394
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_34: 1036621567791298265
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_35: 5251951329139678298
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_36: 6954804178205073629
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_37: 355768882472510627
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_38: 6690247232153028160
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_39: -4561959849430526511
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_4: -6301506774082649264
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_40: 2843691879646805030
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_41: -2502860030736105988
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_42: -3499253896287679533
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_43: 905763668826386529
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_44: -5822039648832210548
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_45: -6331538448290502275
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_46: 5677291449236515788
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_47: 4242637309494707900
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_48: 3449960757725203092
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_49: 1886771871878982420
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_5: -3557222841010356186
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_50: 3613697487396319162
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_51: 7425022506060544978
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_52: 8680085837406188777
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_53: 9171476840806128104
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_54: 8294801161296644632
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_55: 1279724669798149880
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_56: -4807397623021126405
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_57: -1725196942531410004
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_58: 2986766660743697057
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_59: 7341028963504778590
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_6: 8350644301825967153
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_60: -3518081347307894956
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_61: -1218894432180417114
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_7: 6124564299878575639
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_8: -5773227273507499175
+      Free-Gangster-Pixel-Character-Sprite-Sheets-Pack7-1536x1024 (1)_9: 1329023212124788145
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
