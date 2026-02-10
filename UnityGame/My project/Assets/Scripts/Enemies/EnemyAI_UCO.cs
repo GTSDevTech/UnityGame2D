@@ -251,28 +251,23 @@ public class EnemyAI_Shooter : MonoBehaviour
         if (animator != null)
         {
             if (!string.IsNullOrEmpty(deadBool)) animator.SetBool(deadBool, true);
-            // si usas trigger, ok:
             if (!string.IsNullOrEmpty(dieTrigger)) animator.SetTrigger(dieTrigger);
         }
 
-        // parar física
+        // 1) Para física de inmediato
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
+        rb.gravityScale = 0f;
 
-        // 🔒 guardar Y exacta al morir
+        // 2) Fija posición Y exacta
         deathLockedY = rb.position.y;
-
-        // 🔒 bloquear Y + rotación (evita hundirse y rebotar)
-        rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
-
-        // forzar posición una vez (evita corrección tardía)
         rb.position = new Vector2(rb.position.x, deathLockedY);
 
-        // collider sólido para que apoye en el suelo
-        var col = GetComponent<Collider2D>();
-        if (col) col.isTrigger = false;
+        // 3) Cambia el cuerpo para que NO reaccione al solver
+        rb.bodyType = RigidbodyType2D.Kinematic; // o Static (ver nota)
+        rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
 
-        // ajuste collider para "tumbado" (si lo estabas usando)
+        // 4) Ahora sí: ajusta collider (esto es lo que suele causar el "tirón")
         var box = GetComponent<BoxCollider2D>();
         if (box != null)
         {
@@ -280,13 +275,17 @@ public class EnemyAI_Shooter : MonoBehaviour
             box.offset = new Vector2(box.offset.x, box.offset.y - 0.35f);
         }
 
-        // ✅ Fix visual: baja SOLO el hijo Visual (evita “flotar” visualmente)
+        // 5) Sincroniza transforms (evita un frame “desfasado”)
+        Physics2D.SyncTransforms();
+
+        // Visual fix
         if (visual != null)
             visual.localPosition = visualStartLocalPos + new Vector3(0f, deathVisualYOffset, 0f);
 
         if (deathRoutine != null) StopCoroutine(deathRoutine);
         deathRoutine = StartCoroutine(DisableAfterDeath());
     }
+
 
     IEnumerator DisableAfterDeath()
     {

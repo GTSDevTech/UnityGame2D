@@ -1,184 +1,178 @@
 fileFormatVersion: 2
-guid: cc33dc83ed5ba984fbb22f468aad9427
+guid: 70cf6254c399a30479d132aac6723c10
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 44206760428858403
-    second: chaqueta-1_0
+      213: 9142087901687183578
+    second: sprite-policia-3 (1)_0
   - first:
-      213: 3273625921297385759
-    second: chaqueta-1_1
+      213: 2233958547697538706
+    second: sprite-policia-3 (1)_1
   - first:
-      213: 7256357700134765019
-    second: chaqueta-1_2
+      213: -6459756734207263120
+    second: sprite-policia-3 (1)_2
   - first:
-      213: -2799802851221855350
-    second: chaqueta-1_3
+      213: 8356755876801143886
+    second: sprite-policia-3 (1)_3
   - first:
-      213: -7977241320639434021
-    second: chaqueta-1_4
+      213: 4249540632753133778
+    second: sprite-policia-3 (1)_4
   - first:
-      213: -1007793355543258050
-    second: chaqueta-1_5
+      213: -1033236205803035203
+    second: sprite-policia-3 (1)_5
   - first:
-      213: -7613708062505285785
-    second: chaqueta-1_6
+      213: -7519551177865709994
+    second: sprite-policia-3 (1)_6
   - first:
-      213: -990390754676024784
-    second: chaqueta-1_7
+      213: 1031088180053432650
+    second: sprite-policia-3 (1)_7
   - first:
-      213: 1251311755256352201
-    second: chaqueta-1_8
+      213: 7616144242635231226
+    second: sprite-policia-3 (1)_8
   - first:
-      213: -6648643132414308060
-    second: chaqueta-1_9
+      213: 7485389678564445990
+    second: sprite-policia-3 (1)_9
   - first:
-      213: -4405696644477770482
-    second: chaqueta-1_10
+      213: 4965166918805458777
+    second: sprite-policia-3 (1)_10
   - first:
-      213: -7295525171818779311
-    second: chaqueta-1_11
+      213: -7433721112244099070
+    second: sprite-policia-3 (1)_11
   - first:
-      213: 4475124012698104052
-    second: chaqueta-1_12
+      213: -5268681389684873851
+    second: sprite-policia-3 (1)_12
   - first:
-      213: 2993903639109174831
-    second: chaqueta-1_13
+      213: 4075445341278629352
+    second: sprite-policia-3 (1)_13
   - first:
-      213: -1434469317245685977
-    second: chaqueta-1_14
+      213: 7089883993744349382
+    second: sprite-policia-3 (1)_14
   - first:
-      213: 8600370378231898914
-    second: chaqueta-1_15
+      213: -4769284681237101338
+    second: sprite-policia-3 (1)_15
   - first:
-      213: 819221117735203458
-    second: chaqueta-1_16
+      213: -8223540621333353774
+    second: sprite-policia-3 (1)_16
   - first:
-      213: 3574690382234060261
-    second: chaqueta-1_17
+      213: -3803182725146692103
+    second: sprite-policia-3 (1)_17
   - first:
-      213: -3493958556909307164
-    second: chaqueta-1_18
+      213: 7794921971568494879
+    second: sprite-policia-3 (1)_18
   - first:
-      213: -5742692111212961490
-    second: chaqueta-1_19
+      213: 1637100484644437314
+    second: sprite-policia-3 (1)_19
   - first:
-      213: 4797929181368072668
-    second: chaqueta-1_20
+      213: 5003282361939850143
+    second: sprite-policia-3 (1)_20
   - first:
-      213: 6447195313788944237
-    second: chaqueta-1_21
+      213: 1383356932300322716
+    second: sprite-policia-3 (1)_21
   - first:
-      213: 4213967555386233769
-    second: chaqueta-1_22
+      213: -3411007666843237867
+    second: sprite-policia-3 (1)_22
   - first:
-      213: -2836506425579530662
-    second: chaqueta-1_23
+      213: -6092505287563314323
+    second: sprite-policia-3 (1)_23
   - first:
-      213: -888576225024704410
-    second: chaqueta-1_24
+      213: 928389521789915273
+    second: sprite-policia-3 (1)_24
   - first:
-      213: -3727508731515849242
-    second: chaqueta-1_25
+      213: -8150117134358327886
+    second: sprite-policia-3 (1)_25
   - first:
-      213: 6269976515576588053
-    second: chaqueta-1_26
+      213: 2357804625227439664
+    second: sprite-policia-3 (1)_26
   - first:
-      213: -5576441095484264440
-    second: chaqueta-1_27
+      213: -4212623527535430456
+    second: sprite-policia-3 (1)_27
   - first:
-      213: -8401364175512595656
-    second: chaqueta-1_28
+      213: 6433124781557945911
+    second: sprite-policia-3 (1)_28
   - first:
-      213: -3009995505961073486
-    second: chaqueta-1_29
+      213: -2144695455069700671
+    second: sprite-policia-3 (1)_29
   - first:
-      213: -8805236152961709819
-    second: chaqueta-1_30
+      213: -1015996246168983249
+    second: sprite-policia-3 (1)_30
   - first:
-      213: 8893723672296317054
-    second: chaqueta-1_31
+      213: -5712411488471579646
+    second: sprite-policia-3 (1)_31
   - first:
-      213: 3789766251032735636
-    second: chaqueta-1_32
+      213: -37573374511601598
+    second: sprite-policia-3 (1)_32
   - first:
-      213: -940817576141689325
-    second: chaqueta-1_33
+      213: -3644317184167599001
+    second: sprite-policia-3 (1)_33
   - first:
-      213: 8513520596014503081
-    second: chaqueta-1_34
+      213: -8572687589267584722
+    second: sprite-policia-3 (1)_34
   - first:
-      213: 7400065568981105577
-    second: chaqueta-1_35
+      213: -1551554243783881537
+    second: sprite-policia-3 (1)_35
   - first:
-      213: -7963669227977336388
-    second: chaqueta-1_36
+      213: 4818642677503324133
+    second: sprite-policia-3 (1)_36
   - first:
-      213: -5146246648874580949
-    second: chaqueta-1_37
+      213: 5512155171514608568
+    second: sprite-policia-3 (1)_37
   - first:
-      213: 6527996464847811872
-    second: chaqueta-1_38
+      213: -478196534306271397
+    second: sprite-policia-3 (1)_38
   - first:
-      213: -2308598899861913646
-    second: chaqueta-1_39
+      213: 1193786038874687956
+    second: sprite-policia-3 (1)_39
   - first:
-      213: 4349785120541148620
-    second: chaqueta-1_40
+      213: 9012061188069955983
+    second: sprite-policia-3 (1)_40
   - first:
-      213: -1396136697629582042
-    second: chaqueta-1_41
+      213: 7204573406223089502
+    second: sprite-policia-3 (1)_41
   - first:
-      213: -5046455654068669660
-    second: chaqueta-1_42
+      213: 7108655959296987615
+    second: sprite-policia-3 (1)_42
   - first:
-      213: 4803101441715976084
-    second: chaqueta-1_43
+      213: -795915840053857807
+    second: sprite-policia-3 (1)_43
   - first:
-      213: -1732540407072704461
-    second: chaqueta-1_44
+      213: -6027735873612065658
+    second: sprite-policia-3 (1)_44
   - first:
-      213: -1111304478806544583
-    second: chaqueta-1_45
+      213: 5009945207168169713
+    second: sprite-policia-3 (1)_45
   - first:
-      213: -3623845073485310982
-    second: chaqueta-1_46
+      213: -1419653472642866256
+    second: sprite-policia-3 (1)_46
   - first:
-      213: 4588955254060637362
-    second: chaqueta-1_47
+      213: 4384488309417718607
+    second: sprite-policia-3 (1)_47
   - first:
-      213: -3543490773608754155
-    second: chaqueta-1_48
+      213: 8239082164371433897
+    second: sprite-policia-3 (1)_48
   - first:
-      213: -793971241114139245
-    second: chaqueta-1_49
+      213: -979758182963058540
+    second: sprite-policia-3 (1)_49
   - first:
-      213: -6260014615156196741
-    second: chaqueta-1_50
+      213: 7477601267178799986
+    second: sprite-policia-3 (1)_50
   - first:
-      213: 8755887429783271200
-    second: chaqueta-1_51
+      213: -4306106856512345977
+    second: sprite-policia-3 (1)_51
   - first:
-      213: -9040178525142733225
-    second: chaqueta-1_52
+      213: -2287797456856734287
+    second: sprite-policia-3 (1)_52
   - first:
-      213: -668094935112138751
-    second: chaqueta-1_53
+      213: 973238161837593712
+    second: sprite-policia-3 (1)_53
   - first:
-      213: 2131183906095536191
-    second: chaqueta-1_54
+      213: 1198478104308422613
+    second: sprite-policia-3 (1)_54
   - first:
-      213: 2235377475627516393
-    second: chaqueta-1_55
+      213: 8957307203056421087
+    second: sprite-policia-3 (1)_55
   - first:
-      213: -6695334275191404812
-    second: chaqueta-1_56
-  - first:
-      213: 5529463656708427198
-    second: chaqueta-1_57
-  - first:
-      213: -4036427369590768984
-    second: chaqueta-1_58
+      213: 7240715012116564201
+    second: sprite-policia-3 (1)_56
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -287,7 +281,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chaqueta-1_0
+      name: sprite-policia-3 (1)_0
       rect:
         serializedVersion: 2
         x: 23
@@ -295,21 +289,21 @@ TextureImporter:
         width: 7
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 32c680c70dd0d9000800000000000000
-      internalID: 44206760428858403
+      spriteID: ad8f57d72883fde70800000000000000
+      internalID: 9142087901687183578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_1
+      name: sprite-policia-3 (1)_1
       rect:
         serializedVersion: 2
         x: 32
@@ -317,21 +311,21 @@ TextureImporter:
         width: 24
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1901765e614e6d20800000000000000
-      internalID: 3273625921297385759
+      spriteID: 296957e867d900f10800000000000000
+      internalID: 2233958547697538706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_2
+      name: sprite-policia-3 (1)_2
       rect:
         serializedVersion: 2
         x: 57
@@ -339,21 +333,21 @@ TextureImporter:
         width: 16
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd104b7e1e2c3b460800000000000000
-      internalID: 7256357700134765019
+      spriteID: 07e732ab9755a56a0800000000000000
+      internalID: -6459756734207263120
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_3
+      name: sprite-policia-3 (1)_3
       rect:
         serializedVersion: 2
         x: 74
@@ -361,1225 +355,1115 @@ TextureImporter:
         width: 18
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a83abcb042a1529d0800000000000000
-      internalID: -2799802851221855350
+      spriteID: e44e367a13929f370800000000000000
+      internalID: 8356755876801143886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_4
+      name: sprite-policia-3 (1)_4
       rect:
         serializedVersion: 2
-        x: 252
+        x: 257
         y: 849
-        width: 52
-        height: 120
+        width: 43
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd2f7bbb8452b4190800000000000000
-      internalID: -7977241320639434021
+      spriteID: 2d8d6d1c0b669fa30800000000000000
+      internalID: 4249540632753133778
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_5
+      name: sprite-policia-3 (1)_5
       rect:
         serializedVersion: 2
-        x: 415
+        x: 421
         y: 849
-        width: 52
-        height: 120
+        width: 44
+        height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e3c58db58499302f0800000000000000
-      internalID: -1007793355543258050
+      spriteID: db5a908252539a1f0800000000000000
+      internalID: -1033236205803035203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_6
+      name: sprite-policia-3 (1)_6
       rect:
         serializedVersion: 2
-        x: 578
+        x: 586
         y: 849
-        width: 52
-        height: 120
+        width: 43
+        height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 76748d63bdca65690800000000000000
-      internalID: -7613708062505285785
+      spriteID: 656b1f44b0035a790800000000000000
+      internalID: -7519551177865709994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_7
+      name: sprite-policia-3 (1)_7
       rect:
         serializedVersion: 2
-        x: 742
+        x: 749
         y: 849
-        width: 52
-        height: 122
+        width: 43
+        height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03a54be1bdc6142f0800000000000000
-      internalID: -990390754676024784
+      spriteID: a495030ac392f4e00800000000000000
+      internalID: 1031088180053432650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_8
+      name: sprite-policia-3 (1)_8
       rect:
         serializedVersion: 2
-        x: 908
+        x: 914
         y: 849
-        width: 52
-        height: 123
+        width: 43
+        height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9cd4353696d8d5110800000000000000
-      internalID: 1251311755256352201
+      spriteID: affc86c26daf1b960800000000000000
+      internalID: 7616144242635231226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_9
+      name: sprite-policia-3 (1)_9
       rect:
         serializedVersion: 2
-        x: 1071
+        x: 1078
         y: 849
-        width: 51
-        height: 123
+        width: 44
+        height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 421da1e0c464bb3a0800000000000000
-      internalID: -6648643132414308060
+      spriteID: 62f853cd04271e760800000000000000
+      internalID: 7485389678564445990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_10
-      rect:
-        serializedVersion: 2
-        x: 1234
-        y: 849
-        width: 51
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e05a5c58e32dbd2c0800000000000000
-      internalID: -4405696644477770482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_11
+      name: sprite-policia-3 (1)_10
       rect:
         serializedVersion: 2
         x: 23
         y: 651
-        width: 7
+        width: 34
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 15d22d3728611ca90800000000000000
-      internalID: -7295525171818779311
+      spriteID: 95f8bed8101d7e440800000000000000
+      internalID: 4965166918805458777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_12
+      name: sprite-policia-3 (1)_11
       rect:
         serializedVersion: 2
-        x: 32
+        x: 59
         y: 651
-        width: 24
+        width: 27
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4f0f0be4495da1e30800000000000000
-      internalID: 4475124012698104052
+      spriteID: 2086e51b80e16d890800000000000000
+      internalID: -7433721112244099070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_13
+      name: sprite-policia-3 (1)_12
       rect:
         serializedVersion: 2
-        x: 58
+        x: 87
         y: 651
-        width: 15
+        width: 23
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f260ad45f7b7c8920800000000000000
-      internalID: 2993903639109174831
+      spriteID: 5852f15d032e1e6b0800000000000000
+      internalID: -5268681389684873851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_14
+      name: sprite-policia-3 (1)_13
       rect:
         serializedVersion: 2
-        x: 75
+        x: 112
         y: 651
-        width: 18
+        width: 19
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72faf5091cdb71ce0800000000000000
-      internalID: -1434469317245685977
+      spriteID: 8edee6cf1f3ee8830800000000000000
+      internalID: 4075445341278629352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_15
+      name: sprite-policia-3 (1)_14
       rect:
         serializedVersion: 2
-        x: 110
-        y: 651
-        width: 21
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 223ed43da47aa5770800000000000000
-      internalID: 8600370378231898914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_16
-      rect:
-        serializedVersion: 2
-        x: 252
+        x: 251
         y: 651
         width: 52
-        height: 120
+        height: 111
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 282fa1324457e5b00800000000000000
-      internalID: 819221117735203458
+      spriteID: 6c81cd1bde3546260800000000000000
+      internalID: 7089883993744349382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_17
+      name: sprite-policia-3 (1)_15
       rect:
         serializedVersion: 2
-        x: 415
+        x: 428
         y: 651
-        width: 53
-        height: 120
+        width: 42
+        height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e5011f86f9db9130800000000000000
-      internalID: 3574690382234060261
+      spriteID: 6e48626e9d810ddb0800000000000000
+      internalID: -4769284681237101338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_18
+      name: sprite-policia-3 (1)_16
       rect:
         serializedVersion: 2
         x: 583
         y: 651
-        width: 52
-        height: 120
+        width: 35
+        height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4eafb7b4437f28fc0800000000000000
-      internalID: -3493958556909307164
+      spriteID: 2da2e65006d10ed80800000000000000
+      internalID: -8223540621333353774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_19
+      name: sprite-policia-3 (1)_17
       rect:
         serializedVersion: 2
-        x: 742
+        x: 749
         y: 651
-        width: 53
-        height: 120
+        width: 50
+        height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e21a6b073fbdd40b0800000000000000
-      internalID: -5742692111212961490
+      spriteID: 9f5babb2671683bc0800000000000000
+      internalID: -3803182725146692103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_20
+      name: sprite-policia-3 (1)_18
       rect:
         serializedVersion: 2
-        x: 906
-        y: 651
-        width: 52
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd9bce08b2ba59240800000000000000
-      internalID: 4797929181368072668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_21
-      rect:
-        serializedVersion: 2
-        x: 1069
+        x: 903
         y: 651
         width: 52
-        height: 123
+        height: 111
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d6ff3fbaaf9097950800000000000000
-      internalID: 6447195313788944237
+      spriteID: f194a3fdb302d2c60800000000000000
+      internalID: 7794921971568494879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_22
+      name: sprite-policia-3 (1)_19
       rect:
         serializedVersion: 2
-        x: 1232
+        x: 1074
         y: 651
-        width: 52
-        height: 123
+        width: 47
+        height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a351d14a250b7a30800000000000000
-      internalID: 4213967555386233769
+      spriteID: 24df9d0973628b610800000000000000
+      internalID: 1637100484644437314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_23
+      name: sprite-policia-3 (1)_20
       rect:
         serializedVersion: 2
-        x: 1395
+        x: 1240
         y: 651
-        width: 52
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a5618343f64b2a8d0800000000000000
-      internalID: -2836506425579530662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_24
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 463
         width: 34
-        height: 43
+        height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6608b8791a42ba3f0800000000000000
-      internalID: -888576225024704410
+      spriteID: f93f666bcca3f6540800000000000000
+      internalID: 5003282361939850143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_25
+      name: sprite-policia-3 (1)_21
       rect:
         serializedVersion: 2
-        x: 59
-        y: 463
-        width: 24
-        height: 42
+        x: 1399
+        y: 651
+        width: 50
+        height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6e5b4d0de8a354cc0800000000000000
-      internalID: -3727508731515849242
+      spriteID: c97b553fccba23310800000000000000
+      internalID: 1383356932300322716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_26
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 463
-        width: 16
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 517ebf0db6e630750800000000000000
-      internalID: 6269976515576588053
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_27
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 463
-        width: 21
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 80035c07e508c92b0800000000000000
-      internalID: -5576441095484264440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_28
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 463
-        width: 61
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 83311e17bcb586b80800000000000000
-      internalID: -8401364175512595656
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_29
-      rect:
-        serializedVersion: 2
-        x: 412
-        y: 463
-        width: 64
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b40ba3f8095a36d0800000000000000
-      internalID: -3009995505961073486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_30
-      rect:
-        serializedVersion: 2
-        x: 578
-        y: 463
-        width: 54
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5094a4bfe548dc580800000000000000
-      internalID: -8805236152961709819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_31
-      rect:
-        serializedVersion: 2
-        x: 759
-        y: 463
-        width: 31
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e7064b91f8adc6b70800000000000000
-      internalID: 8893723672296317054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_32
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 463
-        width: 45
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 49fe1968354f79430800000000000000
-      internalID: 3789766251032735636
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_33
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 463
-        width: 60
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 31e61af266b81f2f0800000000000000
-      internalID: -940817576141689325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_34
-      rect:
-        serializedVersion: 2
-        x: 1219
-        y: 463
-        width: 62
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a49a6120e9162670800000000000000
-      internalID: 8513520596014503081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_35
-      rect:
-        serializedVersion: 2
-        x: 1393
-        y: 463
-        width: 54
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9abb7b18d6052b660800000000000000
-      internalID: 7400065568981105577
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_36
+      name: sprite-policia-3 (1)_22
       rect:
         serializedVersion: 2
         x: 23
-        y: 282
+        y: 463
         width: 23
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb993bdc70d5b7190800000000000000
-      internalID: -7963669227977336388
+      spriteID: 512ccab699aa9a0d0800000000000000
+      internalID: -3411007666843237867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_37
+      name: sprite-policia-3 (1)_23
       rect:
         serializedVersion: 2
         x: 48
-        y: 282
+        y: 463
         width: 24
-        height: 43
+        height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b24494750fbd498b0800000000000000
-      internalID: -5146246648874580949
+      spriteID: d6b799e68b2137ba0800000000000000
+      internalID: -6092505287563314323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_38
+      name: sprite-policia-3 (1)_24
       rect:
         serializedVersion: 2
-        x: 73
-        y: 282
+        x: 74
+        y: 463
         width: 24
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 025724ea23a189a50800000000000000
-      internalID: 6527996464847811872
+      spriteID: 9809b7be95d42ec00800000000000000
+      internalID: 928389521789915273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_39
+      name: sprite-policia-3 (1)_25
       rect:
         serializedVersion: 2
         x: 251
-        y: 282
-        width: 68
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2df7fd4388536ffd0800000000000000
-      internalID: -2308598899861913646
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_40
-      rect:
-        serializedVersion: 2
-        x: 412
-        y: 282
-        width: 74
-        height: 119
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc5822f558a8d5c30800000000000000
-      internalID: 4349785120541148620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_41
-      rect:
-        serializedVersion: 2
-        x: 559
-        y: 291
-        width: 94
-        height: 110
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 62dd6ef021def9ce0800000000000000
-      internalID: -1396136697629582042
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_42
-      rect:
-        serializedVersion: 2
-        x: 726
-        y: 282
-        width: 86
-        height: 117
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 423b974e15367f9b0800000000000000
-      internalID: -5046455654068669660
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_43
-      rect:
-        serializedVersion: 2
-        x: 893
-        y: 282
+        y: 463
         width: 67
-        height: 119
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 497b5a5305b08a240800000000000000
-      internalID: 4803101441715976084
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_44
-      rect:
-        serializedVersion: 2
-        x: 1077
-        y: 282
-        width: 64
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 338bb6ddda7c4f7e0800000000000000
-      internalID: -1732540407072704461
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_45
-      rect:
-        serializedVersion: 2
-        x: 1233
-        y: 282
-        width: 72
-        height: 119
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 93f6f67e67ad390f0800000000000000
-      internalID: -1111304478806544583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_46
-      rect:
-        serializedVersion: 2
-        x: 1375
-        y: 292
-        width: 91
         height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af3dbd90b1485bdc0800000000000000
-      internalID: -3623845073485310982
+      spriteID: 2bd4fb0c5a7f4ee80800000000000000
+      internalID: -8150117134358327886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_47
+      name: sprite-policia-3 (1)_26
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 463
+        width: 62
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e547080da98b020800000000000000
+      internalID: 2357804625227439664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_27
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 463
+        width: 82
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c43ccc9831c985c0800000000000000
+      internalID: -4212623527535430456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_28
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 463
+        width: 61
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 736168897ec074950800000000000000
+      internalID: 6433124781557945911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_29
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 463
+        width: 62
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cdfc21c8d28c32e0800000000000000
+      internalID: -2144695455069700671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_30
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 463
+        width: 66
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29a7fd0cc476e1f0800000000000000
+      internalID: -1015996246168983249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_31
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 463
+        width: 83
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2048ac2540079b0b0800000000000000
+      internalID: -5712411488471579646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_32
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 463
+        width: 75
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 248293707338a7ff0800000000000000
+      internalID: -37573374511601598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_33
       rect:
         serializedVersion: 2
         x: 23
-        y: 97
+        y: 278
         width: 13
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2bc52708d7e3faf30800000000000000
-      internalID: 4588955254060637362
+      spriteID: 764a6d454d8cc6dc0800000000000000
+      internalID: -3644317184167599001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_48
+      name: sprite-policia-3 (1)_34
       rect:
         serializedVersion: 2
         x: 37
-        y: 101
+        y: 282
         width: 24
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5141d266aedf2dec0800000000000000
-      internalID: -3543490773608754155
+      spriteID: e294e4fbe02b70980800000000000000
+      internalID: -8572687589267584722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_49
+      name: sprite-policia-3 (1)_35
       rect:
         serializedVersion: 2
         x: 62
-        y: 101
+        y: 282
         width: 34
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3950483ec5f3bf4f0800000000000000
-      internalID: -793971241114139245
+      spriteID: fbc0381c2a5c77ae0800000000000000
+      internalID: -1551554243783881537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_50
+      name: sprite-policia-3 (1)_36
       rect:
         serializedVersion: 2
         x: 99
-        y: 101
+        y: 282
         width: 23
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b7a7cdedfd5ff19a0800000000000000
-      internalID: -6260014615156196741
+      spriteID: 5ef6f142cf14fd240800000000000000
+      internalID: 4818642677503324133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_51
+      name: sprite-policia-3 (1)_37
       rect:
         serializedVersion: 2
         x: 255
-        y: 101
-        width: 53
+        y: 282
+        width: 43
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bbe5f08ceb1f7c40800000000000000
+      internalID: 5512155171514608568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_38
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 282
+        width: 42
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f0adf19ca1d59f0800000000000000
+      internalID: -478196534306271397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_39
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 282
+        width: 59
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d942f0d31e219010800000000000000
+      internalID: 1193786038874687956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_40
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 282
+        width: 61
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0273a890a39238970800000000000000
-      internalID: 8755887429783271200
+      spriteID: f899ef017e5411d70800000000000000
+      internalID: 9012061188069955983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_52
+      name: sprite-policia-3 (1)_41
       rect:
         serializedVersion: 2
-        x: 413
+        x: 915
+        y: 285
+        width: 55
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f372c6759cbf360800000000000000
+      internalID: 7204573406223089502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_42
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 284
+        width: 50
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd15c548ee407a260800000000000000
+      internalID: 7108655959296987615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_43
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 282
+        width: 48
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1bb7aa2c654f4f0800000000000000
+      internalID: -795915840053857807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_44
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 282
+        width: 59
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6845975c82e295ca0800000000000000
+      internalID: -6027735873612065658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_45
+      rect:
+        serializedVersion: 2
+        x: 250
         y: 101
-        width: 62
-        height: 105
+        width: 70
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75ea0ce3785da8280800000000000000
-      internalID: -9040178525142733225
+      spriteID: 1f6fd614f96e68540800000000000000
+      internalID: 5009945207168169713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_53
+      name: sprite-policia-3 (1)_46
       rect:
         serializedVersion: 2
-        x: 572
+        x: 411
         y: 101
-        width: 57
-        height: 125
+        width: 78
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 100476c32337ab6f0800000000000000
-      internalID: -668094935112138751
+      spriteID: 0b3e8f230b06c4ce0800000000000000
+      internalID: -1419653472642866256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_54
+      name: sprite-policia-3 (1)_47
       rect:
         serializedVersion: 2
-        x: 727
-        y: 104
-        width: 79
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f389ad9987c739d10800000000000000
-      internalID: 2131183906095536191
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_55
-      rect:
-        serializedVersion: 2
-        x: 893
-        y: 117
-        width: 76
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9e100b578f7a50f10800000000000000
-      internalID: 2235377475627516393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_56
-      rect:
-        serializedVersion: 2
-        x: 1062
-        y: 117
-        width: 74
-        height: 130
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4f608ba33f46513a0800000000000000
-      internalID: -6695334275191404812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_57
-      rect:
-        serializedVersion: 2
-        x: 1223
-        y: 108
-        width: 88
-        height: 127
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ebdc98046e99cbc40800000000000000
-      internalID: 5529463656708427198
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_58
-      rect:
-        serializedVersion: 2
-        x: 1377
+        x: 576
         y: 101
-        width: 89
-        height: 129
+        width: 99
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8aab0e971babbf7c0800000000000000
-      internalID: -4036427369590768984
+      spriteID: f4332bc23e4d8dc30800000000000000
+      internalID: 4384488309417718607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_48
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 101
+        width: 101
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9ad927399175270800000000000000
+      internalID: 8239082164371433897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_52
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 102
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b52302955c1040e0800000000000000
+      internalID: -2287797456856734287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_53
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 102
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0741f26a3f2a18d00800000000000000
+      internalID: 973238161837593712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_54
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 102
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d7136e6c79d1a010800000000000000
+      internalID: 1198478104308422613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_55
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 102
+        width: 18
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd8c93e717fbe4c70800000000000000
+      internalID: 8957307203056421087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-3 (1)_56
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 102
+        width: 11
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e8cb09c0ff2c7460800000000000000
+      internalID: 7240715012116564201
       vertices: []
       indices: 
       edges: []
@@ -1588,7 +1472,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1acc2853d1cc39343819e96bcb47ecaa
     internalID: 0
     vertices: []
     indices: 
@@ -1598,65 +1482,63 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      chaqueta-1_0: 44206760428858403
-      chaqueta-1_1: 3273625921297385759
-      chaqueta-1_10: -4405696644477770482
-      chaqueta-1_11: -7295525171818779311
-      chaqueta-1_12: 4475124012698104052
-      chaqueta-1_13: 2993903639109174831
-      chaqueta-1_14: -1434469317245685977
-      chaqueta-1_15: 8600370378231898914
-      chaqueta-1_16: 819221117735203458
-      chaqueta-1_17: 3574690382234060261
-      chaqueta-1_18: -3493958556909307164
-      chaqueta-1_19: -5742692111212961490
-      chaqueta-1_2: 7256357700134765019
-      chaqueta-1_20: 4797929181368072668
-      chaqueta-1_21: 6447195313788944237
-      chaqueta-1_22: 4213967555386233769
-      chaqueta-1_23: -2836506425579530662
-      chaqueta-1_24: -888576225024704410
-      chaqueta-1_25: -3727508731515849242
-      chaqueta-1_26: 6269976515576588053
-      chaqueta-1_27: -5576441095484264440
-      chaqueta-1_28: -8401364175512595656
-      chaqueta-1_29: -3009995505961073486
-      chaqueta-1_3: -2799802851221855350
-      chaqueta-1_30: -8805236152961709819
-      chaqueta-1_31: 8893723672296317054
-      chaqueta-1_32: 3789766251032735636
-      chaqueta-1_33: -940817576141689325
-      chaqueta-1_34: 8513520596014503081
-      chaqueta-1_35: 7400065568981105577
-      chaqueta-1_36: -7963669227977336388
-      chaqueta-1_37: -5146246648874580949
-      chaqueta-1_38: 6527996464847811872
-      chaqueta-1_39: -2308598899861913646
-      chaqueta-1_4: -7977241320639434021
-      chaqueta-1_40: 4349785120541148620
-      chaqueta-1_41: -1396136697629582042
-      chaqueta-1_42: -5046455654068669660
-      chaqueta-1_43: 4803101441715976084
-      chaqueta-1_44: -1732540407072704461
-      chaqueta-1_45: -1111304478806544583
-      chaqueta-1_46: -3623845073485310982
-      chaqueta-1_47: 4588955254060637362
-      chaqueta-1_48: -3543490773608754155
-      chaqueta-1_49: -793971241114139245
-      chaqueta-1_5: -1007793355543258050
-      chaqueta-1_50: -6260014615156196741
-      chaqueta-1_51: 8755887429783271200
-      chaqueta-1_52: -9040178525142733225
-      chaqueta-1_53: -668094935112138751
-      chaqueta-1_54: 2131183906095536191
-      chaqueta-1_55: 2235377475627516393
-      chaqueta-1_56: -6695334275191404812
-      chaqueta-1_57: 5529463656708427198
-      chaqueta-1_58: -4036427369590768984
-      chaqueta-1_6: -7613708062505285785
-      chaqueta-1_7: -990390754676024784
-      chaqueta-1_8: 1251311755256352201
-      chaqueta-1_9: -6648643132414308060
+      sprite-policia-3 (1)_0: 9142087901687183578
+      sprite-policia-3 (1)_1: 2233958547697538706
+      sprite-policia-3 (1)_10: 4965166918805458777
+      sprite-policia-3 (1)_11: -7433721112244099070
+      sprite-policia-3 (1)_12: -5268681389684873851
+      sprite-policia-3 (1)_13: 4075445341278629352
+      sprite-policia-3 (1)_14: 7089883993744349382
+      sprite-policia-3 (1)_15: -4769284681237101338
+      sprite-policia-3 (1)_16: -8223540621333353774
+      sprite-policia-3 (1)_17: -3803182725146692103
+      sprite-policia-3 (1)_18: 7794921971568494879
+      sprite-policia-3 (1)_19: 1637100484644437314
+      sprite-policia-3 (1)_2: -6459756734207263120
+      sprite-policia-3 (1)_20: 5003282361939850143
+      sprite-policia-3 (1)_21: 1383356932300322716
+      sprite-policia-3 (1)_22: -3411007666843237867
+      sprite-policia-3 (1)_23: -6092505287563314323
+      sprite-policia-3 (1)_24: 928389521789915273
+      sprite-policia-3 (1)_25: -8150117134358327886
+      sprite-policia-3 (1)_26: 2357804625227439664
+      sprite-policia-3 (1)_27: -4212623527535430456
+      sprite-policia-3 (1)_28: 6433124781557945911
+      sprite-policia-3 (1)_29: -2144695455069700671
+      sprite-policia-3 (1)_3: 8356755876801143886
+      sprite-policia-3 (1)_30: -1015996246168983249
+      sprite-policia-3 (1)_31: -5712411488471579646
+      sprite-policia-3 (1)_32: -37573374511601598
+      sprite-policia-3 (1)_33: -3644317184167599001
+      sprite-policia-3 (1)_34: -8572687589267584722
+      sprite-policia-3 (1)_35: -1551554243783881537
+      sprite-policia-3 (1)_36: 4818642677503324133
+      sprite-policia-3 (1)_37: 5512155171514608568
+      sprite-policia-3 (1)_38: -478196534306271397
+      sprite-policia-3 (1)_39: 1193786038874687956
+      sprite-policia-3 (1)_4: 4249540632753133778
+      sprite-policia-3 (1)_40: 9012061188069955983
+      sprite-policia-3 (1)_41: 7204573406223089502
+      sprite-policia-3 (1)_42: 7108655959296987615
+      sprite-policia-3 (1)_43: -795915840053857807
+      sprite-policia-3 (1)_44: -6027735873612065658
+      sprite-policia-3 (1)_45: 5009945207168169713
+      sprite-policia-3 (1)_46: -1419653472642866256
+      sprite-policia-3 (1)_47: 4384488309417718607
+      sprite-policia-3 (1)_48: 8239082164371433897
+      sprite-policia-3 (1)_49: -979758182963058540
+      sprite-policia-3 (1)_5: -1033236205803035203
+      sprite-policia-3 (1)_50: 7477601267178799986
+      sprite-policia-3 (1)_51: -4306106856512345977
+      sprite-policia-3 (1)_52: -2287797456856734287
+      sprite-policia-3 (1)_53: 973238161837593712
+      sprite-policia-3 (1)_54: 1198478104308422613
+      sprite-policia-3 (1)_55: 8957307203056421087
+      sprite-policia-3 (1)_56: 7240715012116564201
+      sprite-policia-3 (1)_6: -7519551177865709994
+      sprite-policia-3 (1)_7: 1031088180053432650
+      sprite-policia-3 (1)_8: 7616144242635231226
+      sprite-policia-3 (1)_9: 7485389678564445990
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

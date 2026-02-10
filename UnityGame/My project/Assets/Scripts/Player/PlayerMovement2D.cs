@@ -44,6 +44,13 @@ public class PlayerMovement2D : MonoBehaviour
     public float shootCooldown = 0.25f;
     public int bulletDamage = 1;
 
+    [Tooltip("Tiempo que el player queda inmóvil al disparar. Si tu animación dura más/menos, ajusta esto.")]
+    public float shootLockDuration = 0.15f;
+
+    [Header("Lock de movimiento (general)")]
+    [Tooltip("Si está activado, además de velocidad 0, congela X con constraints durante ataque/disparo.")]
+    public bool freezeXWithConstraintsWhileLocked = true;
+
     [Header("Ground")]
     public LayerMask groundLayer;
 
@@ -79,11 +86,19 @@ public class PlayerMovement2D : MonoBehaviour
 
     Coroutine attackRoutine;
 
+    // ---- MOVEMENT LOCK ----
+    bool isMovementLocked = false;
+    float movementLockTimer = 0f;
+    bool lockFreezesX = false;
+    RigidbodyConstraints2D baseConstraints;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
         playerInput = GetComponent<PlayerInput>();
+
+        baseConstraints = rb.constraints; // normalmente FreezeRotation
 
         if (animator == null)
             animator = GetComponentInChildren<Animator>();
@@ -137,15 +152,19 @@ public class PlayerMovement2D : MonoBehaviour
         moveInput = moveAction != null ? moveAction.ReadValue<Vector2>() : Vector2.zero;
 
         bool sprintPressed = sprintAction != null && sprintAction.IsPressed();
-        isRunning = (!isAttacking) ? sprintPressed : false;
+
+        // Si está atacando o locked -> no correr
+        isRunning = (!isAttacking && !isMovementLocked) ? sprintPressed : false;
 
         if (jumpAction != null && jumpAction.WasPressedThisFrame())
             jumpBufferCounter = jumpBufferTime;
 
-        if (!isAttacking && attackAction != null && attackAction.WasPressedThisFrame())
+        // Ataque (si quieres permitir atacar mientras locked, quita !isMovementLocked)
+        if (!isAttacking && !isMovementLocked && attackAction != null && attackAction.WasPressedThisFrame())
             TryStartAttack();
 
-        if (shootAction != null && shootAction.WasPressedThisFrame())
+        // Disparo: aunque esté locked por ataque, normalmente NO lo permitimos
+        if (!isMovementLocked && shootAction != null && shootAction.WasPressedThisFrame())
             TryStartShoot();
 
         isGrounded = col.IsTouchingLayers(groundLayer);
@@ -158,7 +177,10 @@ public class PlayerMovement2D : MonoBehaviour
         if (animator != null)
         {
             float maxSpeed = isRunning ? runSpeed : walkSpeed;
-            float speed01 = Mathf.InverseLerp(0f, maxSpeed, Mathf.Abs(rb.linearVelocity.x));
+
+            // Si está locked, la velocidad real será 0
+            float effectiveVX = isMovementLocked ? 0f : rb.linearVelocity.x;
+            float speed01 = Mathf.InverseLerp(0f, maxSpeed, Mathf.Abs(effectiveVX));
 
             animator.SetFloat(speedParam, speed01);
             animator.SetBool(groundedParam, isGrounded);
@@ -166,7 +188,8 @@ public class PlayerMovement2D : MonoBehaviour
             if (!string.IsNullOrEmpty(deadBool)) animator.SetBool(deadBool, isDead);
         }
 
-        if (flipWithDirection && Mathf.Abs(moveInput.x) > 0.01f)
+        // Flip: si está locked, mantén la orientación (no flippear por input)
+        if (flipWithDirection && !isMovementLocked && Mathf.Abs(moveInput.x) > 0.01f)
         {
             Vector3 scale = transform.localScale;
             scale.x = Mathf.Sign(moveInput.x) * Mathf.Abs(scale.x);
@@ -178,11 +201,32 @@ public class PlayerMovement2D : MonoBehaviour
     {
         if (isDead) return;
 
+        // ---- Lock timer ----
+        if (isMovementLocked)
+        {
+            movementLockTimer -= Time.fixedDeltaTime;
+
+            // Inmóvil en X (pero deja Y para gravedad/salto si quieres)
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+
+            if (movementLockTimer <= 0f)
+                UnlockMovement();
+
+            // Si está locked, no aplicar movimiento
+            TryConsumeJump(); // si NO quieres saltar mientras locked, comenta esta línea
+            return;
+        }
+
         float targetSpeed = isRunning ? runSpeed : walkSpeed;
 
+        // Ataque: también bloquea movimiento si lo deseas
         if (!(freezeMovementWhileAttacking && isAttacking))
         {
             rb.linearVelocity = new Vector2(moveInput.x * targetSpeed, rb.linearVelocity.y);
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
         }
 
         TryConsumeJump();
@@ -190,6 +234,9 @@ public class PlayerMovement2D : MonoBehaviour
 
     void TryConsumeJump()
     {
+        // Si NO quieres saltar mientras ataca/dispara, añade:
+        // if (isAttacking || isMovementLocked) return;
+
         if (jumpBufferCounter > 0f && coyoteCounter > 0f)
         {
             if (resetVerticalVelocityBeforeJump)
@@ -202,6 +249,36 @@ public class PlayerMovement2D : MonoBehaviour
         }
     }
 
+    // ---------- MOVEMENT LOCK ----------
+    void LockMovement(float seconds, bool freezeXWithConstraints)
+    {
+        isMovementLocked = true;
+        movementLockTimer = seconds;
+        lockFreezesX = freezeXWithConstraints;
+
+        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+
+        if (freezeXWithConstraintsWhileLocked && freezeXWithConstraints)
+        {
+            // Mantén FreezeRotation si lo tenías
+            baseConstraints = rb.constraints;
+            rb.constraints = baseConstraints | RigidbodyConstraints2D.FreezePositionX;
+        }
+    }
+
+    void UnlockMovement()
+    {
+        isMovementLocked = false;
+        movementLockTimer = 0f;
+
+        if (freezeXWithConstraintsWhileLocked && lockFreezesX)
+        {
+            rb.constraints = baseConstraints; // vuelve a lo que tenías
+            lockFreezesX = false;
+        }
+    }
+
+    // ---------- ATAQUE ----------
     void TryStartAttack()
     {
         if (isAttacking || isDead) return;
@@ -219,15 +296,20 @@ public class PlayerMovement2D : MonoBehaviour
         if (animator != null && !string.IsNullOrEmpty(attackTrigger))
             animator.SetTrigger(attackTrigger);
 
+        // ✅ Bloqueo total durante ataque
         if (freezeMovementWhileAttacking)
-            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            LockMovement(attackDuration, freezeXWithConstraints: true);
 
         yield return new WaitForSeconds(attackDuration);
 
         isAttacking = false;
         attackRoutine = null;
+
+        // Si por algún motivo el lock sigue activo, lo soltamos
+        if (isMovementLocked) UnlockMovement();
     }
 
+    // ---------- SHOOT ----------
     void TryStartShoot()
     {
         if (isDead) return;
@@ -235,6 +317,9 @@ public class PlayerMovement2D : MonoBehaviour
 
         if (animator != null && !string.IsNullOrEmpty(shootTrigger))
             animator.SetTrigger(shootTrigger);
+
+        // ✅ Bloqueo mientras dispara (ajusta shootLockDuration a tu animación)
+        LockMovement(shootLockDuration, freezeXWithConstraints: true);
 
         StartCoroutine(ShootCooldownRoutine());
     }
@@ -254,6 +339,7 @@ public class PlayerMovement2D : MonoBehaviour
     void SpawnBullet()
     {
         if (isDead) return;
+
         if (bulletPrefab == null || shootPoint == null)
         {
             if (debugLogs) Debug.LogWarning("[SHOOT] Falta bulletPrefab o shootPoint");
@@ -292,6 +378,8 @@ public class PlayerMovement2D : MonoBehaviour
 
         isDead = true;
 
+        UnlockMovement();
+
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
@@ -312,13 +400,13 @@ public class PlayerMovement2D : MonoBehaviour
         }
     }
 
-
     public bool IsDead() => isDead;
 
     void OnGUI()
     {
         if (!debugHUD) return;
         GUI.Label(new Rect(10, 10, 500, 20), $"Grounded: {isGrounded}");
-        GUI.Label(new Rect(10, 30, 500, 20), $"Run: {isRunning}  Attacking: {isAttacking}  Dead: {isDead}");
+        GUI.Label(new Rect(10, 30, 700, 20),
+            $"Run: {isRunning}  Attacking: {isAttacking}  Locked: {isMovementLocked}  Dead: {isDead}");
     }
 }
