@@ -1,20 +1,39 @@
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class EnemyAI_Shooter : MonoBehaviour
 {
     [Header("Referencias")]
     public Transform player;
+
+    [Tooltip("Animator (si lo tienes en un hijo Visual, asígnalo aquí o se auto-busca)")]
     public Animator animator;
 
+    [Tooltip("Hijo que contiene Sprite/Animator (opcional). Si existe, se baja al morir para que no “flote”.")]
+    public Transform visual;
+
     [Header("Checks")]
-    public Transform wallCheck;              // arrastra tu hijo WallCheck aquí
-    public float wallCheckDistance = 0.25f;  // distancia del raycast
-    public LayerMask wallLayer;              // capa Ground/Wall/etc.
+    public Transform wallCheck;
+    public float wallCheckDistance = 0.25f;
+    public LayerMask wallLayer;
 
     [Header("Animator Params (exactos)")]
     public string speedParam = "Speed";
     public string shootBool = "IsShooting";
+    public string hurtTrigger = "Hurt";
+    public string dieTrigger = "Die";     // opcional (si lo usas)
+    public string deadBool = "IsDead";    // recomendado
+
+    [Header("Vida")]
+    public int maxHealth = 3;
+    public float hurtStunTime = 0.25f;
+
+    [Header("Disparo (proyectil)")]
+    public Transform shootPoint;
+    public GameObject projectilePrefab;
+    public float projectileSpeed = 8f;
+    public int projectileDamage = 1;
 
     [Header("Velocidades")]
     public float walkSpeed = 1.5f;
@@ -39,24 +58,58 @@ public class EnemyAI_Shooter : MonoBehaviour
     [Header("Flip")]
     public bool flipWithDirection = true;
 
-    private Rigidbody2D rb;
-    private Vector2 patrolStart;
-    private int dir = 1;
+    [Header("Muerte")]
+    public float deathDisableDelay = 1.5f;
 
-    private float shootTimer = 0f;
-    private float cooldownTimer = 0f;
+    [Header("Fix visual muerte (si “flota”)")]
+    public float deathVisualYOffset = -0f; // ajusta a ojo (ya te funcionó)
+    Vector3 visualStartLocalPos;
+
+    Rigidbody2D rb;
+    Vector2 patrolStart;
+    int dir = 1;
+
+    float shootTimer = 0f;
+    float cooldownTimer = 0f;
+    float deathLockedY;
+
+    int health;
+    bool isDead = false;
+    bool isStunned = false;
+    Coroutine deathRoutine;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        if (animator == null) animator = GetComponent<Animator>();
         patrolStart = rb.position;
+        health = maxHealth;
 
-        // Si no asignas wallCheck, intentamos encontrar uno con ese nombre
+        // Auto asignar Visual
+        if (visual == null)
+        {
+            var v = transform.Find("Visual");
+            if (v != null) visual = v;
+        }
+        if (visual != null)
+            visualStartLocalPos = visual.localPosition;
+
+        // Auto asignar Animator (si está en Visual o en el mismo GO)
+        if (animator == null)
+        {
+            animator = (visual != null) ? visual.GetComponent<Animator>() : GetComponent<Animator>();
+            if (animator == null) animator = GetComponentInChildren<Animator>();
+        }
+
         if (wallCheck == null)
         {
             var wc = transform.Find("WallCheck");
             if (wc != null) wallCheck = wc;
+        }
+
+        if (shootPoint == null)
+        {
+            var sp = transform.Find("ShootPoint");
+            if (sp != null) shootPoint = sp;
         }
     }
 
@@ -74,6 +127,16 @@ public class EnemyAI_Shooter : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (isDead) return;
+
+        // stun breve al recibir daño
+        if (isStunned)
+        {
+            rb.linearVelocity = Vector2.zero;
+            UpdateAnimator();
+            return;
+        }
+
         // Timers
         if (shootTimer > 0f) shootTimer -= Time.fixedDeltaTime;
         if (cooldownTimer > 0f) cooldownTimer -= Time.fixedDeltaTime;
@@ -83,9 +146,7 @@ public class EnemyAI_Shooter : MonoBehaviour
 
         // Si hay pared delante (en cualquier modo excepto disparando), girar
         if (shootTimer <= 0f && IsHittingWall())
-        {
             TurnAround();
-        }
 
         // Sin player -> patrulla
         if (player == null)
@@ -99,7 +160,6 @@ public class EnemyAI_Shooter : MonoBehaviour
         float dist = Vector2.Distance(rb.position, player.position);
         bool sees = dist <= visionRange;
 
-        // No lo ve -> patrulla
         if (!sees)
         {
             StopShooting();
@@ -124,8 +184,6 @@ public class EnemyAI_Shooter : MonoBehaviour
         if (dist <= tooCloseDistance)
         {
             StopShooting();
-
-            // Si al alejarse hay pared, gira primero
             int awayDir = (player.position.x >= rb.position.x) ? -1 : 1;
             if (IsHittingWall(awayDir)) awayDir *= -1;
 
@@ -152,55 +210,149 @@ public class EnemyAI_Shooter : MonoBehaviour
         UpdateAnimator();
     }
 
-    // --------- Wall detection ----------
-    bool IsHittingWall()
+    // ---------- VIDA / DAÑO ----------
+    public void TakeDamage(int amount)
     {
-        return IsHittingWall(dir);
+        if (isDead) return;
+
+        health -= amount;
+
+        if (health <= 0)
+        {
+            Die();
+            return;
+        }
+
+        StopShooting();
+        SetShootingBool(false);
+        rb.linearVelocity = Vector2.zero;
+
+        if (animator != null && !string.IsNullOrEmpty(hurtTrigger))
+            animator.SetTrigger(hurtTrigger);
+
+        StartCoroutine(HurtStun());
     }
+
+    IEnumerator HurtStun()
+    {
+        isStunned = true;
+        yield return new WaitForSeconds(hurtStunTime);
+        isStunned = false;
+    }
+
+    void Die()
+    {
+        if (isDead) return;
+        isDead = true;
+
+        StopShooting();
+        SetShootingBool(false);
+
+        if (animator != null)
+        {
+            if (!string.IsNullOrEmpty(deadBool)) animator.SetBool(deadBool, true);
+            if (!string.IsNullOrEmpty(dieTrigger)) animator.SetTrigger(dieTrigger);
+        }
+
+        // 1) Para física de inmediato
+        rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+        rb.gravityScale = 0f;
+
+        // 2) Fija posición Y exacta
+        deathLockedY = rb.position.y;
+        rb.position = new Vector2(rb.position.x, deathLockedY);
+
+        // 3) Cambia el cuerpo para que NO reaccione al solver
+        rb.bodyType = RigidbodyType2D.Kinematic; // o Static (ver nota)
+        rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+
+        // 4) Ahora sí: ajusta collider (esto es lo que suele causar el "tirón")
+        var box = GetComponent<BoxCollider2D>();
+        if (box != null)
+        {
+            box.size = new Vector2(box.size.x * 1.4f, box.size.y * 0.35f);
+            box.offset = new Vector2(box.offset.x, box.offset.y - 0.35f);
+        }
+
+        // 5) Sincroniza transforms (evita un frame “desfasado”)
+        Physics2D.SyncTransforms();
+
+        // Visual fix
+        if (visual != null)
+            visual.localPosition = visualStartLocalPos + new Vector3(0f, deathVisualYOffset, 0f);
+
+        if (deathRoutine != null) StopCoroutine(deathRoutine);
+        deathRoutine = StartCoroutine(DisableAfterDeath());
+    }
+
+
+    IEnumerator DisableAfterDeath()
+    {
+        yield return new WaitForSeconds(deathDisableDelay);
+        this.enabled = false;
+        // (si quieres) gameObject.SetActive(false);
+        // (si quieres) Destroy(gameObject);
+    }
+
+    // ---------- DISPARO ----------
+    void StartShooting()
+    {
+        shootTimer = shootDuration;
+        cooldownTimer = shootCooldown;
+        // si NO usas Animation Event: FireProjectile();
+    }
+
+    // Llama a este método desde un Animation Event en el clip de disparo
+    public void FireProjectile()
+    {
+        if (isDead) return;
+        if (projectilePrefab == null || shootPoint == null) return;
+
+        GameObject b = Instantiate(projectilePrefab, shootPoint.position, Quaternion.identity);
+
+        var rbB = b.GetComponent<Rigidbody2D>();
+        if (rbB != null)
+            rbB.linearVelocity = new Vector2(dir * projectileSpeed, 0f);
+
+        var p = b.GetComponent<Projectile>();
+        if (p != null)
+        {
+            p.damage = projectileDamage;
+            p.shooterTag = "Enemy";
+        }
+    }
+
+    void StopShooting() => shootTimer = 0f;
+
+    // ---------- Wall detection ----------
+    bool IsHittingWall() => IsHittingWall(dir);
 
     bool IsHittingWall(int checkDir)
     {
         if (wallCheck == null) return false;
-
-        Vector2 origin = wallCheck.position;
-        Vector2 direction = Vector2.right * checkDir;
-
-        RaycastHit2D hit = Physics2D.Raycast(origin, direction, wallCheckDistance, wallLayer);
+        RaycastHit2D hit = Physics2D.Raycast(wallCheck.position, Vector2.right * checkDir, wallCheckDistance, wallLayer);
         return hit.collider != null;
     }
 
     void TurnAround()
     {
         dir *= -1;
-        patrolStart = rb.position; // para que no se quede rebotando en el mismo sitio
+        patrolStart = rb.position;
         ApplyFlip();
     }
 
-    // --------- Shooting ----------
-    void StartShooting()
-    {
-        shootTimer = shootDuration;
-        cooldownTimer = shootCooldown;
-    }
-
-    void StopShooting()
-    {
-        shootTimer = 0f;
-    }
-
-    // --------- Patrol ----------
+    // ---------- Patrol ----------
     void Patrol()
     {
         rb.linearVelocity = new Vector2(dir * walkSpeed, rb.linearVelocity.y);
 
         float dx = rb.position.x - patrolStart.x;
         if (Mathf.Abs(dx) >= patrolDistance)
-        {
             TurnAround();
-        }
     }
 
-    // --------- Visual / Animator ----------
+    // ---------- Visual / Animator ----------
     void ApplyFlip()
     {
         if (!flipWithDirection) return;
@@ -219,28 +371,5 @@ public class EnemyAI_Shooter : MonoBehaviour
     {
         if (animator == null || string.IsNullOrEmpty(shootBool)) return;
         animator.SetBool(shootBool, value);
-    }
-
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, visionRange);
-
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, stopDistance);
-
-        Gizmos.color = new Color(1f, 0.4f, 0.4f, 1f);
-        Gizmos.DrawWireSphere(transform.position, tooCloseDistance);
-
-        Gizmos.color = Color.magenta;
-        Gizmos.DrawWireSphere(transform.position, shootDistance);
-
-        // Raycast wall check
-        if (wallCheck != null)
-        {
-            Gizmos.color = Color.cyan;
-            Vector3 to = wallCheck.position + Vector3.right * dir * wallCheckDistance;
-            Gizmos.DrawLine(wallCheck.position, to);
-        }
     }
 }

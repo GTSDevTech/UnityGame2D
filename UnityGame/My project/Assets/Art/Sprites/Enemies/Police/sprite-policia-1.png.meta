@@ -1,0 +1,1550 @@
+fileFormatVersion: 2
+guid: 5c031987ece3c3a46a5bca94916ccdec
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4878293196293730546
+    second: sprite-policia-1_0
+  - first:
+      213: -924353620194047942
+    second: sprite-policia-1_1
+  - first:
+      213: 2808081430912056739
+    second: sprite-policia-1_2
+  - first:
+      213: 2105819965019303051
+    second: sprite-policia-1_3
+  - first:
+      213: 6354789925380109384
+    second: sprite-policia-1_4
+  - first:
+      213: -3017122247744197962
+    second: sprite-policia-1_5
+  - first:
+      213: 6145365781652577094
+    second: sprite-policia-1_6
+  - first:
+      213: -4401735436905085026
+    second: sprite-policia-1_7
+  - first:
+      213: -5666972566532325435
+    second: sprite-policia-1_8
+  - first:
+      213: -2844308292119594558
+    second: sprite-policia-1_9
+  - first:
+      213: 8128763082199212803
+    second: sprite-policia-1_10
+  - first:
+      213: 5688125824227013874
+    second: sprite-policia-1_11
+  - first:
+      213: 8392979197109525895
+    second: sprite-policia-1_12
+  - first:
+      213: 4321648480190999569
+    second: sprite-policia-1_13
+  - first:
+      213: 3991165344238358385
+    second: sprite-policia-1_14
+  - first:
+      213: 6819012592707550349
+    second: sprite-policia-1_15
+  - first:
+      213: -6532292314211954360
+    second: sprite-policia-1_16
+  - first:
+      213: -4989730161478293586
+    second: sprite-policia-1_17
+  - first:
+      213: -2470536154801168914
+    second: sprite-policia-1_18
+  - first:
+      213: 8105657749095054430
+    second: sprite-policia-1_19
+  - first:
+      213: -1619577585405040867
+    second: sprite-policia-1_20
+  - first:
+      213: 5581633272519039521
+    second: sprite-policia-1_21
+  - first:
+      213: 7427994368878311869
+    second: sprite-policia-1_22
+  - first:
+      213: 4984632718762913430
+    second: sprite-policia-1_23
+  - first:
+      213: 3951035527509461388
+    second: sprite-policia-1_24
+  - first:
+      213: 4084842456064489497
+    second: sprite-policia-1_25
+  - first:
+      213: -6589548170516631475
+    second: sprite-policia-1_26
+  - first:
+      213: 3903459514913690514
+    second: sprite-policia-1_27
+  - first:
+      213: -3138264473645118999
+    second: sprite-policia-1_28
+  - first:
+      213: 1440024554601317720
+    second: sprite-policia-1_29
+  - first:
+      213: -726810980842495215
+    second: sprite-policia-1_30
+  - first:
+      213: -3811726651667153950
+    second: sprite-policia-1_31
+  - first:
+      213: 4038541118085762032
+    second: sprite-policia-1_32
+  - first:
+      213: -555282672215253642
+    second: sprite-policia-1_33
+  - first:
+      213: -6040884337247426933
+    second: sprite-policia-1_34
+  - first:
+      213: -8795803756257065087
+    second: sprite-policia-1_35
+  - first:
+      213: -1648120474505787947
+    second: sprite-policia-1_36
+  - first:
+      213: -6409189884104424520
+    second: sprite-policia-1_37
+  - first:
+      213: -1000763975059638092
+    second: sprite-policia-1_38
+  - first:
+      213: -453025695666917847
+    second: sprite-policia-1_39
+  - first:
+      213: -9152965622073356268
+    second: sprite-policia-1_40
+  - first:
+      213: -5919574340358289419
+    second: sprite-policia-1_41
+  - first:
+      213: 9208541745421651665
+    second: sprite-policia-1_42
+  - first:
+      213: 6594125932613326723
+    second: sprite-policia-1_43
+  - first:
+      213: -4870223518384884678
+    second: sprite-policia-1_44
+  - first:
+      213: 2082485530003261289
+    second: sprite-policia-1_45
+  - first:
+      213: 1423235412498056735
+    second: sprite-policia-1_46
+  - first:
+      213: 3855151838409014299
+    second: sprite-policia-1_47
+  - first:
+      213: -639000653979013719
+    second: sprite-policia-1_48
+  - first:
+      213: 217837213632172979
+    second: sprite-policia-1_49
+  - first:
+      213: -944115791343576368
+    second: sprite-policia-1_50
+  - first:
+      213: 558150569213475375
+    second: sprite-policia-1_51
+  - first:
+      213: -3109439590422601705
+    second: sprite-policia-1_52
+  - first:
+      213: 3411206731088095869
+    second: sprite-policia-1_53
+  - first:
+      213: -407678448008850557
+    second: sprite-policia-1_54
+  - first:
+      213: -5291659608640889363
+    second: sprite-policia-1_55
+  - first:
+      213: -4874403665731713019
+    second: sprite-policia-1_56
+  - first:
+      213: -8101967794176058036
+    second: sprite-policia-1_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite-policia-1_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 849
+        width: 7
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f0fa43d0dd23b340800000000000000
+      internalID: 4878293196293730546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 849
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a38cc75a7490c23f0800000000000000
+      internalID: -924353620194047942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 849
+        width: 16
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad32edfe2f48f620800000000000000
+      internalID: 2808081430912056739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_3
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 849
+        width: 18
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ca6efd910693d10800000000000000
+      internalID: 2105819965019303051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_4
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 849
+        width: 41
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844338c94cfb03850800000000000000
+      internalID: 6354789925380109384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_5
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 849
+        width: 42
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba67431d470126d0800000000000000
+      internalID: -3017122247744197962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_6
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 849
+        width: 42
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b1e3e6e99b84550800000000000000
+      internalID: 6145365781652577094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_7
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 849
+        width: 42
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97060801f4e9e2c0800000000000000
+      internalID: -4401735436905085026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_8
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 849
+        width: 42
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cff4f3c97eda51b0800000000000000
+      internalID: -5666972566532325435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_9
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 849
+        width: 42
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c973889dacf688d0800000000000000
+      internalID: -2844308292119594558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_10
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 651
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3032bc984fa2fc070800000000000000
+      internalID: 8128763082199212803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_11
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 651
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f4f6c6dc4840fe40800000000000000
+      internalID: 5688125824227013874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_12
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 651
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78dd4f2ac1ad97470800000000000000
+      internalID: 8392979197109525895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_13
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 651
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c24e9456499fb30800000000000000
+      internalID: 4321648480190999569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_14
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 651
+        width: 32
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f4d270cb7736730800000000000000
+      internalID: 3991165344238358385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_15
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 651
+        width: 37
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8cbf3b03dff1ae50800000000000000
+      internalID: 6819012592707550349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_16
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 651
+        width: 54
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 841d162ffb2a855a0800000000000000
+      internalID: -6532292314211954360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_17
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 651
+        width: 32
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7a808dadae0cab0800000000000000
+      internalID: -4989730161478293586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_18
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 651
+        width: 31
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed1158e474e6bdd0800000000000000
+      internalID: -2470536154801168914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_19
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 651
+        width: 43
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5cf3b5f6c41d7070800000000000000
+      internalID: 8105657749095054430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_20
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 651
+        width: 49
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d176fb754ca1689e0800000000000000
+      internalID: -1619577585405040867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_21
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 651
+        width: 38
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a9ffa73e1f57d40800000000000000
+      internalID: 5581633272519039521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_22
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 463
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9f796f589851760800000000000000
+      internalID: 7427994368878311869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_23
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 463
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e27a94c09fc2540800000000000000
+      internalID: 4984632718762913430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_24
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 463
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c894628f0e5e4d630800000000000000
+      internalID: 3951035527509461388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_25
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 463
+        width: 57
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9187825429640b830800000000000000
+      internalID: 4084842456064489497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_26
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 463
+        width: 81
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d40f7021ad83d84a0800000000000000
+      internalID: -6589548170516631475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_27
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 463
+        width: 66
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2939c855fbfdb2630800000000000000
+      internalID: 3903459514913690514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_28
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 463
+        width: 47
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e98725a615a274d0800000000000000
+      internalID: -3138264473645118999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_29
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 463
+        width: 61
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8550adce3befbf310800000000000000
+      internalID: 1440024554601317720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_30
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 463
+        width: 81
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113a7048349d9e5f0800000000000000
+      internalID: -726810980842495215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_31
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 463
+        width: 72
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb7d724ec60a1bc0800000000000000
+      internalID: -3811726651667153950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_32
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 463
+        width: 43
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fb8f42ffb7cb0830800000000000000
+      internalID: 4038541118085762032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_33
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 278
+        width: 13
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d1ea40a5d3b48f0800000000000000
+      internalID: -555282672215253642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_34
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 282
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86652583b77a2ca0800000000000000
+      internalID: -6040884337247426933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_35
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 282
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187404af5170fe580800000000000000
+      internalID: -8795803756257065087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_36
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 282
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5c80a1923b029e0800000000000000
+      internalID: -1648120474505787947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_37
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 282
+        width: 40
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3cdebf1cbfd07a0800000000000000
+      internalID: -6409189884104424520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_38
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 286
+        width: 47
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b8ff8a87729c12f0800000000000000
+      internalID: -1000763975059638092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_39
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 290
+        width: 58
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e26afa78786b9f0800000000000000
+      internalID: -453025695666917847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_40
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 297
+        width: 52
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41094fed2422af080800000000000000
+      internalID: -9152965622073356268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_41
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 295
+        width: 43
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f74d6d208279dda0800000000000000
+      internalID: -5919574340358289419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_42
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 287
+        width: 45
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de8633bdef4bcf70800000000000000
+      internalID: 9208541745421651665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_43
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 282
+        width: 47
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387db99399a038b50800000000000000
+      internalID: 6594125932613326723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_44
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 282
+        width: 57
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a347ae9738d796cb0800000000000000
+      internalID: -4870223518384884678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_45
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 101
+        width: 87
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9674cb95e8976ec10800000000000000
+      internalID: 2082485530003261289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_46
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 101
+        width: 98
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1604b9211950c310800000000000000
+      internalID: 1423235412498056735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_47
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 101
+        width: 105
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c309beb20408530800000000000000
+      internalID: 3855151838409014299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_49
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 101
+        width: 111
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b31869aac9e50300800000000000000
+      internalID: 217837213632172979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_53
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 102
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a6de5d27a075f20800000000000000
+      internalID: 3411206731088095869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_54
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 102
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38399db8c92a75af0800000000000000
+      internalID: -407678448008850557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_55
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 102
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded5da25f9f3096b0800000000000000
+      internalID: -5291659608640889363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_56
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 102
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508033411b3aa5cb0800000000000000
+      internalID: -4874403665731713019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-policia-1_57
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 102
+        width: 11
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d1b7e9737009f80800000000000000
+      internalID: -8101967794176058036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cfce0fa971296dc489937bd517f3bba3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprite-policia-1_0: 4878293196293730546
+      sprite-policia-1_1: -924353620194047942
+      sprite-policia-1_10: 8128763082199212803
+      sprite-policia-1_11: 5688125824227013874
+      sprite-policia-1_12: 8392979197109525895
+      sprite-policia-1_13: 4321648480190999569
+      sprite-policia-1_14: 3991165344238358385
+      sprite-policia-1_15: 6819012592707550349
+      sprite-policia-1_16: -6532292314211954360
+      sprite-policia-1_17: -4989730161478293586
+      sprite-policia-1_18: -2470536154801168914
+      sprite-policia-1_19: 8105657749095054430
+      sprite-policia-1_2: 2808081430912056739
+      sprite-policia-1_20: -1619577585405040867
+      sprite-policia-1_21: 5581633272519039521
+      sprite-policia-1_22: 7427994368878311869
+      sprite-policia-1_23: 4984632718762913430
+      sprite-policia-1_24: 3951035527509461388
+      sprite-policia-1_25: 4084842456064489497
+      sprite-policia-1_26: -6589548170516631475
+      sprite-policia-1_27: 3903459514913690514
+      sprite-policia-1_28: -3138264473645118999
+      sprite-policia-1_29: 1440024554601317720
+      sprite-policia-1_3: 2105819965019303051
+      sprite-policia-1_30: -726810980842495215
+      sprite-policia-1_31: -3811726651667153950
+      sprite-policia-1_32: 4038541118085762032
+      sprite-policia-1_33: -555282672215253642
+      sprite-policia-1_34: -6040884337247426933
+      sprite-policia-1_35: -8795803756257065087
+      sprite-policia-1_36: -1648120474505787947
+      sprite-policia-1_37: -6409189884104424520
+      sprite-policia-1_38: -1000763975059638092
+      sprite-policia-1_39: -453025695666917847
+      sprite-policia-1_4: 6354789925380109384
+      sprite-policia-1_40: -9152965622073356268
+      sprite-policia-1_41: -5919574340358289419
+      sprite-policia-1_42: 9208541745421651665
+      sprite-policia-1_43: 6594125932613326723
+      sprite-policia-1_44: -4870223518384884678
+      sprite-policia-1_45: 2082485530003261289
+      sprite-policia-1_46: 1423235412498056735
+      sprite-policia-1_47: 3855151838409014299
+      sprite-policia-1_48: -639000653979013719
+      sprite-policia-1_49: 217837213632172979
+      sprite-policia-1_5: -3017122247744197962
+      sprite-policia-1_50: -944115791343576368
+      sprite-policia-1_51: 558150569213475375
+      sprite-policia-1_52: -3109439590422601705
+      sprite-policia-1_53: 3411206731088095869
+      sprite-policia-1_54: -407678448008850557
+      sprite-policia-1_55: -5291659608640889363
+      sprite-policia-1_56: -4874403665731713019
+      sprite-policia-1_57: -8101967794176058036
+      sprite-policia-1_6: 6145365781652577094
+      sprite-policia-1_7: -4401735436905085026
+      sprite-policia-1_8: -5666972566532325435
+      sprite-policia-1_9: -2844308292119594558
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
