@@ -45,7 +45,7 @@ TagManager:
     locked: 0
   - name: BG_Far
     uniqueID: 1919045453
-    locked: 0
+    locked: 1
   - name: BG_Mid
     uniqueID: 1616272515
     locked: 0
