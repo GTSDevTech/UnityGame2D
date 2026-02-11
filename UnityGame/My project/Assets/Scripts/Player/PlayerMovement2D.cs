@@ -29,7 +29,7 @@ public class PlayerMovement2D : MonoBehaviour
     public string runParam = "Run";              // bool
     public string attackTrigger = "Attack";      // trigger
     public string shootTrigger = "Shoot";        // trigger
-    public string reloadTrigger = "Reload";      // trigger  ✅ NUEVO
+    public string reloadTrigger = "Reload";      // trigger
     public string hurtTrigger = "Hurt";          // trigger
     public string dieTrigger = "Die";            // trigger
     public string deadBool = "IsDead";           // bool
@@ -48,14 +48,19 @@ public class PlayerMovement2D : MonoBehaviour
     [Tooltip("Tiempo que el player queda inmóvil al disparar.")]
     public float shootLockDuration = 0.15f;
 
-    [Header("Reload (recarga)")]
+    [Header("Ammo / Reload (recarga)")]
     public bool enableReload = true;
-    [Tooltip("Tiros por cargador (cada X disparos recarga).")]
+    [Tooltip("Balas por cargador.")]
     public int magSize = 6;
     [Tooltip("Tiempo de recarga (si NO usas Animation Event de fin).")]
     public float reloadTime = 1.0f;
     [Tooltip("Bloquea movimiento durante recarga.")]
     public bool lockMovementWhileReloading = true;
+
+    [Tooltip("Balas actuales en cargador.")]
+    public int ammoInMag = 6;
+    [Tooltip("Balas en reserva (lo que te dan los pickups).")]
+    public int ammoReserve = 0;
 
     [Header("Lock de movimiento (general)")]
     [Tooltip("Si está activado, además de velocidad 0, congela X con constraints durante locks.")]
@@ -106,6 +111,9 @@ public class PlayerMovement2D : MonoBehaviour
     float coyoteCounter;
     float jumpBufferCounter;
 
+    public int maletines;
+    public int votos;
+
     Vector3 visualStartLocalPos;
     Coroutine attackRoutine;
 
@@ -118,7 +126,6 @@ public class PlayerMovement2D : MonoBehaviour
     // ---- RELOAD STATE ----
     bool isReloading = false;
     Coroutine reloadRoutine;
-    int shotsInMag = 0; // ✅ contador real
 
     void Awake()
     {
@@ -151,6 +158,9 @@ public class PlayerMovement2D : MonoBehaviour
         sprintAction = playerInput.actions["Sprint"];
         attackAction = playerInput.actions["Attack"];
         shootAction = playerInput.actions["Shoot"];
+
+        // Asegura que el cargador no empiece por encima del magSize
+        ammoInMag = Mathf.Clamp(ammoInMag, 0, magSize);
     }
 
     void OnEnable()
@@ -298,9 +308,6 @@ public class PlayerMovement2D : MonoBehaviour
         if (isCrouching && !allowJumpWhileCrouching)
             return;
 
-        // Si quieres bloquear salto durante recarga, descomenta:
-        // if (isReloading) return;
-
         if (jumpBufferCounter > 0f && coyoteCounter > 0f)
         {
             if (resetVerticalVelocityBeforeJump)
@@ -378,10 +385,10 @@ public class PlayerMovement2D : MonoBehaviour
         if (isReloading) return;
         if (!canShoot) return;
 
-        // Si el cargador ya está “lleno” de disparos, recarga (por si acaso)
-        if (enableReload && magSize > 0 && shotsInMag >= magSize)
+        // Si no quedan balas en cargador, recarga si puedes
+        if (enableReload && magSize > 0 && ammoInMag <= 0)
         {
-            StartReload();
+            if (ammoReserve > 0) StartReload();
             return;
         }
 
@@ -407,17 +414,21 @@ public class PlayerMovement2D : MonoBehaviour
         if (!enableReload) return;
         if (isReloading) return;
 
+        // No recargues si ya está lleno
+        if (ammoInMag >= magSize) return;
+
+        // No recargues si no hay reserva
+        if (ammoReserve <= 0) return;
+
         isReloading = true;
         canShoot = false;
 
-        // Dispara trigger de anim
         if (animator != null && !string.IsNullOrEmpty(reloadTrigger))
             animator.SetTrigger(reloadTrigger);
 
         if (reloadRoutine != null) StopCoroutine(reloadRoutine);
         reloadRoutine = StartCoroutine(ReloadRoutine());
     }
-
 
     IEnumerator ReloadRoutine()
     {
@@ -427,7 +438,12 @@ public class PlayerMovement2D : MonoBehaviour
 
     void FinishReload()
     {
-        shotsInMag = 0;
+        int need = magSize - ammoInMag;
+        int take = Mathf.Min(need, ammoReserve);
+
+        ammoInMag += take;
+        ammoReserve -= take;
+
         isReloading = false;
         canShoot = true;
 
@@ -437,7 +453,7 @@ public class PlayerMovement2D : MonoBehaviour
             reloadRoutine = null;
         }
 
-        // 🔥 por si acaso había un lock de disparo todavía activo:
+        // por si acaso había un lock de disparo todavía activo:
         if (isMovementLocked) UnlockMovement();
     }
 
@@ -480,15 +496,45 @@ public class PlayerMovement2D : MonoBehaviour
             p.damage = bulletDamage;
         }
 
-        // ✅ Contar disparos AQUÍ (solo si realmente salió la bala)
+        // ✅ Gasta 1 bala real
         if (enableReload && magSize > 0)
         {
-            shotsInMag++;
+            ammoInMag = Mathf.Max(0, ammoInMag - 1);
 
-            // Al llegar al límite, comenzar recarga
-            if (shotsInMag >= magSize)
+            if (ammoInMag <= 0 && ammoReserve > 0)
                 StartReload();
         }
+    }
+
+    // ---------- POWERUPS ----------
+    public void AgregarPowerUp(TipoPowerUp tipo)
+    {
+        switch (tipo)
+        {
+            case TipoPowerUp.Maletin:
+                maletines++;
+                break;
+
+            case TipoPowerUp.Voto:
+                votos++;
+                break;
+
+            case TipoPowerUp.Municion:
+                RecargarMunicionExtra(6); // ✅ cada cargador suma 6 a reserva
+                break;
+        }
+    }
+
+    // Ahora munición extra = sumar a reserva
+    public void RecargarMunicionExtra(int cantidad)
+    {
+        ammoReserve += cantidad;
+
+        // ✅ Auto-recarga SOLO si estabas a 0
+        if (enableReload && !isReloading && ammoReserve > 0 && ammoInMag <= 0)
+            StartReload();
+
+        if (debugLogs) Debug.Log($"[AMMO] +{cantidad} a reserva. Mag:{ammoInMag}/{magSize} Reserve:{ammoReserve}");
     }
 
     // ---------- Daño / muerte ----------
@@ -537,8 +583,9 @@ public class PlayerMovement2D : MonoBehaviour
     void OnGUI()
     {
         if (!debugHUD) return;
+
         GUI.Label(new Rect(10, 10, 700, 20), $"Grounded: {isGrounded}");
-        GUI.Label(new Rect(10, 30, 1100, 20),
-            $"Move: {moveInput}  Crouch: {isCrouching}  Attacking: {isAttacking}  Reloading: {isReloading}  Shots: {shotsInMag}/{magSize}  Locked: {isMovementLocked}  Dead: {isDead}");
+        GUI.Label(new Rect(10, 30, 1300, 20),
+            $"Move: {moveInput}  Crouch: {isCrouching}  Attacking: {isAttacking}  Reloading: {isReloading}  Ammo: {ammoInMag}/{magSize}  Reserve: {ammoReserve}  Locked: {isMovementLocked}  Dead: {isDead}");
     }
 }

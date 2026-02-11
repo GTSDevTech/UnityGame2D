@@ -353,7 +353,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1414362637
-  m_SortingLayer: 3
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7726530496120406592, guid: 6c04e05b80cf7e8479fca9feb78e77ab, type: 3}
@@ -429,7 +429,7 @@ Transform:
   m_GameObject: {fileID: 9156386609818824896}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.01, y: -0.43, z: 0}
+  m_LocalPosition: {x: 2.54, y: -0.29, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -485,7 +485,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1414362637
-  m_SortingLayer: 3
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2647758579449617991, guid: 419f6cdb26388294ebaee8ff64c6cc42, type: 3}
@@ -596,6 +596,7 @@ MonoBehaviour:
   hurtTrigger: Hurt
   dieTrigger: Die
   deadBool: IsDead
+  reloadTrigger: Reload
   maxHealth: 3
   hurtStunTime: 0.25
   shootPoint: {fileID: 4467199808771922082}
@@ -611,6 +612,9 @@ MonoBehaviour:
   shootDistance: 5
   shootDuration: 0.6
   shootCooldown: 0.8
+  shotsBeforeReload: 3
+  reloadDuration: 3
+  postReloadCooldown: 1.2
   patrolDistance: 5
   flipWithDirection: 1
   deathDisableDelay: 1.5

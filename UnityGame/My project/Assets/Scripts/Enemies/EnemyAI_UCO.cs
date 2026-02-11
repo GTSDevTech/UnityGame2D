@@ -4,6 +4,7 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody2D))]
 public class EnemyAI_Shooter : MonoBehaviour
 {
+    // -------------------- Inspector --------------------
     [Header("Referencias")]
     public Transform player;
 
@@ -22,8 +23,9 @@ public class EnemyAI_Shooter : MonoBehaviour
     public string speedParam = "Speed";
     public string shootBool = "IsShooting";
     public string hurtTrigger = "Hurt";
-    public string dieTrigger = "Die";     // opcional (si lo usas)
+    public string dieTrigger = "Die";     // opcional
     public string deadBool = "IsDead";    // recomendado
+    public string reloadTrigger = "Reload"; // Trigger para recarga (AnyState->Recharge con condición Reload)
 
     [Header("Vida")]
     public int maxHealth = 3;
@@ -48,9 +50,14 @@ public class EnemyAI_Shooter : MonoBehaviour
     public float tooCloseDistance = 2.2f;
     public float shootDistance = 3.5f;
 
-    [Header("Disparo (animación)")]
+    [Header("Disparo (estado)")]
     public float shootDuration = 0.6f;
     public float shootCooldown = 0.9f;
+
+    [Header("Recarga")]
+    public int shotsBeforeReload = 3;
+    public float reloadDuration = 1.2f;     // variable de duración
+    public float postReloadCooldown = 1.2f; // evita que dispare instant al acabar recarga
 
     [Header("Patrulla")]
     public float patrolDistance = 2f;
@@ -62,25 +69,35 @@ public class EnemyAI_Shooter : MonoBehaviour
     public float deathDisableDelay = 1.5f;
 
     [Header("Fix visual muerte (si “flota”)")]
-    public float deathVisualYOffset = -0f; // ajusta a ojo (ya te funcionó)
+    public float deathVisualYOffset = -0f;
     Vector3 visualStartLocalPos;
 
+    // -------------------- Runtime --------------------
+    enum State { Patrol, CombatIdle, Chase, BackOff, Shoot, Reload, Stunned, Dead }
+    State state = State.Patrol;
+
     Rigidbody2D rb;
+    RigidbodyConstraints2D baseConstraints;
+
     Vector2 patrolStart;
     int dir = 1;
 
+    int health;
+    int shotsSinceReload = 0;
+
     float shootTimer = 0f;
     float cooldownTimer = 0f;
-    float deathLockedY;
+    float reloadTimer = 0f;
 
-    int health;
-    bool isDead = false;
-    bool isStunned = false;
+    bool pendingReload = false;
+
     Coroutine deathRoutine;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        baseConstraints = rb.constraints;
+
         patrolStart = rb.position;
         health = maxHealth;
 
@@ -93,7 +110,7 @@ public class EnemyAI_Shooter : MonoBehaviour
         if (visual != null)
             visualStartLocalPos = visual.localPosition;
 
-        // Auto asignar Animator (si está en Visual o en el mismo GO)
+        // Auto asignar Animator
         if (animator == null)
         {
             animator = (visual != null) ? visual.GetComponent<Animator>() : GetComponent<Animator>();
@@ -115,11 +132,7 @@ public class EnemyAI_Shooter : MonoBehaviour
 
     void Start()
     {
-        if (player == null)
-        {
-            var go = GameObject.FindGameObjectWithTag("Player");
-            if (go != null) player = go.transform;
-        }
+        AcquirePlayer();
 
         if (tooCloseDistance > stopDistance) tooCloseDistance = stopDistance * 0.75f;
         if (shootDistance < stopDistance) shootDistance = stopDistance;
@@ -127,187 +140,256 @@ public class EnemyAI_Shooter : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (isDead) return;
+        if (state == State.Dead) return;
 
-        // stun breve al recibir daño
-        if (isStunned)
-        {
-            rb.linearVelocity = Vector2.zero;
-            UpdateAnimator();
-            return;
-        }
+        // refrescar player si se pierde (por respawn/escena)
+        if (player == null) AcquirePlayer();
 
-        // Timers
-        if (shootTimer > 0f) shootTimer -= Time.fixedDeltaTime;
+        // timers globales
         if (cooldownTimer > 0f) cooldownTimer -= Time.fixedDeltaTime;
+        if (shootTimer > 0f) shootTimer -= Time.fixedDeltaTime;
+        if (reloadTimer > 0f) reloadTimer -= Time.fixedDeltaTime;
 
-        // Forzar animación de disparo según timer
-        SetShootingBool(shootTimer > 0f);
+        // actualizar bool de disparo solo cuando estés en Shoot
+        SetShootingBool(state == State.Shoot);
 
-        // Si hay pared delante (en cualquier modo excepto disparando), girar
-        if (shootTimer <= 0f && IsHittingWall())
-            TurnAround();
+        // decidir si ve al player
+        bool sees = false;
+        float dist = 999f;
 
-        // Sin player -> patrulla
-        if (player == null)
+        if (player != null)
         {
-            StopShooting();
-            Patrol();
-            UpdateAnimator();
-            return;
+            dist = Vector2.Distance(rb.position, player.position);
+            sees = dist <= visionRange;
         }
 
-        float dist = Vector2.Distance(rb.position, player.position);
-        bool sees = dist <= visionRange;
+        // Transiciones “globales” por visión (excepto estados bloqueados)
+        if (state == State.Patrol && sees)
+            EnterState(State.CombatIdle);
 
-        if (!sees)
+        if ((state == State.CombatIdle || state == State.Chase || state == State.BackOff) && !sees)
+            EnterState(State.Patrol);
+
+        // ejecutar estado
+        switch (state)
         {
-            StopShooting();
-            Patrol();
-            UpdateAnimator();
-            return;
+            case State.Patrol:
+                DoPatrol();
+                break;
+
+            case State.CombatIdle:
+                DoCombatIdle(dist);
+                break;
+
+            case State.Chase:
+                DoChase(dist);
+                break;
+
+            case State.BackOff:
+                DoBackOff(dist);
+                break;
+
+            case State.Shoot:
+                DoShootState();
+                break;
+
+            case State.Reload:
+                DoReloadState();
+                break;
+
+            case State.Stunned:
+                DoStunnedState();
+                break;
         }
 
-        // Mirar al player
-        dir = player.position.x >= rb.position.x ? 1 : -1;
-        ApplyFlip();
-
-        // Si está disparando -> quieto
-        if (shootTimer > 0f)
-        {
-            rb.linearVelocity = Vector2.zero;
-            UpdateAnimator();
-            return;
-        }
-
-        // Muy cerca -> alejarse
-        if (dist <= tooCloseDistance)
-        {
-            StopShooting();
-            int awayDir = (player.position.x >= rb.position.x) ? -1 : 1;
-            if (IsHittingWall(awayDir)) awayDir *= -1;
-
-            rb.linearVelocity = new Vector2(awayDir * backOffSpeed, rb.linearVelocity.y);
-            UpdateAnimator();
-            return;
-        }
-
-        // Zona de parada -> quedarse y disparar
-        if (dist <= stopDistance)
-        {
-            rb.linearVelocity = Vector2.zero;
-
-            if (dist <= shootDistance && cooldownTimer <= 0f)
-                StartShooting();
-
-            UpdateAnimator();
-            return;
-        }
-
-        // Lejos -> acercarse corriendo
-        StopShooting();
-        rb.linearVelocity = new Vector2(dir * runSpeed, rb.linearVelocity.y);
         UpdateAnimator();
     }
 
-    // ---------- VIDA / DAÑO ----------
-    public void TakeDamage(int amount)
+    // -------------------- Estados --------------------
+    void EnterState(State newState)
     {
-        if (isDead) return;
+        if (state == newState) return;
 
-        health -= amount;
+        // on-exit
+        if (state == State.Shoot || state == State.Reload)
+            UnlockMovement();
 
-        if (health <= 0)
+        state = newState;
+
+        switch (state)
         {
-            Die();
+            case State.Patrol:
+                break;
+
+            case State.CombatIdle:
+                rb.linearVelocity = Vector2.zero;
+                break;
+
+            case State.Chase:
+                break;
+
+            case State.BackOff:
+                break;
+
+            case State.Shoot:
+                FacePlayer();
+                LockMovement();
+                shootTimer = shootDuration;
+                cooldownTimer = shootCooldown;
+                break;
+
+            case State.Reload:
+                LockMovement();
+                reloadTimer = reloadDuration;
+
+                // por seguridad, también lo lanzo aquí (si ya estaba lanzado no pasa nada)
+                if (animator != null && !string.IsNullOrEmpty(reloadTrigger))
+                    animator.SetTrigger(reloadTrigger);
+                break;
+
+            case State.Stunned:
+                rb.linearVelocity = Vector2.zero;
+                break;
+
+            case State.Dead:
+                LockMovement();
+                break;
+        }
+    }
+
+
+
+    void DoPatrol()
+    {
+        // girar si pared
+        if (IsHittingWall())
+            TurnAround();
+
+        rb.linearVelocity = new Vector2(dir * walkSpeed, rb.linearVelocity.y);
+
+        float dx = rb.position.x - patrolStart.x;
+        if (Mathf.Abs(dx) >= patrolDistance)
+            TurnAround();
+    }
+
+    void DoCombatIdle(float dist)
+    {
+        rb.linearVelocity = Vector2.zero;
+        FacePlayer();
+
+        if (player == null) { EnterState(State.Patrol); return; }
+
+        if (dist <= tooCloseDistance)
+        {
+            EnterState(State.BackOff);
             return;
         }
 
-        StopShooting();
-        SetShootingBool(false);
-        rb.linearVelocity = Vector2.zero;
-
-        if (animator != null && !string.IsNullOrEmpty(hurtTrigger))
-            animator.SetTrigger(hurtTrigger);
-
-        StartCoroutine(HurtStun());
-    }
-
-    IEnumerator HurtStun()
-    {
-        isStunned = true;
-        yield return new WaitForSeconds(hurtStunTime);
-        isStunned = false;
-    }
-
-    void Die()
-    {
-        if (isDead) return;
-        isDead = true;
-
-        StopShooting();
-        SetShootingBool(false);
-
-        if (animator != null)
+        if (dist > stopDistance)
         {
-            if (!string.IsNullOrEmpty(deadBool)) animator.SetBool(deadBool, true);
-            if (!string.IsNullOrEmpty(dieTrigger)) animator.SetTrigger(dieTrigger);
+            EnterState(State.Chase);
+            return;
         }
 
-        // 1) Para física de inmediato
-        rb.linearVelocity = Vector2.zero;
-        rb.angularVelocity = 0f;
-        rb.gravityScale = 0f;
-
-        // 2) Fija posición Y exacta
-        deathLockedY = rb.position.y;
-        rb.position = new Vector2(rb.position.x, deathLockedY);
-
-        // 3) Cambia el cuerpo para que NO reaccione al solver
-        rb.bodyType = RigidbodyType2D.Kinematic; // o Static (ver nota)
-        rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
-
-        // 4) Ahora sí: ajusta collider (esto es lo que suele causar el "tirón")
-        var box = GetComponent<BoxCollider2D>();
-        if (box != null)
+        if (dist <= shootDistance && cooldownTimer <= 0f)
         {
-            box.size = new Vector2(box.size.x * 1.4f, box.size.y * 0.35f);
-            box.offset = new Vector2(box.offset.x, box.offset.y - 0.35f);
+            // si toca recargar, recarga antes de disparar
+            if (shotsSinceReload >= shotsBeforeReload)
+                EnterState(State.Reload);
+            else
+                EnterState(State.Shoot);
+
+            return;
+        }
+    }
+
+    void DoChase(float dist)
+    {
+        FacePlayer();
+
+        if (IsHittingWall())
+            TurnAround();
+
+        if (dist <= stopDistance)
+        {
+            EnterState(State.CombatIdle);
+            return;
         }
 
-        // 5) Sincroniza transforms (evita un frame “desfasado”)
-        Physics2D.SyncTransforms();
-
-        // Visual fix
-        if (visual != null)
-            visual.localPosition = visualStartLocalPos + new Vector3(0f, deathVisualYOffset, 0f);
-
-        if (deathRoutine != null) StopCoroutine(deathRoutine);
-        deathRoutine = StartCoroutine(DisableAfterDeath());
+        rb.linearVelocity = new Vector2(dir * runSpeed, rb.linearVelocity.y);
     }
 
-
-    IEnumerator DisableAfterDeath()
+    void DoBackOff(float dist)
     {
-        yield return new WaitForSeconds(deathDisableDelay);
-        this.enabled = false;
-        // (si quieres) gameObject.SetActive(false);
-        // (si quieres) Destroy(gameObject);
+        FacePlayer();
+
+        // alejarse del player
+        int awayDir = (player != null && player.position.x >= rb.position.x) ? -1 : 1;
+
+        // si hay pared detrás, invierte
+        if (IsHittingWall(awayDir))
+            awayDir *= -1;
+
+        rb.linearVelocity = new Vector2(awayDir * backOffSpeed, rb.linearVelocity.y);
+
+        // cuando ya no está tan cerca, vuelve a idle
+        if (dist > tooCloseDistance + 0.2f)
+            EnterState(State.CombatIdle);
     }
 
-    // ---------- DISPARO ----------
-    void StartShooting()
+    void DoShootState()
     {
-        shootTimer = shootDuration;
-        cooldownTimer = shootCooldown;
-        // si NO usas Animation Event: FireProjectile();
+        LockMovement(); // quieto 100%
+
+        // cuando termina el tiempo/anim de disparo
+        if (shootTimer <= 0f)
+        {
+            if (pendingReload)
+            {
+                pendingReload = false;
+
+                // dispara el trigger justo al salir de Shoot
+                if (animator != null && !string.IsNullOrEmpty(reloadTrigger))
+                    animator.SetTrigger(reloadTrigger);
+
+                EnterState(State.Reload);
+                return;
+            }
+
+            EnterState(State.CombatIdle);
+        }
     }
 
+
+
+    void DoReloadState()
+    {
+        LockMovement();
+
+        if (reloadTimer <= 0f)
+        {
+            shotsSinceReload = 0;
+            cooldownTimer = postReloadCooldown;
+            EnterState(State.CombatIdle);
+        }
+    }
+
+
+    void DoStunnedState()
+    {
+        rb.linearVelocity = Vector2.zero;
+    }
+
+    // -------------------- Proyectiles --------------------
     // Llama a este método desde un Animation Event en el clip de disparo
     public void FireProjectile()
     {
-        if (isDead) return;
+        // solo dispara si realmente está en estado Shoot
+        if (state != State.Shoot) return;
+
         if (projectilePrefab == null || shootPoint == null) return;
+
+        FacePlayer();
 
         GameObject b = Instantiate(projectilePrefab, shootPoint.position, Quaternion.identity);
 
@@ -321,11 +403,105 @@ public class EnemyAI_Shooter : MonoBehaviour
             p.damage = projectileDamage;
             p.shooterTag = "Enemy";
         }
+
+        shotsSinceReload++;
+
+        // 👇 NO entrar a Reload aquí (si no, el Animator sale de Shoot a Walk/Idle)
+        if (shotsSinceReload >= shotsBeforeReload)
+            pendingReload = true;
     }
 
-    void StopShooting() => shootTimer = 0f;
 
-    // ---------- Wall detection ----------
+
+    // -------------------- Vida / daño --------------------
+    public void TakeDamage(int amount)
+    {
+        if (state == State.Dead) return;
+
+        health -= amount;
+
+        if (health <= 0)
+        {
+            Die();
+            return;
+        }
+
+        if (animator != null && !string.IsNullOrEmpty(hurtTrigger))
+            animator.SetTrigger(hurtTrigger);
+
+        StopAllCoroutines();
+        StartCoroutine(HurtStunRoutine());
+    }
+
+    IEnumerator HurtStunRoutine()
+    {
+        EnterState(State.Stunned);
+        yield return new WaitForSeconds(hurtStunTime);
+
+        // vuelve a patrulla o combate según si ve al player
+        bool sees = player != null && Vector2.Distance(rb.position, player.position) <= visionRange;
+        EnterState(sees ? State.CombatIdle : State.Patrol);
+    }
+
+    void Die()
+    {
+        if (state == State.Dead) return;
+
+        state = State.Dead;
+
+        if (animator != null)
+        {
+            if (!string.IsNullOrEmpty(deadBool)) animator.SetBool(deadBool, true);
+            if (!string.IsNullOrEmpty(dieTrigger)) animator.SetTrigger(dieTrigger);
+        }
+
+        rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+        rb.gravityScale = 0f;
+
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        rb.constraints = baseConstraints | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+
+        if (visual != null)
+            visual.localPosition = visualStartLocalPos + new Vector3(0f, deathVisualYOffset, 0f);
+
+        if (deathRoutine != null) StopCoroutine(deathRoutine);
+        deathRoutine = StartCoroutine(DisableAfterDeath());
+    }
+
+    IEnumerator DisableAfterDeath()
+    {
+        yield return new WaitForSeconds(deathDisableDelay);
+        this.enabled = false;
+    }
+
+    // -------------------- Helpers --------------------
+    void AcquirePlayer()
+    {
+        if (player != null) return;
+        var go = GameObject.FindGameObjectWithTag("Player");
+        if (go != null) player = go.transform;
+    }
+
+    void FacePlayer()
+    {
+        if (player == null) return;
+        dir = (player.position.x >= rb.position.x) ? 1 : -1;
+        ApplyFlip();
+    }
+
+    void LockMovement()
+    {
+        rb.constraints = baseConstraints | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+        rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+    }
+
+    void UnlockMovement()
+    {
+        rb.constraints = baseConstraints;
+    }
+
     bool IsHittingWall() => IsHittingWall(dir);
 
     bool IsHittingWall(int checkDir)
@@ -342,17 +518,6 @@ public class EnemyAI_Shooter : MonoBehaviour
         ApplyFlip();
     }
 
-    // ---------- Patrol ----------
-    void Patrol()
-    {
-        rb.linearVelocity = new Vector2(dir * walkSpeed, rb.linearVelocity.y);
-
-        float dx = rb.position.x - patrolStart.x;
-        if (Mathf.Abs(dx) >= patrolDistance)
-            TurnAround();
-    }
-
-    // ---------- Visual / Animator ----------
     void ApplyFlip()
     {
         if (!flipWithDirection) return;
@@ -364,8 +529,15 @@ public class EnemyAI_Shooter : MonoBehaviour
     void UpdateAnimator()
     {
         if (animator == null) return;
-        animator.SetFloat(speedParam, Mathf.Abs(rb.linearVelocity.x));
+
+        float spd = Mathf.Abs(rb.linearVelocity.x);
+
+        if (state == State.Shoot || state == State.Reload || state == State.Stunned || state == State.Dead)
+            spd = 0f;
+
+        animator.SetFloat(speedParam, spd);
     }
+
 
     void SetShootingBool(bool value)
     {
