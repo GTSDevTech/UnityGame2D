@@ -43,6 +43,30 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BG_Far
+    uniqueID: 1919045453
+    locked: 1
+  - name: BG_Mid
+    uniqueID: 1616272515
+    locked: 0
+  - name: BG_Near
+    uniqueID: 2689772101
+    locked: 0
+  - name: World_Back
+    uniqueID: 896279813
+    locked: 0
+  - name: World
+    uniqueID: 4265757805
+    locked: 0
+  - name: World_Front
+    uniqueID: 1391708023
+    locked: 0
+  - name: FX
+    uniqueID: 1063551815
+    locked: 0
+  - name: UI
+    uniqueID: 502939125
+    locked: 0
   - name: Background
     uniqueID: 4009891369
     locked: 0
@@ -54,9 +78,6 @@ TagManager:
     locked: 0
   - name: Bullets
     uniqueID: 3629364009
-    locked: 0
-  - name: UI
-    uniqueID: 2427241903
     locked: 0
   m_RenderingLayers:
   - Default
