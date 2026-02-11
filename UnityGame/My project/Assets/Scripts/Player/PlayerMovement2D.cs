@@ -24,43 +24,101 @@ public class PlayerMovement2D : MonoBehaviour
     public bool flipWithDirection = true;
 
     [Header("Animator Params")]
-    public string speedParam = "Speed";          // float 0..1
+    public string speedParam = "Speed";          // float (0-1)
     public string groundedParam = "isGrounded";  // bool
     public string runParam = "Run";              // bool
     public string attackTrigger = "Attack";      // trigger
+    public string shootTrigger = "Shoot";        // trigger
+    public string reloadTrigger = "Reload";      // trigger  ✅ NUEVO
+    public string hurtTrigger = "Hurt";          // trigger
+    public string dieTrigger = "Die";            // trigger
+    public string deadBool = "IsDead";           // bool
 
-    [Header("Ataque")]
-    public float attackDuration = 0.35f;         // ajusta a la duración real del clip
+    [Header("Ataque melee")]
+    public float attackDuration = 0.35f;
     public bool freezeMovementWhileAttacking = true;
+
+    [Header("Shoot")]
+    public Transform shootPoint;
+    public GameObject bulletPrefab;
+    public float bulletSpeed = 12f;
+    public float shootCooldown = 0.25f;
+    public int bulletDamage = 1;
+
+    [Tooltip("Tiempo que el player queda inmóvil al disparar.")]
+    public float shootLockDuration = 0.15f;
+
+    [Header("Reload (recarga)")]
+    public bool enableReload = true;
+    [Tooltip("Tiros por cargador (cada X disparos recarga).")]
+    public int magSize = 6;
+    [Tooltip("Tiempo de recarga (si NO usas Animation Event de fin).")]
+    public float reloadTime = 1.0f;
+    [Tooltip("Bloquea movimiento durante recarga.")]
+    public bool lockMovementWhileReloading = true;
+
+    [Header("Lock de movimiento (general)")]
+    [Tooltip("Si está activado, además de velocidad 0, congela X con constraints durante locks.")]
+    public bool freezeXWithConstraintsWhileLocked = true;
 
     [Header("Ground")]
     public LayerMask groundLayer;
 
+    [Header("Crouch (Agacharse)")]
+    public bool enableCrouch = true;
+    [Tooltip("Se considera agachado si moveInput.y <= crouchThreshold (mantener S / abajo).")]
+    public float crouchThreshold = -0.5f;
+    [Tooltip("Bool en el Animator para agacharse.")]
+    public string crouchBoolParam = "IsCrouching";
+    [Tooltip("Si está agachado, no se mueve.")]
+    public bool freezeMovementWhileCrouching = true;
+    [Tooltip("Permitir saltar estando agachado.")]
+    public bool allowJumpWhileCrouching = false;
+    [Tooltip("Permitir disparar estando agachado.")]
+    public bool allowShootWhileCrouching = true;
+
     [Header("Debug")]
     public bool debugHUD = false;
+    public bool debugLogs = false;
 
-    // Components
-    private Rigidbody2D rb;
-    private Collider2D col;
-    private PlayerInput playerInput;
+    [Header("Muerte (visual)")]
+    public Transform visual;
+    public float deathVisualYOffset = -0.25f;
 
-    // Input Actions
-    private InputAction moveAction;
-    private InputAction jumpAction;
-    private InputAction sprintAction;
-    private InputAction attackAction;
+    Rigidbody2D rb;
+    Collider2D col;
+    PlayerInput playerInput;
 
-    // State
-    private Vector2 moveInput;
-    private bool isRunning;
-    private bool isGrounded;
-    private bool isAttacking;
+    InputAction moveAction;
+    InputAction jumpAction;
+    InputAction sprintAction;
+    InputAction attackAction;
+    InputAction shootAction;
 
-    // Jump helpers
-    private float coyoteCounter;
-    private float jumpBufferCounter;
+    Vector2 moveInput;
+    bool isRunning;
+    bool isGrounded;
+    bool isAttacking;
+    bool isDead;
+    bool canShoot = true;
+    bool isCrouching;
 
-    private Coroutine attackRoutine;
+    float coyoteCounter;
+    float jumpBufferCounter;
+
+    Vector3 visualStartLocalPos;
+    Coroutine attackRoutine;
+
+    // ---- MOVEMENT LOCK ----
+    bool isMovementLocked = false;
+    float movementLockTimer = 0f;
+    bool lockFreezesX = false;
+    RigidbodyConstraints2D baseConstraints;
+
+    // ---- RELOAD STATE ----
+    bool isReloading = false;
+    Coroutine reloadRoutine;
+    int shotsInMag = 0; // ✅ contador real
 
     void Awake()
     {
@@ -68,31 +126,46 @@ public class PlayerMovement2D : MonoBehaviour
         col = GetComponent<Collider2D>();
         playerInput = GetComponent<PlayerInput>();
 
-        if (animator == null)
-            animator = GetComponent<Animator>();
+        baseConstraints = rb.constraints;
 
-        // Nombres EXACTOS del Input Action Asset
+        if (animator == null)
+            animator = GetComponentInChildren<Animator>();
+
+        if (shootPoint == null)
+        {
+            var sp = transform.Find("ShootPoint");
+            if (sp != null) shootPoint = sp;
+        }
+
+        if (visual == null)
+        {
+            var v = transform.Find("Visual");
+            if (v != null) visual = v;
+        }
+
+        if (visual != null)
+            visualStartLocalPos = visual.localPosition;
+
         moveAction = playerInput.actions["Move"];
         jumpAction = playerInput.actions["Jump"];
         sprintAction = playerInput.actions["Sprint"];
         attackAction = playerInput.actions["Attack"];
-
-        Debug.Log($"[INPUT] ActionMap activo: {playerInput.currentActionMap?.name}");
-        Debug.Log($"[INPUT] Attack action encontrada: {(attackAction != null ? attackAction.name : "NO")}");
+        shootAction = playerInput.actions["Shoot"];
     }
 
     void OnEnable()
     {
-        // Habilitar actions (más correcto que hacerlo solo en Awake)
         playerInput.currentActionMap?.Enable();
         moveAction?.Enable();
         jumpAction?.Enable();
         sprintAction?.Enable();
         attackAction?.Enable();
+        shootAction?.Enable();
     }
 
     void OnDisable()
     {
+        shootAction?.Disable();
         attackAction?.Disable();
         sprintAction?.Disable();
         jumpAction?.Disable();
@@ -102,44 +175,71 @@ public class PlayerMovement2D : MonoBehaviour
 
     void Update()
     {
-        // --- INPUT ---
+        if (isDead) return;
+
         moveInput = moveAction != null ? moveAction.ReadValue<Vector2>() : Vector2.zero;
 
-        bool sprintPressed = sprintAction != null && sprintAction.IsPressed();
-        isRunning = (!isAttacking) ? sprintPressed : false;
+        // Ground
+        isGrounded = col.IsTouchingLayers(groundLayer);
 
+        // Crouch hold
+        if (enableCrouch)
+            isCrouching = isGrounded && (moveInput.y <= crouchThreshold);
+        else
+            isCrouching = false;
+
+        if (animator != null && !string.IsNullOrEmpty(crouchBoolParam))
+            animator.SetBool(crouchBoolParam, isCrouching);
+
+        bool sprintPressed = sprintAction != null && sprintAction.IsPressed();
+
+        // Si está atacando / locked / crouching / recargando -> no correr
+        isRunning = (!isAttacking && !isMovementLocked && !isCrouching && !isReloading) ? sprintPressed : false;
+
+        // Jump buffer
         if (jumpAction != null && jumpAction.WasPressedThisFrame())
             jumpBufferCounter = jumpBufferTime;
 
-        if (!isAttacking && attackAction != null && attackAction.WasPressedThisFrame())
-        {
-            Debug.Log("[INPUT] ATTACK PRESSED");
+        // Ataque (no durante recarga)
+        if (!isAttacking && !isMovementLocked && !isReloading && attackAction != null && attackAction.WasPressedThisFrame())
             TryStartAttack();
+
+        // Disparo (no durante recarga)
+        if (!isMovementLocked && !isReloading && shootAction != null && shootAction.WasPressedThisFrame())
+        {
+            if (!isCrouching || allowShootWhileCrouching)
+                TryStartShoot();
         }
 
-        // --- GROUND ---
-        isGrounded = col.IsTouchingLayers(groundLayer);
-
-        // Coyote time
+        // Coyote / buffer
         if (isGrounded) coyoteCounter = coyoteTime;
         else coyoteCounter -= Time.deltaTime;
 
-        // Jump buffer timer
         jumpBufferCounter -= Time.deltaTime;
 
-        // --- ANIMATOR ---
+        // Animator base
         if (animator != null)
         {
             float maxSpeed = isRunning ? runSpeed : walkSpeed;
-            float speed01 = Mathf.InverseLerp(0f, maxSpeed, Mathf.Abs(rb.linearVelocity.x));
+
+            float effectiveVX =
+                (isMovementLocked ||
+                 (freezeMovementWhileCrouching && isCrouching) ||
+                 (freezeMovementWhileAttacking && isAttacking) ||
+                 (isReloading && lockMovementWhileReloading))
+                ? 0f
+                : rb.linearVelocity.x;
+
+            float speed01 = Mathf.InverseLerp(0f, maxSpeed, Mathf.Abs(effectiveVX));
 
             animator.SetFloat(speedParam, speed01);
             animator.SetBool(groundedParam, isGrounded);
             animator.SetBool(runParam, isRunning);
+            if (!string.IsNullOrEmpty(deadBool)) animator.SetBool(deadBool, isDead);
         }
 
-        // --- FLIP ---
-        if (flipWithDirection && Mathf.Abs(moveInput.x) > 0.01f)
+        // Flip
+        if (flipWithDirection && !isMovementLocked && !isCrouching && !isReloading && Mathf.Abs(moveInput.x) > 0.01f)
         {
             Vector3 scale = transform.localScale;
             scale.x = Mathf.Sign(moveInput.x) * Mathf.Abs(scale.x);
@@ -149,23 +249,57 @@ public class PlayerMovement2D : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (isDead) return;
+
+        isGrounded = col.IsTouchingLayers(groundLayer);
+
+        // Lock timer (shoot/attack/reload)
+        if (isMovementLocked)
+        {
+            movementLockTimer -= Time.fixedDeltaTime;
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+
+            if (movementLockTimer <= 0f)
+                UnlockMovement();
+
+            TryConsumeJump();
+            return;
+        }
+
+        // Recarga: inmóvil en X
+        if (isReloading && lockMovementWhileReloading)
+        {
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            //TryConsumeJump();
+            return;
+        }
+
+        // Crouch: inmóvil en X
+        if (freezeMovementWhileCrouching && isCrouching)
+        {
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            TryConsumeJump();
+            return;
+        }
+
         float targetSpeed = isRunning ? runSpeed : walkSpeed;
 
+        // Ataque: inmóvil en X si corresponde
         if (!(freezeMovementWhileAttacking && isAttacking))
-        {
-            rb.linearVelocity = new Vector2(
-                moveInput.x * targetSpeed,
-                rb.linearVelocity.y
-            );
-        }
+            rb.linearVelocity = new Vector2(moveInput.x * targetSpeed, rb.linearVelocity.y);
+        else
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
 
         TryConsumeJump();
     }
 
     void TryConsumeJump()
     {
-        // Si quieres impedir saltar mientras atacas:
-        // if (isAttacking) return;
+        if (isCrouching && !allowJumpWhileCrouching)
+            return;
+
+        // Si quieres bloquear salto durante recarga, descomenta:
+        // if (isReloading) return;
 
         if (jumpBufferCounter > 0f && coyoteCounter > 0f)
         {
@@ -179,9 +313,39 @@ public class PlayerMovement2D : MonoBehaviour
         }
     }
 
+    // ---------- MOVEMENT LOCK ----------
+    void LockMovement(float seconds, bool freezeXWithConstraints)
+    {
+        isMovementLocked = true;
+        movementLockTimer = seconds;
+        lockFreezesX = freezeXWithConstraints;
+
+        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+
+        if (freezeXWithConstraintsWhileLocked && freezeXWithConstraints)
+        {
+            baseConstraints = rb.constraints;
+            rb.constraints = baseConstraints | RigidbodyConstraints2D.FreezePositionX;
+        }
+    }
+
+    void UnlockMovement()
+    {
+        isMovementLocked = false;
+        movementLockTimer = 0f;
+
+        if (freezeXWithConstraintsWhileLocked && lockFreezesX)
+        {
+            rb.constraints = baseConstraints;
+            lockFreezesX = false;
+        }
+    }
+
+    // ---------- ATAQUE ----------
     void TryStartAttack()
     {
-        if (isAttacking) return;
+        if (isAttacking || isDead) return;
+        if (isReloading) return;
 
         if (attackRoutine != null)
             StopCoroutine(attackRoutine);
@@ -197,21 +361,184 @@ public class PlayerMovement2D : MonoBehaviour
             animator.SetTrigger(attackTrigger);
 
         if (freezeMovementWhileAttacking)
-            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            LockMovement(attackDuration, freezeXWithConstraints: true);
 
         yield return new WaitForSeconds(attackDuration);
 
         isAttacking = false;
         attackRoutine = null;
+
+        if (isMovementLocked) UnlockMovement();
     }
+
+    // ---------- SHOOT ----------
+    void TryStartShoot()
+    {
+        if (isDead) return;
+        if (isReloading) return;
+        if (!canShoot) return;
+
+        // Si el cargador ya está “lleno” de disparos, recarga (por si acaso)
+        if (enableReload && magSize > 0 && shotsInMag >= magSize)
+        {
+            StartReload();
+            return;
+        }
+
+        if (animator != null && !string.IsNullOrEmpty(shootTrigger))
+            animator.SetTrigger(shootTrigger);
+
+        LockMovement(shootLockDuration, freezeXWithConstraints: true);
+
+        StartCoroutine(ShootCooldownRoutine());
+        // El disparo real sale por Animation Event -> Anim_FireBullet()
+    }
+
+    IEnumerator ShootCooldownRoutine()
+    {
+        canShoot = false;
+        yield return new WaitForSeconds(shootCooldown);
+        canShoot = true;
+    }
+
+    // ---------- RELOAD ----------
+    void StartReload()
+    {
+        if (!enableReload) return;
+        if (isReloading) return;
+
+        isReloading = true;
+        canShoot = false;
+
+        // Dispara trigger de anim
+        if (animator != null && !string.IsNullOrEmpty(reloadTrigger))
+            animator.SetTrigger(reloadTrigger);
+
+        if (reloadRoutine != null) StopCoroutine(reloadRoutine);
+        reloadRoutine = StartCoroutine(ReloadRoutine());
+    }
+
+
+    IEnumerator ReloadRoutine()
+    {
+        yield return new WaitForSeconds(reloadTime);
+        FinishReload();
+    }
+
+    void FinishReload()
+    {
+        shotsInMag = 0;
+        isReloading = false;
+        canShoot = true;
+
+        if (reloadRoutine != null)
+        {
+            StopCoroutine(reloadRoutine);
+            reloadRoutine = null;
+        }
+
+        // 🔥 por si acaso había un lock de disparo todavía activo:
+        if (isMovementLocked) UnlockMovement();
+    }
+
+    // ✅ Si quieres, llama a esto desde un Animation Event al final del clip Reload
+    public void Anim_ReloadComplete()
+    {
+        if (!isReloading) return;
+        FinishReload();
+    }
+
+    // ---------- Disparo (Animation Event) ----------
+    public void Anim_FireBullet() => SpawnBullet();
+    public void FireBullet() => SpawnBullet();
+    public void FireProjectile() => SpawnBullet();
+
+    void SpawnBullet()
+    {
+        if (isDead) return;
+        if (isReloading) return;
+
+        if (bulletPrefab == null || shootPoint == null)
+        {
+            if (debugLogs) Debug.LogWarning("[SHOOT] Falta bulletPrefab o shootPoint");
+            return;
+        }
+
+        GameObject b = Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity);
+
+        var rbB = b.GetComponent<Rigidbody2D>();
+        if (rbB != null)
+        {
+            float facing = Mathf.Sign(transform.localScale.x);
+            rbB.linearVelocity = new Vector2(facing * bulletSpeed, 0f);
+        }
+
+        var p = b.GetComponent<Projectile>();
+        if (p != null)
+        {
+            p.shooterTag = "Player";
+            p.damage = bulletDamage;
+        }
+
+        // ✅ Contar disparos AQUÍ (solo si realmente salió la bala)
+        if (enableReload && magSize > 0)
+        {
+            shotsInMag++;
+
+            // Al llegar al límite, comenzar recarga
+            if (shotsInMag >= magSize)
+                StartReload();
+        }
+    }
+
+    // ---------- Daño / muerte ----------
+    public void OnHurt()
+    {
+        if (isDead) return;
+        if (animator != null && !string.IsNullOrEmpty(hurtTrigger))
+            animator.SetTrigger(hurtTrigger);
+    }
+
+    public void OnDie()
+    {
+        if (isDead) return;
+
+        isDead = true;
+
+        if (reloadRoutine != null) StopCoroutine(reloadRoutine);
+        reloadRoutine = null;
+
+        isReloading = false;
+        canShoot = false;
+
+        UnlockMovement();
+
+        rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+        if (visual != null)
+            visual.localPosition = visualStartLocalPos + new Vector3(0f, deathVisualYOffset, 0f);
+
+        playerInput.currentActionMap?.Disable();
+
+        if (animator != null)
+        {
+            if (!string.IsNullOrEmpty(deadBool))
+                animator.SetBool(deadBool, true);
+
+            if (!string.IsNullOrEmpty(dieTrigger))
+                animator.SetTrigger(dieTrigger);
+        }
+    }
+
+    public bool IsDead() => isDead;
 
     void OnGUI()
     {
         if (!debugHUD) return;
-
-        GUI.Label(new Rect(10, 10, 500, 20), $"Grounded: {isGrounded}");
-        GUI.Label(new Rect(10, 30, 500, 20), $"Run: {isRunning}  Attacking: {isAttacking}");
-        GUI.Label(new Rect(10, 50, 500, 20), $"SpeedX: {Mathf.Abs(rb.linearVelocity.x):F2}  VelY: {rb.linearVelocity.y:F2}");
-        GUI.Label(new Rect(10, 70, 500, 20), $"Coyote: {coyoteCounter:F2}  Buffer: {jumpBufferCounter:F2}");
+        GUI.Label(new Rect(10, 10, 700, 20), $"Grounded: {isGrounded}");
+        GUI.Label(new Rect(10, 30, 1100, 20),
+            $"Move: {moveInput}  Crouch: {isCrouching}  Attacking: {isAttacking}  Reloading: {isReloading}  Shots: {shotsInMag}/{magSize}  Locked: {isMovementLocked}  Dead: {isDead}");
     }
 }
