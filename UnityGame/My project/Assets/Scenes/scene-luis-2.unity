@@ -332,7 +332,7 @@ MonoBehaviour:
   patrolDistance: 5
   flipWithDirection: 1
   deathDisableDelay: 1.5
-  deathVisualYOffset: -0.53
+  deathVisualYOffset: -0.52
 --- !u!61 &71630525
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1378,9 +1378,9 @@ MonoBehaviour:
   shootPoint: {fileID: 1173560215}
   bulletPrefab: {fileID: 3145217710079279033, guid: dca6a6eccdb9dd54a8b7b6b9eba9534b, type: 3}
   bulletSpeed: 12
-  shootCooldown: 0.21
+  shootCooldown: 0.5
   bulletDamage: 1
-  shootLockDuration: 0.15
+  shootLockDuration: 0.5
   enableReload: 1
   magSize: 6
   reloadTime: 1
@@ -3481,7 +3481,7 @@ Transform:
   m_GameObject: {fileID: 985908408}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.13, y: -3.5, z: 0}
+  m_LocalPosition: {x: 35.09, y: -3.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
