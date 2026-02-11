@@ -23,4 +23,9 @@ public class PlayerAnimEvents : MonoBehaviour
     {
         if (pm != null) pm.Anim_FireBullet();
     }
+    public void Anim_ReloadComplete()
+    {
+        if (pm != null)
+            pm.Anim_ReloadComplete();
+    }
 }
