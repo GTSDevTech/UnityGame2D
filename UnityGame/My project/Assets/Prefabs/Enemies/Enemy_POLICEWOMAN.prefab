@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1936972945623876587}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.7, y: -0.34, z: 0}
+  m_LocalPosition: {x: 8.718124, y: 0.8501947, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1414362637
-  m_SortingLayer: 3
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -197,6 +197,7 @@ MonoBehaviour:
   hurtTrigger: Hurt
   dieTrigger: Die
   deadBool: IsDead
+  reloadTrigger: Reload
   maxHealth: 3
   hurtStunTime: 0.25
   shootPoint: {fileID: 4132044310522737214}
@@ -212,6 +213,9 @@ MonoBehaviour:
   shootDistance: 5
   shootDuration: 0.6
   shootCooldown: 0.8
+  shotsBeforeReload: 3
+  reloadDuration: 1.2
+  postReloadCooldown: 1.2
   patrolDistance: 5
   flipWithDirection: 1
   deathDisableDelay: 1.5
@@ -591,7 +595,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1414362637
-  m_SortingLayer: 3
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4249540632753133778, guid: 70cf6254c399a30479d132aac6723c10, type: 3}

@@ -58,8 +58,8 @@ public class PlayerHealth : MonoBehaviour
         yield return new WaitForSeconds(deathDestroyDelay);
 
         // Opciones:
-        Destroy(gameObject);
+        //Destroy(gameObject);
         // o si prefieres no destruir:
-        // gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 }
