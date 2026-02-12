@@ -1,0 +1,1534 @@
+fileFormatVersion: 2
+guid: 2e86f71ed6ded034da408bd894f8db83
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4483480719384508566
+    second: mujer1_0
+  - first:
+      213: -4975275308875758352
+    second: mujer1_1
+  - first:
+      213: 8755227118926362253
+    second: mujer1_2
+  - first:
+      213: 1181349096938924318
+    second: mujer1_3
+  - first:
+      213: -7732709582980121189
+    second: mujer1_4
+  - first:
+      213: -9116734588702309803
+    second: mujer1_5
+  - first:
+      213: 2485389956233463898
+    second: mujer1_6
+  - first:
+      213: -4185078697058812669
+    second: mujer1_7
+  - first:
+      213: 1156391051546714869
+    second: mujer1_8
+  - first:
+      213: 3553972522855860169
+    second: mujer1_9
+  - first:
+      213: 1669503154325514599
+    second: mujer1_10
+  - first:
+      213: -269570736545125286
+    second: mujer1_11
+  - first:
+      213: 2613392705813526474
+    second: mujer1_12
+  - first:
+      213: 8253606827402606225
+    second: mujer1_13
+  - first:
+      213: -7650824425593169961
+    second: mujer1_14
+  - first:
+      213: -2937508864281490215
+    second: mujer1_15
+  - first:
+      213: 7989412303569530409
+    second: mujer1_16
+  - first:
+      213: 1642422051488770712
+    second: mujer1_17
+  - first:
+      213: 679658561850496033
+    second: mujer1_18
+  - first:
+      213: 4688573693585425626
+    second: mujer1_19
+  - first:
+      213: -4423092210444168941
+    second: mujer1_20
+  - first:
+      213: 930068162039050679
+    second: mujer1_21
+  - first:
+      213: -4931914685398653075
+    second: mujer1_22
+  - first:
+      213: -3231565871397846573
+    second: mujer1_23
+  - first:
+      213: -8837886471595926459
+    second: mujer1_24
+  - first:
+      213: -5044249330183088738
+    second: mujer1_25
+  - first:
+      213: -4980278263026287602
+    second: mujer1_26
+  - first:
+      213: 2801106396111019425
+    second: mujer1_27
+  - first:
+      213: -4266764380761243748
+    second: mujer1_28
+  - first:
+      213: -7381084483915228751
+    second: mujer1_29
+  - first:
+      213: -1090766701167445805
+    second: mujer1_30
+  - first:
+      213: 6455819914097347477
+    second: mujer1_31
+  - first:
+      213: 3407088077765835483
+    second: mujer1_32
+  - first:
+      213: 7519162133514742847
+    second: mujer1_33
+  - first:
+      213: 3315186577115967533
+    second: mujer1_34
+  - first:
+      213: 3845268733468637244
+    second: mujer1_35
+  - first:
+      213: -5641123763067053143
+    second: mujer1_36
+  - first:
+      213: -7777213558425094417
+    second: mujer1_37
+  - first:
+      213: -8336947953077482997
+    second: mujer1_38
+  - first:
+      213: 3668420855310008815
+    second: mujer1_39
+  - first:
+      213: 628957954628810598
+    second: mujer1_40
+  - first:
+      213: -4579901342708727588
+    second: mujer1_41
+  - first:
+      213: -4848702346564484919
+    second: mujer1_42
+  - first:
+      213: -8356099453735113204
+    second: mujer1_43
+  - first:
+      213: 2275711765994310335
+    second: mujer1_44
+  - first:
+      213: -2714743713409775198
+    second: mujer1_45
+  - first:
+      213: -225423885507364746
+    second: mujer1_46
+  - first:
+      213: 2940233168843083988
+    second: mujer1_47
+  - first:
+      213: 397562956861929240
+    second: mujer1_48
+  - first:
+      213: 1948770336262333460
+    second: mujer1_49
+  - first:
+      213: 1302298903432005490
+    second: mujer1_50
+  - first:
+      213: 3548899526883299049
+    second: mujer1_51
+  - first:
+      213: 644484022470131964
+    second: mujer1_52
+  - first:
+      213: 8396883891951503103
+    second: mujer1_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mujer1_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 566
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 698f934b5f5883e30800000000000000
+      internalID: 4483480719384508566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 566
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f440ba777544fab0800000000000000
+      internalID: -4975275308875758352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_2
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 566
+        width: 13
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d86f87f6da0d08970800000000000000
+      internalID: 8755227118926362253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_3
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 566
+        width: 33
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19e5ce9ebef46010800000000000000
+      internalID: 1181349096938924318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_4
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 566
+        width: 34
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9df53b9a95efa490800000000000000
+      internalID: -7732709582980121189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_5
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 566
+        width: 33
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 552c1e0b13ada7180800000000000000
+      internalID: -9116734588702309803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_6
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 566
+        width: 33
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a588e9d3ff0ed7220800000000000000
+      internalID: 2485389956233463898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_7
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 567
+        width: 33
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d31c8391d9be5c0800000000000000
+      internalID: -4185078697058812669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_8
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 566
+        width: 33
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2e1e8d8835c0010800000000000000
+      internalID: 1156391051546714869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_9
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 434
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c782560e2f325130800000000000000
+      internalID: 3553972522855860169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 434
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76967f006444b2710800000000000000
+      internalID: 1669503154325514599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_11
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 434
+        width: 13
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5c2366e7da424cf0800000000000000
+      internalID: -269570736545125286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_12
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 434
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7bc90d1d2a44420800000000000000
+      internalID: 2613392705813526474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_13
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 434
+        width: 36
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19632171ea3ba8270800000000000000
+      internalID: 8253606827402606225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_14
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 434
+        width: 40
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d713a188bfc2d590800000000000000
+      internalID: -7650824425593169961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_15
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 434
+        width: 41
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dcc0f3604fdb37d0800000000000000
+      internalID: -2937508864281490215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_16
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 434
+        width: 39
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ea56e092810ee60800000000000000
+      internalID: 7989412303569530409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_17
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 434
+        width: 38
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89aa146672e0bc610800000000000000
+      internalID: 1642422051488770712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_18
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 434
+        width: 40
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 124d6ab6cd1ae6900800000000000000
+      internalID: 679658561850496033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_19
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 308
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad48665eee8211140800000000000000
+      internalID: 4688573693585425626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_20
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 308
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3119da3b1150e92c0800000000000000
+      internalID: -4423092210444168941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_21
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 309
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b1fc3fc01448ec00800000000000000
+      internalID: 930068162039050679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_22
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 308
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67e74a59b15e8bb0800000000000000
+      internalID: -4931914685398653075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_23
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 308
+        width: 28
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d14e0726fb2723d0800000000000000
+      internalID: -3231565871397846573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_24
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 309
+        width: 32
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c5b474415895580800000000000000
+      internalID: -8837886471595926459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_25
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 308
+        width: 40
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e955fe3b5f93ff9b0800000000000000
+      internalID: -5044249330183088738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_26
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 308
+        width: 33
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0cf7b17e4f72eab0800000000000000
+      internalID: -4980278263026287602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_27
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 308
+        width: 22
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad95462d678fd620800000000000000
+      internalID: 2801106396111019425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_28
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 308
+        width: 28
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9fbf68e66869c4c0800000000000000
+      internalID: -4266764380761243748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_29
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 308
+        width: 34
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9d51fb4ce119990800000000000000
+      internalID: -7381084483915228751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_30
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 308
+        width: 41
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8f614e671dcd0f0800000000000000
+      internalID: -1090766701167445805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_31
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 188
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59b4aa9e10ea79950800000000000000
+      internalID: 6455819914097347477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 188
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bda73b12e88684f20800000000000000
+      internalID: 3407088077765835483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_33
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 188
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ce6b84f1e695860800000000000000
+      internalID: 7519162133514742847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_34
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 188
+        width: 43
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20f32590a8e10e20800000000000000
+      internalID: 3315186577115967533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_35
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 188
+        width: 50
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38705c3a832d5530800000000000000
+      internalID: 3845268733468637244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_36
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 189
+        width: 53
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ab9f5053d3b6b1b0800000000000000
+      internalID: -5641123763067053143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_37
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 188
+        width: 34
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe678bb5979c11490800000000000000
+      internalID: -7777213558425094417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_38
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 188
+        width: 41
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a85e9f1063d4c80800000000000000
+      internalID: -8336947953077482997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_39
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 188
+        width: 41
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1436fe459d8e230800000000000000
+      internalID: 3668420855310008815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_40
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 188
+        width: 49
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6677e486de18ab800800000000000000
+      internalID: 628957954628810598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_41
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 190
+        width: 56
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd003818efbe070c0800000000000000
+      internalID: -4579901342708727588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_42
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 64
+        width: 9
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c0cb63c7e2f5bcb0800000000000000
+      internalID: -4848702346564484919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_43
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 67
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e6840c1db290c80800000000000000
+      internalID: -8356099453735113204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_44
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 67
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fba844f3bc3f49f10800000000000000
+      internalID: 2275711765994310335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_45
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 67
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a94cf9d9fa435ad0800000000000000
+      internalID: -2714743713409775198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_46
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 67
+        width: 32
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 678f174ab222fdcf0800000000000000
+      internalID: -225423885507364746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_47
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 67
+        width: 40
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d096b13d7ecdc820800000000000000
+      internalID: 2940233168843083988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_48
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 67
+        width: 28
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817fb93276d648500800000000000000
+      internalID: 397562956861929240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_49
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 68
+        width: 29
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4142cb9bb4c6b0b10800000000000000
+      internalID: 1948770336262333460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_50
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 72
+        width: 30
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277027ae3f1b21210800000000000000
+      internalID: 1302298903432005490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_51
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 75
+        width: 34
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ee4e6b1159304130800000000000000
+      internalID: 3548899526883299049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_52
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 71
+        width: 36
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf04fb6cdcaa1f800800000000000000
+      internalID: 644484022470131964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mujer1_53
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 67
+        width: 39
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff608ff3969b78470800000000000000
+      internalID: 8396883891951503103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mujer1_0: 4483480719384508566
+      mujer1_1: -4975275308875758352
+      mujer1_10: 1669503154325514599
+      mujer1_11: -269570736545125286
+      mujer1_12: 2613392705813526474
+      mujer1_13: 8253606827402606225
+      mujer1_14: -7650824425593169961
+      mujer1_15: -2937508864281490215
+      mujer1_16: 7989412303569530409
+      mujer1_17: 1642422051488770712
+      mujer1_18: 679658561850496033
+      mujer1_19: 4688573693585425626
+      mujer1_2: 8755227118926362253
+      mujer1_20: -4423092210444168941
+      mujer1_21: 930068162039050679
+      mujer1_22: -4931914685398653075
+      mujer1_23: -3231565871397846573
+      mujer1_24: -8837886471595926459
+      mujer1_25: -5044249330183088738
+      mujer1_26: -4980278263026287602
+      mujer1_27: 2801106396111019425
+      mujer1_28: -4266764380761243748
+      mujer1_29: -7381084483915228751
+      mujer1_3: 1181349096938924318
+      mujer1_30: -1090766701167445805
+      mujer1_31: 6455819914097347477
+      mujer1_32: 3407088077765835483
+      mujer1_33: 7519162133514742847
+      mujer1_34: 3315186577115967533
+      mujer1_35: 3845268733468637244
+      mujer1_36: -5641123763067053143
+      mujer1_37: -7777213558425094417
+      mujer1_38: -8336947953077482997
+      mujer1_39: 3668420855310008815
+      mujer1_4: -7732709582980121189
+      mujer1_40: 628957954628810598
+      mujer1_41: -4579901342708727588
+      mujer1_42: -4848702346564484919
+      mujer1_43: -8356099453735113204
+      mujer1_44: 2275711765994310335
+      mujer1_45: -2714743713409775198
+      mujer1_46: -225423885507364746
+      mujer1_47: 2940233168843083988
+      mujer1_48: 397562956861929240
+      mujer1_49: 1948770336262333460
+      mujer1_5: -9116734588702309803
+      mujer1_50: 1302298903432005490
+      mujer1_51: 3548899526883299049
+      mujer1_52: 644484022470131964
+      mujer1_53: 8396883891951503103
+      mujer1_6: 2485389956233463898
+      mujer1_7: -4185078697058812669
+      mujer1_8: 1156391051546714869
+      mujer1_9: 3553972522855860169
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
