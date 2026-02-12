@@ -9,6 +9,9 @@ public class PlayerHealth : MonoBehaviour
     int currentHealth;
     bool isDead;
     PlayerMovement2D pm;
+    public int CurrentHealth => currentHealth;
+    public float Health01 => maxHealth <= 0 ? 0f : Mathf.Clamp01((float)currentHealth / maxHealth);
+
 
     void Awake()
     {
