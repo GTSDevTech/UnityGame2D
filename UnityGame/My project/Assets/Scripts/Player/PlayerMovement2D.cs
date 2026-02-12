@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
@@ -576,6 +578,7 @@ public class PlayerMovement2D : MonoBehaviour
             if (!string.IsNullOrEmpty(dieTrigger))
                 animator.SetTrigger(dieTrigger);
         }
+        SceneManager.LoadScene("GameOverScene");
     }
 
     public bool IsDead() => isDead;
