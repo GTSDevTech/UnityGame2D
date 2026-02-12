@@ -67,17 +67,5 @@ TagManager:
   - name: UI
     uniqueID: 502939125
     locked: 0
-  - name: Background
-    uniqueID: 4009891369
-    locked: 0
-  - name: Ground
-    uniqueID: 2062245901
-    locked: 0
-  - name: Characters
-    uniqueID: 2880604659
-    locked: 0
-  - name: Bullets
-    uniqueID: 3629364009
-    locked: 0
   m_RenderingLayers:
   - Default
