@@ -115,6 +115,8 @@ public class PlayerMovement2D : MonoBehaviour
 
     public int maletines;
     public int votos;
+    public int maxVotos = 6;
+
 
     Vector3 visualStartLocalPos;
     Coroutine attackRoutine;

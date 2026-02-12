@@ -823,8 +823,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HUDController
   player: {fileID: 0}
+  playerHealth: {fileID: 0}
   votesFill: {fileID: 4863322043301439969}
-  maxVotos: 10
   fundsFill: {fileID: 7594753748100783581}
   maxFondos: 10
   ammoText: {fileID: 1313035576031116234}

@@ -186,7 +186,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2815617954361801450, guid: a21489e5da88c5045a40e681155769c4, type: 3}
       propertyPath: votos
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2815617954361801450, guid: a21489e5da88c5045a40e681155769c4, type: 3}
       propertyPath: ammoInMag
