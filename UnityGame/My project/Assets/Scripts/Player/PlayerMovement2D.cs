@@ -578,8 +578,15 @@ public class PlayerMovement2D : MonoBehaviour
             if (!string.IsNullOrEmpty(dieTrigger))
                 animator.SetTrigger(dieTrigger);
         }
-        SceneManager.LoadScene("GameOverScene");
+        StartCoroutine(LoadGameOverDelayed());
     }
+
+    IEnumerator LoadGameOverDelayed()
+    {
+        yield return new WaitForSeconds(3f); // ⏱ espera 3 segundos
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOverScene");
+    }
+
 
     public bool IsDead() => isDead;
 
