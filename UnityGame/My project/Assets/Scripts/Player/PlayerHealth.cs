@@ -4,11 +4,10 @@ using System.Collections;
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 5;
-    public float deathDestroyDelay = 1.2f; // pon aquí lo que dure tu anim de muerte
+    public float deathAnimTime = 1.2f;
 
     int currentHealth;
     bool isDead;
-
     PlayerMovement2D pm;
 
     void Awake()
@@ -18,7 +17,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Start()
     {
-        currentHealth = maxHealth;
+        ResetHealth();
     }
 
     public void TakeDamage(int damage)
@@ -28,14 +27,12 @@ public class PlayerHealth : MonoBehaviour
         currentHealth -= damage;
         Debug.Log("Player HP: " + currentHealth);
 
-        // ? Hurt anim (si aún vive)
         if (currentHealth > 0)
         {
             if (pm != null) pm.OnHurt();
             return;
         }
 
-        // ? Muere
         Die();
     }
 
@@ -46,20 +43,32 @@ public class PlayerHealth : MonoBehaviour
 
         Debug.Log("PLAYER MUERTO");
 
-        // ? dispara animación y bloquea input (lo hace tu PlayerMovement2D)
         if (pm != null) pm.OnDie();
 
-        // ? espera a que termine la anim antes de destruir (o desactivar)
         StartCoroutine(DeathRoutine());
     }
 
     IEnumerator DeathRoutine()
     {
-        yield return new WaitForSeconds(deathDestroyDelay);
+        yield return new WaitForSeconds(deathAnimTime);
 
-        // Opciones:
-        //Destroy(gameObject);
-        // o si prefieres no destruir:
-        gameObject.SetActive(false);
+        if (CheckpointManager.I != null)
+            CheckpointManager.I.RespawnPlayer(transform);
+        else
+            Debug.LogWarning("No hay CheckpointManager, respawn cancelado.");
+    }
+
+    public void ResetAfterRespawn()
+    {
+        ResetHealth();
+        isDead = false;
+
+        if (pm != null)
+            pm.OnRespawn();
+    }
+
+    void ResetHealth()
+    {
+        currentHealth = maxHealth;
     }
 }

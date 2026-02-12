@@ -457,7 +457,7 @@ public class PlayerMovement2D : MonoBehaviour
         if (isMovementLocked) UnlockMovement();
     }
 
-    // ✅ Si quieres, llama a esto desde un Animation Event al final del clip Reload
+    //  Si quieres, llama a esto desde un Animation Event al final del clip Reload
     public void Anim_ReloadComplete()
     {
         if (!isReloading) return;
@@ -530,7 +530,7 @@ public class PlayerMovement2D : MonoBehaviour
     {
         ammoReserve += cantidad;
 
-        // ✅ Auto-recarga SOLO si estabas a 0
+        //  Auto-recarga SOLO si estabas a 0
         if (enableReload && !isReloading && ammoReserve > 0 && ammoInMag <= 0)
             StartReload();
 
@@ -580,6 +580,37 @@ public class PlayerMovement2D : MonoBehaviour
 
     public bool IsDead() => isDead;
 
+    public void OnRespawn()
+    {
+        isDead = false;
+
+        // Reactiva input
+        playerInput.currentActionMap?.Enable();
+
+        // Resetea físicas
+        rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+        // Reset animator
+        if (animator != null)
+        {
+            if (!string.IsNullOrEmpty(deadBool))
+                animator.SetBool(deadBool, false);
+
+            animator.Rebind();
+            animator.Update(0f);
+        }
+
+        // Reset visual
+        if (visual != null)
+            visual.localPosition = visualStartLocalPos;
+
+        // Limpia locks
+        isMovementLocked = false;
+        isReloading = false;
+        canShoot = true;
+    }
     void OnGUI()
     {
         if (!debugHUD) return;
