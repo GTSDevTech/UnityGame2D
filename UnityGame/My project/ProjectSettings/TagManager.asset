@@ -6,6 +6,7 @@ TagManager:
   tags:
   - shooterTag
   - Enemy
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -14,12 +15,12 @@ TagManager:
   - Water
   - UI
   - Ground
+  - Platform
+  - Hazard
   - Player
   - Enemy
-  - 
-  - 
-  - 
-  - 
+  - Proyectile_Player
+  - Proyectile_Enemy
   - 
   - 
   - 

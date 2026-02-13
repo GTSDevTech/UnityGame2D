@@ -9,13 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Settings/Scenes/StartScene.unity
+    path: Assets/_Project/Scenes/Test/Scenes/StartScene.unity
     guid: fa85146c16fdeed4f8fdb602030a3201
   - enabled: 1
-    path: Assets/Scenes/scene-luis-3.unity
+    path: Assets/_Project/Scenes/Test/scene-luis-3.unity
     guid: 30e2dcea0aa6c33499947a19e09b999a
   - enabled: 1
-    path: Assets/Settings/Scenes/GameOverScene.unity
+    path: Assets/_Project/Scenes/Test/Scenes/GameOverScene.unity
     guid: 30187e8a9f12f1b419f31f8d2d6dedcf
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

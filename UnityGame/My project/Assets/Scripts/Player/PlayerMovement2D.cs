@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(PlayerInput))]
@@ -26,15 +25,15 @@ public class PlayerMovement2D : MonoBehaviour
     public bool flipWithDirection = true;
 
     [Header("Animator Params")]
-    public string speedParam = "Speed";          // float (0-1)
-    public string groundedParam = "isGrounded";  // bool
-    public string runParam = "Run";              // bool
-    public string attackTrigger = "Attack";      // trigger
-    public string shootTrigger = "Shoot";        // trigger
-    public string reloadTrigger = "Reload";      // trigger
-    public string hurtTrigger = "Hurt";          // trigger
-    public string dieTrigger = "Die";            // trigger
-    public string deadBool = "IsDead";           // bool
+    public string speedParam = "Speed";
+    public string groundedParam = "isGrounded";
+    public string runParam = "Run";
+    public string attackTrigger = "Attack";
+    public string shootTrigger = "Shoot";
+    public string reloadTrigger = "Reload";
+    public string hurtTrigger = "Hurt";
+    public string dieTrigger = "Die";
+    public string deadBool = "IsDead";
 
     [Header("Ataque melee")]
     public float attackDuration = 0.35f;
@@ -52,36 +51,41 @@ public class PlayerMovement2D : MonoBehaviour
 
     [Header("Ammo / Reload (recarga)")]
     public bool enableReload = true;
-    [Tooltip("Balas por cargador.")]
     public int magSize = 6;
-    [Tooltip("Tiempo de recarga (si NO usas Animation Event de fin).")]
     public float reloadTime = 1.0f;
-    [Tooltip("Bloquea movimiento durante recarga.")]
     public bool lockMovementWhileReloading = true;
 
-    [Tooltip("Balas actuales en cargador.")]
     public int ammoInMag = 6;
-    [Tooltip("Balas en reserva (lo que te dan los pickups).")]
     public int ammoReserve = 0;
 
     [Header("Lock de movimiento (general)")]
-    [Tooltip("Si está activado, además de velocidad 0, congela X con constraints durante locks.")]
     public bool freezeXWithConstraintsWhileLocked = true;
 
-    [Header("Ground")]
+    [Header("Ground / Platforms")]
+    [Tooltip("Incluye Ground + Platform si quieres que plataformas one-way cuenten como suelo.")]
     public LayerMask groundLayer;
+
+    [Header("Drop Through Platforms (opcional)")]
+    public bool enableDropThroughPlatforms = true;
+
+    [Tooltip("Layer (Physics Layer) de las plataformas one-way (tu 'Platform').")]
+    public string platformPhysicsLayerName = "Platform";
+
+    [Tooltip("Tiempo que se ignora la colisión al hacer down+jump.")]
+    public float dropThroughSeconds = 0.25f;
+
+    [Tooltip("Empujón hacia abajo para despegarse de la plataforma al hacer drop.")]
+    public float dropDownVelocity = 2.5f;
+
+    [Tooltip("Pequeño offset hacia abajo para salir del contacto el mismo frame.")]
+    public float dropDownPositionNudge = 0.03f;
 
     [Header("Crouch (Agacharse)")]
     public bool enableCrouch = true;
-    [Tooltip("Se considera agachado si moveInput.y <= crouchThreshold (mantener S / abajo).")]
     public float crouchThreshold = -0.5f;
-    [Tooltip("Bool en el Animator para agacharse.")]
     public string crouchBoolParam = "IsCrouching";
-    [Tooltip("Si está agachado, no se mueve.")]
     public bool freezeMovementWhileCrouching = true;
-    [Tooltip("Permitir saltar estando agachado.")]
     public bool allowJumpWhileCrouching = false;
-    [Tooltip("Permitir disparar estando agachado.")]
     public bool allowShootWhileCrouching = true;
 
     [Header("Debug")]
@@ -117,7 +121,6 @@ public class PlayerMovement2D : MonoBehaviour
     public int votos;
     public int maxVotos = 6;
 
-
     Vector3 visualStartLocalPos;
     Coroutine attackRoutine;
 
@@ -130,6 +133,10 @@ public class PlayerMovement2D : MonoBehaviour
     // ---- RELOAD STATE ----
     bool isReloading = false;
     Coroutine reloadRoutine;
+
+    // ---- DROP THROUGH ----
+    Coroutine dropRoutine;
+    int cachedPlatformLayer = -1;
 
     void Awake()
     {
@@ -163,8 +170,11 @@ public class PlayerMovement2D : MonoBehaviour
         attackAction = playerInput.actions["Attack"];
         shootAction = playerInput.actions["Shoot"];
 
-        // Asegura que el cargador no empiece por encima del magSize
         ammoInMag = Mathf.Clamp(ammoInMag, 0, magSize);
+
+        cachedPlatformLayer = LayerMask.NameToLayer(platformPhysicsLayerName);
+        if (enableDropThroughPlatforms && cachedPlatformLayer < 0 && debugLogs)
+            Debug.LogWarning($"[PLATFORM] No existe Physics Layer '{platformPhysicsLayerName}'.");
     }
 
     void OnEnable()
@@ -193,7 +203,7 @@ public class PlayerMovement2D : MonoBehaviour
 
         moveInput = moveAction != null ? moveAction.ReadValue<Vector2>() : Vector2.zero;
 
-        // Ground
+        // Ground (incluye Platform si quieres)
         isGrounded = col.IsTouchingLayers(groundLayer);
 
         // Crouch hold
@@ -210,9 +220,26 @@ public class PlayerMovement2D : MonoBehaviour
         // Si está atacando / locked / crouching / recargando -> no correr
         isRunning = (!isAttacking && !isMovementLocked && !isCrouching && !isReloading) ? sprintPressed : false;
 
+        bool jumpPressedThisFrame = (jumpAction != null && jumpAction.WasPressedThisFrame());
+
         // Jump buffer
-        if (jumpAction != null && jumpAction.WasPressedThisFrame())
+        if (jumpPressedThisFrame)
             jumpBufferCounter = jumpBufferTime;
+
+        // ✅ DROP-THROUGH: abajo + salto estando grounded -> atraviesa plataformas
+        // Nota: aunque estés "agachado", esto debe funcionar (y NO debe intentar salto normal).
+        if (enableDropThroughPlatforms && isGrounded && jumpPressedThisFrame)
+        {
+            bool pressingDown = (moveInput.y <= crouchThreshold);
+            if (pressingDown)
+            {
+                if (TryDropThroughPlatform())
+                {
+                    // Consumimos buffer para que no intente saltar
+                    jumpBufferCounter = 0f;
+                }
+            }
+        }
 
         // Ataque (no durante recarga)
         if (!isAttacking && !isMovementLocked && !isReloading && attackAction != null && attackAction.WasPressedThisFrame())
@@ -284,7 +311,6 @@ public class PlayerMovement2D : MonoBehaviour
         if (isReloading && lockMovementWhileReloading)
         {
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
-            //TryConsumeJump();
             return;
         }
 
@@ -322,6 +348,38 @@ public class PlayerMovement2D : MonoBehaviour
             jumpBufferCounter = 0f;
             coyoteCounter = 0f;
         }
+    }
+
+    // ---------- DROP THROUGH PLATFORMS ----------
+    bool TryDropThroughPlatform()
+    {
+        int platformLayer = cachedPlatformLayer;
+        if (platformLayer < 0) return false;
+
+        int playerLayer = gameObject.layer;
+
+        // Ignora colisión por layer un rato
+        if (dropRoutine != null) StopCoroutine(dropRoutine);
+        dropRoutine = StartCoroutine(DropThroughRoutine(playerLayer, platformLayer, dropThroughSeconds));
+
+        // ✅ Empujón para “salir” del contacto (esto hace que funcione en la práctica)
+        // - pequeño nudge hacia abajo
+        rb.position += Vector2.down * Mathf.Max(0f, dropDownPositionNudge);
+
+        // - asegura velocidad hacia abajo (sin matar tu X)
+        float vy = rb.linearVelocity.y;
+        if (vy > 0f) vy = 0f;
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, -Mathf.Max(0.5f, dropDownVelocity));
+
+        return true;
+    }
+
+    IEnumerator DropThroughRoutine(int playerLayer, int platformLayer, float seconds)
+    {
+        Physics2D.IgnoreLayerCollision(playerLayer, platformLayer, true);
+        yield return new WaitForSeconds(Mathf.Max(0.05f, seconds));
+        Physics2D.IgnoreLayerCollision(playerLayer, platformLayer, false);
+        dropRoutine = null;
     }
 
     // ---------- MOVEMENT LOCK ----------
@@ -389,7 +447,6 @@ public class PlayerMovement2D : MonoBehaviour
         if (isReloading) return;
         if (!canShoot) return;
 
-        // Si no quedan balas en cargador, recarga si puedes
         if (enableReload && magSize > 0 && ammoInMag <= 0)
         {
             if (ammoReserve > 0) StartReload();
@@ -418,10 +475,7 @@ public class PlayerMovement2D : MonoBehaviour
         if (!enableReload) return;
         if (isReloading) return;
 
-        // No recargues si ya está lleno
         if (ammoInMag >= magSize) return;
-
-        // No recargues si no hay reserva
         if (ammoReserve <= 0) return;
 
         isReloading = true;
@@ -457,11 +511,9 @@ public class PlayerMovement2D : MonoBehaviour
             reloadRoutine = null;
         }
 
-        // por si acaso había un lock de disparo todavía activo:
         if (isMovementLocked) UnlockMovement();
     }
 
-    //  Si quieres, llama a esto desde un Animation Event al final del clip Reload
     public void Anim_ReloadComplete()
     {
         if (!isReloading) return;
@@ -500,7 +552,6 @@ public class PlayerMovement2D : MonoBehaviour
             p.damage = bulletDamage;
         }
 
-        // ✅ Gasta 1 bala real
         if (enableReload && magSize > 0)
         {
             ammoInMag = Mathf.Max(0, ammoInMag - 1);
@@ -511,6 +562,7 @@ public class PlayerMovement2D : MonoBehaviour
     }
 
     // ---------- POWERUPS ----------
+    // ✅ Arregla el CS1061 de ScriptPowerUp.cs
     public void AgregarPowerUp(TipoPowerUp tipo)
     {
         switch (tipo)
@@ -518,23 +570,19 @@ public class PlayerMovement2D : MonoBehaviour
             case TipoPowerUp.Maletin:
                 maletines++;
                 break;
-
             case TipoPowerUp.Voto:
                 votos++;
                 break;
-
             case TipoPowerUp.Municion:
-                RecargarMunicionExtra(6); // ✅ cada cargador suma 6 a reserva
+                RecargarMunicionExtra(6);
                 break;
         }
     }
 
-    // Ahora munición extra = sumar a reserva
     public void RecargarMunicionExtra(int cantidad)
     {
         ammoReserve += cantidad;
 
-        //  Auto-recarga SOLO si estabas a 0
         if (enableReload && !isReloading && ammoReserve > 0 && ammoInMag <= 0)
             StartReload();
 
@@ -580,15 +628,15 @@ public class PlayerMovement2D : MonoBehaviour
             if (!string.IsNullOrEmpty(dieTrigger))
                 animator.SetTrigger(dieTrigger);
         }
+
         StartCoroutine(LoadGameOverDelayed());
     }
 
     IEnumerator LoadGameOverDelayed()
     {
-        yield return new WaitForSeconds(3f); // ⏱ espera 3 segundos
-        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOverScene");
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene("GameOverScene");
     }
-
 
     public bool IsDead() => isDead;
 
@@ -596,15 +644,12 @@ public class PlayerMovement2D : MonoBehaviour
     {
         isDead = false;
 
-        // Reactiva input
         playerInput.currentActionMap?.Enable();
 
-        // Resetea físicas
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
-        // Reset animator
         if (animator != null)
         {
             if (!string.IsNullOrEmpty(deadBool))
@@ -614,15 +659,14 @@ public class PlayerMovement2D : MonoBehaviour
             animator.Update(0f);
         }
 
-        // Reset visual
         if (visual != null)
             visual.localPosition = visualStartLocalPos;
 
-        // Limpia locks
         isMovementLocked = false;
         isReloading = false;
         canShoot = true;
     }
+
     void OnGUI()
     {
         if (!debugHUD) return;
