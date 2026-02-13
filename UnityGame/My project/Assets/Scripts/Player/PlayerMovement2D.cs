@@ -115,6 +115,8 @@ public class PlayerMovement2D : MonoBehaviour
 
     public int maletines;
     public int votos;
+    public int maxVotos = 6;
+
 
     Vector3 visualStartLocalPos;
     Coroutine attackRoutine;
@@ -578,8 +580,15 @@ public class PlayerMovement2D : MonoBehaviour
             if (!string.IsNullOrEmpty(dieTrigger))
                 animator.SetTrigger(dieTrigger);
         }
-        SceneManager.LoadScene("GameOverScene");
+        StartCoroutine(LoadGameOverDelayed());
     }
+
+    IEnumerator LoadGameOverDelayed()
+    {
+        yield return new WaitForSeconds(3f); // ⏱ espera 3 segundos
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOverScene");
+    }
+
 
     public bool IsDead() => isDead;
 
