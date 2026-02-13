@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7fbf732b531e35048acf5e67c2651f6c
+guid: bc9529b8f6e46f44f8387930e65db1c0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3157235129821007054
-    second: Gemini_Generated_Image_n3kgsdn3kgsdn3kg_0
+      213: -3326965108441868461
+    second: congreso_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gemini_Generated_Image_n3kgsdn3kgsdn3kg_0
+      name: congreso_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1344
-        height: 768
+        y: 74
+        width: 1634
+        height: 938
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 23372ae806f3f24d0800000000000000
-      internalID: -3157235129821007054
+      spriteID: 35714336cde34d1d0800000000000000
+      internalID: -3326965108441868461
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Gemini_Generated_Image_n3kgsdn3kgsdn3kg_0: -3157235129821007054
+      congreso_0: -3326965108441868461
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
