@@ -2,10 +2,18 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int maxHealth = 2;
+    [Header("Health")]
+    public int maxHealth = 3;
 
     int currentHealth;
     bool isDead;
+
+    EnemyAI_Shooter ai;
+
+    void Awake()
+    {
+        ai = GetComponent<EnemyAI_Shooter>(); // debe estar en ROOT
+    }
 
     void Start()
     {
@@ -19,7 +27,11 @@ public class EnemyHealth : MonoBehaviour
         currentHealth -= damage;
         Debug.Log($"{name} HP: {currentHealth}");
 
-        if (currentHealth > 0) return;
+        if (currentHealth > 0)
+        {
+            if (ai != null) ai.PlayHurt();
+            return;
+        }
 
         Die();
     }
@@ -29,7 +41,7 @@ public class EnemyHealth : MonoBehaviour
         if (isDead) return;
         isDead = true;
 
-        // Aquí luego: animación, loot, score, etc.
-        Destroy(gameObject);
+        if (ai != null) ai.DieFromHealth();
+        else Destroy(gameObject); // fallback
     }
 }
