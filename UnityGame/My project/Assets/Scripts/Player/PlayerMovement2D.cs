@@ -538,6 +538,18 @@ public class PlayerMovement2D : MonoBehaviour
 
         GameObject b = Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity);
 
+        // ✅ NUEVO: asignar layer físico del proyectil (no sorting)
+        int projLayer = LayerMask.NameToLayer("Projectile_Player");
+        if (projLayer >= 0)
+        {
+            b.layer = projLayer;
+
+            // Si el prefab tiene hijos con colliders, aplica también (muy importante)
+            foreach (Transform t in b.GetComponentsInChildren<Transform>(true))
+                t.gameObject.layer = projLayer;
+        }
+
+        // Velocidad
         var rbB = b.GetComponent<Rigidbody2D>();
         if (rbB != null)
         {
@@ -545,13 +557,18 @@ public class PlayerMovement2D : MonoBehaviour
             rbB.linearVelocity = new Vector2(facing * bulletSpeed, 0f);
         }
 
+        // Config del proyectil
         var p = b.GetComponent<Projectile>();
         if (p != null)
         {
             p.shooterTag = "Player";
             p.damage = bulletDamage;
+
+            // Opcional: si quieres que también destruya en plataforma/ground sin tocar script:
+            // p.worldLayers = new[] { "Ground", "Platform" };
         }
 
+        // Munición
         if (enableReload && magSize > 0)
         {
             ammoInMag = Mathf.Max(0, ammoInMag - 1);
