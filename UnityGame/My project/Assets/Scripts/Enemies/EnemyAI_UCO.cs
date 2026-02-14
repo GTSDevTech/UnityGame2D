@@ -27,8 +27,7 @@ public class EnemyAI_Shooter : MonoBehaviour
     public string deadBool = "IsDead";    // recomendado
     public string reloadTrigger = "Reload"; // Trigger para recarga (AnyState->Recharge con condición Reload)
 
-    [Header("Vida")]
-    public int maxHealth = 3;
+    [Header("Hurt/Stun")]
     public float hurtStunTime = 0.25f;
 
     [Header("Disparo (proyectil)")]
@@ -72,7 +71,6 @@ public class EnemyAI_Shooter : MonoBehaviour
     public float deathVisualYOffset = -0f;
     Vector3 visualStartLocalPos;
 
-    // ✅ NUEVO: layer del proyectil enemigo (física, no sorting)
     [Header("Projectile Layer (Physics)")]
     [Tooltip("Layer física para los proyectiles del enemigo (debe existir en Unity).")]
     public string enemyProjectileLayerName = "Projectile_Enemy";
@@ -87,7 +85,6 @@ public class EnemyAI_Shooter : MonoBehaviour
     Vector2 patrolStart;
     int dir = 1;
 
-    int health;
     int shotsSinceReload = 0;
 
     float shootTimer = 0f;
@@ -106,9 +103,8 @@ public class EnemyAI_Shooter : MonoBehaviour
         baseConstraints = rb.constraints;
 
         patrolStart = rb.position;
-        health = maxHealth;
 
-        // ✅ cache layer id (evita NameToLayer cada disparo)
+        // cache layer id (evita NameToLayer cada disparo)
         enemyProjectileLayer = LayerMask.NameToLayer(enemyProjectileLayerName);
 
         // Auto asignar Visual
@@ -235,12 +231,6 @@ public class EnemyAI_Shooter : MonoBehaviour
                 rb.linearVelocity = Vector2.zero;
                 break;
 
-            case State.Chase:
-                break;
-
-            case State.BackOff:
-                break;
-
             case State.Shoot:
                 FacePlayer();
                 LockMovement();
@@ -252,7 +242,6 @@ public class EnemyAI_Shooter : MonoBehaviour
                 LockMovement();
                 reloadTimer = reloadDuration;
 
-                // por seguridad, también lo lanzo aquí (si ya estaba lanzado no pasa nada)
                 if (animator != null && !string.IsNullOrEmpty(reloadTrigger))
                     animator.SetTrigger(reloadTrigger);
                 break;
@@ -269,7 +258,6 @@ public class EnemyAI_Shooter : MonoBehaviour
 
     void DoPatrol()
     {
-        // girar si pared
         if (IsHittingWall())
             TurnAround();
 
@@ -301,7 +289,6 @@ public class EnemyAI_Shooter : MonoBehaviour
 
         if (dist <= shootDistance && cooldownTimer <= 0f)
         {
-            // si toca recargar, recarga antes de disparar
             if (shotsSinceReload >= shotsBeforeReload)
                 EnterState(State.Reload);
             else
@@ -331,32 +318,27 @@ public class EnemyAI_Shooter : MonoBehaviour
     {
         FacePlayer();
 
-        // alejarse del player
         int awayDir = (player != null && player.position.x >= rb.position.x) ? -1 : 1;
 
-        // si hay pared detrás, invierte
         if (IsHittingWall(awayDir))
             awayDir *= -1;
 
         rb.linearVelocity = new Vector2(awayDir * backOffSpeed, rb.linearVelocity.y);
 
-        // cuando ya no está tan cerca, vuelve a idle
         if (dist > tooCloseDistance + 0.2f)
             EnterState(State.CombatIdle);
     }
 
     void DoShootState()
     {
-        LockMovement(); // quieto 100%
+        LockMovement();
 
-        // cuando termina el tiempo/anim de disparo
         if (shootTimer <= 0f)
         {
             if (pendingReload)
             {
                 pendingReload = false;
 
-                // dispara el trigger justo al salir de Shoot
                 if (animator != null && !string.IsNullOrEmpty(reloadTrigger))
                     animator.SetTrigger(reloadTrigger);
 
@@ -386,19 +368,16 @@ public class EnemyAI_Shooter : MonoBehaviour
     }
 
     // -------------------- Proyectiles --------------------
-    // Llama a este método desde un Animation Event en el clip de disparo
+    // Animation Event
     public void FireProjectile()
     {
-        // solo dispara si realmente está en estado Shoot
         if (state != State.Shoot) return;
-
         if (projectilePrefab == null || shootPoint == null) return;
 
         FacePlayer();
 
         GameObject b = Instantiate(projectilePrefab, shootPoint.position, Quaternion.identity);
 
-        // ✅ NUEVO: asignar layer físico del proyectil enemigo (y a hijos)
         if (enemyProjectileLayer >= 0)
         {
             b.layer = enemyProjectileLayer;
@@ -419,23 +398,14 @@ public class EnemyAI_Shooter : MonoBehaviour
 
         shotsSinceReload++;
 
-        // 👇 NO entrar a Reload aquí (si no, el Animator sale de Shoot a Walk/Idle)
         if (shotsSinceReload >= shotsBeforeReload)
             pendingReload = true;
     }
 
-    // -------------------- Vida / daño --------------------
-    public void TakeDamage(int amount)
+    // -------------------- API para EnemyHealth (Opción A) --------------------
+    public void PlayHurt()
     {
         if (state == State.Dead) return;
-
-        health -= amount;
-
-        if (health <= 0)
-        {
-            Die();
-            return;
-        }
 
         if (animator != null && !string.IsNullOrEmpty(hurtTrigger))
             animator.SetTrigger(hurtTrigger);
@@ -444,12 +414,16 @@ public class EnemyAI_Shooter : MonoBehaviour
         StartCoroutine(HurtStunRoutine());
     }
 
+    public void DieFromHealth()
+    {
+        Die();
+    }
+
     IEnumerator HurtStunRoutine()
     {
         EnterState(State.Stunned);
         yield return new WaitForSeconds(hurtStunTime);
 
-        // vuelve a patrulla o combate según si ve al player
         bool sees = player != null && Vector2.Distance(rb.position, player.position) <= visionRange;
         EnterState(sees ? State.CombatIdle : State.Patrol);
     }

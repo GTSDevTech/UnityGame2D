@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOverMenu : MonoBehaviour
 {
-    public string gameSceneName = "scene-luis-3";
+    public string gameSceneName = "Level_01_Spain";
     public string startSceneName = "StartScene";
 
     public void Retry()
