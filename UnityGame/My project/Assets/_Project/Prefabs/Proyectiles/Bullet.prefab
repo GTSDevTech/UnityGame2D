@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -26.5148, y: 1.5331, z: 0}
-  m_LocalScale: {x: 0.0634, y: 0.0917, z: 1}
+  m_LocalScale: {x: 0.0634, y: 0.09170001, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -29209491
   m_SortingLayer: 5
-  m_SortingOrder: 10
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2346302928887187388, guid: 53d1e05cd06c2a3488445cad44ebc728, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -182,3 +182,7 @@ MonoBehaviour:
   damage: 1
   lifeTime: 3
   shooterTag: 
+  destroyOnGround: 1
+  worldLayers:
+  - Ground
+  - Platform

@@ -316,8 +316,8 @@ MonoBehaviour:
       type: {class: RenderGraphGlobalSettings, ns: UnityEngine.Rendering, asm: Unity.RenderPipelines.Core.Runtime}
       data:
         m_version: 0
-        m_EnableCompilationCaching: 1
-        m_EnableValidityChecks: 1
+        m_EnableCompilationCaching: 0
+        m_EnableValidityChecks: 0
     - rid: 7752762179098771469
       type: {class: ProbeVolumeRuntimeResources, ns: UnityEngine.Rendering, asm: Unity.RenderPipelines.Core.Runtime}
       data:

@@ -72,6 +72,11 @@ public class EnemyAI_Shooter : MonoBehaviour
     public float deathVisualYOffset = -0f;
     Vector3 visualStartLocalPos;
 
+    // ✅ NUEVO: layer del proyectil enemigo (física, no sorting)
+    [Header("Projectile Layer (Physics)")]
+    [Tooltip("Layer física para los proyectiles del enemigo (debe existir en Unity).")]
+    public string enemyProjectileLayerName = "Projectile_Enemy";
+
     // -------------------- Runtime --------------------
     enum State { Patrol, CombatIdle, Chase, BackOff, Shoot, Reload, Stunned, Dead }
     State state = State.Patrol;
@@ -93,6 +98,8 @@ public class EnemyAI_Shooter : MonoBehaviour
 
     Coroutine deathRoutine;
 
+    int enemyProjectileLayer = -1;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -100,6 +107,9 @@ public class EnemyAI_Shooter : MonoBehaviour
 
         patrolStart = rb.position;
         health = maxHealth;
+
+        // ✅ cache layer id (evita NameToLayer cada disparo)
+        enemyProjectileLayer = LayerMask.NameToLayer(enemyProjectileLayerName);
 
         // Auto asignar Visual
         if (visual == null)
@@ -257,8 +267,6 @@ public class EnemyAI_Shooter : MonoBehaviour
         }
     }
 
-
-
     void DoPatrol()
     {
         // girar si pared
@@ -360,8 +368,6 @@ public class EnemyAI_Shooter : MonoBehaviour
         }
     }
 
-
-
     void DoReloadState()
     {
         LockMovement();
@@ -373,7 +379,6 @@ public class EnemyAI_Shooter : MonoBehaviour
             EnterState(State.CombatIdle);
         }
     }
-
 
     void DoStunnedState()
     {
@@ -393,6 +398,14 @@ public class EnemyAI_Shooter : MonoBehaviour
 
         GameObject b = Instantiate(projectilePrefab, shootPoint.position, Quaternion.identity);
 
+        // ✅ NUEVO: asignar layer físico del proyectil enemigo (y a hijos)
+        if (enemyProjectileLayer >= 0)
+        {
+            b.layer = enemyProjectileLayer;
+            foreach (Transform t in b.GetComponentsInChildren<Transform>(true))
+                t.gameObject.layer = enemyProjectileLayer;
+        }
+
         var rbB = b.GetComponent<Rigidbody2D>();
         if (rbB != null)
             rbB.linearVelocity = new Vector2(dir * projectileSpeed, 0f);
@@ -410,8 +423,6 @@ public class EnemyAI_Shooter : MonoBehaviour
         if (shotsSinceReload >= shotsBeforeReload)
             pendingReload = true;
     }
-
-
 
     // -------------------- Vida / daño --------------------
     public void TakeDamage(int amount)
@@ -537,7 +548,6 @@ public class EnemyAI_Shooter : MonoBehaviour
 
         animator.SetFloat(speedParam, spd);
     }
-
 
     void SetShootingBool(bool value)
     {
