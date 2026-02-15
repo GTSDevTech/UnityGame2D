@@ -1,28 +1,19 @@
 fileFormatVersion: 2
-guid: 5c047515dae2e754c90a6e31fa3f3747
+guid: 226f1494c437a1c4bab2cb23618feec0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7498422986601641673
-    second: idle_final_0
+      213: -1592083444133198323
+    second: crouch_final_0
   - first:
-      213: 3345804393753370752
-    second: idle_final_1
+      213: -8759372822057906550
+    second: crouch_final_1
   - first:
-      213: -5149716238440815481
-    second: idle_final_2
+      213: -3617122948760717910
+    second: crouch_final_2
   - first:
-      213: 7401259397867873570
-    second: idle_final_3
-  - first:
-      213: -7800492357270566495
-    second: idle_final_4
-  - first:
-      213: -6621849046377711050
-    second: idle_final_5
-  - first:
-      213: -5026073779706059892
-    second: idle_final_6
+      213: -8398797128493893648
+    second: crouch_final_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -131,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_final_0
+      name: crouch_final_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 80
-        height: 126
+        height: 125
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c6b30c5affbf0860800000000000000
-      internalID: 7498422986601641673
+      spriteID: d0609a3fa88c7e9e0800000000000000
+      internalID: -1592083444133198323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_final_1
+      name: crouch_final_1
       rect:
         serializedVersion: 2
         x: 80
         y: 0
         width: 80
-        height: 126
+        height: 125
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0806c998e5fae6e20800000000000000
-      internalID: 3345804393753370752
+      spriteID: a8e0706d3d4707680800000000000000
+      internalID: -8759372822057906550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_final_2
+      name: crouch_final_2
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 80
-        height: 126
+        height: 125
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 784aca19d588888b0800000000000000
-      internalID: -5149716238440815481
+      spriteID: aa5343aa7d56dcdc0800000000000000
+      internalID: -3617122948760717910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_final_3
+      name: crouch_final_3
       rect:
         serializedVersion: 2
         x: 240
         y: 0
         width: 80
-        height: 126
+        height: 125
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,74 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 225af64753e86b660800000000000000
-      internalID: 7401259397867873570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_final_4
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 80
-        height: 126
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1a90db3a7851fb390800000000000000
-      internalID: -7800492357270566495
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_final_5
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 0
-        width: 80
-        height: 126
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 63ab56a50677a14a0800000000000000
-      internalID: -6621849046377711050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_final_6
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 80
-        height: 126
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c8327b1d68ccf3ab0800000000000000
-      internalID: -5026073779706059892
+      spriteID: 0f7fc87a28a717b80800000000000000
+      internalID: -8398797128493893648
       vertices: []
       indices: 
       edges: []
@@ -288,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d3e479d87507e914aa6bc1744a02fbd8
+    spriteID: 10a88790eb8390d44947673a89dc8ef9
     internalID: 0
     vertices: []
     indices: 
@@ -298,15 +223,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":80.0,"y":126.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":80.0,"y":125.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      idle_final_0: 7498422986601641673
-      idle_final_1: 3345804393753370752
-      idle_final_2: -5149716238440815481
-      idle_final_3: 7401259397867873570
-      idle_final_4: -7800492357270566495
-      idle_final_5: -6621849046377711050
-      idle_final_6: -5026073779706059892
+      crouch_final_0: -1592083444133198323
+      crouch_final_1: -8759372822057906550
+      crouch_final_2: -3617122948760717910
+      crouch_final_3: -8398797128493893648
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

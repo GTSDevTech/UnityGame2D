@@ -1,22 +1,37 @@
 fileFormatVersion: 2
-guid: be0af55fd93b77c4a94cbdab10259abf
+guid: 27236433e3a30584fbfa69b48ee6c96b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2598868237486306103
-    second: attack1_0
+      213: 320678910582945665
+    second: jum_final_0
   - first:
-      213: -4914715563372401958
-    second: attack1_1
+      213: 5385209120957068048
+    second: jum_final_1
   - first:
-      213: 2659852609378229497
-    second: attack1_2
+      213: -6592072419776022886
+    second: jum_final_2
   - first:
-      213: -742131402468218244
-    second: attack1_3
+      213: 1795816681662298927
+    second: jum_final_3
   - first:
-      213: 4622947799296944477
-    second: attack1_4
+      213: -4491100568315152446
+    second: jum_final_4
+  - first:
+      213: 7129132722262249873
+    second: jum_final_5
+  - first:
+      213: -1422290137118311370
+    second: jum_final_6
+  - first:
+      213: -7834774462812853367
+    second: jum_final_7
+  - first:
+      213: -7946860069461728285
+    second: jum_final_8
+  - first:
+      213: -8588442134756830677
+    second: jum_final_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -125,13 +140,123 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: attack1_0
+      name: jum_final_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 4
+        x: 0
+        y: 0
+        width: 53
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187714825c7437400800000000000000
+      internalID: 320678910582945665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jum_final_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 0
+        width: 63
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013f6d7d92b1cba40800000000000000
+      internalID: 5385209120957068048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jum_final_2
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 0
+        width: 57
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96b99d7f014484a0800000000000000
+      internalID: -6592072419776022886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jum_final_3
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 5
+        width: 79
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2bb330e1c50ce810800000000000000
+      internalID: 1795816681662298927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jum_final_4
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 13
+        width: 76
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c73507f3d76ca1c0800000000000000
+      internalID: -4491100568315152446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jum_final_5
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 19
         width: 74
-        height: 120
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,85 +265,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 733ba6184e8011420800000000000000
-      internalID: 2598868237486306103
+      spriteID: 1911e0b6074cfe260800000000000000
+      internalID: 7129132722262249873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack1_1
+      name: jum_final_6
       rect:
         serializedVersion: 2
-        x: 175
-        y: 4
-        width: 70
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: adaaa110c3c6bcbb0800000000000000
-      internalID: -4914715563372401958
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack1_2
-      rect:
-        serializedVersion: 2
-        x: 359
-        y: 4
-        width: 96
-        height: 125
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9fc92e01bd1b9e420800000000000000
-      internalID: 2659852609378229497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack1_3
-      rect:
-        serializedVersion: 2
-        x: 533
-        y: 4
-        width: 71
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c7a2833eb6b63b5f0800000000000000
-      internalID: -742131402468218244
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack1_4
-      rect:
-        serializedVersion: 2
-        x: 702
-        y: 4
-        width: 66
+        x: 697
+        y: 11
+        width: 88
         height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -228,8 +287,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d59a440b782082040800000000000000
-      internalID: 4622947799296944477
+      spriteID: 63c7589e7a2034ce0800000000000000
+      internalID: -1422290137118311370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jum_final_7
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 9
+        width: 95
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98becb0f22a454390800000000000000
+      internalID: -7834774462812853367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jum_final_8
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 0
+        width: 57
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e36ffffed417b190800000000000000
+      internalID: -7946860069461728285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jum_final_9
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 0
+        width: 53
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2252d7c169bfc880800000000000000
+      internalID: -8588442134756830677
       vertices: []
       indices: 
       edges: []
@@ -248,11 +373,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      attack1_0: 2598868237486306103
-      attack1_1: -4914715563372401958
-      attack1_2: 2659852609378229497
-      attack1_3: -742131402468218244
-      attack1_4: 4622947799296944477
+      jum_final_0: 320678910582945665
+      jum_final_1: 5385209120957068048
+      jum_final_2: -6592072419776022886
+      jum_final_3: 1795816681662298927
+      jum_final_4: -4491100568315152446
+      jum_final_5: 7129132722262249873
+      jum_final_6: -1422290137118311370
+      jum_final_7: -7834774462812853367
+      jum_final_8: -7946860069461728285
+      jum_final_9: -8588442134756830677
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

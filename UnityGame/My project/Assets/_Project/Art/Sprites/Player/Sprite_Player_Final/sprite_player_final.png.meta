@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3e5de0b235d507846bf5ee54f24a0dcc
+guid: 5c02f8801c8159c4b86cd8b82e422d0e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3326965108441868461
-    second: congreso_0
+      213: -3777790161066493499
+    second: sprite_player_final_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: congreso_0
+      name: sprite_player_final_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 74
-        width: 1634
-        height: 938
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 0
+        width: 80
+        height: 130
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35714336cde34d1d0800000000000000
-      internalID: -3326965108441868461
+      spriteID: 5c97aa53dd7929bc0800000000000000
+      internalID: -3777790161066493499
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b237b200bc76c5649b4bef82f277d635
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +146,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":80.0,"y":130.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      congreso_0: -3326965108441868461
+      sprite_player_final_0: -3777790161066493499
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
