@@ -12,7 +12,7 @@ public class PlayerHUD : MonoBehaviour
 
     [Header("UI - Fondos robados")]
     public Image fundsFill;
-    public int maxFondos = 10;
+    public int maxFondos = 20;
 
     [Header("UI - Munición")]
     public TMP_Text ammoText;

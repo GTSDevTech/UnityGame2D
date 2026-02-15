@@ -1,0 +1,3250 @@
+fileFormatVersion: 2
+guid: 67631e2cda1811948aea526ca634ec56
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1083557840234851130
+    second: alcanta2_0
+  - first:
+      213: -72537596082874531
+    second: alcanta2_1
+  - first:
+      213: -5113988020610555275
+    second: alcanta2_2
+  - first:
+      213: -6468122436104938889
+    second: alcanta2_3
+  - first:
+      213: -2615425960197525189
+    second: alcanta2_4
+  - first:
+      213: 8988049395938384268
+    second: alcanta2_5
+  - first:
+      213: -1686086250419890814
+    second: alcanta2_6
+  - first:
+      213: 1667098847538186923
+    second: alcanta2_7
+  - first:
+      213: -891182181879014856
+    second: alcanta2_8
+  - first:
+      213: -6539382112988893570
+    second: alcanta2_9
+  - first:
+      213: 2800980577845539278
+    second: alcanta2_10
+  - first:
+      213: 6880379685082126228
+    second: alcanta2_11
+  - first:
+      213: 288725906536592307
+    second: alcanta2_12
+  - first:
+      213: -9006638648686913068
+    second: alcanta2_13
+  - first:
+      213: -3791693203849473773
+    second: alcanta2_14
+  - first:
+      213: -662328344904645091
+    second: alcanta2_15
+  - first:
+      213: -6323618437790598734
+    second: alcanta2_16
+  - first:
+      213: 4844083441080271125
+    second: alcanta2_17
+  - first:
+      213: -2335690227480904384
+    second: alcanta2_18
+  - first:
+      213: -2197055382411104529
+    second: alcanta2_19
+  - first:
+      213: -8204087702238581543
+    second: alcanta2_20
+  - first:
+      213: 8499264948065830692
+    second: alcanta2_21
+  - first:
+      213: 7388951628533892517
+    second: alcanta2_22
+  - first:
+      213: 5813472445111054279
+    second: alcanta2_23
+  - first:
+      213: 3646469643753455799
+    second: alcanta2_24
+  - first:
+      213: -3634505879576085649
+    second: alcanta2_25
+  - first:
+      213: 7617614313257186394
+    second: alcanta2_26
+  - first:
+      213: 7360452677351340917
+    second: alcanta2_27
+  - first:
+      213: -5185394565069583049
+    second: alcanta2_28
+  - first:
+      213: -4748872735815344279
+    second: alcanta2_29
+  - first:
+      213: 5262891402342407066
+    second: alcanta2_30
+  - first:
+      213: -3735281333160910848
+    second: alcanta2_31
+  - first:
+      213: -2601601802872259956
+    second: alcanta2_32
+  - first:
+      213: -5745558632713913743
+    second: alcanta2_33
+  - first:
+      213: 4409809773905974804
+    second: alcanta2_34
+  - first:
+      213: -832996779745892082
+    second: alcanta2_35
+  - first:
+      213: 1352536496231849051
+    second: alcanta2_36
+  - first:
+      213: -7388779005908858702
+    second: alcanta2_37
+  - first:
+      213: 3923593108451515328
+    second: alcanta2_38
+  - first:
+      213: 1652531271365505783
+    second: alcanta2_39
+  - first:
+      213: -257223444807067525
+    second: alcanta2_40
+  - first:
+      213: 4383491798705529634
+    second: alcanta2_41
+  - first:
+      213: -7613770723587792681
+    second: alcanta2_42
+  - first:
+      213: -2100656932744497691
+    second: alcanta2_43
+  - first:
+      213: 1309617566900747185
+    second: alcanta2_44
+  - first:
+      213: -8147068561695326562
+    second: alcanta2_45
+  - first:
+      213: -1980620681454955089
+    second: alcanta2_46
+  - first:
+      213: 4538858017109221723
+    second: alcanta2_47
+  - first:
+      213: -3616454525096372303
+    second: alcanta2_48
+  - first:
+      213: 2854520518564088724
+    second: alcanta2_49
+  - first:
+      213: -3210241267145472115
+    second: alcanta2_50
+  - first:
+      213: 8702696451177591427
+    second: alcanta2_51
+  - first:
+      213: -3074818821875649733
+    second: alcanta2_52
+  - first:
+      213: -4955416013549951057
+    second: alcanta2_53
+  - first:
+      213: 2546334782428040297
+    second: alcanta2_54
+  - first:
+      213: 6094812233895693901
+    second: alcanta2_55
+  - first:
+      213: 4997148857783043736
+    second: alcanta2_56
+  - first:
+      213: 5641333531788570215
+    second: alcanta2_57
+  - first:
+      213: -6139988133276589169
+    second: alcanta2_58
+  - first:
+      213: 6815006196041507525
+    second: alcanta2_59
+  - first:
+      213: 4895501680894452119
+    second: alcanta2_60
+  - first:
+      213: 6348768100652995760
+    second: alcanta2_61
+  - first:
+      213: -5855238789546939663
+    second: alcanta2_62
+  - first:
+      213: -2654882766975163705
+    second: alcanta2_63
+  - first:
+      213: 2831928280925744256
+    second: alcanta2_64
+  - first:
+      213: -4266006391504350708
+    second: alcanta2_65
+  - first:
+      213: 2907820774465241443
+    second: alcanta2_66
+  - first:
+      213: 2799163077538097158
+    second: alcanta2_67
+  - first:
+      213: -6010466932958303577
+    second: alcanta2_68
+  - first:
+      213: -1156562239609372286
+    second: alcanta2_69
+  - first:
+      213: -8407741174984509115
+    second: alcanta2_70
+  - first:
+      213: 4926192559773084099
+    second: alcanta2_71
+  - first:
+      213: 7888435022798486292
+    second: alcanta2_72
+  - first:
+      213: 2488808879406590775
+    second: alcanta2_73
+  - first:
+      213: -1751297820266326374
+    second: alcanta2_74
+  - first:
+      213: -6364699831524260322
+    second: alcanta2_75
+  - first:
+      213: 4852627137166488914
+    second: alcanta2_76
+  - first:
+      213: -8504786984431384157
+    second: alcanta2_77
+  - first:
+      213: -6297779472479068118
+    second: alcanta2_78
+  - first:
+      213: 5935634643766166418
+    second: alcanta2_79
+  - first:
+      213: 6431180067266901004
+    second: alcanta2_80
+  - first:
+      213: -7699607087780342454
+    second: alcanta2_81
+  - first:
+      213: 9053277345576266328
+    second: alcanta2_82
+  - first:
+      213: -4782852874222105348
+    second: alcanta2_83
+  - first:
+      213: -8173214567772135413
+    second: alcanta2_84
+  - first:
+      213: -4339166660592229265
+    second: alcanta2_85
+  - first:
+      213: 5122241805655773525
+    second: alcanta2_86
+  - first:
+      213: 2004931823513510127
+    second: alcanta2_87
+  - first:
+      213: 4390850620611476451
+    second: alcanta2_88
+  - first:
+      213: 1948403780221439934
+    second: alcanta2_89
+  - first:
+      213: 3583599543248422350
+    second: alcanta2_90
+  - first:
+      213: 7637478070260244680
+    second: alcanta2_91
+  - first:
+      213: -5977533728036979996
+    second: alcanta2_92
+  - first:
+      213: -5539193992868551359
+    second: alcanta2_93
+  - first:
+      213: 2060855863237372393
+    second: alcanta2_94
+  - first:
+      213: 989698108121499488
+    second: alcanta2_95
+  - first:
+      213: -1852061855413825314
+    second: alcanta2_96
+  - first:
+      213: -4288335219030407768
+    second: alcanta2_97
+  - first:
+      213: -8863153602645149104
+    second: alcanta2_98
+  - first:
+      213: 4331978096797243366
+    second: alcanta2_99
+  - first:
+      213: -4951595315034642057
+    second: alcanta2_100
+  - first:
+      213: 1211243189968156317
+    second: alcanta2_101
+  - first:
+      213: 3334191925171321760
+    second: alcanta2_102
+  - first:
+      213: -539481622231255324
+    second: alcanta2_103
+  - first:
+      213: -8584366850986199360
+    second: alcanta2_104
+  - first:
+      213: -1118560644999131121
+    second: alcanta2_105
+  - first:
+      213: -5480587565152090886
+    second: alcanta2_106
+  - first:
+      213: 9034125475970845045
+    second: alcanta2_107
+  - first:
+      213: 5805832771747576850
+    second: alcanta2_108
+  - first:
+      213: -5553484797098289228
+    second: alcanta2_109
+  - first:
+      213: -820462260644692170
+    second: alcanta2_110
+  - first:
+      213: 177664771981784374
+    second: alcanta2_111
+  - first:
+      213: -39620391917018138
+    second: alcanta2_112
+  - first:
+      213: -7985985986602763662
+    second: alcanta2_113
+  - first:
+      213: -1307302131434042130
+    second: alcanta2_114
+  - first:
+      213: 206411951246489239
+    second: alcanta2_115
+  - first:
+      213: -374201142327609680
+    second: alcanta2_116
+  - first:
+      213: -6372158750980739679
+    second: alcanta2_117
+  - first:
+      213: 1983440982436512913
+    second: alcanta2_118
+  - first:
+      213: 1958423732465106620
+    second: alcanta2_119
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: alcanta2_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 203
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ba9c06d12990f00800000000000000
+      internalID: 1083557840234851130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1015
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d579e90d07b4efef0800000000000000
+      internalID: -72537596082874531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_2
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 844
+        width: 155
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572a7e58df67709b0800000000000000
+      internalID: -5113988020610555275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_3
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 443
+        width: 158
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a1b38f9ec9c36a0800000000000000
+      internalID: -6468122436104938889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_4
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 3
+        width: 237
+        height: 1021
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31771242f324bbd0800000000000000
+      internalID: -2615425960197525189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_5
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 827
+        width: 162
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89529c0e47fbbc70800000000000000
+      internalID: 8988049395938384268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_6
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 493
+        width: 199
+        height: 531
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2855d0f0d71d998e0800000000000000
+      internalID: -1686086250419890814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_7
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 496
+        width: 208
+        height: 528
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa0af4b199b22710800000000000000
+      internalID: 1667098847538186923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_8
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 520
+        width: 208
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a91faf682e1a3f0800000000000000
+      internalID: -891182181879014856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_9
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1007
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ee0c88d927f35a0800000000000000
+      internalID: -6539382112988893570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_10
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 999
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1704dcef41fd620800000000000000
+      internalID: 2800980577845539278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_11
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 991
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4975229aed40c7f50800000000000000
+      internalID: 6880379685082126228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_12
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 983
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b3f098aea2c10400800000000000000
+      internalID: 288725906536592307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_13
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 961
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d956b44eddf10380800000000000000
+      internalID: -9006638648686913068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_14
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 685
+        width: 127
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3111a4fce13316bc0800000000000000
+      internalID: -3791693203849473773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_15
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 688
+        width: 154
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d16494521efeec6f0800000000000000
+      internalID: -662328344904645091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_16
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 695
+        width: 123
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b97168e88efd38a0800000000000000
+      internalID: -6323618437790598734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_17
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 699
+        width: 141
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51101ff7934a93340800000000000000
+      internalID: 4844083441080271125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_18
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 846
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d36a5fc16f59fd0800000000000000
+      internalID: -2335690227480904384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_19
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 661
+        width: 125
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feea68b25cd7281e0800000000000000
+      internalID: -2197055382411104529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_20
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 667
+        width: 164
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc2be1b3b9352e80800000000000000
+      internalID: -8204087702238581543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_21
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 416
+        width: 158
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4278461707473f570800000000000000
+      internalID: 8499264948065830692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_22
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 717
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a58e499b54da8660800000000000000
+      internalID: 7388951628533892517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_23
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 683
+        width: 121
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cfad52436a9da050800000000000000
+      internalID: 5813472445111054279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_24
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 563
+        width: 128
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b08b2832dcda9230800000000000000
+      internalID: 3646469643753455799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_25
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 684
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b7cc1b824af8dc0800000000000000
+      internalID: -3634505879576085649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_26
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 516
+        width: 155
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5430a9abd337b960800000000000000
+      internalID: 7617614313257186394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_27
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 565
+        width: 123
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b799376b4952660800000000000000
+      internalID: 7360452677351340917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_28
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 656
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d49c0dd17c908b0800000000000000
+      internalID: -5185394565069583049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_29
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 542
+        width: 113
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f503a486d981eb0800000000000000
+      internalID: -4748872735815344279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_30
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 595
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b9310b8db890940800000000000000
+      internalID: 5262891402342407066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_31
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 437
+        width: 182
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 000ebc8fa6d992cc0800000000000000
+      internalID: -3735281333160910848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_32
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 527
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8a78c4b1f045ebd0800000000000000
+      internalID: -2601601802872259956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_33
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 535
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a78e46ddca340b0800000000000000
+      internalID: -5745558632713913743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_34
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 390
+        width: 139
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41616bc00aac23d30800000000000000
+      internalID: 4409809773905974804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_35
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 519
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e09a33c97d99074f0800000000000000
+      internalID: -832996779745892082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_36
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 502
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c96abf6cc25c210800000000000000
+      internalID: 1352536496231849051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_37
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 388
+        width: 155
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b840fc34a8c57990800000000000000
+      internalID: -7388779005908858702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_38
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 241
+        width: 153
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb5c60e427637630800000000000000
+      internalID: 3923593108451515328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_39
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 272
+        width: 186
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f237f19f68fee610800000000000000
+      internalID: 1652531271365505783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_40
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 272
+        width: 155
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b785f58c3a82e6cf0800000000000000
+      internalID: -257223444807067525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_41
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 142
+        width: 274
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2236ea1f09a45dc30800000000000000
+      internalID: 4383491798705529634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_42
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 415
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0e74bcdd3765690800000000000000
+      internalID: -7613770723587792681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_43
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 272
+        width: 211
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e57dc046a7f8d2e0800000000000000
+      internalID: -2100656932744497691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_44
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 390
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bbfaba0d32bc2210800000000000000
+      internalID: 1309617566900747185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_45
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 350
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9eb563ee4ccfee80800000000000000
+      internalID: -8147068561695326562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_46
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 285
+        width: 158
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa5d517ebfb6384e0800000000000000
+      internalID: -1980620681454955089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_47
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 295
+        width: 152
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51aab391534dfe30800000000000000
+      internalID: 4538858017109221723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_48
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 326
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7d64d25c5cfcdc0800000000000000
+      internalID: -3616454525096372303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_49
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 335
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b8319a94b4d9720800000000000000
+      internalID: 2854520518564088724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_50
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 303
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d878e7c739ee273d0800000000000000
+      internalID: -3210241267145472115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_51
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 295
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3823e70405036c870800000000000000
+      internalID: 8702696451177591427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_52
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 288
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33ba65929c0455d0800000000000000
+      internalID: -3074818821875649733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_53
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 297
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa7a21ef363da3bb0800000000000000
+      internalID: -4955416013549951057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_54
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 286
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c48d95ef5665320800000000000000
+      internalID: 2546334782428040297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_55
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 294
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ece0e5f6f159450800000000000000
+      internalID: 6094812233895693901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_56
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 287
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89648edf860795540800000000000000
+      internalID: 4997148857783043736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_57
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 289
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ee1c545fa0a4e40800000000000000
+      internalID: 5641333531788570215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_58
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 291
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f836fe6e2516acaa0800000000000000
+      internalID: -6139988133276589169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_59
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 287
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2e3212704c39e50800000000000000
+      internalID: 6815006196041507525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_60
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 287
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791aa0f57d050f340800000000000000
+      internalID: 4895501680894452119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_61
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 291
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b4d0c843fa5b1850800000000000000
+      internalID: 6348768100652995760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_62
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 288
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa67f1e7530ebea0800000000000000
+      internalID: -5855238789546939663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_63
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 292
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c2a32a8036f72bd0800000000000000
+      internalID: -2654882766975163705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_64
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 291
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c26fd64c70d4720800000000000000
+      internalID: 2831928280925744256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_65
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 279
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0256d80ac91cc4c0800000000000000
+      internalID: -4266006391504350708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_66
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 279
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 361808c8697aa5820800000000000000
+      internalID: 2907820774465241443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_67
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 279
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6082c090dff98d620800000000000000
+      internalID: 2799163077538097158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_68
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 277
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aae9c65b28869ca0800000000000000
+      internalID: -6010466932958303577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_69
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 277
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281047355c013ffe0800000000000000
+      internalID: -1156562239609372286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_70
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 279
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5497f9d82f3b15b80800000000000000
+      internalID: -8407741174984509115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_71
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 271
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c96274780a5d5440800000000000000
+      internalID: 4926192559773084099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_72
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 283
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41b77a7cbd9597d60800000000000000
+      internalID: 7888435022798486292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_73
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 277
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b2ed25d760a8220800000000000000
+      internalID: 2488808879406590775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_74
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 279
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a961c1749e322b7e0800000000000000
+      internalID: -1751297820266326374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_75
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 279
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e160200993b0ca7a0800000000000000
+      internalID: -6364699831524260322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_76
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 283
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 255ba32cbaef75340800000000000000
+      internalID: 4852627137166488914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_77
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 272
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a90a964c4de8f980800000000000000
+      internalID: -8504786984431384157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_78
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 280
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a206325dfeac998a0800000000000000
+      internalID: -6297779472479068118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_79
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 280
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2934f2a924c9f5250800000000000000
+      internalID: 5935634643766166418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_80
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 282
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0434048234204950800000000000000
+      internalID: 6431180067266901004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_81
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 279
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a45d5ced520852590800000000000000
+      internalID: -7699607087780342454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_82
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 0
+        width: 154
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85a2a2c87c3b3ad70800000000000000
+      internalID: 9053277345576266328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_83
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 122
+        width: 163
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc090bc6a4ef9db0800000000000000
+      internalID: -4782852874222105348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_84
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 269
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00e4e677a8e29e80800000000000000
+      internalID: -8173214567772135413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_85
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 0
+        width: 182
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64ae2e79ee28c3c0800000000000000
+      internalID: -4339166660592229265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_86
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 272
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55194cf88cbd51740800000000000000
+      internalID: 5122241805655773525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_87
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 0
+        width: 166
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe02663fed2f2db10800000000000000
+      internalID: 2004931823513510127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_88
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 264
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ebb95f206f6fec30800000000000000
+      internalID: 4390850620611476451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_89
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 265
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf802f3aee1a0b10800000000000000
+      internalID: 1948403780221439934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_90
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 0
+        width: 167
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec503904cc08bb130800000000000000
+      internalID: 3583599543248422350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_91
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 272
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0a2bdf6d5cdf960800000000000000
+      internalID: 7637478070260244680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_92
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 271
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ea7073aeb88b0da0800000000000000
+      internalID: -5977533728036979996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_93
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 267
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145a7115964d023b0800000000000000
+      internalID: -5539193992868551359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_94
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 264
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e96b8d1d71a99c10800000000000000
+      internalID: 2060855863237372393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_95
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 0
+        width: 222
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06745798f2d1cbd00800000000000000
+      internalID: 989698108121499488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_96
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 262
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed0120e1e872c46e0800000000000000
+      internalID: -1852061855413825314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_97
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 106
+        width: 150
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a545efb6d5cc74c0800000000000000
+      internalID: -4288335219030407768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_98
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 0
+        width: 156
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05abc94e1c0cff480800000000000000
+      internalID: -8863153602645149104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_99
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 167
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e75f5290274e1c30800000000000000
+      internalID: 4331978096797243366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_100
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 160
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7792fdfab46684bb0800000000000000
+      internalID: -4951595315034642057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_101
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 119
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d96b9aa83433fc010800000000000000
+      internalID: 1211243189968156317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_102
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 111
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0abffc004ed654e20800000000000000
+      internalID: 3334191925171321760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_103
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 94
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e6fd08a2506388f0800000000000000
+      internalID: -539481622231255324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_104
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 86
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c63459b4d33ed880800000000000000
+      internalID: -8584366850986199360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_105
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 91
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00581f05031a70f0800000000000000
+      internalID: -1118560644999131121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_106
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 93
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af4cfaa95aa01f3b0800000000000000
+      internalID: -5480587565152090886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_107
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 79
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5798c8b6149af5d70800000000000000
+      internalID: 9034125475970845045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_108
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 70
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21cf5513526729050800000000000000
+      internalID: 5805832771747576850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_109
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 77
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b79c6b200f0ee2b0800000000000000
+      internalID: -5553484797098289228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_110
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 60
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63fb8a2cbe12d94f0800000000000000
+      internalID: -820462260644692170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_111
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 55
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63533173b21377200800000000000000
+      internalID: 177664771981784374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_112
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 38
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e3ace5a67d337ff0800000000000000
+      internalID: -39620391917018138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_113
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 48
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a7b478e041c2190800000000000000
+      internalID: -7985985986602763662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_114
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 39
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec43c943a78bdde0800000000000000
+      internalID: -1307302131434042130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_115
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 31
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796317773925dd200800000000000000
+      internalID: 206411951246489239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_116
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 23
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b6740d2b029ecaf0800000000000000
+      internalID: -374201142327609680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_117
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 24
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad656b806b8197a0800000000000000
+      internalID: -6372158750980739679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_118
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 8
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19484179019968b10800000000000000
+      internalID: 1983440982436512913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcanta2_119
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 0
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbef64d2208bd2b10800000000000000
+      internalID: 1958423732465106620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      alcanta2_0: 1083557840234851130
+      alcanta2_1: -72537596082874531
+      alcanta2_10: 2800980577845539278
+      alcanta2_100: -4951595315034642057
+      alcanta2_101: 1211243189968156317
+      alcanta2_102: 3334191925171321760
+      alcanta2_103: -539481622231255324
+      alcanta2_104: -8584366850986199360
+      alcanta2_105: -1118560644999131121
+      alcanta2_106: -5480587565152090886
+      alcanta2_107: 9034125475970845045
+      alcanta2_108: 5805832771747576850
+      alcanta2_109: -5553484797098289228
+      alcanta2_11: 6880379685082126228
+      alcanta2_110: -820462260644692170
+      alcanta2_111: 177664771981784374
+      alcanta2_112: -39620391917018138
+      alcanta2_113: -7985985986602763662
+      alcanta2_114: -1307302131434042130
+      alcanta2_115: 206411951246489239
+      alcanta2_116: -374201142327609680
+      alcanta2_117: -6372158750980739679
+      alcanta2_118: 1983440982436512913
+      alcanta2_119: 1958423732465106620
+      alcanta2_12: 288725906536592307
+      alcanta2_13: -9006638648686913068
+      alcanta2_14: -3791693203849473773
+      alcanta2_15: -662328344904645091
+      alcanta2_16: -6323618437790598734
+      alcanta2_17: 4844083441080271125
+      alcanta2_18: -2335690227480904384
+      alcanta2_19: -2197055382411104529
+      alcanta2_2: -5113988020610555275
+      alcanta2_20: -8204087702238581543
+      alcanta2_21: 8499264948065830692
+      alcanta2_22: 7388951628533892517
+      alcanta2_23: 5813472445111054279
+      alcanta2_24: 3646469643753455799
+      alcanta2_25: -3634505879576085649
+      alcanta2_26: 7617614313257186394
+      alcanta2_27: 7360452677351340917
+      alcanta2_28: -5185394565069583049
+      alcanta2_29: -4748872735815344279
+      alcanta2_3: -6468122436104938889
+      alcanta2_30: 5262891402342407066
+      alcanta2_31: -3735281333160910848
+      alcanta2_32: -2601601802872259956
+      alcanta2_33: -5745558632713913743
+      alcanta2_34: 4409809773905974804
+      alcanta2_35: -832996779745892082
+      alcanta2_36: 1352536496231849051
+      alcanta2_37: -7388779005908858702
+      alcanta2_38: 3923593108451515328
+      alcanta2_39: 1652531271365505783
+      alcanta2_4: -2615425960197525189
+      alcanta2_40: -257223444807067525
+      alcanta2_41: 4383491798705529634
+      alcanta2_42: -7613770723587792681
+      alcanta2_43: -2100656932744497691
+      alcanta2_44: 1309617566900747185
+      alcanta2_45: -8147068561695326562
+      alcanta2_46: -1980620681454955089
+      alcanta2_47: 4538858017109221723
+      alcanta2_48: -3616454525096372303
+      alcanta2_49: 2854520518564088724
+      alcanta2_5: 8988049395938384268
+      alcanta2_50: -3210241267145472115
+      alcanta2_51: 8702696451177591427
+      alcanta2_52: -3074818821875649733
+      alcanta2_53: -4955416013549951057
+      alcanta2_54: 2546334782428040297
+      alcanta2_55: 6094812233895693901
+      alcanta2_56: 4997148857783043736
+      alcanta2_57: 5641333531788570215
+      alcanta2_58: -6139988133276589169
+      alcanta2_59: 6815006196041507525
+      alcanta2_6: -1686086250419890814
+      alcanta2_60: 4895501680894452119
+      alcanta2_61: 6348768100652995760
+      alcanta2_62: -5855238789546939663
+      alcanta2_63: -2654882766975163705
+      alcanta2_64: 2831928280925744256
+      alcanta2_65: -4266006391504350708
+      alcanta2_66: 2907820774465241443
+      alcanta2_67: 2799163077538097158
+      alcanta2_68: -6010466932958303577
+      alcanta2_69: -1156562239609372286
+      alcanta2_7: 1667098847538186923
+      alcanta2_70: -8407741174984509115
+      alcanta2_71: 4926192559773084099
+      alcanta2_72: 7888435022798486292
+      alcanta2_73: 2488808879406590775
+      alcanta2_74: -1751297820266326374
+      alcanta2_75: -6364699831524260322
+      alcanta2_76: 4852627137166488914
+      alcanta2_77: -8504786984431384157
+      alcanta2_78: -6297779472479068118
+      alcanta2_79: 5935634643766166418
+      alcanta2_8: -891182181879014856
+      alcanta2_80: 6431180067266901004
+      alcanta2_81: -7699607087780342454
+      alcanta2_82: 9053277345576266328
+      alcanta2_83: -4782852874222105348
+      alcanta2_84: -8173214567772135413
+      alcanta2_85: -4339166660592229265
+      alcanta2_86: 5122241805655773525
+      alcanta2_87: 2004931823513510127
+      alcanta2_88: 4390850620611476451
+      alcanta2_89: 1948403780221439934
+      alcanta2_9: -6539382112988893570
+      alcanta2_90: 3583599543248422350
+      alcanta2_91: 7637478070260244680
+      alcanta2_92: -5977533728036979996
+      alcanta2_93: -5539193992868551359
+      alcanta2_94: 2060855863237372393
+      alcanta2_95: 989698108121499488
+      alcanta2_96: -1852061855413825314
+      alcanta2_97: -4288335219030407768
+      alcanta2_98: -8863153602645149104
+      alcanta2_99: 4331978096797243366
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

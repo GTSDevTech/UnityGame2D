@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
@@ -8,46 +8,75 @@ public class HUDController : MonoBehaviour
     public PlayerMovement2D player;
     public PlayerHealth playerHealth;
 
-    [Header("UI - Votos (vida)")]
+    [Header("UI - Vida")]
     public Image votesFill;
 
-    [Header("UI - Fondos robados")]
-    public Image fundsFill;
-    public int maxFondos = 10;
+    [Header("UI - Maletines")]
+    public Image maletinesFill;
+    public TMP_Text maletinesText;
 
-    [Header("UI - Munici�n")]
+    [Header("UI - Munición")]
     public TMP_Text ammoText;
+
+    int lastMaletines = -1;
+
+    void Awake()
+    {
+        // Forzar inicio vacío
+        if (maletinesFill) maletinesFill.fillAmount = 0f;
+        if (maletinesText) maletinesText.text = "0/0";
+    }
 
     void Start()
     {
-        if (player == null)
-            player = FindFirstObjectByType<PlayerMovement2D>();
-
-        if (playerHealth == null)
-            playerHealth = FindFirstObjectByType<PlayerHealth>();
+        FindRefs();
+        UpdateHUD();
     }
 
     void Update()
     {
-        if (player == null)
+        if (!player || !player.gameObject.activeInHierarchy || !playerHealth)
+            FindRefs();
+
+        UpdateHUD();
+    }
+
+    void FindRefs()
+    {
+        if (!player)
             player = FindFirstObjectByType<PlayerMovement2D>();
 
-        if (playerHealth == null)
+        if (!playerHealth)
             playerHealth = FindFirstObjectByType<PlayerHealth>();
+    }
 
-        // --- VIDA (PlayerHealth) ---
-        if (votesFill != null && playerHealth != null)
+    void UpdateHUD()
+    {
+        if (!player || !playerHealth) return;
+
+        // VIDA
+        if (votesFill)
             votesFill.fillAmount = playerHealth.Health01;
 
-        // --- FONDOS ROBADOS ---
-        if (fundsFill != null && player != null)
+        // MALETINES
+        float maxM = Mathf.Max(1, player.maxMaletines);
+        float fill = Mathf.Clamp01((float)player.maletines / maxM);
+
+        if (maletinesFill)
+            maletinesFill.fillAmount = fill;
+
+        if (maletinesText)
+            maletinesText.text = $"{player.maletines}/{player.maxMaletines}";
+
+        // Debug opcional: ver si realmente cambia
+        if (player.maletines != lastMaletines)
         {
-            float fondos01 = maxFondos <= 0 ? 0f : Mathf.Clamp01((float)player.maletines / maxFondos);
-            fundsFill.fillAmount = fondos01;
+            lastMaletines = player.maletines;
+            Debug.Log($"[HUD] Maletines HUD = {player.maletines}/{player.maxMaletines} (fill={fill})");
         }
 
-        // --- MUNCI�N ---
-        if (ammoText != null && player != null)
+        // MUNICIÓN
+        if (ammoText)
             ammoText.text = $"{player.ammoInMag}/{player.magSize} | {player.ammoReserve}";
     }
 }
