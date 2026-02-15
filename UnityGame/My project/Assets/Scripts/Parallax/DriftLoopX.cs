@@ -2,19 +2,31 @@ using UnityEngine;
 
 public class DriftLoopX : MonoBehaviour
 {
-    public float speed = 0.2f;     
-    public float minX = -30f;      
-    public float maxX = 30f;       
+    public float speed = 0.2f;
 
-    void Update()
+    // Rango LOCAL respecto a la posición inicial
+    public float minX = -30f;
+    public float maxX = 30f;
+
+    private Vector3 startLocalPos;
+
+    void Awake()
     {
-        transform.position += Vector3.left * speed * Time.deltaTime;
+        startLocalPos = transform.localPosition;
+    }
 
-        if (transform.position.x < minX)
-        {
-            var p = transform.position;
-            p.x = maxX;
-            transform.position = p;
-        }
+    void LateUpdate()
+    {
+        var p = transform.localPosition;
+
+        p.x += (-speed) * Time.deltaTime;
+
+        float localMin = startLocalPos.x + minX;
+        float localMax = startLocalPos.x + maxX;
+
+        if (p.x < localMin)
+            p.x = localMax;
+
+        transform.localPosition = p;
     }
 }
