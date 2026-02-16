@@ -484,9 +484,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -1414362637
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -29209491
+  m_SortingLayer: 5
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2647758579449617991, guid: 419f6cdb26388294ebaee8ff64c6cc42, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -597,7 +597,6 @@ MonoBehaviour:
   dieTrigger: Die
   deadBool: IsDead
   reloadTrigger: Reload
-  maxHealth: 3
   hurtStunTime: 0.25
   shootPoint: {fileID: 4467199808771922082}
   projectilePrefab: {fileID: 3145217710079279033, guid: dca6a6eccdb9dd54a8b7b6b9eba9534b, type: 3}
@@ -619,3 +618,4 @@ MonoBehaviour:
   flipWithDirection: 1
   deathDisableDelay: 1.5
   deathVisualYOffset: -0.53
+  enemyProjectileLayerName: Projectile_Enemy

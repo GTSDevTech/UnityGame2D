@@ -49,6 +49,14 @@ public class PlayerMovement2D : MonoBehaviour
     [Tooltip("Tiempo que el player queda inmóvil al disparar.")]
     public float shootLockDuration = 0.15f;
 
+    [Header("Shoot - Spawn mode (robusto entre escenas)")]
+    [Tooltip("Si está activo, la bala se dispara mediante Animation Event (recomendado para sincronía). Si el evento falta, se usa fallback.")]
+    public bool fireUsingAnimationEvent = true;
+
+    [Tooltip("Tiempo (segundos) tras pulsar disparo para forzar el spawn si el Animation Event no llega.")]
+    public float fireFallbackDelay = 0.08f;
+
+
     [Header("Ammo / Reload (recarga)")]
     public bool enableReload = true;
     public int magSize = 6;
@@ -112,6 +120,10 @@ public class PlayerMovement2D : MonoBehaviour
     bool isAttacking;
     bool isDead;
     bool canShoot = true;
+    bool shotPending = false;
+    bool shotFiredThisPress = false;
+    Coroutine shotFallbackRoutine;
+
     bool isCrouching;
 
     float coyoteCounter;
@@ -426,11 +438,19 @@ public class PlayerMovement2D : MonoBehaviour
         if (isReloading) return;
         if (!canShoot) return;
 
+        // No dispares si no hay balas en cargador (si recarga está activa)
         if (enableReload && magSize > 0 && ammoInMag <= 0)
         {
             if (ammoReserve > 0) StartReload();
             return;
         }
+
+        // Disparo "pendiente": esperamos al Animation Event, pero ponemos un fallback por si falta el evento
+        shotPending = true;
+        shotFiredThisPress = false;
+
+        if (shotFallbackRoutine != null) StopCoroutine(shotFallbackRoutine);
+        shotFallbackRoutine = StartCoroutine(ShootFallbackRoutine());
 
         if (animator != null && !string.IsNullOrEmpty(shootTrigger))
             animator.SetTrigger(shootTrigger);
@@ -440,7 +460,24 @@ public class PlayerMovement2D : MonoBehaviour
         StartCoroutine(ShootCooldownRoutine());
     }
 
-    IEnumerator ShootCooldownRoutine()
+    
+    IEnumerator ShootFallbackRoutine()
+    {
+        // Si el Animation Event no llega (por clip distinto, evento borrado, etc.), forzamos el disparo.
+        float delay = Mathf.Max(0f, fireFallbackDelay);
+        if (delay > 0f) yield return new WaitForSeconds(delay);
+
+        if (!shotPending) yield break; // ya se resolvió por evento
+
+        // Si no dependemos del evento, o si dependemos pero no llegó, disparamos igualmente
+        if (!fireUsingAnimationEvent || !shotFiredThisPress)
+        {
+            shotPending = false;
+            SpawnBullet();
+        }
+    }
+
+IEnumerator ShootCooldownRoutine()
     {
         canShoot = false;
         yield return new WaitForSeconds(shootCooldown);
@@ -497,11 +534,27 @@ public class PlayerMovement2D : MonoBehaviour
         FinishReload();
     }
 
-    public void Anim_FireBullet() => SpawnBullet();
-    public void FireBullet() => SpawnBullet();
-    public void FireProjectile() => SpawnBullet();
+    public void Anim_FireBullet() => HandleAnimFireBullet();
+    public void FireBullet() => HandleAnimFireBullet();
+    public void FireProjectile() => HandleAnimFireBullet();
 
-    void SpawnBullet()
+    
+    void HandleAnimFireBullet()
+    {
+        // Este método es llamado por Animation Events (PlayerAnimEvents).
+        // Marcamos que el evento llegó para que el fallback no dispare doble.
+        shotFiredThisPress = true;
+        shotPending = false;
+        if (shotFallbackRoutine != null)
+        {
+            StopCoroutine(shotFallbackRoutine);
+            shotFallbackRoutine = null;
+        }
+
+        SpawnBullet();
+    }
+
+void SpawnBullet()
     {
         if (isDead) return;
         if (isReloading) return;

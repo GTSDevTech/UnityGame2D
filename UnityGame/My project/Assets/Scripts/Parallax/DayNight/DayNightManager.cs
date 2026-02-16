@@ -2,11 +2,16 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[DisallowMultipleComponent]
 public class DayNightManager : MonoBehaviour
 {
-    [Header("Roots")]
+    [Header("Roots (optional manual assign)")]
     public GameObject skyDay;
     public GameObject skyNight;
+
+    [Header("Auto-bind (names in Hierarchy)")]
+    [SerializeField] private string skyDayName = "Sky Day";
+    [SerializeField] private string skyNightName = "Sky Night";
 
     [Header("Timing")]
     public float fadeSeconds = 1.0f;
@@ -14,6 +19,7 @@ public class DayNightManager : MonoBehaviour
     public float nightSeconds = 20f;
     public bool startAtNight = false;
 
+    // 0 day -> 1 night
     public float IsNightNormalized { get; private set; }
 
     [Header("Debug (optional)")]
@@ -22,11 +28,22 @@ public class DayNightManager : MonoBehaviour
     bool isNight;
     Coroutine cycleRoutine;
 
+    void Awake()
+    {
+        AutoBind();
+    }
+
+    void OnEnable()
+    {
+        // Por si cambiaste escena y este objeto persiste o se reactivó
+        AutoBind();
+    }
+
     void Start()
     {
         if (skyDay == null || skyNight == null)
         {
-            Debug.LogError("DayNightManager: Asigna skyDay y skyNight en el Inspector.");
+            Debug.LogError("DayNightManager: No encuentro skyDay/skyNight. Asigna en Inspector o renombra en la jerarquía según skyDayName/skyNightName.", this);
             enabled = false;
             return;
         }
@@ -37,9 +54,11 @@ public class DayNightManager : MonoBehaviour
 
         isNight = startAtNight;
 
-        // Estado inicial (y también fija globalAlpha de estrellas)
         SetGroupAlpha(skyDay, isNight ? 0f : 1f);
         SetGroupAlpha(skyNight, isNight ? 1f : 0f);
+
+        // Estado coherente siempre
+        IsNightNormalized = GetAnyAlpha(skyNight);
 
         cycleRoutine = StartCoroutine(AutoCycle());
     }
@@ -54,6 +73,32 @@ public class DayNightManager : MonoBehaviour
             StopAllCoroutines();
             StartCoroutine(SwitchTo(!isNight, restartCycle: true));
         }
+    }
+
+    void AutoBind()
+    {
+        if (skyDay == null)
+            skyDay = FindRootByName(skyDayName);
+
+        if (skyNight == null)
+            skyNight = FindRootByName(skyNightName);
+    }
+
+    GameObject FindRootByName(string name)
+    {
+        if (string.IsNullOrWhiteSpace(name)) return null;
+
+        // Busca exacto por nombre en escena
+        var go = GameObject.Find(name);
+        if (go) return go;
+
+        // Fallback: busca por contains (por si tienes "Sky Day (1)")
+        foreach (var t in FindObjectsByType<Transform>(FindObjectsSortMode.None))
+        {
+            if (t.name == name || t.name.Contains(name))
+                return t.gameObject;
+        }
+        return null;
     }
 
     IEnumerator AutoCycle()
@@ -71,9 +116,10 @@ public class DayNightManager : MonoBehaviour
 
         isNight = toNight;
 
-        // Remate por seguridad (deja exacto 0 o 1)
         SetGroupAlpha(skyDay, isNight ? 0f : 1f);
         SetGroupAlpha(skyNight, isNight ? 1f : 0f);
+
+        IsNightNormalized = GetAnyAlpha(skyNight);
 
         if (restartCycle)
             cycleRoutine = StartCoroutine(AutoCycle());
@@ -89,7 +135,6 @@ public class DayNightManager : MonoBehaviour
         float dayTo = toNight ? 0f : 1f;
         float nightTo = toNight ? 1f : 0f;
 
-        // Evita división por 0
         float duration = Mathf.Max(0.01f, fadeSeconds);
 
         while (t < duration)
@@ -97,20 +142,25 @@ public class DayNightManager : MonoBehaviour
             t += Time.deltaTime;
             float k = Mathf.SmoothStep(0f, 1f, t / duration);
 
-
             SetGroupAlpha(skyDay, Mathf.Lerp(dayFrom, dayTo, k));
             SetGroupAlpha(skyNight, Mathf.Lerp(nightFrom, nightTo, k));
+
+            // Mantén este valor actualizado durante el fade
+            IsNightNormalized = GetAnyAlpha(skyNight);
 
             yield return null;
         }
 
-        // Remate final del fade
         SetGroupAlpha(skyDay, dayTo);
         SetGroupAlpha(skyNight, nightTo);
+
+        IsNightNormalized = nightTo;
     }
 
     void SetGroupAlpha(GameObject root, float a)
     {
+        if (!root) return;
+
         var srs = root.GetComponentsInChildren<SpriteRenderer>(true);
         foreach (var sr in srs)
         {
@@ -125,12 +175,12 @@ public class DayNightManager : MonoBehaviour
             var twinkles = root.GetComponentsInChildren<StarTwinkle>(true);
             foreach (var tw in twinkles)
                 tw.globalAlpha = Mathf.InverseLerp(0.35f, 1f, a);
-            if (root == skyNight) IsNightNormalized = a;
         }
     }
 
     float GetAnyAlpha(GameObject root)
     {
+        if (!root) return 1f;
         var sr = root.GetComponentInChildren<SpriteRenderer>(true);
         return sr ? sr.color.a : 1f;
     }
