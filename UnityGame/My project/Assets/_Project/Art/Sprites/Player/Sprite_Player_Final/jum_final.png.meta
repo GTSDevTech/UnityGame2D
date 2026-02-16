@@ -102,7 +102,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -145,10 +145,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 53
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 112
+        height: 152
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: jum_final_1
       rect:
         serializedVersion: 2
-        x: 109
+        x: 112
         y: 0
-        width: 63
-        height: 104
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 112
+        height: 152
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: jum_final_2
       rect:
         serializedVersion: 2
-        x: 223
+        x: 224
         y: 0
-        width: 57
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 112
+        height: 152
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: jum_final_3
       rect:
         serializedVersion: 2
-        x: 343
-        y: 5
-        width: 79
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 336
+        y: 0
+        width: 112
+        height: 152
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,12 +231,12 @@ TextureImporter:
       name: jum_final_4
       rect:
         serializedVersion: 2
-        x: 457
-        y: 13
-        width: 76
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 448
+        y: 0
+        width: 112
+        height: 152
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -253,12 +253,12 @@ TextureImporter:
       name: jum_final_5
       rect:
         serializedVersion: 2
-        x: 588
-        y: 19
-        width: 74
-        height: 130
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 560
+        y: 0
+        width: 112
+        height: 152
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -275,12 +275,12 @@ TextureImporter:
       name: jum_final_6
       rect:
         serializedVersion: 2
-        x: 697
-        y: 11
-        width: 88
-        height: 127
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 672
+        y: 0
+        width: 112
+        height: 152
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -297,12 +297,12 @@ TextureImporter:
       name: jum_final_7
       rect:
         serializedVersion: 2
-        x: 802
-        y: 9
-        width: 95
-        height: 125
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 784
+        y: 0
+        width: 112
+        height: 152
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -319,12 +319,12 @@ TextureImporter:
       name: jum_final_8
       rect:
         serializedVersion: 2
-        x: 927
+        x: 896
         y: 0
-        width: 57
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 112
+        height: 152
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -341,12 +341,12 @@ TextureImporter:
       name: jum_final_9
       rect:
         serializedVersion: 2
-        x: 1043
+        x: 1008
         y: 0
-        width: 53
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 112
+        height: 152
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -363,7 +363,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e7cfe44749fdb2d4099d0ce2fe64c985
     internalID: 0
     vertices: []
     indices: 
@@ -371,7 +371,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":112.0,"y":152.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       jum_final_0: 320678910582945665
       jum_final_1: 5385209120957068048
