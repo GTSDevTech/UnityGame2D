@@ -181,8 +181,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
   damage: 1
   lifeTime: 3
-  shooterTag: 
+  shooterTag: shooterTag
   destroyOnGround: 1
   worldLayers:
   - Ground
   - Platform
+  visual: {fileID: 1521021837247436018}
+  orientToVelocity: 1
+  rotationOffsetDegrees: -180
+  minSpeedToRotate: 0.01

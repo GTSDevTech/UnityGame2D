@@ -13,9 +13,50 @@ public class Projectile : MonoBehaviour
     public bool destroyOnGround = true;
     public string[] worldLayers = new[] { "Ground", "Platform" };
 
+    [Header("Visual / Orientation")]
+    [Tooltip("Arrastra aquí el hijo 'Visual'. Si está vacío, rotará el root.")]
+    public Transform visual;
+
+    [Tooltip("Si está activo, el sprite rota para mirar a la dirección de la velocidad.")]
+    public bool orientToVelocity = true;
+
+    [Tooltip("Offset en grados por si tu sprite no apunta exactamente a la derecha.")]
+    public float rotationOffsetDegrees = 0f;
+
+    [Tooltip("Velocidad mínima para actualizar la rotación (evita jitter cuando se para).")]
+    public float minSpeedToRotate = 0.01f;
+
+    Rigidbody2D rb;
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        if (visual == null)
+        {
+            // Si existe hijo llamado "Visual", lo pillamos automático
+            var v = transform.Find("Visual");
+            if (v != null) visual = v;
+        }
+    }
+
     void Start()
     {
         Destroy(gameObject, lifeTime);
+    }
+
+    void LateUpdate()
+    {
+        if (!orientToVelocity) return;
+        if (rb == null) return;
+
+        Vector2 v = rb.linearVelocity;
+        if (v.sqrMagnitude < (minSpeedToRotate * minSpeedToRotate)) return;
+
+        // Sprite apunta a la derecha => usamos "right" como dirección forward en 2D
+        float angle = Mathf.Atan2(v.y, v.x) * Mathf.Rad2Deg + rotationOffsetDegrees;
+
+        Transform t = (visual != null) ? visual : transform;
+        t.rotation = Quaternion.Euler(0f, 0f, angle);
     }
 
     void OnTriggerEnter2D(Collider2D other)

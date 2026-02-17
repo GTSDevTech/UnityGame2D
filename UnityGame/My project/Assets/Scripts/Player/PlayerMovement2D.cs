@@ -24,6 +24,14 @@ public class PlayerMovement2D : MonoBehaviour
     [Header("Orientación")]
     public bool flipWithDirection = true;
 
+    // ✅ NUEVO: Tap = flip / Hold = move
+    [Header("Tap-to-Flip / Hold-to-Move")]
+    [Tooltip("Si pulsas izquierda/derecha menos de este tiempo: solo flip. Si mantienes más: camina.")]
+    public float tapToFlipSeconds = 0.14f;
+
+    [Tooltip("Zona muerta del input horizontal para evitar drift.")]
+    public float moveDeadzone = 0.15f;
+
     [Header("Animator Params")]
     public string speedParam = "Speed";
     public string groundedParam = "isGrounded";
@@ -34,6 +42,26 @@ public class PlayerMovement2D : MonoBehaviour
     public string hurtTrigger = "Hurt";
     public string dieTrigger = "Die";
     public string deadBool = "IsDead";
+
+    [Header("Shoot Up / Aim (disparo arriba)")]
+    [Tooltip("Bool animator: true cuando apuntas arriba (por input).")]
+    public string aimUpBoolParam = "AimUp";
+
+    [Tooltip("Trigger animator para disparo arriba (↑ + disparo estando quieto).")]
+    public string shootUpTrigger = "ShootUp";
+
+    [Tooltip("Umbral del eje Y del input para considerar 'arriba'.")]
+    public float aimUpThreshold = 0.5f;
+
+    [Tooltip("Solo permite ShootUp si estás prácticamente quieto.")]
+    public float shootUpMaxSpeed = 0.1f;
+
+    [Header("Special Move 1 (hold ↓ en crouch)")]
+    [Tooltip("Bool animator para activar el loop de SpecialMove1 (se activa tras mantener ↓ cierto tiempo estando quieto).")]
+    public string specialMove1BoolParam = "SpecialMove1";
+
+    [Tooltip("Segundos manteniendo ↓ (crouch) para activar SpecialMove1.")]
+    public float specialHoldSeconds = 0.6f;
 
     [Header("Ataque melee")]
     public float attackDuration = 0.35f;
@@ -55,7 +83,6 @@ public class PlayerMovement2D : MonoBehaviour
 
     [Tooltip("Tiempo (segundos) tras pulsar disparo para forzar el spawn si el Animation Event no llega.")]
     public float fireFallbackDelay = 0.08f;
-
 
     [Header("Ammo / Reload (recarga)")]
     public bool enableReload = true;
@@ -115,16 +142,29 @@ public class PlayerMovement2D : MonoBehaviour
     InputAction shootAction;
 
     Vector2 moveInput;
+
+    // ✅ NUEVO: este es el X que realmente usamos para moverse (tap->0, hold->mueve)
+    float moveXForMotion = 0f;
+
     bool isRunning;
     bool isGrounded;
     bool isAttacking;
     bool isDead;
+
     bool canShoot = true;
     bool shotPending = false;
     bool shotFiredThisPress = false;
     Coroutine shotFallbackRoutine;
 
     bool isCrouching;
+    bool aimUp;
+
+    // Direccion guardada para el disparo (normal o arriba)
+    Vector2 pendingShotDir = Vector2.zero;
+
+    // Special move (hold ↓)
+    float downHoldTime = 0f;
+    bool specialMove1Active = false;
 
     float coyoteCounter;
     float jumpBufferCounter;
@@ -155,6 +195,12 @@ public class PlayerMovement2D : MonoBehaviour
     // ---- DROP THROUGH ----
     Coroutine dropRoutine;
     int cachedPlatformLayer = -1;
+
+    // ✅ NUEVO: estado del tap/hold
+    bool holdingDir = false;
+    float dirHoldTime = 0f;
+    int heldDirSign = 0;          // -1 o +1
+    bool movedThisHold = false;   // si ya hemos empezado a mover en este hold
 
     void Awake()
     {
@@ -221,15 +267,44 @@ public class PlayerMovement2D : MonoBehaviour
 
         moveInput = moveAction != null ? moveAction.ReadValue<Vector2>() : Vector2.zero;
 
+        // AimUp por input
+        aimUp = moveInput.y >= aimUpThreshold;
+
+        // Ground
         isGrounded = col.IsTouchingLayers(groundLayer);
 
+        // Crouch
         if (enableCrouch)
             isCrouching = isGrounded && (moveInput.y <= crouchThreshold);
         else
             isCrouching = false;
 
-        if (animator != null && !string.IsNullOrEmpty(crouchBoolParam))
-            animator.SetBool(crouchBoolParam, isCrouching);
+        if (animator != null)
+        {
+            if (!string.IsNullOrEmpty(crouchBoolParam))
+                animator.SetBool(crouchBoolParam, isCrouching);
+
+            if (!string.IsNullOrEmpty(aimUpBoolParam))
+                animator.SetBool(aimUpBoolParam, aimUp);
+        }
+
+        // SpecialMove1: hold ↓ mientras estás agachado, grounded y quieto
+        if (isCrouching && isGrounded && Mathf.Abs(rb.linearVelocity.x) <= shootUpMaxSpeed)
+            downHoldTime += Time.deltaTime;
+        else
+            downHoldTime = 0f;
+
+        specialMove1Active =
+            isCrouching &&
+            isGrounded &&
+            Mathf.Abs(rb.linearVelocity.x) <= shootUpMaxSpeed &&
+            downHoldTime >= specialHoldSeconds;
+
+        if (animator != null && !string.IsNullOrEmpty(specialMove1BoolParam))
+            animator.SetBool(specialMove1BoolParam, specialMove1Active);
+
+        // ✅ Tap-to-Flip / Hold-to-Move (calcula moveXForMotion)
+        UpdateTapFlipHoldMove();
 
         bool sprintPressed = sprintAction != null && sprintAction.IsPressed();
         isRunning = (!isAttacking && !isMovementLocked && !isCrouching && !isReloading) ? sprintPressed : false;
@@ -282,13 +357,58 @@ public class PlayerMovement2D : MonoBehaviour
             animator.SetBool(runParam, isRunning);
             if (!string.IsNullOrEmpty(deadBool)) animator.SetBool(deadBool, isDead);
         }
+    }
 
-        if (flipWithDirection && !isMovementLocked && !isCrouching && !isReloading && Mathf.Abs(moveInput.x) > 0.01f)
+    // ✅ NUEVO: Tap-to-Flip / Hold-to-Move
+    void UpdateTapFlipHoldMove()
+    {
+        float rawX = moveInput.x;
+
+        // Deadzone
+        if (Mathf.Abs(rawX) < moveDeadzone)
         {
-            Vector3 scale = transform.localScale;
-            scale.x = Mathf.Sign(moveInput.x) * Mathf.Abs(scale.x);
-            transform.localScale = scale;
+            // Soltaste dirección -> resetea
+            holdingDir = false;
+            dirHoldTime = 0f;
+            heldDirSign = 0;
+            movedThisHold = false;
+            moveXForMotion = 0f;
+            return;
         }
+
+        int sign = rawX > 0f ? 1 : -1;
+
+        // Si cambias de dirección mientras mantienes, reinicia el “hold”
+        if (!holdingDir || sign != heldDirSign)
+        {
+            holdingDir = true;
+            heldDirSign = sign;
+            dirHoldTime = 0f;
+            movedThisHold = false;
+
+            // Flip inmediato al primer toque (pero aún no te mueves)
+            if (flipWithDirection && !isMovementLocked && !isReloading)
+            {
+                Vector3 scale = transform.localScale;
+                scale.x = heldDirSign * Mathf.Abs(scale.x);
+                transform.localScale = scale;
+            }
+        }
+
+        dirHoldTime += Time.deltaTime;
+
+        // Durante el “tap window” NO se mueve, solo orienta
+        if (dirHoldTime < Mathf.Max(0.01f, tapToFlipSeconds))
+        {
+            moveXForMotion = 0f;
+            return;
+        }
+
+        // Ya es hold -> permite moverse
+        movedThisHold = true;
+
+        // Puedes usar input continuo (analog) o fijo a -1/+1. Yo lo dejo ANALÓGICO:
+        moveXForMotion = rawX;
     }
 
     void FixedUpdate()
@@ -325,7 +445,7 @@ public class PlayerMovement2D : MonoBehaviour
         float targetSpeed = isRunning ? runSpeed : walkSpeed;
 
         if (!(freezeMovementWhileAttacking && isAttacking))
-            rb.linearVelocity = new Vector2(moveInput.x * targetSpeed, rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(moveXForMotion * targetSpeed, rb.linearVelocity.y);
         else
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
 
@@ -438,38 +558,51 @@ public class PlayerMovement2D : MonoBehaviour
         if (isReloading) return;
         if (!canShoot) return;
 
-        // No dispares si no hay balas en cargador (si recarga está activa)
         if (enableReload && magSize > 0 && ammoInMag <= 0)
         {
             if (ammoReserve > 0) StartReload();
             return;
         }
 
-        // Disparo "pendiente": esperamos al Animation Event, pero ponemos un fallback por si falta el evento
+        bool wantShootUp =
+            aimUp &&
+            isGrounded &&
+            Mathf.Abs(rb.linearVelocity.x) <= shootUpMaxSpeed &&
+            !isCrouching;
+
+        if (wantShootUp) pendingShotDir = Vector2.up;
+        else
+        {
+            float facing = Mathf.Sign(transform.localScale.x);
+            pendingShotDir = new Vector2(facing, 0f);
+        }
+
         shotPending = true;
         shotFiredThisPress = false;
 
         if (shotFallbackRoutine != null) StopCoroutine(shotFallbackRoutine);
         shotFallbackRoutine = StartCoroutine(ShootFallbackRoutine());
 
-        if (animator != null && !string.IsNullOrEmpty(shootTrigger))
-            animator.SetTrigger(shootTrigger);
+        if (animator != null)
+        {
+            if (wantShootUp && !string.IsNullOrEmpty(shootUpTrigger))
+                animator.SetTrigger(shootUpTrigger);
+            else if (!string.IsNullOrEmpty(shootTrigger))
+                animator.SetTrigger(shootTrigger);
+        }
 
         LockMovement(shootLockDuration, freezeXWithConstraints: true);
 
         StartCoroutine(ShootCooldownRoutine());
     }
 
-    
     IEnumerator ShootFallbackRoutine()
     {
-        // Si el Animation Event no llega (por clip distinto, evento borrado, etc.), forzamos el disparo.
         float delay = Mathf.Max(0f, fireFallbackDelay);
         if (delay > 0f) yield return new WaitForSeconds(delay);
 
-        if (!shotPending) yield break; // ya se resolvió por evento
+        if (!shotPending) yield break;
 
-        // Si no dependemos del evento, o si dependemos pero no llegó, disparamos igualmente
         if (!fireUsingAnimationEvent || !shotFiredThisPress)
         {
             shotPending = false;
@@ -477,7 +610,7 @@ public class PlayerMovement2D : MonoBehaviour
         }
     }
 
-IEnumerator ShootCooldownRoutine()
+    IEnumerator ShootCooldownRoutine()
     {
         canShoot = false;
         yield return new WaitForSeconds(shootCooldown);
@@ -538,13 +671,11 @@ IEnumerator ShootCooldownRoutine()
     public void FireBullet() => HandleAnimFireBullet();
     public void FireProjectile() => HandleAnimFireBullet();
 
-    
     void HandleAnimFireBullet()
     {
-        // Este método es llamado por Animation Events (PlayerAnimEvents).
-        // Marcamos que el evento llegó para que el fallback no dispare doble.
         shotFiredThisPress = true;
         shotPending = false;
+
         if (shotFallbackRoutine != null)
         {
             StopCoroutine(shotFallbackRoutine);
@@ -554,7 +685,7 @@ IEnumerator ShootCooldownRoutine()
         SpawnBullet();
     }
 
-void SpawnBullet()
+    void SpawnBullet()
     {
         if (isDead) return;
         if (isReloading) return;
@@ -578,8 +709,11 @@ void SpawnBullet()
         var rbB = b.GetComponent<Rigidbody2D>();
         if (rbB != null)
         {
-            float facing = Mathf.Sign(transform.localScale.x);
-            rbB.linearVelocity = new Vector2(facing * bulletSpeed, 0f);
+            Vector2 dir = pendingShotDir.sqrMagnitude > 0.001f
+                ? pendingShotDir.normalized
+                : new Vector2(Mathf.Sign(transform.localScale.x), 0f);
+
+            rbB.linearVelocity = dir * bulletSpeed;
         }
 
         var p = b.GetComponent<Projectile>();
@@ -598,9 +732,7 @@ void SpawnBullet()
         }
     }
 
-    // -----------------------------
-    // ✅ MALETINES: SUMA CON CLAMP
-    // -----------------------------
+
     public void AddMaletin(int amount = 1)
     {
         maxMaletines = Mathf.Max(1, maxMaletines);
@@ -612,7 +744,7 @@ void SpawnBullet()
         switch (tipo)
         {
             case TipoPowerUp.Maletin:
-                AddMaletin(1); // ✅ aquí estaba el problema (antes: maletines++)
+                AddMaletin(1);
                 break;
 
             case TipoPowerUp.Voto:
@@ -710,6 +842,26 @@ void SpawnBullet()
         isMovementLocked = false;
         isReloading = false;
         canShoot = true;
+
+        shotPending = false;
+        shotFiredThisPress = false;
+        if (shotFallbackRoutine != null)
+        {
+            StopCoroutine(shotFallbackRoutine);
+            shotFallbackRoutine = null;
+        }
+
+        downHoldTime = 0f;
+        specialMove1Active = false;
+        if (animator != null && !string.IsNullOrEmpty(specialMove1BoolParam))
+            animator.SetBool(specialMove1BoolParam, false);
+
+        // ✅ reset tap/hold
+        holdingDir = false;
+        dirHoldTime = 0f;
+        heldDirSign = 0;
+        movedThisHold = false;
+        moveXForMotion = 0f;
     }
 
     void OnGUI()
@@ -717,7 +869,7 @@ void SpawnBullet()
         if (!debugHUD) return;
 
         GUI.Label(new Rect(10, 10, 700, 20), $"Grounded: {isGrounded}");
-        GUI.Label(new Rect(10, 30, 1300, 20),
-            $"Move: {moveInput}  Crouch: {isCrouching}  Attacking: {isAttacking}  Reloading: {isReloading}  Ammo: {ammoInMag}/{magSize}  Reserve: {ammoReserve}  Locked: {isMovementLocked}  Dead: {isDead}");
+        GUI.Label(new Rect(10, 30, 1500, 20),
+            $"Move:{moveInput}  MoveXForMotion:{moveXForMotion:0.00}  Crouch:{isCrouching}  Attacking:{isAttacking}  Reloading:{isReloading}  Ammo:{ammoInMag}/{magSize}  Reserve:{ammoReserve}  Locked:{isMovementLocked}  Dead:{isDead}  AimUp:{aimUp}  Special:{specialMove1Active}");
     }
 }
