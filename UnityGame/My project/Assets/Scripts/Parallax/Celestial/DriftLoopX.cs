@@ -1,32 +1,71 @@
 using UnityEngine;
 
+[RequireComponent(typeof(SpriteRenderer))]
 public class DriftLoopX : MonoBehaviour
 {
+    [Header("Movement")]
+    [Tooltip("World units per second")]
     public float speed = 0.2f;
 
-    // Rango LOCAL respecto a la posición inicial
-    public float minX = -30f;
-    public float maxX = 30f;
+    [Tooltip("If true, uses Camera bounds. If false, uses Manual Bounds below.")]
+    public bool useCameraBounds = true;
 
-    private Vector3 startLocalPos;
+    [Tooltip("If empty, uses Camera.main")]
+    public Camera targetCamera;
+
+    [Tooltip("Extra margin outside the bounds before wrapping")]
+    public float padding = 0.5f;
+
+    [Header("Manual Bounds (world X)")]
+    public float manualMinX = -10f;
+    public float manualMaxX = 10f;
+
+    SpriteRenderer sr;
+    float halfWidth;
 
     void Awake()
     {
-        startLocalPos = transform.localPosition;
+        sr = GetComponent<SpriteRenderer>();
+        if (targetCamera == null) targetCamera = Camera.main;
     }
 
-    void LateUpdate()
+    void Start()
     {
-        var p = transform.localPosition;
+        // ancho real en mundo (incluye escala)
+        halfWidth = sr.bounds.extents.x;
+    }
 
-        p.x += (-speed) * Time.deltaTime;
+    void Update()
+    {
+        // Move left (si quieres derecha, pon +speed)
+        Vector3 pos = transform.position;
+        pos.x += -speed * Time.deltaTime;
 
-        float localMin = startLocalPos.x + minX;
-        float localMax = startLocalPos.x + maxX;
+        GetBounds(out float minX, out float maxX);
 
-        if (p.x < localMin)
-            p.x = localMax;
+        // Wrap: si sale por la izquierda, entra por la derecha
+        if (pos.x < (minX - halfWidth - padding))
+        {
+            pos.x = (maxX + halfWidth + padding);
+        }
 
-        transform.localPosition = p;
+        transform.position = pos;
+    }
+
+    void GetBounds(out float minX, out float maxX)
+    {
+        if (!useCameraBounds || targetCamera == null || !targetCamera.orthographic)
+        {
+            minX = manualMinX;
+            maxX = manualMaxX;
+            return;
+        }
+
+        float camHalfHeight = targetCamera.orthographicSize;
+        float camHalfWidth = camHalfHeight * targetCamera.aspect;
+
+        float camX = targetCamera.transform.position.x;
+        minX = camX - camHalfWidth;
+        maxX = camX + camHalfWidth;
     }
 }
