@@ -145,6 +145,10 @@ public class PlayerMovement2D : MonoBehaviour
 
     // ✅ NUEVO: este es el X que realmente usamos para moverse (tap->0, hold->mueve)
     float moveXForMotion = 0f;
+    
+    
+    [Header("Sonidos")]
+    public AudioSource shootSFX;
 
     bool isRunning;
     bool isGrounded;
@@ -686,7 +690,8 @@ public class PlayerMovement2D : MonoBehaviour
     }
 
     void SpawnBullet()
-    {
+    {   
+        if (shootSFX != null) shootSFX.Play();
         if (isDead) return;
         if (isReloading) return;
 
