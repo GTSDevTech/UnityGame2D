@@ -145,6 +145,17 @@ public class PlayerMovement2D : MonoBehaviour
 
     // ✅ NUEVO: este es el X que realmente usamos para moverse (tap->0, hold->mueve)
     float moveXForMotion = 0f;
+    
+    
+    [Header("Sonidos")]
+    public AudioSource shootSFX;  // Sonido de disparo
+    public AudioSource jumpSFX;   // Sonido de salto
+    public AudioSource hitSFX;    // 💥 Sonido de recibir daño
+    public AudioSource deathSFX;  // 💀 Sonido de morir
+    public AudioSource itemSFX;
+    public AudioSource meleeSFX;// 💰 Sonido del maletín
+    public AudioSource fartSFX; // Sonido cuando te agachas
+    
 
     bool isRunning;
     bool isGrounded;
@@ -275,9 +286,16 @@ public class PlayerMovement2D : MonoBehaviour
 
         // Crouch
         if (enableCrouch)
+        {
+            bool wasCrouching = isCrouching;
             isCrouching = isGrounded && (moveInput.y <= crouchThreshold);
+            if (isCrouching && !wasCrouching && fartSFX != null)
+                fartSFX.Play();
+        }
         else
+        {
             isCrouching = false;
+        }
 
         if (animator != null)
         {
@@ -463,6 +481,9 @@ public class PlayerMovement2D : MonoBehaviour
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
 
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            
+            // ✅ NUEVA LÍNEA: Aquí suena el salto
+            if (jumpSFX != null) jumpSFX.Play(); 
 
             jumpBufferCounter = 0f;
             coyoteCounter = 0f;
@@ -537,6 +558,8 @@ public class PlayerMovement2D : MonoBehaviour
     IEnumerator AttackCoroutine()
     {
         isAttacking = true;
+        
+        if(meleeSFX != null) meleeSFX.Play();
 
         if (animator != null && !string.IsNullOrEmpty(attackTrigger))
             animator.SetTrigger(attackTrigger);
@@ -686,7 +709,8 @@ public class PlayerMovement2D : MonoBehaviour
     }
 
     void SpawnBullet()
-    {
+    {   
+        if (shootSFX != null) shootSFX.Play();
         if (isDead) return;
         if (isReloading) return;
 
@@ -735,6 +759,7 @@ public class PlayerMovement2D : MonoBehaviour
 
     public void AddMaletin(int amount = 1)
     {
+        if(itemSFX != null) itemSFX.Play();
         maxMaletines = Mathf.Max(1, maxMaletines);
         maletines = Mathf.Clamp(maletines + amount, 0, maxMaletines);
     }
@@ -768,14 +793,16 @@ public class PlayerMovement2D : MonoBehaviour
     }
 
     public void OnHurt()
-    {
+    {   
+        if (hitSFX !=null) hitSFX.Play();
         if (isDead) return;
         if (animator != null && !string.IsNullOrEmpty(hurtTrigger))
             animator.SetTrigger(hurtTrigger);
     }
 
     public void OnDie()
-    {
+    {   
+        if(deathSFX != null) deathSFX.Play();
         if (isDead) return;
 
         isDead = true;
