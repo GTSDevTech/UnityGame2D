@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: CS_PrimeraConversacion
   m_EditorClassIdentifier: Assembly-CSharp::CutsceneSequence
   lines:
-  - speakerName: Corrupto
+  - speakerName: Fontanero dele stado
     text: "Vaya, parece que hemos robado tanto que hemos quebrado al Pa\xEDs, ser\xE1
       mejor que nos vayamos antes de que nos encuentren... Yo que tu no volver\xEDa
       atr\xE1s..."
     speakerTransform: {fileID: 0}
-  - speakerName: Corrupto
+  - speakerName: Fontanero dele stado
     text: "Si yo fuese tu, intentar\xEDa llegar al aeropuerto y largarme en el Falconeti...
       No olvides robar todo el dinero que puedas por el camino, seguro que te ser\xE1
       \xFAtil jejeje"
