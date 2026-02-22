@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f90a985ed01a6f847ba2da48d5a7c3f2
+guid: 462e6906f9dac1e408597dee240825d1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6103394005982723982
-    second: ChatGPT Image 14 feb 2026, 23_58_41_0
+      213: 7195268672227423287
+    second: fontanera_perfil_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 130
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChatGPT Image 14 feb 2026, 23_58_41_0
+      name: fontanera_perfil_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 1
-        width: 1494
-        height: 1023
+        x: 135
+        y: 103
+        width: 727
+        height: 867
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 270c62d1d736c4ba0800000000000000
-      internalID: -6103394005982723982
+      spriteID: 734bc973cbabad360800000000000000
+      internalID: 7195268672227423287
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ChatGPT Image 14 feb 2026, 23_58_41_0: -6103394005982723982
+      fontanera_perfil_0: 7195268672227423287
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

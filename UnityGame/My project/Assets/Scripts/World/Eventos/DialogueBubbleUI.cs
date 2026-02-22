@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class DialogueBubbleUI : MonoBehaviour
 {
     [Header("Refs UI")]
-    public GameObject root;        // el panel/bocadillo (para activar/desactivar)
+    public GameObject root;        // panel/bocadillo
     public TMP_Text txtSpeaker;
     public TMP_Text txtLine;
     public Button btnNext;
+    public Image imgPortrait;      // foto (UI Image)
 
     [Header("Opcional: seguir a un NPC")]
     public bool followTarget = false;
@@ -45,15 +46,19 @@ public class DialogueBubbleUI : MonoBehaviour
         waitingNext = false;
     }
 
-    public void ShowLine(string speaker, string line, Transform followTransform = null)
+    public void ShowLine(string speaker, string line, Transform followTransform = null, Sprite portrait = null)
     {
         if (root != null) root.SetActive(true);
 
-        if (txtSpeaker != null)
-            txtSpeaker.text = speaker ?? "";
+        if (txtSpeaker != null) txtSpeaker.text = speaker ?? "";
+        if (txtLine != null) txtLine.text = line ?? "";
 
-        if (txtLine != null)
-            txtLine.text = line ?? "";
+        // Portrait
+        if (imgPortrait != null)
+        {
+            imgPortrait.sprite = portrait;
+            imgPortrait.gameObject.SetActive(portrait != null);
+        }
 
         follow = followTransform;
         followTarget = (follow != null);
@@ -73,5 +78,11 @@ public class DialogueBubbleUI : MonoBehaviour
         followTarget = false;
 
         if (root != null) root.SetActive(false);
+
+        if (imgPortrait != null)
+        {
+            imgPortrait.sprite = null;
+            imgPortrait.gameObject.SetActive(false);
+        }
     }
 }
