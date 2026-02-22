@@ -65,10 +65,8 @@ public class PlayerHealth : MonoBehaviour
     {
         yield return new WaitForSeconds(deathAnimTime);
 
-        if (CheckpointManager.I != null)
-            CheckpointManager.I.RespawnPlayer(transform);
-        else
-            Debug.LogWarning("No hay CheckpointManager, respawn cancelado.");
+        // 🔥 Ir directo a Game Over
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOverScene");
     }
 
     public void ResetAfterRespawn()

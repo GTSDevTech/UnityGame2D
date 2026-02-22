@@ -1,184 +1,157 @@
 fileFormatVersion: 2
-guid: cc33dc83ed5ba984fbb22f468aad9427
+guid: ec7985b1c62975349b5053e1ceb2f967
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 44206760428858403
-    second: chaqueta-1_0
+      213: 2017982478927235093
+    second: barajas_0
   - first:
-      213: 3273625921297385759
-    second: chaqueta-1_1
+      213: -8918566003498445043
+    second: barajas_1
   - first:
-      213: 7256357700134765019
-    second: chaqueta-1_2
+      213: -6761801170611337850
+    second: barajas_2
   - first:
-      213: -2799802851221855350
-    second: chaqueta-1_3
+      213: -6676379601103082224
+    second: barajas_3
   - first:
-      213: -7977241320639434021
-    second: chaqueta-1_4
+      213: 5390605172198063778
+    second: barajas_4
   - first:
-      213: -1007793355543258050
-    second: chaqueta-1_5
+      213: 3504500508357804998
+    second: barajas_5
   - first:
-      213: -7613708062505285785
-    second: chaqueta-1_6
+      213: 1922781700811415851
+    second: barajas_6
   - first:
-      213: -990390754676024784
-    second: chaqueta-1_7
+      213: -22515453750379416
+    second: barajas_7
   - first:
-      213: 1251311755256352201
-    second: chaqueta-1_8
+      213: 8656541924456961578
+    second: barajas_8
   - first:
-      213: -6648643132414308060
-    second: chaqueta-1_9
+      213: -8368186299861269125
+    second: barajas_9
   - first:
-      213: -4405696644477770482
-    second: chaqueta-1_10
+      213: 3562865789814697301
+    second: barajas_10
   - first:
-      213: -7295525171818779311
-    second: chaqueta-1_11
+      213: -5995397029187235942
+    second: barajas_11
   - first:
-      213: 4475124012698104052
-    second: chaqueta-1_12
+      213: 1162690498276226027
+    second: barajas_12
   - first:
-      213: 2993903639109174831
-    second: chaqueta-1_13
+      213: -4910336894355499085
+    second: barajas_13
   - first:
-      213: -1434469317245685977
-    second: chaqueta-1_14
+      213: 1572065747182026676
+    second: barajas_14
   - first:
-      213: 8600370378231898914
-    second: chaqueta-1_15
+      213: -7542021217204417394
+    second: barajas_15
   - first:
-      213: 819221117735203458
-    second: chaqueta-1_16
+      213: 3628335276555942361
+    second: barajas_16
   - first:
-      213: 3574690382234060261
-    second: chaqueta-1_17
+      213: -6027571064200817062
+    second: barajas_17
   - first:
-      213: -3493958556909307164
-    second: chaqueta-1_18
+      213: 6703355751911873246
+    second: barajas_18
   - first:
-      213: -5742692111212961490
-    second: chaqueta-1_19
+      213: 5525453732127853146
+    second: barajas_19
   - first:
-      213: 4797929181368072668
-    second: chaqueta-1_20
+      213: -6740684307489498911
+    second: barajas_20
   - first:
-      213: 6447195313788944237
-    second: chaqueta-1_21
+      213: -7849334777963036313
+    second: barajas_21
   - first:
-      213: 4213967555386233769
-    second: chaqueta-1_22
+      213: -335409002520722080
+    second: barajas_22
   - first:
-      213: -2836506425579530662
-    second: chaqueta-1_23
+      213: 8614987942110877764
+    second: barajas_23
   - first:
-      213: -888576225024704410
-    second: chaqueta-1_24
+      213: 207477612478750046
+    second: barajas_24
   - first:
-      213: -3727508731515849242
-    second: chaqueta-1_25
+      213: 8593296526140730038
+    second: barajas_25
   - first:
-      213: 6269976515576588053
-    second: chaqueta-1_26
+      213: 7677908734568079533
+    second: barajas_26
   - first:
-      213: -5576441095484264440
-    second: chaqueta-1_27
+      213: 5163427026884068782
+    second: barajas_27
   - first:
-      213: -8401364175512595656
-    second: chaqueta-1_28
+      213: -8132598502636822719
+    second: barajas_28
   - first:
-      213: -3009995505961073486
-    second: chaqueta-1_29
+      213: 1960512554522575009
+    second: barajas_29
   - first:
-      213: -8805236152961709819
-    second: chaqueta-1_30
+      213: -5664669687920838104
+    second: barajas_30
   - first:
-      213: 8893723672296317054
-    second: chaqueta-1_31
+      213: 1241848649818187148
+    second: barajas_31
   - first:
-      213: 3789766251032735636
-    second: chaqueta-1_32
+      213: 1894885517317923847
+    second: barajas_32
   - first:
-      213: -940817576141689325
-    second: chaqueta-1_33
+      213: 8344617840374421809
+    second: barajas_33
   - first:
-      213: 8513520596014503081
-    second: chaqueta-1_34
+      213: 18433945210276311
+    second: barajas_34
   - first:
-      213: 7400065568981105577
-    second: chaqueta-1_35
+      213: 7612760812314995165
+    second: barajas_35
   - first:
-      213: -7963669227977336388
-    second: chaqueta-1_36
+      213: 5562617640461976132
+    second: barajas_36
   - first:
-      213: -5146246648874580949
-    second: chaqueta-1_37
+      213: 4959234484418255322
+    second: barajas_37
   - first:
-      213: 6527996464847811872
-    second: chaqueta-1_38
+      213: 9182494275343611791
+    second: barajas_38
   - first:
-      213: -2308598899861913646
-    second: chaqueta-1_39
+      213: 6012794377547610948
+    second: barajas_39
   - first:
-      213: 4349785120541148620
-    second: chaqueta-1_40
+      213: 5923869156935153656
+    second: barajas_40
   - first:
-      213: -1396136697629582042
-    second: chaqueta-1_41
+      213: -7785865237989728239
+    second: barajas_41
   - first:
-      213: -5046455654068669660
-    second: chaqueta-1_42
+      213: -1088981003706707738
+    second: barajas_42
   - first:
-      213: 4803101441715976084
-    second: chaqueta-1_43
+      213: -1550601594730206827
+    second: barajas_43
   - first:
-      213: -1732540407072704461
-    second: chaqueta-1_44
+      213: -4692642110547864173
+    second: barajas_44
   - first:
-      213: -1111304478806544583
-    second: chaqueta-1_45
+      213: -4289575794613025452
+    second: barajas_45
   - first:
-      213: -3623845073485310982
-    second: chaqueta-1_46
+      213: 3385226974727801760
+    second: barajas_46
   - first:
-      213: 4588955254060637362
-    second: chaqueta-1_47
+      213: 7618089975069172279
+    second: barajas_47
   - first:
-      213: -3543490773608754155
-    second: chaqueta-1_48
+      213: -5508297106848685786
+    second: barajas_48
   - first:
-      213: -793971241114139245
-    second: chaqueta-1_49
-  - first:
-      213: -6260014615156196741
-    second: chaqueta-1_50
-  - first:
-      213: 8755887429783271200
-    second: chaqueta-1_51
-  - first:
-      213: -9040178525142733225
-    second: chaqueta-1_52
-  - first:
-      213: -668094935112138751
-    second: chaqueta-1_53
-  - first:
-      213: 2131183906095536191
-    second: chaqueta-1_54
-  - first:
-      213: 2235377475627516393
-    second: chaqueta-1_55
-  - first:
-      213: -6695334275191404812
-    second: chaqueta-1_56
-  - first:
-      213: 5529463656708427198
-    second: chaqueta-1_57
-  - first:
-      213: -4036427369590768984
-    second: chaqueta-1_58
+      213: 5552714975361104147
+    second: barajas_49
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -225,7 +198,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -287,13 +260,79 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chaqueta-1_0
+      name: barajas_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 849
+        x: 0
+        y: 0
+        width: 1536
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5188b637f50510c10800000000000000
+      internalID: 2017982478927235093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 119
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07999fe873ea3480800000000000000
+      internalID: -8918566003498445043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 139
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68504ef29a14922a0800000000000000
+      internalID: -6761801170611337850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 94
         width: 7
-        height: 42
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,20 +341,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 32c680c70dd0d9000800000000000000
-      internalID: 44206760428858403
+      spriteID: 01d2692302cb853a0800000000000000
+      internalID: -6676379601103082224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_1
+      name: barajas_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 849
-        width: 24
-        height: 42
+        x: 155
+        y: 137
+        width: 6
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,20 +363,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1901765e614e6d20800000000000000
-      internalID: 3273625921297385759
+      spriteID: 2aebf3de7d64fca40800000000000000
+      internalID: 5390605172198063778
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_2
+      name: barajas_5
       rect:
         serializedVersion: 2
-        x: 57
-        y: 849
-        width: 16
-        height: 42
+        x: 489
+        y: 153
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,20 +385,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd104b7e1e2c3b460800000000000000
-      internalID: 7256357700134765019
+      spriteID: 6c3c7db05ac72a030800000000000000
+      internalID: 3504500508357804998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_3
+      name: barajas_6
       rect:
         serializedVersion: 2
-        x: 74
-        y: 849
-        width: 18
-        height: 42
+        x: 496
+        y: 145
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,20 +407,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a83abcb042a1529d0800000000000000
-      internalID: -2799802851221855350
+      spriteID: b216c7105c71faa10800000000000000
+      internalID: 1922781700811415851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_4
+      name: barajas_7
       rect:
         serializedVersion: 2
-        x: 252
-        y: 849
-        width: 52
-        height: 120
+        x: 812
+        y: 136
+        width: 6
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -390,944 +429,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd2f7bbb8452b4190800000000000000
-      internalID: -7977241320639434021
+      spriteID: 86c7049605200bff0800000000000000
+      internalID: -22515453750379416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_5
+      name: barajas_8
       rect:
         serializedVersion: 2
-        x: 415
-        y: 849
-        width: 52
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e3c58db58499302f0800000000000000
-      internalID: -1007793355543258050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_6
-      rect:
-        serializedVersion: 2
-        x: 578
-        y: 849
-        width: 52
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 76748d63bdca65690800000000000000
-      internalID: -7613708062505285785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_7
-      rect:
-        serializedVersion: 2
-        x: 742
-        y: 849
-        width: 52
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 03a54be1bdc6142f0800000000000000
-      internalID: -990390754676024784
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_8
-      rect:
-        serializedVersion: 2
-        x: 908
-        y: 849
-        width: 52
-        height: 123
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9cd4353696d8d5110800000000000000
-      internalID: 1251311755256352201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_9
-      rect:
-        serializedVersion: 2
-        x: 1071
-        y: 849
-        width: 51
-        height: 123
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 421da1e0c464bb3a0800000000000000
-      internalID: -6648643132414308060
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_10
-      rect:
-        serializedVersion: 2
-        x: 1234
-        y: 849
-        width: 51
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e05a5c58e32dbd2c0800000000000000
-      internalID: -4405696644477770482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_11
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 651
-        width: 7
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 15d22d3728611ca90800000000000000
-      internalID: -7295525171818779311
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_12
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 651
-        width: 24
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4f0f0be4495da1e30800000000000000
-      internalID: 4475124012698104052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_13
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 651
-        width: 15
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f260ad45f7b7c8920800000000000000
-      internalID: 2993903639109174831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_14
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 651
-        width: 18
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 72faf5091cdb71ce0800000000000000
-      internalID: -1434469317245685977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_15
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 651
-        width: 21
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 223ed43da47aa5770800000000000000
-      internalID: 8600370378231898914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_16
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 651
-        width: 52
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 282fa1324457e5b00800000000000000
-      internalID: 819221117735203458
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_17
-      rect:
-        serializedVersion: 2
-        x: 415
-        y: 651
-        width: 53
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e5011f86f9db9130800000000000000
-      internalID: 3574690382234060261
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_18
-      rect:
-        serializedVersion: 2
-        x: 583
-        y: 651
-        width: 52
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4eafb7b4437f28fc0800000000000000
-      internalID: -3493958556909307164
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_19
-      rect:
-        serializedVersion: 2
-        x: 742
-        y: 651
-        width: 53
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e21a6b073fbdd40b0800000000000000
-      internalID: -5742692111212961490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_20
-      rect:
-        serializedVersion: 2
-        x: 906
-        y: 651
-        width: 52
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd9bce08b2ba59240800000000000000
-      internalID: 4797929181368072668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_21
-      rect:
-        serializedVersion: 2
-        x: 1069
-        y: 651
-        width: 52
-        height: 123
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d6ff3fbaaf9097950800000000000000
-      internalID: 6447195313788944237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_22
-      rect:
-        serializedVersion: 2
-        x: 1232
-        y: 651
-        width: 52
-        height: 123
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a351d14a250b7a30800000000000000
-      internalID: 4213967555386233769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_23
-      rect:
-        serializedVersion: 2
-        x: 1395
-        y: 651
-        width: 52
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a5618343f64b2a8d0800000000000000
-      internalID: -2836506425579530662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_24
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 463
-        width: 34
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6608b8791a42ba3f0800000000000000
-      internalID: -888576225024704410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_25
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 463
-        width: 24
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6e5b4d0de8a354cc0800000000000000
-      internalID: -3727508731515849242
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_26
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 463
-        width: 16
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 517ebf0db6e630750800000000000000
-      internalID: 6269976515576588053
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_27
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 463
-        width: 21
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 80035c07e508c92b0800000000000000
-      internalID: -5576441095484264440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_28
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 463
-        width: 61
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 83311e17bcb586b80800000000000000
-      internalID: -8401364175512595656
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_29
-      rect:
-        serializedVersion: 2
-        x: 412
-        y: 463
-        width: 64
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b40ba3f8095a36d0800000000000000
-      internalID: -3009995505961073486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_30
-      rect:
-        serializedVersion: 2
-        x: 578
-        y: 463
-        width: 54
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5094a4bfe548dc580800000000000000
-      internalID: -8805236152961709819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_31
-      rect:
-        serializedVersion: 2
-        x: 759
-        y: 463
-        width: 31
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e7064b91f8adc6b70800000000000000
-      internalID: 8893723672296317054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_32
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 463
-        width: 45
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 49fe1968354f79430800000000000000
-      internalID: 3789766251032735636
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_33
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 463
-        width: 60
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 31e61af266b81f2f0800000000000000
-      internalID: -940817576141689325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_34
-      rect:
-        serializedVersion: 2
-        x: 1219
-        y: 463
-        width: 62
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a49a6120e9162670800000000000000
-      internalID: 8513520596014503081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_35
-      rect:
-        serializedVersion: 2
-        x: 1393
-        y: 463
-        width: 54
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9abb7b18d6052b660800000000000000
-      internalID: 7400065568981105577
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_36
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 282
-        width: 23
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cb993bdc70d5b7190800000000000000
-      internalID: -7963669227977336388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_37
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 282
-        width: 24
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b24494750fbd498b0800000000000000
-      internalID: -5146246648874580949
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_38
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 282
-        width: 24
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 025724ea23a189a50800000000000000
-      internalID: 6527996464847811872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_39
-      rect:
-        serializedVersion: 2
-        x: 251
-        y: 282
-        width: 68
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2df7fd4388536ffd0800000000000000
-      internalID: -2308598899861913646
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_40
-      rect:
-        serializedVersion: 2
-        x: 412
-        y: 282
-        width: 74
-        height: 119
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc5822f558a8d5c30800000000000000
-      internalID: 4349785120541148620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_41
-      rect:
-        serializedVersion: 2
-        x: 559
-        y: 291
-        width: 94
-        height: 110
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 62dd6ef021def9ce0800000000000000
-      internalID: -1396136697629582042
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_42
-      rect:
-        serializedVersion: 2
-        x: 726
-        y: 282
-        width: 86
-        height: 117
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 423b974e15367f9b0800000000000000
-      internalID: -5046455654068669660
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_43
-      rect:
-        serializedVersion: 2
-        x: 893
-        y: 282
-        width: 67
-        height: 119
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 497b5a5305b08a240800000000000000
-      internalID: 4803101441715976084
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_44
-      rect:
-        serializedVersion: 2
-        x: 1077
-        y: 282
-        width: 64
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 338bb6ddda7c4f7e0800000000000000
-      internalID: -1732540407072704461
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_45
-      rect:
-        serializedVersion: 2
-        x: 1233
-        y: 282
-        width: 72
-        height: 119
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 93f6f67e67ad390f0800000000000000
-      internalID: -1111304478806544583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_46
-      rect:
-        serializedVersion: 2
-        x: 1375
-        y: 292
-        width: 91
-        height: 110
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af3dbd90b1485bdc0800000000000000
-      internalID: -3623845073485310982
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_47
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 97
+        x: 867
+        y: 134
         width: 13
-        height: 47
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1336,20 +451,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2bc52708d7e3faf30800000000000000
-      internalID: 4588955254060637362
+      spriteID: a2698861407322870800000000000000
+      internalID: 8656541924456961578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_48
+      name: barajas_9
       rect:
         serializedVersion: 2
-        x: 37
-        y: 101
-        width: 24
-        height: 43
+        x: 878
+        y: 135
+        width: 7
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1358,20 +473,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5141d266aedf2dec0800000000000000
-      internalID: -3543490773608754155
+      spriteID: b758a7695ea3edb80800000000000000
+      internalID: -8368186299861269125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_49
+      name: barajas_10
       rect:
         serializedVersion: 2
-        x: 62
-        y: 101
-        width: 34
-        height: 43
+        x: 878
+        y: 114
+        width: 9
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1380,20 +495,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3950483ec5f3bf4f0800000000000000
-      internalID: -793971241114139245
+      spriteID: 55deb481f87d17130800000000000000
+      internalID: 3562865789814697301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_50
+      name: barajas_11
       rect:
         serializedVersion: 2
-        x: 99
-        y: 101
-        width: 23
-        height: 43
+        x: 891
+        y: 117
+        width: 12
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1402,20 +517,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b7a7cdedfd5ff19a0800000000000000
-      internalID: -6260014615156196741
+      spriteID: a9fccdbba221ccca0800000000000000
+      internalID: -5995397029187235942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_51
+      name: barajas_12
       rect:
         serializedVersion: 2
-        x: 255
-        y: 101
-        width: 53
-        height: 115
+        x: 892
+        y: 141
+        width: 10
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1424,20 +539,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0273a890a39238970800000000000000
-      internalID: 8755887429783271200
+      spriteID: be3f97519d4b22010800000000000000
+      internalID: 1162690498276226027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_52
+      name: barajas_13
       rect:
         serializedVersion: 2
-        x: 413
-        y: 101
-        width: 62
-        height: 105
+        x: 896
+        y: 112
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1446,42 +561,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75ea0ce3785da8280800000000000000
-      internalID: -9040178525142733225
+      spriteID: 3b712745c9afadbb0800000000000000
+      internalID: -4910336894355499085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_53
+      name: barajas_14
       rect:
         serializedVersion: 2
-        x: 572
-        y: 101
-        width: 57
-        height: 125
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 100476c32337ab6f0800000000000000
-      internalID: -668094935112138751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chaqueta-1_54
-      rect:
-        serializedVersion: 2
-        x: 727
+        x: 902
         y: 104
-        width: 79
-        height: 128
+        width: 8
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1490,20 +583,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f389ad9987c739d10800000000000000
-      internalID: 2131183906095536191
+      spriteID: 4bff758c77911d510800000000000000
+      internalID: 1572065747182026676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_55
+      name: barajas_15
       rect:
         serializedVersion: 2
-        x: 893
-        y: 117
-        width: 76
-        height: 128
+        x: 903
+        y: 137
+        width: 11
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1512,20 +605,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e100b578f7a50f10800000000000000
-      internalID: 2235377475627516393
+      spriteID: e8c421c89ab555790800000000000000
+      internalID: -7542021217204417394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_56
+      name: barajas_16
       rect:
         serializedVersion: 2
-        x: 1062
-        y: 117
-        width: 74
-        height: 130
+        x: 903
+        y: 109
+        width: 9
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1534,20 +627,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4f608ba33f46513a0800000000000000
-      internalID: -6695334275191404812
+      spriteID: 9d9b225d5bf6a5230800000000000000
+      internalID: 3628335276555942361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_57
+      name: barajas_17
       rect:
         serializedVersion: 2
-        x: 1223
-        y: 108
-        width: 88
-        height: 127
+        x: 904
+        y: 128
+        width: 6
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1556,20 +649,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ebdc98046e99cbc40800000000000000
-      internalID: 5529463656708427198
+      spriteID: a5613e37d04c95ca0800000000000000
+      internalID: -6027571064200817062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chaqueta-1_58
+      name: barajas_18
       rect:
         serializedVersion: 2
-        x: 1377
-        y: 101
-        width: 89
-        height: 129
+        x: 904
+        y: 95
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1578,8 +671,690 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8aab0e971babbf7c0800000000000000
-      internalID: -4036427369590768984
+      spriteID: eda57cb5a8a170d50800000000000000
+      internalID: 6703355751911873246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_19
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 123
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a465ee4ea5eac40800000000000000
+      internalID: 5525453732127853146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_20
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8d90506574472a0800000000000000
+      internalID: -6740684307489498911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_21
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 88
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761c4646b9f811390800000000000000
+      internalID: -7849334777963036313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_22
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 136
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065c84e0a43685bf0800000000000000
+      internalID: -335409002520722080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_23
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 104
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 448dac1a3e59e8770800000000000000
+      internalID: 8614987942110877764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_24
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 96
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d54ae0acb11e200800000000000000
+      internalID: 207477612478750046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_25
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 144
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba673a49a5814770800000000000000
+      internalID: 8593296526140730038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_26
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 155
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0acc590596d8a60800000000000000
+      internalID: 7677908734568079533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_27
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 144
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea58311268d28a740800000000000000
+      internalID: 5163427026884068782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_28
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 91
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f557d00c4332f80800000000000000
+      internalID: -8132598502636822719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_29
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 118
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a00306f7c3253b10800000000000000
+      internalID: 1960512554522575009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_30
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 99
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a3e897eec0361b0800000000000000
+      internalID: -5664669687920838104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_31
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 155
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85263574ceeb3110800000000000000
+      internalID: 1241848649818187148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_32
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 131
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70464c5a65cfb4a10800000000000000
+      internalID: 1894885517317923847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_33
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 104
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13997e1d6b90ec370800000000000000
+      internalID: 8344617840374421809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_34
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 119
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d94114539d714000800000000000000
+      internalID: 18433945210276311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_35
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 107
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9ac0aef95f5a960800000000000000
+      internalID: 7612760812314995165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_36
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 131
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442ce01a543623d40800000000000000
+      internalID: 5562617640461976132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_37
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 88
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad91e990d7db2d440800000000000000
+      internalID: 4959234484418255322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_38
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 151
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87f9e974e5ce6f70800000000000000
+      internalID: 9182494275343611791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_39
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 136
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44bf03511acb17350800000000000000
+      internalID: 6012794377547610948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_40
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 129
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7330bbc9fc53250800000000000000
+      internalID: 5923869156935153656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_41
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 96
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1106f8c31dc03f390800000000000000
+      internalID: -7785865237989728239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_42
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 74
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0d9eafb8923e0f0800000000000000
+      internalID: -1088981003706707738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_43
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 147
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599a3f5a0182b7ae0800000000000000
+      internalID: -1550601594730206827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_44
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 107
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39551c6fcd260eeb0800000000000000
+      internalID: -4692642110547864173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_45
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 157
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4550afcba8d5874c0800000000000000
+      internalID: -4289575794613025452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_46
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 151
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab88b07ffdbafe20800000000000000
+      internalID: 3385226974727801760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_47
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 154
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73266fe4874e8b960800000000000000
+      internalID: 7618089975069172279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_48
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 155
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621e8fc27f89e83b0800000000000000
+      internalID: -5508297106848685786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_49
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 146
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 319f36db9d43f0d40800000000000000
+      internalID: 5552714975361104147
       vertices: []
       indices: 
       edges: []
@@ -1598,65 +1373,56 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      chaqueta-1_0: 44206760428858403
-      chaqueta-1_1: 3273625921297385759
-      chaqueta-1_10: -4405696644477770482
-      chaqueta-1_11: -7295525171818779311
-      chaqueta-1_12: 4475124012698104052
-      chaqueta-1_13: 2993903639109174831
-      chaqueta-1_14: -1434469317245685977
-      chaqueta-1_15: 8600370378231898914
-      chaqueta-1_16: 819221117735203458
-      chaqueta-1_17: 3574690382234060261
-      chaqueta-1_18: -3493958556909307164
-      chaqueta-1_19: -5742692111212961490
-      chaqueta-1_2: 7256357700134765019
-      chaqueta-1_20: 4797929181368072668
-      chaqueta-1_21: 6447195313788944237
-      chaqueta-1_22: 4213967555386233769
-      chaqueta-1_23: -2836506425579530662
-      chaqueta-1_24: -888576225024704410
-      chaqueta-1_25: -3727508731515849242
-      chaqueta-1_26: 6269976515576588053
-      chaqueta-1_27: -5576441095484264440
-      chaqueta-1_28: -8401364175512595656
-      chaqueta-1_29: -3009995505961073486
-      chaqueta-1_3: -2799802851221855350
-      chaqueta-1_30: -8805236152961709819
-      chaqueta-1_31: 8893723672296317054
-      chaqueta-1_32: 3789766251032735636
-      chaqueta-1_33: -940817576141689325
-      chaqueta-1_34: 8513520596014503081
-      chaqueta-1_35: 7400065568981105577
-      chaqueta-1_36: -7963669227977336388
-      chaqueta-1_37: -5146246648874580949
-      chaqueta-1_38: 6527996464847811872
-      chaqueta-1_39: -2308598899861913646
-      chaqueta-1_4: -7977241320639434021
-      chaqueta-1_40: 4349785120541148620
-      chaqueta-1_41: -1396136697629582042
-      chaqueta-1_42: -5046455654068669660
-      chaqueta-1_43: 4803101441715976084
-      chaqueta-1_44: -1732540407072704461
-      chaqueta-1_45: -1111304478806544583
-      chaqueta-1_46: -3623845073485310982
-      chaqueta-1_47: 4588955254060637362
-      chaqueta-1_48: -3543490773608754155
-      chaqueta-1_49: -793971241114139245
-      chaqueta-1_5: -1007793355543258050
-      chaqueta-1_50: -6260014615156196741
-      chaqueta-1_51: 8755887429783271200
-      chaqueta-1_52: -9040178525142733225
-      chaqueta-1_53: -668094935112138751
-      chaqueta-1_54: 2131183906095536191
-      chaqueta-1_55: 2235377475627516393
-      chaqueta-1_56: -6695334275191404812
-      chaqueta-1_57: 5529463656708427198
-      chaqueta-1_58: -4036427369590768984
-      chaqueta-1_6: -7613708062505285785
-      chaqueta-1_7: -990390754676024784
-      chaqueta-1_8: 1251311755256352201
-      chaqueta-1_9: -6648643132414308060
+      barajas_0: 2017982478927235093
+      barajas_1: -8918566003498445043
+      barajas_10: 3562865789814697301
+      barajas_11: -5995397029187235942
+      barajas_12: 1162690498276226027
+      barajas_13: -4910336894355499085
+      barajas_14: 1572065747182026676
+      barajas_15: -7542021217204417394
+      barajas_16: 3628335276555942361
+      barajas_17: -6027571064200817062
+      barajas_18: 6703355751911873246
+      barajas_19: 5525453732127853146
+      barajas_2: -6761801170611337850
+      barajas_20: -6740684307489498911
+      barajas_21: -7849334777963036313
+      barajas_22: -335409002520722080
+      barajas_23: 8614987942110877764
+      barajas_24: 207477612478750046
+      barajas_25: 8593296526140730038
+      barajas_26: 7677908734568079533
+      barajas_27: 5163427026884068782
+      barajas_28: -8132598502636822719
+      barajas_29: 1960512554522575009
+      barajas_3: -6676379601103082224
+      barajas_30: -5664669687920838104
+      barajas_31: 1241848649818187148
+      barajas_32: 1894885517317923847
+      barajas_33: 8344617840374421809
+      barajas_34: 18433945210276311
+      barajas_35: 7612760812314995165
+      barajas_36: 5562617640461976132
+      barajas_37: 4959234484418255322
+      barajas_38: 9182494275343611791
+      barajas_39: 6012794377547610948
+      barajas_4: 5390605172198063778
+      barajas_40: 5923869156935153656
+      barajas_41: -7785865237989728239
+      barajas_42: -1088981003706707738
+      barajas_43: -1550601594730206827
+      barajas_44: -4692642110547864173
+      barajas_45: -4289575794613025452
+      barajas_46: 3385226974727801760
+      barajas_47: 7618089975069172279
+      barajas_48: -5508297106848685786
+      barajas_49: 5552714975361104147
+      barajas_5: 3504500508357804998
+      barajas_6: 1922781700811415851
+      barajas_7: -22515453750379416
+      barajas_8: 8656541924456961578
+      barajas_9: -8368186299861269125
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
