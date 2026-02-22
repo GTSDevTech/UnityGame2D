@@ -23,8 +23,8 @@ public class EnemyAI_Shooter : MonoBehaviour
     public string speedParam = "Speed";
     public string shootBool = "IsShooting";
     public string hurtTrigger = "Hurt";
-    public string dieTrigger = "Die";     // opcional
-    public string deadBool = "IsDead";    // recomendado
+    public string dieTrigger = "Die";       // opcional
+    public string deadBool = "IsDead";      // recomendado
     public string reloadTrigger = "Reload"; // Trigger para recarga (AnyState->Recharge con condición Reload)
 
     [Header("Hurt/Stun")]
@@ -74,6 +74,12 @@ public class EnemyAI_Shooter : MonoBehaviour
     [Header("Projectile Layer (Physics)")]
     [Tooltip("Layer física para los proyectiles del enemigo (debe existir en Unity).")]
     public string enemyProjectileLayerName = "Projectile_Enemy";
+
+    [Header("Sonidos")]
+    public AudioSource shootSFX;
+    public AudioSource hurtSFX;
+    public AudioSource reloadSFX;
+    public AudioSource deathSFX;
 
     // -------------------- Runtime --------------------
     enum State { Patrol, CombatIdle, Chase, BackOff, Shoot, Reload, Stunned, Dead }
@@ -242,6 +248,8 @@ public class EnemyAI_Shooter : MonoBehaviour
                 LockMovement();
                 reloadTimer = reloadDuration;
 
+                if (reloadSFX != null) reloadSFX.Play(); // 🔊 RECARGA
+
                 if (animator != null && !string.IsNullOrEmpty(reloadTrigger))
                     animator.SetTrigger(reloadTrigger);
                 break;
@@ -374,6 +382,8 @@ public class EnemyAI_Shooter : MonoBehaviour
         if (state != State.Shoot) return;
         if (projectilePrefab == null || shootPoint == null) return;
 
+        if (shootSFX != null) shootSFX.Play(); // 🔊 DISPARO
+
         FacePlayer();
 
         GameObject b = Instantiate(projectilePrefab, shootPoint.position, Quaternion.identity);
@@ -407,6 +417,8 @@ public class EnemyAI_Shooter : MonoBehaviour
     {
         if (state == State.Dead) return;
 
+        if (hurtSFX != null) hurtSFX.Play(); // 🔊 HURT
+
         if (animator != null && !string.IsNullOrEmpty(hurtTrigger))
             animator.SetTrigger(hurtTrigger);
 
@@ -432,10 +444,17 @@ public class EnemyAI_Shooter : MonoBehaviour
     {
         if (state == State.Dead) return;
 
+        if (deathSFX != null) deathSFX.Play(); // 🔊 MUERTE
+
         state = State.Dead;
 
+        // ✅ unificado (evita duplicados)
         if (animator != null)
         {
+            // limpia triggers anteriores (evita re-disparos raros)
+            if (!string.IsNullOrEmpty(hurtTrigger)) animator.ResetTrigger(hurtTrigger);
+            if (!string.IsNullOrEmpty(reloadTrigger)) animator.ResetTrigger(reloadTrigger);
+
             if (!string.IsNullOrEmpty(deadBool)) animator.SetBool(deadBool, true);
             if (!string.IsNullOrEmpty(dieTrigger)) animator.SetTrigger(dieTrigger);
         }

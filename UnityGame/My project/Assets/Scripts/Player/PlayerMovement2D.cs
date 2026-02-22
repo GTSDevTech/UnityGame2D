@@ -24,12 +24,8 @@ public class PlayerMovement2D : MonoBehaviour
     [Header("Orientación")]
     public bool flipWithDirection = true;
 
-    // ✅ NUEVO: Tap = flip / Hold = move
     [Header("Tap-to-Flip / Hold-to-Move")]
-    [Tooltip("Si pulsas izquierda/derecha menos de este tiempo: solo flip. Si mantienes más: camina.")]
     public float tapToFlipSeconds = 0.14f;
-
-    [Tooltip("Zona muerta del input horizontal para evitar drift.")]
     public float moveDeadzone = 0.15f;
 
     [Header("Animator Params")]
@@ -44,28 +40,25 @@ public class PlayerMovement2D : MonoBehaviour
     public string deadBool = "IsDead";
 
     [Header("Shoot Up / Aim (disparo arriba)")]
-    [Tooltip("Bool animator: true cuando apuntas arriba (por input).")]
     public string aimUpBoolParam = "AimUp";
-
-    [Tooltip("Trigger animator para disparo arriba (↑ + disparo estando quieto).")]
     public string shootUpTrigger = "ShootUp";
-
-    [Tooltip("Umbral del eje Y del input para considerar 'arriba'.")]
     public float aimUpThreshold = 0.5f;
-
-    [Tooltip("Solo permite ShootUp si estás prácticamente quieto.")]
     public float shootUpMaxSpeed = 0.1f;
 
     [Header("Special Move 1 (hold ↓ en crouch)")]
-    [Tooltip("Bool animator para activar el loop de SpecialMove1 (se activa tras mantener ↓ cierto tiempo estando quieto).")]
     public string specialMove1BoolParam = "SpecialMove1";
-
-    [Tooltip("Segundos manteniendo ↓ (crouch) para activar SpecialMove1.")]
     public float specialHoldSeconds = 0.6f;
 
     [Header("Ataque melee")]
     public float attackDuration = 0.35f;
     public bool freezeMovementWhileAttacking = true;
+
+    [Header("Melee Hitbox")]
+    public Transform meleePoint;
+    public Vector2 meleeSize = new Vector2(1.4f, 0.8f);
+    public LayerMask enemyLayer;
+    public int meleeDamage = 999; // 💀 Instakill
+    bool meleeHitThisAttack = false;
 
     [Header("Shoot")]
     public Transform shootPoint;
@@ -74,14 +67,10 @@ public class PlayerMovement2D : MonoBehaviour
     public float shootCooldown = 0.25f;
     public int bulletDamage = 1;
 
-    [Tooltip("Tiempo que el player queda inmóvil al disparar.")]
     public float shootLockDuration = 0.15f;
 
     [Header("Shoot - Spawn mode (robusto entre escenas)")]
-    [Tooltip("Si está activo, la bala se dispara mediante Animation Event (recomendado para sincronía). Si el evento falta, se usa fallback.")]
     public bool fireUsingAnimationEvent = true;
-
-    [Tooltip("Tiempo (segundos) tras pulsar disparo para forzar el spawn si el Animation Event no llega.")]
     public float fireFallbackDelay = 0.08f;
 
     [Header("Ammo / Reload (recarga)")]
@@ -97,22 +86,13 @@ public class PlayerMovement2D : MonoBehaviour
     public bool freezeXWithConstraintsWhileLocked = true;
 
     [Header("Ground / Platforms")]
-    [Tooltip("Incluye Ground + Platform si quieres que plataformas one-way cuenten como suelo.")]
     public LayerMask groundLayer;
 
     [Header("Drop Through Platforms (opcional)")]
     public bool enableDropThroughPlatforms = true;
-
-    [Tooltip("Layer (Physics Layer) de las plataformas one-way (tu 'Platform').")]
     public string platformPhysicsLayerName = "Platform";
-
-    [Tooltip("Tiempo que se ignora la colisión al hacer down+jump.")]
     public float dropThroughSeconds = 0.25f;
-
-    [Tooltip("Empujón hacia abajo para despegarse de la plataforma al hacer drop.")]
     public float dropDownVelocity = 2.5f;
-
-    [Tooltip("Pequeño offset hacia abajo para salir del contacto el mismo frame.")]
     public float dropDownPositionNudge = 0.03f;
 
     [Header("Crouch (Agacharse)")]
@@ -140,22 +120,22 @@ public class PlayerMovement2D : MonoBehaviour
     InputAction sprintAction;
     InputAction attackAction;
     InputAction shootAction;
+    PlayerHealth playerHealth;
 
     Vector2 moveInput;
-
-    // ✅ NUEVO: este es el X que realmente usamos para moverse (tap->0, hold->mueve)
     float moveXForMotion = 0f;
-    
-    
+
     [Header("Sonidos")]
-    public AudioSource shootSFX;  // Sonido de disparo
-    public AudioSource jumpSFX;   // Sonido de salto
-    public AudioSource hitSFX;    // 💥 Sonido de recibir daño
-    public AudioSource deathSFX;  // 💀 Sonido de morir
+    public AudioSource shootSFX;
+    public AudioSource jumpSFX;
+    public AudioSource hitSFX;
+    public AudioSource deathSFX;
     public AudioSource itemSFX;
-    public AudioSource meleeSFX;// 💰 Sonido del maletín
-    public AudioSource fartSFX; // Sonido cuando te agachas
-    
+    public AudioSource meleeSFX;
+    public AudioSource fartSFX;
+
+    // 🔊 AudioSource recarga (clip "recharge")
+    public AudioSource rechargeSFX;
 
     bool isRunning;
     bool isGrounded;
@@ -170,19 +150,14 @@ public class PlayerMovement2D : MonoBehaviour
     bool isCrouching;
     bool aimUp;
 
-    // Direccion guardada para el disparo (normal o arriba)
     Vector2 pendingShotDir = Vector2.zero;
 
-    // Special move (hold ↓)
     float downHoldTime = 0f;
     bool specialMove1Active = false;
 
     float coyoteCounter;
     float jumpBufferCounter;
 
-    // -----------------------------
-    // ✅ MALETINES (UNA SOLA FUENTE)
-    // -----------------------------
     [Header("Progreso - Maletines / Votos")]
     public int maxMaletines = 20;
     public int maletines = 0;
@@ -193,31 +168,31 @@ public class PlayerMovement2D : MonoBehaviour
     Vector3 visualStartLocalPos;
     Coroutine attackRoutine;
 
-    // ---- MOVEMENT LOCK ----
     bool isMovementLocked = false;
     float movementLockTimer = 0f;
     bool lockFreezesX = false;
     RigidbodyConstraints2D baseConstraints;
 
-    // ---- RELOAD STATE ----
     bool isReloading = false;
     Coroutine reloadRoutine;
 
-    // ---- DROP THROUGH ----
     Coroutine dropRoutine;
     int cachedPlatformLayer = -1;
 
-    // ✅ NUEVO: estado del tap/hold
     bool holdingDir = false;
     float dirHoldTime = 0f;
-    int heldDirSign = 0;          // -1 o +1
-    bool movedThisHold = false;   // si ya hemos empezado a mover en este hold
+    int heldDirSign = 0;
+    bool movedThisHold = false;
+
+    // Fallback sonido recarga (por si el Animation Event no llega)
+    Coroutine reloadSfxFallbackRoutine;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
         playerInput = GetComponent<PlayerInput>();
+        playerHealth = GetComponent<PlayerHealth>();
 
         baseConstraints = rb.constraints;
 
@@ -278,13 +253,9 @@ public class PlayerMovement2D : MonoBehaviour
 
         moveInput = moveAction != null ? moveAction.ReadValue<Vector2>() : Vector2.zero;
 
-        // AimUp por input
         aimUp = moveInput.y >= aimUpThreshold;
-
-        // Ground
         isGrounded = col.IsTouchingLayers(groundLayer);
 
-        // Crouch
         if (enableCrouch)
         {
             bool wasCrouching = isCrouching;
@@ -306,7 +277,6 @@ public class PlayerMovement2D : MonoBehaviour
                 animator.SetBool(aimUpBoolParam, aimUp);
         }
 
-        // SpecialMove1: hold ↓ mientras estás agachado, grounded y quieto
         if (isCrouching && isGrounded && Mathf.Abs(rb.linearVelocity.x) <= shootUpMaxSpeed)
             downHoldTime += Time.deltaTime;
         else
@@ -321,17 +291,16 @@ public class PlayerMovement2D : MonoBehaviour
         if (animator != null && !string.IsNullOrEmpty(specialMove1BoolParam))
             animator.SetBool(specialMove1BoolParam, specialMove1Active);
 
-        // ✅ Tap-to-Flip / Hold-to-Move (calcula moveXForMotion)
         UpdateTapFlipHoldMove();
 
         bool sprintPressed = sprintAction != null && sprintAction.IsPressed();
         isRunning = (!isAttacking && !isMovementLocked && !isCrouching && !isReloading) ? sprintPressed : false;
 
         bool jumpPressedThisFrame = (jumpAction != null && jumpAction.WasPressedThisFrame());
-
         if (jumpPressedThisFrame)
             jumpBufferCounter = jumpBufferTime;
 
+        // ✅ DROP: ↓ + Jump
         if (enableDropThroughPlatforms && isGrounded && jumpPressedThisFrame)
         {
             bool pressingDown = (moveInput.y <= crouchThreshold);
@@ -358,34 +327,18 @@ public class PlayerMovement2D : MonoBehaviour
 
         if (animator != null)
         {
-            float maxSpeed = isRunning ? runSpeed : walkSpeed;
-
-            float effectiveVX =
-                (isMovementLocked ||
-                 (freezeMovementWhileCrouching && isCrouching) ||
-                 (freezeMovementWhileAttacking && isAttacking) ||
-                 (isReloading && lockMovementWhileReloading))
-                ? 0f
-                : rb.linearVelocity.x;
-
-            float speed01 = Mathf.InverseLerp(0f, maxSpeed, Mathf.Abs(effectiveVX));
-
-            animator.SetFloat(speedParam, speed01);
             animator.SetBool(groundedParam, isGrounded);
             animator.SetBool(runParam, isRunning);
             if (!string.IsNullOrEmpty(deadBool)) animator.SetBool(deadBool, isDead);
         }
     }
 
-    // ✅ NUEVO: Tap-to-Flip / Hold-to-Move
     void UpdateTapFlipHoldMove()
     {
         float rawX = moveInput.x;
 
-        // Deadzone
         if (Mathf.Abs(rawX) < moveDeadzone)
         {
-            // Soltaste dirección -> resetea
             holdingDir = false;
             dirHoldTime = 0f;
             heldDirSign = 0;
@@ -396,7 +349,6 @@ public class PlayerMovement2D : MonoBehaviour
 
         int sign = rawX > 0f ? 1 : -1;
 
-        // Si cambias de dirección mientras mantienes, reinicia el “hold”
         if (!holdingDir || sign != heldDirSign)
         {
             holdingDir = true;
@@ -404,7 +356,6 @@ public class PlayerMovement2D : MonoBehaviour
             dirHoldTime = 0f;
             movedThisHold = false;
 
-            // Flip inmediato al primer toque (pero aún no te mueves)
             if (flipWithDirection && !isMovementLocked && !isReloading)
             {
                 Vector3 scale = transform.localScale;
@@ -415,17 +366,13 @@ public class PlayerMovement2D : MonoBehaviour
 
         dirHoldTime += Time.deltaTime;
 
-        // Durante el “tap window” NO se mueve, solo orienta
         if (dirHoldTime < Mathf.Max(0.01f, tapToFlipSeconds))
         {
             moveXForMotion = 0f;
             return;
         }
 
-        // Ya es hold -> permite moverse
         movedThisHold = true;
-
-        // Puedes usar input continuo (analog) o fijo a -1/+1. Yo lo dejo ANALÓGICO:
         moveXForMotion = rawX;
     }
 
@@ -444,19 +391,23 @@ public class PlayerMovement2D : MonoBehaviour
                 UnlockMovement();
 
             TryConsumeJump();
+            UpdateAnimatorSpeedAfterPhysics();
             return;
         }
 
         if (isReloading && lockMovementWhileReloading)
         {
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            UpdateAnimatorSpeedAfterPhysics();
             return;
         }
 
-        if (freezeMovementWhileCrouching && isCrouching)
+        // ✅ no bloquees si estamos en dropRoutine
+        if (freezeMovementWhileCrouching && isCrouching && dropRoutine == null)
         {
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
             TryConsumeJump();
+            UpdateAnimatorSpeedAfterPhysics();
             return;
         }
 
@@ -468,6 +419,25 @@ public class PlayerMovement2D : MonoBehaviour
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
 
         TryConsumeJump();
+        UpdateAnimatorSpeedAfterPhysics();
+    }
+
+    void UpdateAnimatorSpeedAfterPhysics()
+    {
+        if (animator == null || string.IsNullOrEmpty(speedParam)) return;
+
+        float maxSpeed = isRunning ? runSpeed : walkSpeed;
+
+        float effectiveVX =
+            (isMovementLocked ||
+             (freezeMovementWhileCrouching && isCrouching) ||
+             (freezeMovementWhileAttacking && isAttacking) ||
+             (isReloading && lockMovementWhileReloading))
+            ? 0f
+            : rb.linearVelocity.x;
+
+        float speed01 = Mathf.InverseLerp(0f, maxSpeed, Mathf.Abs(effectiveVX));
+        animator.SetFloat(speedParam, speed01);
     }
 
     void TryConsumeJump()
@@ -481,41 +451,60 @@ public class PlayerMovement2D : MonoBehaviour
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
 
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            
-            // ✅ NUEVA LÍNEA: Aquí suena el salto
-            if (jumpSFX != null) jumpSFX.Play(); 
+            if (jumpSFX != null) jumpSFX.Play();
 
             jumpBufferCounter = 0f;
             coyoteCounter = 0f;
         }
     }
 
+    // ===================== DROP THROUGH (FIX ROBUSTO) =====================
     bool TryDropThroughPlatform()
     {
-        int platformLayer = cachedPlatformLayer;
-        if (platformLayer < 0) return false;
+        if (cachedPlatformLayer < 0) return false;
 
-        int playerLayer = gameObject.layer;
+        // Detecta una plataforma (collider) en layer Platform solapando al jugador.
+        // Nota: col.bounds.size * 0.95f para evitar pillar cosas raras alrededor.
+        Collider2D platformCol = Physics2D.OverlapBox(
+            col.bounds.center,
+            col.bounds.size * 0.95f,
+            0f,
+            1 << cachedPlatformLayer
+        );
+
+        if (platformCol == null)
+        {
+            if (debugLogs) Debug.Log("[DROP] No se encontró collider de plataforma bajo/solapando al jugador.");
+            return false;
+        }
 
         if (dropRoutine != null) StopCoroutine(dropRoutine);
-        dropRoutine = StartCoroutine(DropThroughRoutine(playerLayer, platformLayer, dropThroughSeconds));
+        dropRoutine = StartCoroutine(DropThroughColliderRoutine(col, platformCol, dropThroughSeconds));
 
+        // pequeño empujón hacia abajo para salir de la superficie
         rb.position += Vector2.down * Mathf.Max(0f, dropDownPositionNudge);
 
+        // fuerza hacia abajo
         float vy = rb.linearVelocity.y;
         if (vy > 0f) vy = 0f;
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, -Mathf.Max(0.5f, dropDownVelocity));
 
+        if (debugLogs) Debug.Log($"[DROP] Ignorando colisión con {platformCol.name} durante {dropThroughSeconds:0.00}s.");
         return true;
     }
 
-    IEnumerator DropThroughRoutine(int playerLayer, int platformLayer, float seconds)
+    IEnumerator DropThroughColliderRoutine(Collider2D playerCol, Collider2D platformCol, float seconds)
     {
-        Physics2D.IgnoreLayerCollision(playerLayer, platformLayer, true);
+        Physics2D.IgnoreCollision(playerCol, platformCol, true);
+
         yield return new WaitForSeconds(Mathf.Max(0.05f, seconds));
-        Physics2D.IgnoreLayerCollision(playerLayer, platformLayer, false);
+
+        if (playerCol && platformCol)
+            Physics2D.IgnoreCollision(playerCol, platformCol, false);
+
         dropRoutine = null;
     }
+    // ======================================================================
 
     void LockMovement(float seconds, bool freezeXWithConstraints)
     {
@@ -558,8 +547,9 @@ public class PlayerMovement2D : MonoBehaviour
     IEnumerator AttackCoroutine()
     {
         isAttacking = true;
-        
-        if(meleeSFX != null) meleeSFX.Play();
+        meleeHitThisAttack = false;
+
+        if (meleeSFX != null) meleeSFX.Play();
 
         if (animator != null && !string.IsNullOrEmpty(attackTrigger))
             animator.SetTrigger(attackTrigger);
@@ -573,6 +563,25 @@ public class PlayerMovement2D : MonoBehaviour
         attackRoutine = null;
 
         if (isMovementLocked) UnlockMovement();
+    }
+
+    public void Anim_MeleeHit()
+    {
+        if (isDead) return;
+        if (meleeHitThisAttack) return;
+
+        meleeHitThisAttack = true;
+
+        Transform point = meleePoint != null ? meleePoint : transform;
+
+        Collider2D[] hits = Physics2D.OverlapBoxAll(point.position, meleeSize, 0f, enemyLayer);
+
+        foreach (var h in hits)
+        {
+            EnemyHealth eh = h.GetComponentInParent<EnemyHealth>();
+            if (eh != null)
+                eh.TakeDamage(meleeDamage);
+        }
     }
 
     void TryStartShoot()
@@ -615,7 +624,6 @@ public class PlayerMovement2D : MonoBehaviour
         }
 
         LockMovement(shootLockDuration, freezeXWithConstraints: true);
-
         StartCoroutine(ShootCooldownRoutine());
     }
 
@@ -645,6 +653,8 @@ public class PlayerMovement2D : MonoBehaviour
         if (!enableReload) return;
         if (isReloading) return;
 
+        animator.ResetTrigger(reloadTrigger);
+
         if (ammoInMag >= magSize) return;
         if (ammoReserve <= 0) return;
 
@@ -654,8 +664,28 @@ public class PlayerMovement2D : MonoBehaviour
         if (animator != null && !string.IsNullOrEmpty(reloadTrigger))
             animator.SetTrigger(reloadTrigger);
 
+        // 🔊 FALLBACK: si el Animation Event no llega, lo forzamos muy pronto
+        if (reloadSfxFallbackRoutine != null) StopCoroutine(reloadSfxFallbackRoutine);
+        reloadSfxFallbackRoutine = StartCoroutine(ReloadSfxFallback(0.06f));
+
         if (reloadRoutine != null) StopCoroutine(reloadRoutine);
         reloadRoutine = StartCoroutine(ReloadRoutine());
+    }
+
+    IEnumerator ReloadSfxFallback(float delay)
+    {
+        yield return new WaitForSeconds(Mathf.Max(0f, delay));
+
+        // si sigues recargando y nadie ha sonado por event, suena aquí
+        // (esto no impide que el event suene; pero normalmente el event llegará antes y oirás 1 solo)
+        // Para evitar dobles, el event cancela esta corrutina.
+        if (isReloading && rechargeSFX != null)
+        {
+            rechargeSFX.Stop();
+            rechargeSFX.Play();
+        }
+
+        reloadSfxFallbackRoutine = null;
     }
 
     IEnumerator ReloadRoutine()
@@ -690,6 +720,22 @@ public class PlayerMovement2D : MonoBehaviour
         FinishReload();
     }
 
+    // ✅ Animation Event del clip Reload: llama a "Anim_PlayReloadSFX"
+    public void Anim_PlayReloadSFX()
+    {
+        Debug.Log("[EVENT] Anim_PlayReloadSFX (PlayerMovement2D) llamado");
+
+        if (rechargeSFX != null)
+        {
+            rechargeSFX.Stop();
+            rechargeSFX.Play();
+        }
+        else if (debugLogs)
+        {
+            Debug.LogWarning("[RELOAD] rechargeSFX es NULL");
+        }
+    }
+
     public void Anim_FireBullet() => HandleAnimFireBullet();
     public void FireBullet() => HandleAnimFireBullet();
     public void FireProjectile() => HandleAnimFireBullet();
@@ -709,7 +755,7 @@ public class PlayerMovement2D : MonoBehaviour
     }
 
     void SpawnBullet()
-    {   
+    {
         if (shootSFX != null) shootSFX.Play();
         if (isDead) return;
         if (isReloading) return;
@@ -750,16 +796,12 @@ public class PlayerMovement2D : MonoBehaviour
         if (enableReload && magSize > 0)
         {
             ammoInMag = Mathf.Max(0, ammoInMag - 1);
-
-            if (ammoInMag <= 0 && ammoReserve > 0)
-                StartReload();
         }
     }
 
-
     public void AddMaletin(int amount = 1)
     {
-        if(itemSFX != null) itemSFX.Play();
+        if (itemSFX != null) itemSFX.Play();
         maxMaletines = Mathf.Max(1, maxMaletines);
         maletines = Mathf.Clamp(maletines + amount, 0, maxMaletines);
     }
@@ -773,7 +815,8 @@ public class PlayerMovement2D : MonoBehaviour
                 break;
 
             case TipoPowerUp.Voto:
-                votos++;
+                votos = Mathf.Clamp(votos + 1, 0, maxVotos);   // si quieres llevar contador
+                if (playerHealth != null) playerHealth.Heal(1); // ✅ esto es lo que faltaba
                 break;
 
             case TipoPowerUp.Municion:
@@ -793,16 +836,16 @@ public class PlayerMovement2D : MonoBehaviour
     }
 
     public void OnHurt()
-    {   
-        if (hitSFX !=null) hitSFX.Play();
+    {
+        if (hitSFX != null) hitSFX.Play();
         if (isDead) return;
         if (animator != null && !string.IsNullOrEmpty(hurtTrigger))
             animator.SetTrigger(hurtTrigger);
     }
 
     public void OnDie()
-    {   
-        if(deathSFX != null) deathSFX.Play();
+    {
+        if (deathSFX != null) deathSFX.Play();
         if (isDead) return;
 
         isDead = true;
@@ -883,7 +926,6 @@ public class PlayerMovement2D : MonoBehaviour
         if (animator != null && !string.IsNullOrEmpty(specialMove1BoolParam))
             animator.SetBool(specialMove1BoolParam, false);
 
-        // ✅ reset tap/hold
         holdingDir = false;
         dirHoldTime = 0f;
         heldDirSign = 0;
