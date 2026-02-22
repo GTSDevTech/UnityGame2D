@@ -463,33 +463,50 @@ public class PlayerMovement2D : MonoBehaviour
     {
         if (cachedPlatformLayer < 0) return false;
 
-        // Detecta una plataforma (collider) en layer Platform solapando al jugador.
-        // Nota: col.bounds.size * 0.95f para evitar pillar cosas raras alrededor.
+        // ==============================
+        // Detectar plataforma JUSTO BAJO LOS PIES
+        // (esto arregla el CapsuleCollider con offset alto)
+        // ==============================
+
+        float feetY = col.bounds.min.y;
+
+        // Centro justo bajo el player
+        Vector2 center = new Vector2(col.bounds.center.x, feetY - 0.05f);
+
+        // Franja fina bajo los pies
+        Vector2 size = new Vector2(col.bounds.size.x * 0.8f, 0.12f);
+
         Collider2D platformCol = Physics2D.OverlapBox(
-            col.bounds.center,
-            col.bounds.size * 0.95f,
+            center,
+            size,
             0f,
             1 << cachedPlatformLayer
         );
 
         if (platformCol == null)
         {
-            if (debugLogs) Debug.Log("[DROP] No se encontró collider de plataforma bajo/solapando al jugador.");
+            if (debugLogs) Debug.Log("[DROP] No se encontró collider de plataforma bajo los pies.");
             return false;
         }
 
         if (dropRoutine != null) StopCoroutine(dropRoutine);
         dropRoutine = StartCoroutine(DropThroughColliderRoutine(col, platformCol, dropThroughSeconds));
 
-        // pequeño empujón hacia abajo para salir de la superficie
+        // Empujón hacia abajo
         rb.position += Vector2.down * Mathf.Max(0f, dropDownPositionNudge);
 
-        // fuerza hacia abajo
+        // Fuerza hacia abajo
         float vy = rb.linearVelocity.y;
         if (vy > 0f) vy = 0f;
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, -Mathf.Max(0.5f, dropDownVelocity));
 
-        if (debugLogs) Debug.Log($"[DROP] Ignorando colisión con {platformCol.name} durante {dropThroughSeconds:0.00}s.");
+        rb.linearVelocity = new Vector2(
+            rb.linearVelocity.x,
+            -Mathf.Max(0.5f, dropDownVelocity)
+        );
+
+        if (debugLogs)
+            Debug.Log($"[DROP] Ignorando colisión con {platformCol.name} durante {dropThroughSeconds:0.00}s.");
+
         return true;
     }
 

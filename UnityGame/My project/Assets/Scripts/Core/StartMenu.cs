@@ -5,7 +5,7 @@ public class StartMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Level_01_Spain"); // nombre EXACTO
+        SceneManager.LoadScene("Spain_Luis"); // nombre EXACTO
     }
 
     public void ExitGame()
