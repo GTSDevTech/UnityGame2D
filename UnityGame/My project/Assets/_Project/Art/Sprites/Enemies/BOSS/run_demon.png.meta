@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -133,10 +133,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 224
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 288
+        height: 229
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -155,10 +155,10 @@ TextureImporter:
         serializedVersion: 2
         x: 288
         y: 0
-        width: 224
-        height: 208
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 288
+        height: 229
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,12 +175,12 @@ TextureImporter:
       name: run_demon_2
       rect:
         serializedVersion: 2
-        x: 588
+        x: 576
         y: 0
-        width: 241
-        height: 207
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 288
+        height: 229
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: run_demon_3
       rect:
         serializedVersion: 2
-        x: 890
+        x: 864
         y: 0
-        width: 249
-        height: 209
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 288
+        height: 229
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -219,12 +219,12 @@ TextureImporter:
       name: run_demon_4
       rect:
         serializedVersion: 2
-        x: 1181
+        x: 1152
         y: 0
-        width: 231
-        height: 214
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 288
+        height: 229
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -241,12 +241,12 @@ TextureImporter:
       name: run_demon_5
       rect:
         serializedVersion: 2
-        x: 1469
+        x: 1440
         y: 0
-        width: 242
-        height: 215
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 288
+        height: 229
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -263,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a38c296cc82d7504282c8e8aae9f83ae
     internalID: 0
     vertices: []
     indices: 
@@ -271,7 +271,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":288.0,"y":229.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       run_demon_0: -1074708725213801858
       run_demon_1: 4688123539292795542

@@ -7,13 +7,14 @@ public class CutsceneController : MonoBehaviour
     public PlayerMovement2D player;
     public DialogueBubbleUI ui;
 
-    [Header("Acción al terminar (solo para una conversación concreta)")]
-    public CutsceneSequence onlyForThisSequence;  // arrastra aquí la conversación (asset)
-    public GameObject objectToDisable;            // arrastra aquí el objeto de escena (Manifestacion (1))
+    [Header("Acción al terminar (desactivar objeto)")]
+    public CutsceneSequence onlyForThisSequence;
+    public GameObject objectToDisable;
 
-    [Header("Salir a EndScene (opcional)")]
-    [Tooltip("Si se asigna y la sequence es 'onlyForThisSequence', al terminar hará fade y cargará EndScene.")]
-    public ScreenFaderLoader endSceneFader;
+    [Header("Transición con Fade (diablo)")]
+    public CutsceneSequence sequenceToLoadScene;   // conversación del diablo
+    public ScreenFaderLoader faderLoader;         // tu ScreenFaderLoader
+    public string sceneToLoad = "Scene_Azotea";   // escena de pelea
 
     bool isPlaying = false;
 
@@ -28,14 +29,7 @@ public class CutsceneController : MonoBehaviour
     public void Play(CutsceneSequence sequence)
     {
         if (isPlaying) return;
-
-        if (sequence == null)
-        {
-            Debug.LogWarning("[CutsceneController] Sequence es NULL");
-            return;
-        }
-
-        Debug.Log($"[CutsceneController] Play() sequence={sequence.name} lines={(sequence.lines == null ? "NULL" : sequence.lines.Length.ToString())}");
+        if (sequence == null) return;
 
         StartCoroutine(PlayRoutine(sequence));
     }
@@ -44,7 +38,7 @@ public class CutsceneController : MonoBehaviour
     {
         isPlaying = true;
 
-        // 🔹 Forzar Idle antes de bloquear control
+        // 🔹 Forzar Idle
         if (player)
         {
             var rb = player.GetComponent<Rigidbody2D>();
@@ -55,21 +49,13 @@ public class CutsceneController : MonoBehaviour
             }
 
             var anim = player.animator != null ? player.animator : player.GetComponentInChildren<Animator>();
-            if (anim)
-            {
-                anim.SetFloat("Speed", 0f); // ajusta si tu parámetro se llama distinto
-            }
+            if (anim) anim.SetFloat("Speed", 0f);
         }
 
-        // 🔹 Bloquear control jugador
+        // 🔹 Bloquear control
         if (player) player.enabled = false;
 
         if (ui != null) ui.Hide();
-
-        if (sequence.lines == null || sequence.lines.Length == 0)
-        {
-            Debug.LogWarning("[CutsceneController] La sequence no tiene líneas.");
-        }
 
         foreach (var line in sequence.lines)
         {
@@ -78,31 +64,25 @@ public class CutsceneController : MonoBehaviour
                 ui.ShowLine(line.speakerName, line.text, line.speakerTransform, line.portrait);
                 yield return ui.WaitForNext();
             }
-            else
-            {
-                Debug.Log($"[CUTSCENE] {line.speakerName}: {line.text}");
-                yield return new WaitForSeconds(1.2f);
-            }
         }
 
         if (ui != null) ui.Hide();
 
-        // 🔥 Solo si es ESTA conversación concreta
-        if (sequence == onlyForThisSequence)
+        // 🔥 Conversación que desactiva objeto
+        if (sequence == onlyForThisSequence && objectToDisable != null)
         {
-            if (objectToDisable != null)
-                objectToDisable.SetActive(false);
-
-            // ✅ Si hay fader asignado, en vez de reactivar control y seguir, salimos a EndScene
-            if (endSceneFader != null)
-            {
-                endSceneFader.GoToEndScene();
-                isPlaying = false;
-                yield break;
-            }
+            objectToDisable.SetActive(false);
         }
 
-        // 🔹 Desbloquear control (comportamiento original)
+        // 🔥 Conversación del DIABLO → Fade + cargar Scene_Azotea
+        if (sequence == sequenceToLoadScene && faderLoader != null)
+        {
+            faderLoader.LoadScene(sceneToLoad);
+            isPlaying = false;
+            yield break;
+        }
+
+        // 🔹 Desbloquear control normal
         if (player) player.enabled = true;
 
         isPlaying = false;
