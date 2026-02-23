@@ -5,6 +5,9 @@ public class CheckpointManager : MonoBehaviour
 {
     public static CheckpointManager I;
 
+    // ✅ Key para “volver a un checkpoint SOLO una vez” al cargar la escena
+    const string PREF_NEXT_CP_ID = "NEXT_CHECKPOINT_ID";
+
     [Header("Start checkpoint")]
     [Tooltip("Si está activo, al iniciar se fija el checkpoint con ID más bajo encontrado (normalmente 0).")]
     public bool autoSetStartCheckpointOnPlay = true;
@@ -27,9 +30,71 @@ public class CheckpointManager : MonoBehaviour
 
     void Start()
     {
+        // ✅ 1) Si venimos de otra escena y nos han marcado un checkpoint “de retorno”,
+        // lo aplicamos SOLO esta vez y lo consumimos.
+        if (PlayerPrefs.HasKey(PREF_NEXT_CP_ID))
+        {
+            int forcedId = PlayerPrefs.GetInt(PREF_NEXT_CP_ID, -1);
+
+            // Consumir para que SOLO afecte a esta carga de escena
+            PlayerPrefs.DeleteKey(PREF_NEXT_CP_ID);
+
+            var cpsForced = FindObjectsByType<CheckpointTrigger>(FindObjectsSortMode.None);
+            if (cpsForced != null && cpsForced.Length > 0)
+            {
+                CheckpointTrigger target = null;
+
+                for (int i = 0; i < cpsForced.Length; i++)
+                {
+                    if (cpsForced[i] != null && cpsForced[i].checkpointId == forcedId)
+                    {
+                        target = cpsForced[i];
+                        break;
+                    }
+                }
+
+                if (target != null)
+                {
+                    // 1) Guardar checkpoint runtime
+                    ForceSetCheckpoint(target);
+                    Debug.Log($"🏁 Checkpoint FORZADO por retorno -> ID {currentCheckpointId} en {lastCheckpointPos}");
+
+                    // 2) Teleport del player a ese checkpoint AL CARGAR escena
+                    var p = GameObject.FindGameObjectWithTag("Player");
+                    if (p != null)
+                    {
+                        var tr = p.transform;
+                        tr.position = lastCheckpointPos;
+
+                        var rb = p.GetComponent<Rigidbody2D>();
+                        var col = p.GetComponent<Collider2D>();
+
+                        if (col != null) col.enabled = false;
+
+                        if (rb != null)
+                        {
+                            rb.linearVelocity = Vector2.zero;
+                            rb.angularVelocity = 0f;
+                        }
+
+                        // esperar 1 frame para asentar transform y evitar “rebotes”
+                        StartCoroutine(EnablePlayerColliderNextFrame(col));
+                    }
+                    else
+                    {
+                        Debug.LogWarning("⚠️ No se encontró Player con tag 'Player' para teletransportar al checkpoint forzado.");
+                    }
+
+                    return; // ⛔ evita auto-set al inicial
+                }
+            }
+
+            Debug.LogWarning($"⚠️ No se encontró CheckpointTrigger con ID {forcedId}. Se usará el inicial.");
+        }
+
+        // ✅ 2) Comportamiento original: auto-set al checkpoint de ID más bajo
         if (!autoSetStartCheckpointOnPlay) return;
 
-        // Busca todos los checkpoints y se queda con el de ID más bajo como "inicio"
         var cps = FindObjectsByType<CheckpointTrigger>(FindObjectsSortMode.None);
         if (cps == null || cps.Length == 0)
         {
@@ -48,17 +113,19 @@ public class CheckpointManager : MonoBehaviour
         Debug.Log($"🏁 Checkpoint inicial auto-set -> ID {currentCheckpointId} en {lastCheckpointPos}");
     }
 
+    IEnumerator EnablePlayerColliderNextFrame(Collider2D col)
+    {
+        yield return null;
+        if (col != null) col.enabled = true;
+    }
+
     // ✅ SOLO acepta si el checkpoint es más avanzado que el actual
     public bool TrySetCheckpoint(CheckpointTrigger cp)
     {
         if (cp == null) return false;
 
         if (cp.checkpointId <= currentCheckpointId)
-        {
-            // No retrocede
-            // Debug.Log($"⏭️ Ignorado CP ID {cp.checkpointId} (actual {currentCheckpointId})");
             return false;
-        }
 
         ForceSetCheckpoint(cp);
         Debug.Log($"✅ Checkpoint actualizado -> ID {currentCheckpointId} en {lastCheckpointPos}");
