@@ -184,7 +184,6 @@ public class PlayerMovement2D : MonoBehaviour
     int heldDirSign = 0;
     bool movedThisHold = false;
 
-    // Fallback sonido recarga (por si el Animation Event no llega)
     Coroutine reloadSfxFallbackRoutine;
 
     void Awake()
