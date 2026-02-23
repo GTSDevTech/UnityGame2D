@@ -23,9 +23,9 @@ public class EnemyAI_Shooter : MonoBehaviour
     public string speedParam = "Speed";
     public string shootBool = "IsShooting";
     public string hurtTrigger = "Hurt";
-    public string dieTrigger = "Die";       // opcional
-    public string deadBool = "IsDead";      // recomendado
-    public string reloadTrigger = "Reload"; // Trigger para recarga (AnyState->Recharge con condición Reload)
+    public string dieTrigger = "Die";       
+    public string deadBool = "IsDead";      
+    public string reloadTrigger = "Reload"; 
 
     [Header("Hurt/Stun")]
     public float hurtStunTime = 0.25f;
@@ -441,37 +441,43 @@ public class EnemyAI_Shooter : MonoBehaviour
     }
 
     void Die()
+{
+    // Igual que Player: SFX primero, luego guard clause
+    if (deathSFX != null) deathSFX.Play();
+    if (state == State.Dead) return;
+
+    state = State.Dead;
+
+    // Igual concepto que Player (canShoot = false / isReloading = false)
+    pendingReload = false;
+
+    // CLAVE: si muere disparando, el bool IsShooting puede quedarse true porque FixedUpdate ya no lo actualiza
+    if (animator != null && !string.IsNullOrEmpty(shootBool))
+        animator.SetBool(shootBool, false);
+
+    UnlockMovement();
+
+    // Igual que Player: cortar físicas sin bodyType kinematic, sin gravityScale=0, sin freeze position
+    rb.linearVelocity = Vector2.zero;
+    rb.angularVelocity = 0f;
+    rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+    if (visual != null)
+        visual.localPosition = visualStartLocalPos + new Vector3(0f, deathVisualYOffset, 0f);
+
+    // Igual que Player: dead bool + die trigger (sin resets extra)
+    if (animator != null)
     {
-        if (state == State.Dead) return;
+        if (!string.IsNullOrEmpty(deadBool))
+            animator.SetBool(deadBool, true);
 
-        if (deathSFX != null) deathSFX.Play(); // 🔊 MUERTE
-
-        state = State.Dead;
-
-        // ✅ unificado (evita duplicados)
-        if (animator != null)
-        {
-            // limpia triggers anteriores (evita re-disparos raros)
-            if (!string.IsNullOrEmpty(hurtTrigger)) animator.ResetTrigger(hurtTrigger);
-            if (!string.IsNullOrEmpty(reloadTrigger)) animator.ResetTrigger(reloadTrigger);
-
-            if (!string.IsNullOrEmpty(deadBool)) animator.SetBool(deadBool, true);
-            if (!string.IsNullOrEmpty(dieTrigger)) animator.SetTrigger(dieTrigger);
-        }
-
-        rb.linearVelocity = Vector2.zero;
-        rb.angularVelocity = 0f;
-        rb.gravityScale = 0f;
-
-        rb.bodyType = RigidbodyType2D.Kinematic;
-        rb.constraints = baseConstraints | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
-
-        if (visual != null)
-            visual.localPosition = visualStartLocalPos + new Vector3(0f, deathVisualYOffset, 0f);
-
-        if (deathRoutine != null) StopCoroutine(deathRoutine);
-        deathRoutine = StartCoroutine(DisableAfterDeath());
+        if (!string.IsNullOrEmpty(dieTrigger))
+            animator.SetTrigger(dieTrigger);
     }
+
+    if (deathRoutine != null) StopCoroutine(deathRoutine);
+    deathRoutine = StartCoroutine(DisableAfterDeath());
+}
 
     IEnumerator DisableAfterDeath()
     {
