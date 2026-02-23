@@ -15,14 +15,17 @@ MonoBehaviour:
   lines:
   - speakerName: Avalible
     text: "Hombreee, que pasa Perro! Aqu\xED estabamos con una amigas, se est\xE1
-      poniendo la cosa chunga, nosotros nos vamos al aeropuesto... \xBFNo os ven\xEDs
-      ninguna?"
+      poniendo la cosa chunga, \xBFverdad? Nosotros nos vamos al aereopuesto... \xBFNo
+      os ven\xEDs ninguna?"
     speakerTransform: {fileID: 0}
+    portrait: {fileID: -7205378508237066365, guid: 4df62f6b2d215604baccef3654d592f5, type: 3}
   - speakerName: Kodos
     text: "\xBFTe acuerdas de los tiempos de la banda de Peugeot? Vaya pelotazo metimos,
-      yo pas\xE9 de portero a Fontanero jajaja"
+      yo pas\xE9 de portero a fontanero jajaja"
     speakerTransform: {fileID: 0}
+    portrait: {fileID: 1533944377389384540, guid: a7642d9344cd2b04bb2d30e11dfb37f0, type: 3}
   - speakerName: "Santa Cerde\xF1a"
     text: Yo mejor no hablo mucho que soy un bocaza... Pero date prisa, nos espera
       un vuelo a Republica Dominicana!!
     speakerTransform: {fileID: 0}
+    portrait: {fileID: -5213980311838224735, guid: 6a7708bba16a1d44aa13101ed1bb20a7, type: 3}

@@ -2,9 +2,21 @@
 
 public class EventTriggerZone : MonoBehaviour
 {
-    [Header("Qué evento lanzar")]
+    public enum TriggerAction
+    {
+        PlayCutscene,
+        FadeToEndScene
+    }
+
+    [Header("Qué hace este trigger")]
+    public TriggerAction action = TriggerAction.PlayCutscene;
+
+    [Header("CUTSCENE (solo si action = PlayCutscene)")]
     public CutsceneController cutscene;   // arrástralo desde la escena
-    public CutsceneSequence sequence;     // arrastra el asset del evento (lo crearemos después)
+    public CutsceneSequence sequence;     // arrastra el asset del evento
+
+    [Header("END SCENE (solo si action = FadeToEndScene)")]
+    public ScreenFaderLoader endSceneFader; // arrastra ScreenFader (el que tiene ScreenFaderLoader)
 
     [Header("Opciones")]
     public bool triggerOnce = true;
@@ -27,14 +39,33 @@ public class EventTriggerZone : MonoBehaviour
 
         Debug.Log("[EventTriggerZone] Es el Player ✅");
 
-        if (cutscene == null || sequence == null)
+        if (action == TriggerAction.PlayCutscene)
         {
-            Debug.LogWarning("[EventTriggerZone] Falta cutscene o sequence en el Inspector.");
-            return;
-        }
+            if (cutscene == null || sequence == null)
+            {
+                Debug.LogWarning("[EventTriggerZone] Falta cutscene o sequence en el Inspector.");
+                return;
+            }
 
-        Debug.Log("[EventTriggerZone] Voy a reproducir cutscene ✅");
-        cutscene.Play(sequence);
+            Debug.Log("[EventTriggerZone] Voy a reproducir cutscene ✅");
+            cutscene.Play(sequence);
+        }
+        else // FadeToEndScene
+        {
+            if (endSceneFader == null)
+            {
+                endSceneFader = FindObjectOfType<ScreenFaderLoader>();
+            }
+
+            if (endSceneFader == null)
+            {
+                Debug.LogWarning("[EventTriggerZone] No encuentro ScreenFaderLoader en la escena.");
+                return;
+            }
+
+            Debug.Log("[EventTriggerZone] Fade -> EndScene ✅");
+            endSceneFader.GoToEndScene();
+        }
 
         if (triggerOnce)
             fired = true;

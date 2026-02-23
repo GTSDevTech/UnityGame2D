@@ -15,15 +15,18 @@ MonoBehaviour:
   lines:
   - speakerName: Perro Corrupto
     text: "Buenos d\xEDas jefe. Ver\xE1s, la cosa se ha puesto un poco.. Tensa, as\xED
-      que vengo a pedirte unas vacaciones... Y si me quitas a la gente de la puerta
-      del aereopuerto, mucho mejor..."
+      que vengo a pedirte unas vacaciones... Y si me quitas a la manifestaci\xF3n
+      de la puerta del aereopuerto, mucho mejor..."
     speakerTransform: {fileID: 0}
+    portrait: {fileID: -8933851603162251381, guid: b060ced296441b640b05b639e38a7234, type: 3}
   - speakerName: Lucifer
     text: "Hombre Perrito, a ti te quer\xEDa yo ver, que me est\xE1s quitando el
       trabjo... Bueno bueno, no veas si pides, que ya me has vendido tu alma y me
       tienes hipotecada la hermano y tu mujer..."
     speakerTransform: {fileID: 0}
+    portrait: {fileID: 8637782004570053862, guid: c7e1ef1b28d4ffd429f039abd4431c4a, type: 3}
   - speakerName: Lucifer
     text: "Bueno, como he visto que has robado TODOS los fondos p\xFAblicos del Pa\xEDs
       te lo paso por esta... Venga, p\xEDrate."
     speakerTransform: {fileID: 0}
+    portrait: {fileID: 8637782004570053862, guid: c7e1ef1b28d4ffd429f039abd4431c4a, type: 3}
