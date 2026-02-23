@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 53d1e05cd06c2a3488445cad44ebc728
+guid: 777c1673b475db448828700cda121e75
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2346302928887187388
-    second: bullet_0
+      213: -1392784990358644983
+    second: attack_fire_away_demon_0
+  - first:
+      213: 6648824891431155271
+    second: attack_fire_away_demon_1
+  - first:
+      213: -3086922412285833731
+    second: attack_fire_away_demon_2
+  - first:
+      213: 1160255789271379933
+    second: attack_fire_away_demon_3
+  - first:
+      213: 314565332051859238
+    second: attack_fire_away_demon_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1000
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bullet_0
+      name: attack_fire_away_demon_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 28
-        width: 253
-        height: 105
+        x: 0
+        y: 0
+        width: 243
+        height: 227
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +140,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 448783cdae1407fd0800000000000000
-      internalID: -2346302928887187388
+      spriteID: 9075d293e65dbace0800000000000000
+      internalID: -1392784990358644983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack_fire_away_demon_1
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 0
+        width: 244
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7467783030f554c50800000000000000
+      internalID: 6648824891431155271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack_fire_away_demon_2
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 0
+        width: 282
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfdc286db6c0925d0800000000000000
+      internalID: -3086922412285833731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack_fire_away_demon_3
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 0
+        width: 224
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf6c183e7e0a1010800000000000000
+      internalID: 1160255789271379933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack_fire_away_demon_4
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 94
+        width: 155
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6279a9bb08f8d5400800000000000000
+      internalID: 314565332051859238
       vertices: []
       indices: 
       edges: []
@@ -148,7 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bullet_0: -2346302928887187388
+      attack_fire_away_demon_0: -1392784990358644983
+      attack_fire_away_demon_1: 6648824891431155271
+      attack_fire_away_demon_2: -3086922412285833731
+      attack_fire_away_demon_3: 1160255789271379933
+      attack_fire_away_demon_4: 314565332051859238
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

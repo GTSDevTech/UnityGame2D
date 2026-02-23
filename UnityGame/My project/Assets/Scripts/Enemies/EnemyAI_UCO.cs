@@ -19,13 +19,30 @@ public class EnemyAI_Shooter : MonoBehaviour
     public float wallCheckDistance = 0.25f;
     public LayerMask wallLayer;
 
+    [Header("Ground Check (como Player, pero automático)")]
+    [Tooltip("Si no lo asignas, buscará un hijo llamado GroundCheck.")]
+    public Transform groundCheck;
+    [Tooltip("Radio del overlap para detectar suelo.")]
+    public float groundCheckRadius = 0.12f;
+    [Tooltip("LayerMask del suelo (Ground).")]
+    public LayerMask groundLayer;
+
     [Header("Animator Params (exactos)")]
     public string speedParam = "Speed";
+
+    // Controller viejo (Enemy): bool
     public string shootBool = "IsShooting";
+
+    // Controller Player: trigger
+    public string shootTrigger = "Shoot";
+
+    // Controller Player: grounded bool
+    public string groundedBool = "isGrounded";
+
     public string hurtTrigger = "Hurt";
-    public string dieTrigger = "Die";       
-    public string deadBool = "IsDead";      
-    public string reloadTrigger = "Reload"; 
+    public string dieTrigger = "Die";
+    public string deadBool = "IsDead";
+    public string reloadTrigger = "Reload";
 
     [Header("Hurt/Stun")]
     public float hurtStunTime = 0.25f;
@@ -103,6 +120,12 @@ public class EnemyAI_Shooter : MonoBehaviour
 
     int enemyProjectileLayer = -1;
 
+    // Cache de params del Animator (para no romper si el controller no los tiene)
+    bool _hasShootBool;
+    bool _hasShootTrigger;
+    bool _hasGroundedBool;
+    bool _hasSpeedFloat;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -129,17 +152,29 @@ public class EnemyAI_Shooter : MonoBehaviour
             if (animator == null) animator = GetComponentInChildren<Animator>();
         }
 
+        // Auto WallCheck
         if (wallCheck == null)
         {
             var wc = transform.Find("WallCheck");
             if (wc != null) wallCheck = wc;
         }
 
+        // Auto GroundCheck
+        if (groundCheck == null)
+        {
+            var gc = transform.Find("GroundCheck");
+            if (gc != null) groundCheck = gc;
+        }
+
+        // Auto ShootPoint
         if (shootPoint == null)
         {
             var sp = transform.Find("ShootPoint");
             if (sp != null) shootPoint = sp;
         }
+
+        // Cache params del animator (IMPORTANTE: evita el error "Parameter does not exist")
+        CacheAnimatorParams();
     }
 
     void Start()
@@ -162,7 +197,7 @@ public class EnemyAI_Shooter : MonoBehaviour
         if (shootTimer > 0f) shootTimer -= Time.fixedDeltaTime;
         if (reloadTimer > 0f) reloadTimer -= Time.fixedDeltaTime;
 
-        // actualizar bool de disparo solo cuando estés en Shoot
+        // actualizar bool de disparo solo cuando estés en Shoot (solo si existe en el controller)
         SetShootingBool(state == State.Shoot);
 
         // decidir si ve al player
@@ -242,6 +277,11 @@ public class EnemyAI_Shooter : MonoBehaviour
                 LockMovement();
                 shootTimer = shootDuration;
                 cooldownTimer = shootCooldown;
+
+                // NUEVO: si el controller es el del Player, dispara por Trigger "Shoot"
+                if (animator != null && _hasShootTrigger && !string.IsNullOrEmpty(shootTrigger))
+                    animator.SetTrigger(shootTrigger);
+
                 break;
 
             case State.Reload:
@@ -377,17 +417,27 @@ public class EnemyAI_Shooter : MonoBehaviour
 
     // -------------------- Proyectiles --------------------
     // Animation Event
+    // -------------------- Proyectiles --------------------
+// Animation Event
     public void FireProjectile()
     {
-        if (state != State.Shoot) return;
+        // IMPORTANTE: No dependas del state exacto del script para permitir el AnimEvent.
+        // Si ya estás muerto / stunned / recargando, no dispares.
+        if (state == State.Dead || state == State.Stunned || state == State.Reload) return;
+
         if (projectilePrefab == null || shootPoint == null) return;
 
-        if (shootSFX != null) shootSFX.Play(); // 🔊 DISPARO
+        if (shootSFX != null) shootSFX.Play();
 
-        FacePlayer();
+        // No recalcules FacePlayer aquí: puede cambiarte dir justo en el frame del disparo.
+        // La dirección debe venir del "dir" ya establecido por la IA/estado.
+        int shootDir = dir;
+        if (shootDir == 0) shootDir = 1;
 
+        // Spawn (tal cual, en el shootPoint)
         GameObject b = Instantiate(projectilePrefab, shootPoint.position, Quaternion.identity);
 
+        // Layer a toda la jerarquía del proyectil
         if (enemyProjectileLayer >= 0)
         {
             b.layer = enemyProjectileLayer;
@@ -395,19 +445,27 @@ public class EnemyAI_Shooter : MonoBehaviour
                 t.gameObject.layer = enemyProjectileLayer;
         }
 
-        var rbB = b.GetComponent<Rigidbody2D>();
-        if (rbB != null)
-            rbB.linearVelocity = new Vector2(dir * projectileSpeed, 0f);
+        // (Recomendado) Ignorar colisión con el enemigo (por si hay overlaps con colliders hijos)
+        Collider2D enemyCol = GetComponent<Collider2D>();
+        Collider2D bulletCol = b.GetComponent<Collider2D>();
+        if (enemyCol != null && bulletCol != null)
+            Physics2D.IgnoreCollision(enemyCol, bulletCol);
 
-        var p = b.GetComponent<Projectile>();
+        // Velocidad
+        Rigidbody2D rbB = b.GetComponent<Rigidbody2D>();
+        if (rbB != null)
+            rbB.linearVelocity = new Vector2(shootDir * projectileSpeed, 0f);
+
+        // Datos de daño/autor
+        Projectile p = b.GetComponent<Projectile>();
         if (p != null)
         {
             p.damage = projectileDamage;
-            p.shooterTag = "Enemy";
+            p.shooterTag = gameObject.tag; // correcto
         }
 
+        // Contador de disparos/recarga
         shotsSinceReload++;
-
         if (shotsSinceReload >= shotsBeforeReload)
             pendingReload = true;
     }
@@ -441,43 +499,38 @@ public class EnemyAI_Shooter : MonoBehaviour
     }
 
     void Die()
-{
-    // Igual que Player: SFX primero, luego guard clause
-    if (deathSFX != null) deathSFX.Play();
-    if (state == State.Dead) return;
-
-    state = State.Dead;
-
-    // Igual concepto que Player (canShoot = false / isReloading = false)
-    pendingReload = false;
-
-    // CLAVE: si muere disparando, el bool IsShooting puede quedarse true porque FixedUpdate ya no lo actualiza
-    if (animator != null && !string.IsNullOrEmpty(shootBool))
-        animator.SetBool(shootBool, false);
-
-    UnlockMovement();
-
-    // Igual que Player: cortar físicas sin bodyType kinematic, sin gravityScale=0, sin freeze position
-    rb.linearVelocity = Vector2.zero;
-    rb.angularVelocity = 0f;
-    rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-
-    if (visual != null)
-        visual.localPosition = visualStartLocalPos + new Vector3(0f, deathVisualYOffset, 0f);
-
-    // Igual que Player: dead bool + die trigger (sin resets extra)
-    if (animator != null)
     {
-        if (!string.IsNullOrEmpty(deadBool))
-            animator.SetBool(deadBool, true);
+        if (deathSFX != null) deathSFX.Play();
+        if (state == State.Dead) return;
 
-        if (!string.IsNullOrEmpty(dieTrigger))
-            animator.SetTrigger(dieTrigger);
+        state = State.Dead;
+        pendingReload = false;
+
+        // CLAVE: si muere disparando, el bool puede quedarse "true" si el controller lo tiene
+        if (animator != null && _hasShootBool && !string.IsNullOrEmpty(shootBool))
+            animator.SetBool(shootBool, false);
+
+        UnlockMovement();
+
+        rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+        if (visual != null)
+            visual.localPosition = visualStartLocalPos + new Vector3(0f, deathVisualYOffset, 0f);
+
+        if (animator != null)
+        {
+            if (!string.IsNullOrEmpty(deadBool))
+                animator.SetBool(deadBool, true);
+
+            if (!string.IsNullOrEmpty(dieTrigger))
+                animator.SetTrigger(dieTrigger);
+        }
+
+        if (deathRoutine != null) StopCoroutine(deathRoutine);
+        deathRoutine = StartCoroutine(DisableAfterDeath());
     }
-
-    if (deathRoutine != null) StopCoroutine(deathRoutine);
-    deathRoutine = StartCoroutine(DisableAfterDeath());
-}
 
     IEnumerator DisableAfterDeath()
     {
@@ -521,6 +574,12 @@ public class EnemyAI_Shooter : MonoBehaviour
         return hit.collider != null;
     }
 
+    bool IsGrounded()
+    {
+        if (groundCheck == null) return false;
+        return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer) != null;
+    }
+
     void TurnAround()
     {
         dir *= -1;
@@ -545,12 +604,60 @@ public class EnemyAI_Shooter : MonoBehaviour
         if (state == State.Shoot || state == State.Reload || state == State.Stunned || state == State.Dead)
             spd = 0f;
 
-        animator.SetFloat(speedParam, spd);
+        if (_hasSpeedFloat && !string.IsNullOrEmpty(speedParam))
+            animator.SetFloat(speedParam, spd);
+
+        // NUEVO: grounded real para controller del Player (evita "saltando")
+        if (_hasGroundedBool && !string.IsNullOrEmpty(groundedBool))
+            animator.SetBool(groundedBool, IsGrounded());
     }
 
     void SetShootingBool(bool value)
     {
         if (animator == null || string.IsNullOrEmpty(shootBool)) return;
+        if (!_hasShootBool) return; // evita el error si el controller no tiene IsShooting
         animator.SetBool(shootBool, value);
     }
+
+    void CacheAnimatorParams()
+    {
+        if (animator == null)
+        {
+            _hasShootBool = false;
+            _hasShootTrigger = false;
+            _hasGroundedBool = false;
+            _hasSpeedFloat = false;
+            return;
+        }
+
+        _hasShootBool = HasParam(shootBool, AnimatorControllerParameterType.Bool);
+        _hasShootTrigger = HasParam(shootTrigger, AnimatorControllerParameterType.Trigger);
+        _hasGroundedBool = HasParam(groundedBool, AnimatorControllerParameterType.Bool);
+        _hasSpeedFloat = HasParam(speedParam, AnimatorControllerParameterType.Float);
+    }
+
+    bool HasParam(string name, AnimatorControllerParameterType type)
+    {
+        if (animator == null || string.IsNullOrEmpty(name)) return false;
+        foreach (var p in animator.parameters)
+        {
+            if (p.name == name && p.type == type) return true;
+        }
+        return false;
+    }
+
+#if UNITY_EDITOR
+    void OnDrawGizmosSelected()
+    {
+        if (groundCheck != null)
+        {
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        }
+
+        if (wallCheck != null)
+        {
+            Gizmos.DrawLine(wallCheck.position, wallCheck.position + Vector3.right * wallCheckDistance);
+        }
+    }
+#endif
 }
