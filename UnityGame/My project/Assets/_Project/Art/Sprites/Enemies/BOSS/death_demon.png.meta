@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: fad62e1593584f945aeb75fd21f49a1a
+guid: 1d16332f87184044d8fc106f39213d6f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2895342470157390894
-    second: mini_fire_ball_demon_0
+      213: 3965448807155361769
+    second: death_demon_0
   - first:
-      213: -1755234820270670575
-    second: mini_fire_ball_demon_1
+      213: -9012058627830834928
+    second: death_demon_1
+  - first:
+      213: 4223402489428112977
+    second: death_demon_2
+  - first:
+      213: -103432347426591656
+    second: death_demon_3
+  - first:
+      213: 289985296725099686
+    second: death_demon_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,45 +125,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mini_fire_ball_demon_0
+      name: death_demon_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 35
-        width: 12
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 314
+        height: 251
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2455dce2a25e2820800000000000000
-      internalID: 2895342470157390894
+      spriteID: 9e7ed752eaa180730800000000000000
+      internalID: 3965448807155361769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mini_fire_ball_demon_1
+      name: death_demon_1
       rect:
         serializedVersion: 2
-        x: 12
-        y: 16
-        width: 55
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 314
+        y: 0
+        width: 314
+        height: 251
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 11dbe580b3724a7e0800000000000000
-      internalID: -1755234820270670575
+      spriteID: 01916290d6cbee280800000000000000
+      internalID: -9012058627830834928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_demon_2
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 0
+        width: 314
+        height: 251
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156fcd5003a8c9a30800000000000000
+      internalID: 4223402489428112977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_demon_3
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 0
+        width: 314
+        height: 251
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c6a59f3d8809ef0800000000000000
+      internalID: -103432347426591656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_demon_4
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 0
+        width: 314
+        height: 251
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a4c269471c360400800000000000000
+      internalID: 289985296725099686
       vertices: []
       indices: 
       edges: []
@@ -163,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: da126d846f07a2e4da2ed6f2637ac35f
     internalID: 0
     vertices: []
     indices: 
@@ -171,10 +246,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":314.0,"y":251.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      mini_fire_ball_demon_0: 2895342470157390894
-      mini_fire_ball_demon_1: -1755234820270670575
+      death_demon_0: 3965448807155361769
+      death_demon_1: -9012058627830834928
+      death_demon_2: 4223402489428112977
+      death_demon_3: -103432347426591656
+      death_demon_4: 289985296725099686
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

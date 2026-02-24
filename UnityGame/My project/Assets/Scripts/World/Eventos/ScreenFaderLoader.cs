@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -8,7 +8,7 @@ public class ScreenFaderLoader : MonoBehaviour
     [Header("UI")]
     public Image fadeImage;
 
-    [Header("Transici�n")]
+    [Header("Transición")]
     public float fadeOutSeconds = 0.8f;
     public float fadeInSeconds = 0.3f;
     public string sceneToLoad = "EndScene";
@@ -21,9 +21,19 @@ public class ScreenFaderLoader : MonoBehaviour
         SetAlpha(0f);
     }
 
+    // 🔥 Método antiguo (lo dejamos por compatibilidad)
     public void GoToEndScene()
     {
+        LoadScene(sceneToLoad);
+    }
+
+    // ✅ NUEVO MÉTODO GENÉRICO (esto arregla tu error)
+    public void LoadScene(string newScene)
+    {
         if (busy) return;
+        if (string.IsNullOrEmpty(newScene)) return;
+
+        sceneToLoad = newScene;
         StartCoroutine(FadeAndLoad());
     }
 
@@ -37,9 +47,8 @@ public class ScreenFaderLoader : MonoBehaviour
         // Cargar escena
         yield return SceneManager.LoadSceneAsync(sceneToLoad);
 
-        // (Opcional) Fade IN desde negro
-        // Si no quieres fade-in, borra estas 2 l�neas
-        yield return null; // deja respirar 1 frame
+        // Fade IN desde negro
+        yield return null;
         yield return Fade(1f, 0f, fadeInSeconds);
 
         busy = false;

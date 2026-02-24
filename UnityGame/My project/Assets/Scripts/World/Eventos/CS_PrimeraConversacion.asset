@@ -15,13 +15,18 @@ MonoBehaviour:
   lines:
   - speakerName: Fontanera del Estado
     text: "Vaya, parece que hemos robado tanto que hemos quebrado al Pa\xEDs, ser\xE1
-      mejor que nos vayamos antes de que nos encuentren... Yo que tu no volver\xEDa
-      atr\xE1s..."
+      mejor que nos vayamos antes de que nos encuentre la UCO, ya est\xE1n por todos
+      lados... Yo que tu no volver\xEDa atr\xE1s..."
     speakerTransform: {fileID: 0}
     portrait: {fileID: 7195268672227423287, guid: 462e6906f9dac1e408597dee240825d1, type: 3}
   - speakerName: Fontanera del Estado
     text: "Si yo fuese tu, intentar\xEDa llegar al aeropuerto y largarme en el Falconeti...
       No olvides robar todo el dinero que puedas por el camino, seguro que te ser\xE1
       \xFAtil jejeje"
+    speakerTransform: {fileID: 0}
+    portrait: {fileID: 7195268672227423287, guid: 462e6906f9dac1e408597dee240825d1, type: 3}
+  - speakerName: Fontanera del Estado
+    text: "Para moverte utiliza W / A, espacio para saltar, mant\xE9n shift para
+      correr, con click izquierdo disparas y con click derecho golpeas con el malet\xEDn."
     speakerTransform: {fileID: 0}
     portrait: {fileID: 7195268672227423287, guid: 462e6906f9dac1e408597dee240825d1, type: 3}

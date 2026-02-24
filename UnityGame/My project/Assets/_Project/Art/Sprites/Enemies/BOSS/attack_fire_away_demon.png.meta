@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -130,10 +130,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 243
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 384
+        height: 250
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,12 +150,12 @@ TextureImporter:
       name: attack_fire_away_demon_1
       rect:
         serializedVersion: 2
-        x: 377
+        x: 384
         y: 0
-        width: 244
-        height: 228
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 384
+        height: 250
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -172,12 +172,12 @@ TextureImporter:
       name: attack_fire_away_demon_2
       rect:
         serializedVersion: 2
-        x: 766
+        x: 768
         y: 0
-        width: 282
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 384
+        height: 250
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: attack_fire_away_demon_3
       rect:
         serializedVersion: 2
-        x: 1151
+        x: 1152
         y: 0
-        width: 224
-        height: 229
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 384
+        height: 250
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -212,33 +212,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: attack_fire_away_demon_4
-      rect:
-        serializedVersion: 2
-        x: 1358
-        y: 94
-        width: 155
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6279a9bb08f8d5400800000000000000
-      internalID: 314565332051859238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1b5618702525c3b49884999177adbf34
     internalID: 0
     vertices: []
     indices: 
@@ -246,13 +224,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":384.0,"y":250.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       attack_fire_away_demon_0: -1392784990358644983
       attack_fire_away_demon_1: 6648824891431155271
       attack_fire_away_demon_2: -3086922412285833731
       attack_fire_away_demon_3: 1160255789271379933
-      attack_fire_away_demon_4: 314565332051859238
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

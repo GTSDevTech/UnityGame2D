@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: fad62e1593584f945aeb75fd21f49a1a
+guid: 4c403b76f68362d44891b79111d4b14c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2895342470157390894
-    second: mini_fire_ball_demon_0
-  - first:
-      213: -1755234820270670575
-    second: mini_fire_ball_demon_1
+      213: 3334974514884007058
+    second: sprite_demon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,45 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mini_fire_ball_demon_0
+      name: sprite_demon_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 35
-        width: 12
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 225
+        height: 231
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2455dce2a25e2820800000000000000
-      internalID: 2895342470157390894
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mini_fire_ball_demon_1
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 16
-        width: 55
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 11dbe580b3724a7e0800000000000000
-      internalID: -1755234820270670575
+      spriteID: 29454aed6a5384e20800000000000000
+      internalID: 3334974514884007058
       vertices: []
       indices: 
       edges: []
@@ -163,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 66d09037c84e69746963a721ce5c1544
     internalID: 0
     vertices: []
     indices: 
@@ -171,10 +146,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":225.0,"y":231.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      mini_fire_ball_demon_0: 2895342470157390894
-      mini_fire_ball_demon_1: -1755234820270670575
+      sprite_demon_0: 3334974514884007058
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
