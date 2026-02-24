@@ -1,0 +1,1430 @@
+fileFormatVersion: 2
+guid: ec7985b1c62975349b5053e1ceb2f967
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2017982478927235093
+    second: barajas_0
+  - first:
+      213: -8918566003498445043
+    second: barajas_1
+  - first:
+      213: -6761801170611337850
+    second: barajas_2
+  - first:
+      213: -6676379601103082224
+    second: barajas_3
+  - first:
+      213: 5390605172198063778
+    second: barajas_4
+  - first:
+      213: 3504500508357804998
+    second: barajas_5
+  - first:
+      213: 1922781700811415851
+    second: barajas_6
+  - first:
+      213: -22515453750379416
+    second: barajas_7
+  - first:
+      213: 8656541924456961578
+    second: barajas_8
+  - first:
+      213: -8368186299861269125
+    second: barajas_9
+  - first:
+      213: 3562865789814697301
+    second: barajas_10
+  - first:
+      213: -5995397029187235942
+    second: barajas_11
+  - first:
+      213: 1162690498276226027
+    second: barajas_12
+  - first:
+      213: -4910336894355499085
+    second: barajas_13
+  - first:
+      213: 1572065747182026676
+    second: barajas_14
+  - first:
+      213: -7542021217204417394
+    second: barajas_15
+  - first:
+      213: 3628335276555942361
+    second: barajas_16
+  - first:
+      213: -6027571064200817062
+    second: barajas_17
+  - first:
+      213: 6703355751911873246
+    second: barajas_18
+  - first:
+      213: 5525453732127853146
+    second: barajas_19
+  - first:
+      213: -6740684307489498911
+    second: barajas_20
+  - first:
+      213: -7849334777963036313
+    second: barajas_21
+  - first:
+      213: -335409002520722080
+    second: barajas_22
+  - first:
+      213: 8614987942110877764
+    second: barajas_23
+  - first:
+      213: 207477612478750046
+    second: barajas_24
+  - first:
+      213: 8593296526140730038
+    second: barajas_25
+  - first:
+      213: 7677908734568079533
+    second: barajas_26
+  - first:
+      213: 5163427026884068782
+    second: barajas_27
+  - first:
+      213: -8132598502636822719
+    second: barajas_28
+  - first:
+      213: 1960512554522575009
+    second: barajas_29
+  - first:
+      213: -5664669687920838104
+    second: barajas_30
+  - first:
+      213: 1241848649818187148
+    second: barajas_31
+  - first:
+      213: 1894885517317923847
+    second: barajas_32
+  - first:
+      213: 8344617840374421809
+    second: barajas_33
+  - first:
+      213: 18433945210276311
+    second: barajas_34
+  - first:
+      213: 7612760812314995165
+    second: barajas_35
+  - first:
+      213: 5562617640461976132
+    second: barajas_36
+  - first:
+      213: 4959234484418255322
+    second: barajas_37
+  - first:
+      213: 9182494275343611791
+    second: barajas_38
+  - first:
+      213: 6012794377547610948
+    second: barajas_39
+  - first:
+      213: 5923869156935153656
+    second: barajas_40
+  - first:
+      213: -7785865237989728239
+    second: barajas_41
+  - first:
+      213: -1088981003706707738
+    second: barajas_42
+  - first:
+      213: -1550601594730206827
+    second: barajas_43
+  - first:
+      213: -4692642110547864173
+    second: barajas_44
+  - first:
+      213: -4289575794613025452
+    second: barajas_45
+  - first:
+      213: 3385226974727801760
+    second: barajas_46
+  - first:
+      213: 7618089975069172279
+    second: barajas_47
+  - first:
+      213: -5508297106848685786
+    second: barajas_48
+  - first:
+      213: 5552714975361104147
+    second: barajas_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: barajas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1536
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5188b637f50510c10800000000000000
+      internalID: 2017982478927235093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 119
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07999fe873ea3480800000000000000
+      internalID: -8918566003498445043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 139
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68504ef29a14922a0800000000000000
+      internalID: -6761801170611337850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 94
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d2692302cb853a0800000000000000
+      internalID: -6676379601103082224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_4
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 137
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aebf3de7d64fca40800000000000000
+      internalID: 5390605172198063778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_5
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 153
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3c7db05ac72a030800000000000000
+      internalID: 3504500508357804998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_6
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 145
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b216c7105c71faa10800000000000000
+      internalID: 1922781700811415851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_7
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 136
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86c7049605200bff0800000000000000
+      internalID: -22515453750379416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_8
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 134
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2698861407322870800000000000000
+      internalID: 8656541924456961578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_9
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 135
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b758a7695ea3edb80800000000000000
+      internalID: -8368186299861269125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_10
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 114
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55deb481f87d17130800000000000000
+      internalID: 3562865789814697301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_11
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 117
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9fccdbba221ccca0800000000000000
+      internalID: -5995397029187235942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_12
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 141
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3f97519d4b22010800000000000000
+      internalID: 1162690498276226027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_13
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 112
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b712745c9afadbb0800000000000000
+      internalID: -4910336894355499085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_14
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 104
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bff758c77911d510800000000000000
+      internalID: 1572065747182026676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_15
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 137
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c421c89ab555790800000000000000
+      internalID: -7542021217204417394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_16
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 109
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9b225d5bf6a5230800000000000000
+      internalID: 3628335276555942361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_17
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 128
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5613e37d04c95ca0800000000000000
+      internalID: -6027571064200817062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_18
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 95
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda57cb5a8a170d50800000000000000
+      internalID: 6703355751911873246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_19
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 123
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a465ee4ea5eac40800000000000000
+      internalID: 5525453732127853146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_20
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8d90506574472a0800000000000000
+      internalID: -6740684307489498911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_21
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 88
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761c4646b9f811390800000000000000
+      internalID: -7849334777963036313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_22
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 136
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065c84e0a43685bf0800000000000000
+      internalID: -335409002520722080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_23
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 104
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 448dac1a3e59e8770800000000000000
+      internalID: 8614987942110877764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_24
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 96
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d54ae0acb11e200800000000000000
+      internalID: 207477612478750046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_25
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 144
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba673a49a5814770800000000000000
+      internalID: 8593296526140730038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_26
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 155
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0acc590596d8a60800000000000000
+      internalID: 7677908734568079533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_27
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 144
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea58311268d28a740800000000000000
+      internalID: 5163427026884068782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_28
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 91
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f557d00c4332f80800000000000000
+      internalID: -8132598502636822719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_29
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 118
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a00306f7c3253b10800000000000000
+      internalID: 1960512554522575009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_30
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 99
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a3e897eec0361b0800000000000000
+      internalID: -5664669687920838104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_31
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 155
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85263574ceeb3110800000000000000
+      internalID: 1241848649818187148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_32
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 131
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70464c5a65cfb4a10800000000000000
+      internalID: 1894885517317923847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_33
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 104
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13997e1d6b90ec370800000000000000
+      internalID: 8344617840374421809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_34
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 119
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d94114539d714000800000000000000
+      internalID: 18433945210276311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_35
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 107
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9ac0aef95f5a960800000000000000
+      internalID: 7612760812314995165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_36
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 131
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442ce01a543623d40800000000000000
+      internalID: 5562617640461976132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_37
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 88
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad91e990d7db2d440800000000000000
+      internalID: 4959234484418255322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_38
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 151
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87f9e974e5ce6f70800000000000000
+      internalID: 9182494275343611791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_39
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 136
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44bf03511acb17350800000000000000
+      internalID: 6012794377547610948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_40
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 129
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7330bbc9fc53250800000000000000
+      internalID: 5923869156935153656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_41
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 96
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1106f8c31dc03f390800000000000000
+      internalID: -7785865237989728239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_42
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 74
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0d9eafb8923e0f0800000000000000
+      internalID: -1088981003706707738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_43
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 147
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599a3f5a0182b7ae0800000000000000
+      internalID: -1550601594730206827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_44
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 107
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39551c6fcd260eeb0800000000000000
+      internalID: -4692642110547864173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_45
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 157
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4550afcba8d5874c0800000000000000
+      internalID: -4289575794613025452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_46
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 151
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab88b07ffdbafe20800000000000000
+      internalID: 3385226974727801760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_47
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 154
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73266fe4874e8b960800000000000000
+      internalID: 7618089975069172279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_48
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 155
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621e8fc27f89e83b0800000000000000
+      internalID: -5508297106848685786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barajas_49
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 146
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 319f36db9d43f0d40800000000000000
+      internalID: 5552714975361104147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      barajas_0: 2017982478927235093
+      barajas_1: -8918566003498445043
+      barajas_10: 3562865789814697301
+      barajas_11: -5995397029187235942
+      barajas_12: 1162690498276226027
+      barajas_13: -4910336894355499085
+      barajas_14: 1572065747182026676
+      barajas_15: -7542021217204417394
+      barajas_16: 3628335276555942361
+      barajas_17: -6027571064200817062
+      barajas_18: 6703355751911873246
+      barajas_19: 5525453732127853146
+      barajas_2: -6761801170611337850
+      barajas_20: -6740684307489498911
+      barajas_21: -7849334777963036313
+      barajas_22: -335409002520722080
+      barajas_23: 8614987942110877764
+      barajas_24: 207477612478750046
+      barajas_25: 8593296526140730038
+      barajas_26: 7677908734568079533
+      barajas_27: 5163427026884068782
+      barajas_28: -8132598502636822719
+      barajas_29: 1960512554522575009
+      barajas_3: -6676379601103082224
+      barajas_30: -5664669687920838104
+      barajas_31: 1241848649818187148
+      barajas_32: 1894885517317923847
+      barajas_33: 8344617840374421809
+      barajas_34: 18433945210276311
+      barajas_35: 7612760812314995165
+      barajas_36: 5562617640461976132
+      barajas_37: 4959234484418255322
+      barajas_38: 9182494275343611791
+      barajas_39: 6012794377547610948
+      barajas_4: 5390605172198063778
+      barajas_40: 5923869156935153656
+      barajas_41: -7785865237989728239
+      barajas_42: -1088981003706707738
+      barajas_43: -1550601594730206827
+      barajas_44: -4692642110547864173
+      barajas_45: -4289575794613025452
+      barajas_46: 3385226974727801760
+      barajas_47: 7618089975069172279
+      barajas_48: -5508297106848685786
+      barajas_49: 5552714975361104147
+      barajas_5: 3504500508357804998
+      barajas_6: 1922781700811415851
+      barajas_7: -22515453750379416
+      barajas_8: 8656541924456961578
+      barajas_9: -8368186299861269125
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

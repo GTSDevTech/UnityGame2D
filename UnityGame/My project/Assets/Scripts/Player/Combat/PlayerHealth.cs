@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class PlayerHealth : MonoBehaviour
@@ -9,9 +9,10 @@ public class PlayerHealth : MonoBehaviour
     int currentHealth;
     bool isDead;
     PlayerMovement2D pm;
-    public int CurrentHealth => currentHealth;
-    public float Health01 => maxHealth <= 0 ? 0f : Mathf.Clamp01((float)currentHealth / maxHealth);
 
+    public int CurrentHealth => currentHealth;
+
+    public float Health01 => maxHealth <= 0 ? 0f : Mathf.Clamp01((float)currentHealth / maxHealth);
 
     void Awake()
     {
@@ -39,6 +40,15 @@ public class PlayerHealth : MonoBehaviour
         Die();
     }
 
+    // ✅ NUEVO: curación (para el PowerUp Voto)
+    public void Heal(int amount)
+    {
+        if (isDead) return;
+
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        Debug.Log("Player HEAL -> HP: " + currentHealth);
+    }
+
     void Die()
     {
         if (isDead) return;
@@ -55,10 +65,8 @@ public class PlayerHealth : MonoBehaviour
     {
         yield return new WaitForSeconds(deathAnimTime);
 
-        if (CheckpointManager.I != null)
-            CheckpointManager.I.RespawnPlayer(transform);
-        else
-            Debug.LogWarning("No hay CheckpointManager, respawn cancelado.");
+        // 🔥 Ir directo a Game Over
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOverScene");
     }
 
     public void ResetAfterRespawn()

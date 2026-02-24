@@ -234,7 +234,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -303,8 +303,8 @@ TextureImporter:
         y: 849
         width: 91
         height: 84
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: -0.04761905}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1355,9 +1355,9 @@ TextureImporter:
       name: sprite-4-UCO (1)_58
       rect:
         serializedVersion: 2
-        x: 222
+        x: 223
         y: 101
-        width: 81
+        width: 85
         height: 95
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1377,10 +1377,10 @@ TextureImporter:
       name: sprite-4-UCO (1)_59
       rect:
         serializedVersion: 2
-        x: 384
+        x: 385
         y: 101
         width: 85
-        height: 90
+        height: 95
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1399,10 +1399,10 @@ TextureImporter:
       name: sprite-4-UCO (1)_60
       rect:
         serializedVersion: 2
-        x: 551
+        x: 552
         y: 101
-        width: 84
-        height: 81
+        width: 85
+        height: 95
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1421,11 +1421,11 @@ TextureImporter:
       name: sprite-4-UCO (1)_61
       rect:
         serializedVersion: 2
-        x: 700
+        x: 699
         y: 101
         width: 90
-        height: 28
-      alignment: 9
+        height: 95
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 

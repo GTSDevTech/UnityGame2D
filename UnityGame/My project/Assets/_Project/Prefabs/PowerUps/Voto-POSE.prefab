@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2889362265148668738}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.2103, y: 4.5594, z: 0}
+  m_LocalPosition: {x: -384.89, y: -411.71, z: 0}
   m_LocalScale: {x: 0.6146989, y: 0.60466045, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -29209491
   m_SortingLayer: 5
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2157911397049290522, guid: 146564f586aa4a146bc46909f0a20f7b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -154,6 +154,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   tipo: 1
+  pickupSFX: {fileID: 0}
+  destroyAfterSound: 1
 --- !u!50 &1786543716253790676
 Rigidbody2D:
   serializedVersion: 5

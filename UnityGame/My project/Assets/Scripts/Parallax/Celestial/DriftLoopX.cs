@@ -1,32 +1,70 @@
 using UnityEngine;
 
+[RequireComponent(typeof(SpriteRenderer))]
 public class DriftLoopX : MonoBehaviour
 {
+    [Header("Movement")]
+    [Tooltip("World units per second (ej: 0.15 - 0.6 dependiendo del PPU).")]
     public float speed = 0.2f;
 
-    // Rango LOCAL respecto a la posición inicial
-    public float minX = -30f;
-    public float maxX = 30f;
+    [Tooltip("Si true, se mueve a la derecha. Si false, a la izquierda.")]
+    public bool moveRight = false;
 
-    private Vector3 startLocalPos;
+    [Header("Bounds")]
+    [Tooltip("BoxCollider2D que define el área visible/permitida (por ejemplo: CameraBounds).")]
+    public BoxCollider2D boundsCollider;
+
+    [Tooltip("Margen extra para que no aparezca cortada al hacer wrap.")]
+    public float padding = 0.5f;
+
+    SpriteRenderer sr;
+    float halfWidth;
 
     void Awake()
     {
-        startLocalPos = transform.localPosition;
+        sr = GetComponent<SpriteRenderer>();
+        RecalcHalfWidth();
     }
 
-    void LateUpdate()
+    void OnEnable()
     {
-        var p = transform.localPosition;
+        RecalcHalfWidth();
+    }
 
-        p.x += (-speed) * Time.deltaTime;
+    void RecalcHalfWidth()
+    {
+        // ancho real en mundo (incluye escala)
+        halfWidth = sr.bounds.extents.x;
+    }
 
-        float localMin = startLocalPos.x + minX;
-        float localMax = startLocalPos.x + maxX;
+    void Update()
+    {
+        if (boundsCollider == null) return;
 
-        if (p.x < localMin)
-            p.x = localMax;
+        float dir = moveRight ? 1f : -1f;
 
-        transform.localPosition = p;
+        Vector3 pos = transform.position;
+        pos.x += dir * speed * Time.deltaTime;
+
+        // bounds del collider en world
+        Bounds b = boundsCollider.bounds;
+        float minX = b.min.x;
+        float maxX = b.max.x;
+
+        // Wrap
+        if (dir > 0f)
+        {
+            // va a la derecha, si sale por la derecha -> entra por la izquierda
+            if (pos.x > (maxX + halfWidth + padding))
+                pos.x = (minX - halfWidth - padding);
+        }
+        else
+        {
+            // va a la izquierda, si sale por la izquierda -> entra por la derecha
+            if (pos.x < (minX - halfWidth - padding))
+                pos.x = (maxX + halfWidth + padding);
+        }
+
+        transform.position = pos;
     }
 }

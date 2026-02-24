@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: bf62c999463c2ff41909e9600df6f962
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6116292215999839277
+    second: balrog_0
+  - first:
+      213: -8884792132970723710
+    second: balrog_1
+  - first:
+      213: -404758597348885818
+    second: balrog_2
+  - first:
+      213: -7656797351479398734
+    second: balrog_3
+  - first:
+      213: 5354184351815375019
+    second: balrog_4
+  - first:
+      213: -5795305183060556370
+    second: balrog_5
+  - first:
+      213: 2339739612286695107
+    second: balrog_6
+  - first:
+      213: -1881731729598744165
+    second: balrog_7
+  - first:
+      213: -4950982596840785670
+    second: balrog_8
+  - first:
+      213: -6392553947352786369
+    second: balrog_9
+  - first:
+      213: -1126806845854004554
+    second: balrog_10
+  - first:
+      213: -1518602978425190191
+    second: balrog_11
+  - first:
+      213: 4988533959766075552
+    second: balrog_12
+  - first:
+      213: 284602121033513282
+    second: balrog_13
+  - first:
+      213: -2732642488804762125
+    second: balrog_14
+  - first:
+      213: -3235639810073583390
+    second: balrog_15
+  - first:
+      213: 5183677046453733885
+    second: balrog_16
+  - first:
+      213: 3432407768658846320
+    second: balrog_17
+  - first:
+      213: -7159772774110690581
+    second: balrog_18
+  - first:
+      213: 2141183888810646688
+    second: balrog_19
+  - first:
+      213: -4756155087638106116
+    second: balrog_20
+  - first:
+      213: -6874599299548983465
+    second: balrog_21
+  - first:
+      213: 1360249811301064323
+    second: balrog_22
+  - first:
+      213: -7792029175516380386
+    second: balrog_23
+  - first:
+      213: -3457608204477671604
+    second: balrog_24
+  - first:
+      213: -6298785594413142638
+    second: balrog_25
+  - first:
+      213: 2928353860770972334
+    second: balrog_26
+  - first:
+      213: 7086133551235506830
+    second: balrog_27
+  - first:
+      213: 3701734710953490245
+    second: balrog_28
+  - first:
+      213: -9191612676051537721
+    second: balrog_29
+  - first:
+      213: -5629790928022542223
+    second: balrog_30
+  - first:
+      213: 7796327538848787023
+    second: balrog_31
+  - first:
+      213: -2888387723086821283
+    second: balrog_32
+  - first:
+      213: -1540598262019384481
+    second: balrog_33
+  - first:
+      213: -8811569388267384075
+    second: balrog_34
+  - first:
+      213: 8418425160227476127
+    second: balrog_35
+  - first:
+      213: 2851707737363015341
+    second: balrog_36
+  - first:
+      213: -7467392067349090321
+    second: balrog_37
+  - first:
+      213: -5547106745080043580
+    second: balrog_38
+  - first:
+      213: -764976111107239276
+    second: balrog_39
+  - first:
+      213: 537162884669363260
+    second: balrog_40
+  - first:
+      213: -7765567350571147700
+    second: balrog_41
+  - first:
+      213: 2449057676098622599
+    second: balrog_42
+  - first:
+      213: -7114655588387536361
+    second: balrog_43
+  - first:
+      213: -8146538139105480237
+    second: balrog_44
+  - first:
+      213: 8020759182114579171
+    second: balrog_45
+  - first:
+      213: -2652990693592198058
+    second: balrog_46
+  - first:
+      213: -5274688811983140982
+    second: balrog_47
+  - first:
+      213: 5851122445184602179
+    second: balrog_48
+  - first:
+      213: -8629327800975943797
+    second: balrog_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: balrog_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1285
+        width: 209
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c382d6d5f61e450800000000000000
+      internalID: 6116292215999839277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_1
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1287
+        width: 204
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2864813f0a0e2b480800000000000000
+      internalID: -8884792132970723710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_2
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 1285
+        width: 198
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cafb314332026af0800000000000000
+      internalID: -404758597348885818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_3
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1286
+        width: 193
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2be2be350679db590800000000000000
+      internalID: -7656797351479398734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_4
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 1285
+        width: 191
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba819efdc42ed4a40800000000000000
+      internalID: 5354184351815375019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_5
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 1285
+        width: 208
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea502be04a0f29fa0800000000000000
+      internalID: -5795305183060556370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_6
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 1284
+        width: 210
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c63249e7cc687020800000000000000
+      internalID: 2339739612286695107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_7
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1045
+        width: 230
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b997fa636feb2e5e0800000000000000
+      internalID: -1881731729598744165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_8
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1045
+        width: 230
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af8f9224f839a4bb0800000000000000
+      internalID: -4950982596840785670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_9
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1047
+        width: 241
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a1488dd061947a0800000000000000
+      internalID: -6392553947352786369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_10
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 1047
+        width: 249
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bac46ec427cc50f0800000000000000
+      internalID: -1126806845854004554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_11
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1045
+        width: 231
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8cd1413a6dceae0800000000000000
+      internalID: -1518602978425190191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_12
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 1045
+        width: 243
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a864ddb435da3540800000000000000
+      internalID: 4988533959766075552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_13
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 772
+        width: 219
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24976860f1c13f300800000000000000
+      internalID: 284602121033513282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_14
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 772
+        width: 228
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fd17a47224b31ad0800000000000000
+      internalID: -2732642488804762125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_15
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 783
+        width: 233
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0a3736cb2b813d0800000000000000
+      internalID: -3235639810073583390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_16
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 816
+        width: 248
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df988383fce10f740800000000000000
+      internalID: 5183677046453733885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_17
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 774
+        width: 231
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072a33f0eac52af20800000000000000
+      internalID: 3432407768658846320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_18
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 773
+        width: 254
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be28e96989063ac90800000000000000
+      internalID: -7159772774110690581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_19
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 810
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac1953076307bd10800000000000000
+      internalID: 2141183888810646688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_20
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 517
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cffe9a0a52ebefdb0800000000000000
+      internalID: -4756155087638106116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_21
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 517
+        width: 234
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75fcb393c548890a0800000000000000
+      internalID: -6874599299548983465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_22
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 518
+        width: 235
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e54681ff390e210800000000000000
+      internalID: 1360249811301064323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_23
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 517
+        width: 202
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e13cdd1bfb62dd390800000000000000
+      internalID: -7792029175516380386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_24
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 517
+        width: 261
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c47d1af38ab1400d0800000000000000
+      internalID: -3457608204477671604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_25
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 517
+        width: 239
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d28a0dfd73698a0800000000000000
+      internalID: -6298785594413142638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_26
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 516
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2c5ef325a93a820800000000000000
+      internalID: 2928353860770972334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_27
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 264
+        width: 245
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e82ae50cbe0075260800000000000000
+      internalID: 7086133551235506830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_28
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 264
+        width: 244
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547bd136b143f5330800000000000000
+      internalID: 3701734710953490245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_29
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 263
+        width: 278
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c078fa68f4d07080800000000000000
+      internalID: -9191612676051537721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_30
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 263
+        width: 224
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178ef779af6fed1b0800000000000000
+      internalID: -5629790928022542223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_31
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 435
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a6da1079e123c60800000000000000
+      internalID: 7796327538848787023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_32
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 263
+        width: 225
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d588fcf4ba26ae7d0800000000000000
+      internalID: -2888387723086821283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_33
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 444
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b10ca0b02be9ae0800000000000000
+      internalID: -1540598262019384481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_34
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 264
+        width: 226
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2dd9ab35407b580800000000000000
+      internalID: -8811569388267384075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_35
+      rect:
+        serializedVersion: 2
+        x: 1987
+        y: 263
+        width: 309
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92d19b941144d470800000000000000
+      internalID: 8418425160227476127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_36
+      rect:
+        serializedVersion: 2
+        x: 2333
+        y: 264
+        width: 222
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da661c0041d439720800000000000000
+      internalID: 2851707737363015341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_37
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 371
+        width: 242
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef661b8a7e7e5890800000000000000
+      internalID: -7467392067349090321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_38
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 427
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c7a4502ec7b403b0800000000000000
+      internalID: -5547106745080043580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_39
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 419
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4921bcba7424265f0800000000000000
+      internalID: -764976111107239276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_40
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 372
+        width: 116
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c34dd3f2cc2647700800000000000000
+      internalID: 537162884669363260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_41
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 419
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ed5dd63a92b3490800000000000000
+      internalID: -7765567350571147700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_42
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 400
+        width: 55
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7845d421bfcccf120800000000000000
+      internalID: 2449057676098622599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_43
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 356
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 712c9eaff6aa34d90800000000000000
+      internalID: -7114655588387536361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_44
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 341
+        width: 77
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1327589bea1fe80800000000000000
+      internalID: -8146538139105480237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_45
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 246
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e264e6faf57f4f60800000000000000
+      internalID: 8020759182114579171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_46
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 0
+        width: 250
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6541504350fae2bd0800000000000000
+      internalID: -2652990693592198058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_47
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 0
+        width: 257
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a878405d87a8cc6b0800000000000000
+      internalID: -5274688811983140982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_48
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 0
+        width: 253
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3401b820ddc533150800000000000000
+      internalID: 5851122445184602179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balrog_49
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 0
+        width: 247
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b871d6cc5187e3880800000000000000
+      internalID: -8629327800975943797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      balrog_0: 6116292215999839277
+      balrog_1: -8884792132970723710
+      balrog_10: -1126806845854004554
+      balrog_11: -1518602978425190191
+      balrog_12: 4988533959766075552
+      balrog_13: 284602121033513282
+      balrog_14: -2732642488804762125
+      balrog_15: -3235639810073583390
+      balrog_16: 5183677046453733885
+      balrog_17: 3432407768658846320
+      balrog_18: -7159772774110690581
+      balrog_19: 2141183888810646688
+      balrog_2: -404758597348885818
+      balrog_20: -4756155087638106116
+      balrog_21: -6874599299548983465
+      balrog_22: 1360249811301064323
+      balrog_23: -7792029175516380386
+      balrog_24: -3457608204477671604
+      balrog_25: -6298785594413142638
+      balrog_26: 2928353860770972334
+      balrog_27: 7086133551235506830
+      balrog_28: 3701734710953490245
+      balrog_29: -9191612676051537721
+      balrog_3: -7656797351479398734
+      balrog_30: -5629790928022542223
+      balrog_31: 7796327538848787023
+      balrog_32: -2888387723086821283
+      balrog_33: -1540598262019384481
+      balrog_34: -8811569388267384075
+      balrog_35: 8418425160227476127
+      balrog_36: 2851707737363015341
+      balrog_37: -7467392067349090321
+      balrog_38: -5547106745080043580
+      balrog_39: -764976111107239276
+      balrog_4: 5354184351815375019
+      balrog_40: 537162884669363260
+      balrog_41: -7765567350571147700
+      balrog_42: 2449057676098622599
+      balrog_43: -7114655588387536361
+      balrog_44: -8146538139105480237
+      balrog_45: 8020759182114579171
+      balrog_46: -2652990693592198058
+      balrog_47: -5274688811983140982
+      balrog_48: 5851122445184602179
+      balrog_49: -8629327800975943797
+      balrog_5: -5795305183060556370
+      balrog_6: 2339739612286695107
+      balrog_7: -1881731729598744165
+      balrog_8: -4950982596840785670
+      balrog_9: -6392553947352786369
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d47e02d5c9d7b64e9621c9ecea04bcd, type: 3}
+  m_Name: CS_ConversacionDiablo
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneSequence
+  lines:
+  - speakerName: Perro Corrupto
+    text: "Buenos d\xEDas jefe. Ver\xE1s, la cosa se ha puesto un poco.. Tensa, as\xED
+      que vengo a pedirte unas vacaciones... Y si me quitas a la manifestaci\xF3n
+      de la puerta del aereopuerto, mucho mejor..."
+    speakerTransform: {fileID: 0}
+    portrait: {fileID: -8933851603162251381, guid: b060ced296441b640b05b639e38a7234, type: 3}
+  - speakerName: Lucifer
+    text: "Hombre Perrito, a ti te quer\xEDa yo ver, que me est\xE1s quitando el
+      trabajo... Bueno bueno, no veas si pides, que ya me has vendido tu alma y me
+      tienes hipotecada la hermano y tu mujer..."
+    speakerTransform: {fileID: 0}
+    portrait: {fileID: 8637782004570053862, guid: c7e1ef1b28d4ffd429f039abd4431c4a, type: 3}
+  - speakerName: Lucifer
+    text: "Vamos a hacer una cosa, yo me quedo con tu dinero y encima te voy a dar
+      una paliza, \xBFTe parece?"
+    speakerTransform: {fileID: 0}
+    portrait: {fileID: 8637782004570053862, guid: c7e1ef1b28d4ffd429f039abd4431c4a, type: 3}

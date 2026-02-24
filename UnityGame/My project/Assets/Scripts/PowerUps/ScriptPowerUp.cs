@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public enum TipoPowerUp
 {
@@ -11,29 +11,49 @@ public class PowerUp : MonoBehaviour
 {
     public TipoPowerUp tipo;
 
+    [Header("SFX (en el propio pickup)")]
+    public AudioSource pickupSFX;          // AudioSource en ESTE objeto
+    public bool destroyAfterSound = true;  // destruir cuando termine el sonido
+
+    bool picked = false;
+
     private void Reset()
     {
-        // Asegura trigger por defecto
-        var c = GetComponent<Collider2D>();
-        if (c != null) c.isTrigger = true;
+        // Auto-rellena si hay AudioSource en el objeto
+        pickupSFX = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (picked) return;
         if (!other.CompareTag("Player")) return;
 
         var player = other.GetComponent<PlayerMovement2D>();
-        if (player == null)
-        {
-            Debug.LogError("[PowerUp] El Player no tiene PlayerMovement2D.", other);
-            return;
-        }
+        if (player == null) return;
 
-        int before = player.maletines;
+        picked = true;
 
+        // Aplica el powerup
         player.AgregarPowerUp(tipo);
 
-        Debug.Log($"[PowerUp] {tipo} recogido. Maletines: {before} -> {player.maletines}", this);
+        // Sonido del pickup (el que tenga este prefab)
+        if (pickupSFX != null && pickupSFX.clip != null)
+        {
+            pickupSFX.Play();
+
+            if (destroyAfterSound)
+            {
+                // Evita doble pickup y oculta el objeto mientras suena
+                var col = GetComponent<Collider2D>();
+                if (col) col.enabled = false;
+
+                foreach (var r in GetComponentsInChildren<Renderer>(true))
+                    r.enabled = false;
+
+                Destroy(gameObject, pickupSFX.clip.length);
+                return;
+            }
+        }
 
         Destroy(gameObject);
     }
