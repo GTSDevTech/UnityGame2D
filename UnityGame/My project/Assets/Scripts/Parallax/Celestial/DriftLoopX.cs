@@ -4,21 +4,18 @@ using UnityEngine;
 public class DriftLoopX : MonoBehaviour
 {
     [Header("Movement")]
-    [Tooltip("World units per second")]
+    [Tooltip("World units per second (ej: 0.15 - 0.6 dependiendo del PPU).")]
     public float speed = 0.2f;
 
-    [Tooltip("If true, uses Camera bounds. If false, uses Manual Bounds below.")]
-    public bool useCameraBounds = true;
+    [Tooltip("Si true, se mueve a la derecha. Si false, a la izquierda.")]
+    public bool moveRight = false;
 
-    [Tooltip("If empty, uses Camera.main")]
-    public Camera targetCamera;
+    [Header("Bounds")]
+    [Tooltip("BoxCollider2D que define el área visible/permitida (por ejemplo: CameraBounds).")]
+    public BoxCollider2D boundsCollider;
 
-    [Tooltip("Extra margin outside the bounds before wrapping")]
+    [Tooltip("Margen extra para que no aparezca cortada al hacer wrap.")]
     public float padding = 0.5f;
-
-    [Header("Manual Bounds (world X)")]
-    public float manualMinX = -10f;
-    public float manualMaxX = 10f;
 
     SpriteRenderer sr;
     float halfWidth;
@@ -26,10 +23,15 @@ public class DriftLoopX : MonoBehaviour
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        if (targetCamera == null) targetCamera = Camera.main;
+        RecalcHalfWidth();
     }
 
-    void Start()
+    void OnEnable()
+    {
+        RecalcHalfWidth();
+    }
+
+    void RecalcHalfWidth()
     {
         // ancho real en mundo (incluye escala)
         halfWidth = sr.bounds.extents.x;
@@ -37,35 +39,32 @@ public class DriftLoopX : MonoBehaviour
 
     void Update()
     {
-        // Move left (si quieres derecha, pon +speed)
+        if (boundsCollider == null) return;
+
+        float dir = moveRight ? 1f : -1f;
+
         Vector3 pos = transform.position;
-        pos.x += -speed * Time.deltaTime;
+        pos.x += dir * speed * Time.deltaTime;
 
-        GetBounds(out float minX, out float maxX);
+        // bounds del collider en world
+        Bounds b = boundsCollider.bounds;
+        float minX = b.min.x;
+        float maxX = b.max.x;
 
-        // Wrap: si sale por la izquierda, entra por la derecha
-        if (pos.x < (minX - halfWidth - padding))
+        // Wrap
+        if (dir > 0f)
         {
-            pos.x = (maxX + halfWidth + padding);
+            // va a la derecha, si sale por la derecha -> entra por la izquierda
+            if (pos.x > (maxX + halfWidth + padding))
+                pos.x = (minX - halfWidth - padding);
+        }
+        else
+        {
+            // va a la izquierda, si sale por la izquierda -> entra por la derecha
+            if (pos.x < (minX - halfWidth - padding))
+                pos.x = (maxX + halfWidth + padding);
         }
 
         transform.position = pos;
-    }
-
-    void GetBounds(out float minX, out float maxX)
-    {
-        if (!useCameraBounds || targetCamera == null || !targetCamera.orthographic)
-        {
-            minX = manualMinX;
-            maxX = manualMaxX;
-            return;
-        }
-
-        float camHalfHeight = targetCamera.orthographicSize;
-        float camHalfWidth = camHalfHeight * targetCamera.aspect;
-
-        float camX = targetCamera.transform.position.x;
-        minX = camX - camHalfWidth;
-        maxX = camX + camHalfWidth;
     }
 }
