@@ -90,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,11 +132,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 238
+        y: 241
         width: 121
-        height: 114
+        height: 109
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: alcan5_1
       rect:
         serializedVersion: 2
-        x: 147
-        y: 2
-        width: 124
-        height: 350
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 148
+        y: 240
+        width: 120
+        height: 109
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -176,11 +176,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 292
-        y: 237
+        y: 240
         width: 116
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 109
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: alcan5_3
       rect:
         serializedVersion: 2
-        x: 292
-        y: 120
-        width: 116
-        height: 118
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8
+        y: 122
+        width: 112
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -219,13 +219,13 @@ TextureImporter:
       name: alcan5_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 123
-        height: 233
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        x: 149
+        y: 122
+        width: 120
+        height: 111
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 1, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -241,12 +241,12 @@ TextureImporter:
       name: alcan5_5
       rect:
         serializedVersion: 2
-        x: 293
-        y: 2
-        width: 117
-        height: 119
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 292
+        y: 122
+        width: 116
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -259,11 +259,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: alcan5_6
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2
+        width: 112
+        height: 111
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 1, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b415bbc7b0d06534a9aa179f1b76b867
+      internalID: 629015463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcan5_7
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1
+        width: 120
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4286f2493d149644a81eb6d6e7443603
+      internalID: 264101603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alcan5_8
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1
+        width: 114
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f745c5de4b31444c9c1b354f3350626
+      internalID: 1162300252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 03c5e8feec7e21745ac42daf76d0bd9d
     internalID: 0
     vertices: []
     indices: 
@@ -271,7 +337,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":136.0,"y":117.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       alcan5_0: -4511496591675803634
       alcan5_1: 8170742943633940550
@@ -279,6 +347,9 @@ TextureImporter:
       alcan5_3: -6268160086678287940
       alcan5_4: 9214053109337098173
       alcan5_5: -3127201563888532959
+      alcan5_6: 629015463
+      alcan5_7: 264101603
+      alcan5_8: 1162300252
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

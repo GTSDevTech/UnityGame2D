@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 087da35b7631183439f7625f22b61df7
+guid: 92f2e150bc679174b9f1be58b65a8314
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 37449793548122741
-    second: alcan7_0
+      213: 9158294253394938962
+    second: colunm1_0
   - first:
-      213: 5508694273320037662
-    second: alcan7_1
+      213: 46838182318786016
+    second: colunm1_1
   - first:
-      213: 2369896084836602355
-    second: alcan7_2
-  - first:
-      213: -4040559268043218125
-    second: alcan7_3
+      213: 5918006664302764883
+    second: colunm1_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: alcan7_0
+      name: colunm1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 150
-        width: 159
-        height: 156
+        y: 309
+        width: 115
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +134,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 57af859836c058000800000000000000
-      internalID: 37449793548122741
+      spriteID: 25c4b1ac91cc81f70800000000000000
+      internalID: 9158294253394938962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alcan7_1
+      name: colunm1_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 145
+        width: 115
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e54903241766a000800000000000000
+      internalID: 46838182318786016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colunm1_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 161
-        height: 150
+        width: 115
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,52 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1d28795140d27c40800000000000000
-      internalID: 5508694273320037662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alcan7_2
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 162
-        height: 148
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f15643deef83e020800000000000000
-      internalID: 2369896084836602355
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alcan7_3
-      rect:
-        serializedVersion: 2
-        x: 174
-        y: 147
-        width: 148
-        height: 159
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3332f56e0cc0de7c0800000000000000
-      internalID: -4040559268043218125
+      spriteID: 353292cc4bbf02250800000000000000
+      internalID: 5918006664302764883
       vertices: []
       indices: 
       edges: []
@@ -223,10 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      alcan7_0: 37449793548122741
-      alcan7_1: 5508694273320037662
-      alcan7_2: 2369896084836602355
-      alcan7_3: -4040559268043218125
+      colunm1_0: 9158294253394938962
+      colunm1_1: 46838182318786016
+      colunm1_2: 5918006664302764883
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

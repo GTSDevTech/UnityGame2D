@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: 087da35b7631183439f7625f22b61df7
+guid: 26317d99d39889a428a25e5c3d7626f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 37449793548122741
-    second: alcan7_0
+      213: 6248149062172060062
+    second: deco1_0
   - first:
-      213: 5508694273320037662
-    second: alcan7_1
+      213: -1856665703498537927
+    second: deco1_1
   - first:
-      213: 2369896084836602355
-    second: alcan7_2
+      213: 5674834711670589666
+    second: deco1_2
   - first:
-      213: -4040559268043218125
-    second: alcan7_3
+      213: -3962593843923839680
+    second: deco1_3
+  - first:
+      213: -7651024500993728924
+    second: deco1_4
+  - first:
+      213: -2557205764298501300
+    second: deco1_5
+  - first:
+      213: 4020790094069222499
+    second: deco1_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,35 +131,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: alcan7_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 150
-        width: 159
-        height: 156
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 57af859836c058000800000000000000
-      internalID: 37449793548122741
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alcan7_1
+      name: deco1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 161
-        height: 150
+        width: 33
+        height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +146,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1d28795140d27c40800000000000000
-      internalID: 5508694273320037662
+      spriteID: e99a47ac772e5b650800000000000000
+      internalID: 6248149062172060062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alcan7_2
+      name: deco1_1
       rect:
         serializedVersion: 2
-        x: 160
+        x: 35
+        y: 3
+        width: 28
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 934a154316ccb36e0800000000000000
+      internalID: -1856665703498537927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deco1_2
+      rect:
+        serializedVersion: 2
+        x: 63
         y: 0
-        width: 162
-        height: 148
+        width: 37
+        height: 83
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f15643deef83e020800000000000000
-      internalID: 2369896084836602355
+      spriteID: 2e88e2c8a1011ce40800000000000000
+      internalID: 5674834711670589666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alcan7_3
+      name: deco1_3
       rect:
         serializedVersion: 2
-        x: 174
-        y: 147
-        width: 148
-        height: 159
+        x: 102
+        y: 0
+        width: 27
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +212,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3332f56e0cc0de7c0800000000000000
-      internalID: -4040559268043218125
+      spriteID: 04515c7c4e90209c0800000000000000
+      internalID: -3962593843923839680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deco1_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 34
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e5572d0c912d590800000000000000
+      internalID: -7651024500993728924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deco1_5
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 32
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c431861f7eaf28cd0800000000000000
+      internalID: -2557205764298501300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deco1_6
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 15
+        width: 24
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36cc7699947bcc730800000000000000
+      internalID: 4020790094069222499
       vertices: []
       indices: 
       edges: []
@@ -223,10 +298,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      alcan7_0: 37449793548122741
-      alcan7_1: 5508694273320037662
-      alcan7_2: 2369896084836602355
-      alcan7_3: -4040559268043218125
+      deco1_0: 6248149062172060062
+      deco1_1: -1856665703498537927
+      deco1_2: 5674834711670589666
+      deco1_3: -3962593843923839680
+      deco1_4: -7651024500993728924
+      deco1_5: -2557205764298501300
+      deco1_6: 4020790094069222499
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 087da35b7631183439f7625f22b61df7
+guid: bf9a50769cf9a1d4cb02df4f62909cb2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 37449793548122741
-    second: alcan7_0
+      213: 1424348306605089384
+    second: hazard3_0
   - first:
-      213: 5508694273320037662
-    second: alcan7_1
+      213: 1512591886823362405
+    second: hazard3_1
   - first:
-      213: 2369896084836602355
-    second: alcan7_2
+      213: 9130448479781512190
+    second: hazard3_2
   - first:
-      213: -4040559268043218125
-    second: alcan7_3
+      213: -3541984632499207983
+    second: hazard3_3
+  - first:
+      213: -1701861982552594343
+    second: hazard3_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,35 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: alcan7_0
+      name: hazard3_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 150
-        width: 159
-        height: 156
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 57af859836c058000800000000000000
-      internalID: 37449793548122741
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alcan7_1
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
-        width: 161
-        height: 150
+        width: 52
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +140,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1d28795140d27c40800000000000000
-      internalID: 5508694273320037662
+      spriteID: 86220a30d3d44c310800000000000000
+      internalID: 1424348306605089384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alcan7_2
+      name: hazard3_1
       rect:
         serializedVersion: 2
-        x: 160
+        x: 49
+        y: 14
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f8e389e4ecdf410800000000000000
+      internalID: 1512591886823362405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazard3_2
+      rect:
+        serializedVersion: 2
+        x: 70
         y: 0
-        width: 162
-        height: 148
+        width: 55
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f15643deef83e020800000000000000
-      internalID: 2369896084836602355
+      spriteID: ef3e165648ed5be70800000000000000
+      internalID: 9130448479781512190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alcan7_3
+      name: hazard3_3
       rect:
         serializedVersion: 2
-        x: 174
-        y: 147
-        width: 148
-        height: 159
+        x: 135
+        y: 0
+        width: 54
+        height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +206,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3332f56e0cc0de7c0800000000000000
-      internalID: -4040559268043218125
+      spriteID: 1d00ef33eb758dec0800000000000000
+      internalID: -3541984632499207983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazard3_4
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 0
+        width: 71
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958e5313b85c168e0800000000000000
+      internalID: -1701861982552594343
       vertices: []
       indices: 
       edges: []
@@ -223,10 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      alcan7_0: 37449793548122741
-      alcan7_1: 5508694273320037662
-      alcan7_2: 2369896084836602355
-      alcan7_3: -4040559268043218125
+      hazard3_0: 1424348306605089384
+      hazard3_1: 1512591886823362405
+      hazard3_2: 9130448479781512190
+      hazard3_3: -3541984632499207983
+      hazard3_4: -1701861982552594343
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

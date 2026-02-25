@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 087da35b7631183439f7625f22b61df7
+guid: c0e87084e7c4e3243a178dc15f1395af
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 37449793548122741
-    second: alcan7_0
-  - first:
-      213: 5508694273320037662
-    second: alcan7_1
-  - first:
-      213: 2369896084836602355
-    second: alcan7_2
-  - first:
-      213: -4040559268043218125
-    second: alcan7_3
+      213: 3322266479791537964
+    second: skull1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,35 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: alcan7_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 150
-        width: 159
-        height: 156
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 57af859836c058000800000000000000
-      internalID: 37449793548122741
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alcan7_1
+      name: skull1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 161
-        height: 150
+        width: 141
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,52 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1d28795140d27c40800000000000000
-      internalID: 5508694273320037662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alcan7_2
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 162
-        height: 148
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f15643deef83e020800000000000000
-      internalID: 2369896084836602355
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alcan7_3
-      rect:
-        serializedVersion: 2
-        x: 174
-        y: 147
-        width: 148
-        height: 159
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3332f56e0cc0de7c0800000000000000
-      internalID: -4040559268043218125
+      spriteID: c2f7921e2cf0b1e20800000000000000
+      internalID: 3322266479791537964
       vertices: []
       indices: 
       edges: []
@@ -223,10 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      alcan7_0: 37449793548122741
-      alcan7_1: 5508694273320037662
-      alcan7_2: 2369896084836602355
-      alcan7_3: -4040559268043218125
+      skull1_0: 3322266479791537964
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
