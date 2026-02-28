@@ -37,7 +37,7 @@ public class EventTriggerZone : MonoBehaviour
         if (fired) return;
         if (!other.CompareTag("Player")) return;
 
-        Debug.Log("[EventTriggerZone] Es el Player ✅");
+        Debug.Log("[EventTriggerZone] Es el Player, disparo el evento");
 
         if (action == TriggerAction.PlayCutscene)
         {
@@ -47,14 +47,14 @@ public class EventTriggerZone : MonoBehaviour
                 return;
             }
 
-            Debug.Log("[EventTriggerZone] Voy a reproducir cutscene ✅");
+            Debug.Log("[EventTriggerZone] Voy a reproducir cutscene");
             cutscene.Play(sequence);
         }
         else // FadeToEndScene
         {
             if (endSceneFader == null)
             {
-                endSceneFader = FindObjectOfType<ScreenFaderLoader>();
+                endSceneFader = FindFirstObjectByType<ScreenFaderLoader>();
             }
 
             if (endSceneFader == null)
@@ -63,7 +63,7 @@ public class EventTriggerZone : MonoBehaviour
                 return;
             }
 
-            Debug.Log("[EventTriggerZone] Fade -> EndScene ✅");
+            Debug.Log("[EventTriggerZone] Fade -> EndScene");
             endSceneFader.GoToEndScene();
         }
 

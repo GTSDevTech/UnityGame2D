@@ -15,6 +15,10 @@ public class PlayerMovement2D : MonoBehaviour
     public float walkSpeed = 6f;
     public float runSpeed = 10f;
 
+    [Header("Beat'em up Depth (Z)")]
+    [Tooltip("Componente que calcula la profundidad en Z y sorting. Si está null, no hay profundidad.")]
+    public BeatEmUpDepth2D depth2D;
+
     [Header("Salto")]
     public float jumpForce = 12f;
     public bool resetVerticalVelocityBeforeJump = true;
@@ -45,7 +49,7 @@ public class PlayerMovement2D : MonoBehaviour
     public float aimUpThreshold = 0.5f;
     public float shootUpMaxSpeed = 0.1f;
 
-    [Header("Special Move 1 (hold ↓ en crouch)")]
+    [Header("Special Move 1 (hold Crouch)")]
     public string specialMove1BoolParam = "SpecialMove1";
     public float specialHoldSeconds = 0.6f;
 
@@ -97,7 +101,10 @@ public class PlayerMovement2D : MonoBehaviour
 
     [Header("Crouch (Agacharse)")]
     public bool enableCrouch = true;
+
+    [Tooltip("DEPRECATED: antes crouch era con Move.y <= threshold. Ahora se usa acción 'Crouch'. Se mantiene como fallback si no existe la acción.")]
     public float crouchThreshold = -0.5f;
+
     public string crouchBoolParam = "IsCrouching";
     public bool freezeMovementWhileCrouching = true;
     public bool allowJumpWhileCrouching = false;
@@ -120,6 +127,10 @@ public class PlayerMovement2D : MonoBehaviour
     InputAction sprintAction;
     InputAction attackAction;
     InputAction shootAction;
+
+    // Crouch como botón
+    InputAction crouchAction;
+
     PlayerHealth playerHealth;
 
     Vector2 moveInput;
@@ -195,6 +206,8 @@ public class PlayerMovement2D : MonoBehaviour
 
         baseConstraints = rb.constraints;
 
+        if (!depth2D) depth2D = GetComponent<BeatEmUpDepth2D>();
+
         if (animator == null)
             animator = GetComponentInChildren<Animator>();
 
@@ -219,6 +232,9 @@ public class PlayerMovement2D : MonoBehaviour
         attackAction = playerInput.actions["Attack"];
         shootAction = playerInput.actions["Shoot"];
 
+        // Crouch botón (si existe)
+        crouchAction = playerInput.actions.FindAction("Crouch", throwIfNotFound: false);
+
         ammoInMag = Mathf.Clamp(ammoInMag, 0, magSize);
 
         cachedPlatformLayer = LayerMask.NameToLayer(platformPhysicsLayerName);
@@ -234,10 +250,12 @@ public class PlayerMovement2D : MonoBehaviour
         sprintAction?.Enable();
         attackAction?.Enable();
         shootAction?.Enable();
+        crouchAction?.Enable();
     }
 
     void OnDisable()
     {
+        crouchAction?.Disable();
         shootAction?.Disable();
         attackAction?.Disable();
         sprintAction?.Disable();
@@ -252,13 +270,23 @@ public class PlayerMovement2D : MonoBehaviour
 
         moveInput = moveAction != null ? moveAction.ReadValue<Vector2>() : Vector2.zero;
 
-        aimUp = moveInput.y >= aimUpThreshold;
+        // Grounded antes de lógica dependiente
         isGrounded = col.IsTouchingLayers(groundLayer);
+
+        aimUp = moveInput.y >= aimUpThreshold;
+
+        // Crouch por botón (si existe). Si no, fallback antiguo.
+        bool crouchPressed = false;
+        if (crouchAction != null)
+            crouchPressed = crouchAction.IsPressed();
+        else
+            crouchPressed = (moveInput.y <= crouchThreshold);
 
         if (enableCrouch)
         {
             bool wasCrouching = isCrouching;
-            isCrouching = isGrounded && (moveInput.y <= crouchThreshold);
+            isCrouching = isGrounded && crouchPressed;
+
             if (isCrouching && !wasCrouching && fartSFX != null)
                 fartSFX.Play();
         }
@@ -276,6 +304,7 @@ public class PlayerMovement2D : MonoBehaviour
                 animator.SetBool(aimUpBoolParam, aimUp);
         }
 
+        // SpecialMove1: hold crouch
         if (isCrouching && isGrounded && Mathf.Abs(rb.linearVelocity.x) <= shootUpMaxSpeed)
             downHoldTime += Time.deltaTime;
         else
@@ -299,11 +328,10 @@ public class PlayerMovement2D : MonoBehaviour
         if (jumpPressedThisFrame)
             jumpBufferCounter = jumpBufferTime;
 
-        // ✅ DROP: ↓ + Jump
+        // ✅ DROP: Crouch + Jump (solo plataformas)
         if (enableDropThroughPlatforms && isGrounded && jumpPressedThisFrame)
         {
-            bool pressingDown = (moveInput.y <= crouchThreshold);
-            if (pressingDown)
+            if (crouchPressed)
             {
                 if (TryDropThroughPlatform())
                     jumpBufferCounter = 0f;
@@ -379,6 +407,7 @@ public class PlayerMovement2D : MonoBehaviour
     {
         if (isDead) return;
 
+        // refresco grounded en física
         isGrounded = col.IsTouchingLayers(groundLayer);
 
         if (isMovementLocked)
@@ -391,6 +420,7 @@ public class PlayerMovement2D : MonoBehaviour
 
             TryConsumeJump();
             UpdateAnimatorSpeedAfterPhysics();
+            ApplyDepthZ(); // ✅ aplica Z aunque estés lockeado
             return;
         }
 
@@ -398,6 +428,7 @@ public class PlayerMovement2D : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
             UpdateAnimatorSpeedAfterPhysics();
+            ApplyDepthZ();
             return;
         }
 
@@ -407,6 +438,7 @@ public class PlayerMovement2D : MonoBehaviour
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
             TryConsumeJump();
             UpdateAnimatorSpeedAfterPhysics();
+            ApplyDepthZ();
             return;
         }
 
@@ -419,6 +451,21 @@ public class PlayerMovement2D : MonoBehaviour
 
         TryConsumeJump();
         UpdateAnimatorSpeedAfterPhysics();
+
+        // ✅ Beat'em up depth en Z al final (robusto con Rigidbody2D)
+        ApplyDepthZ();
+    }
+
+    void ApplyDepthZ()
+    {
+        if (depth2D == null || !depth2D.enabled) return;
+
+        // Usamos Move.y como “profundidad” (Z), igual que querías
+        depth2D.Tick(moveInput.y, Time.fixedDeltaTime);
+
+        // Aplicar Z manteniendo X/Y de la física
+        Vector2 p = rb.position;
+        depth2D.ApplyZ(transform, p.x, p.y);
     }
 
     void UpdateAnimatorSpeedAfterPhysics()
@@ -462,17 +509,9 @@ public class PlayerMovement2D : MonoBehaviour
     {
         if (cachedPlatformLayer < 0) return false;
 
-        // ==============================
-        // Detectar plataforma JUSTO BAJO LOS PIES
-        // (esto arregla el CapsuleCollider con offset alto)
-        // ==============================
-
         float feetY = col.bounds.min.y;
 
-        // Centro justo bajo el player
         Vector2 center = new Vector2(col.bounds.center.x, feetY - 0.05f);
-
-        // Franja fina bajo los pies
         Vector2 size = new Vector2(col.bounds.size.x * 0.8f, 0.12f);
 
         Collider2D platformCol = Physics2D.OverlapBox(
@@ -491,10 +530,8 @@ public class PlayerMovement2D : MonoBehaviour
         if (dropRoutine != null) StopCoroutine(dropRoutine);
         dropRoutine = StartCoroutine(DropThroughColliderRoutine(col, platformCol, dropThroughSeconds));
 
-        // Empujón hacia abajo
         rb.position += Vector2.down * Mathf.Max(0f, dropDownPositionNudge);
 
-        // Fuerza hacia abajo
         float vy = rb.linearVelocity.y;
         if (vy > 0f) vy = 0f;
 
@@ -680,7 +717,6 @@ public class PlayerMovement2D : MonoBehaviour
         if (animator != null && !string.IsNullOrEmpty(reloadTrigger))
             animator.SetTrigger(reloadTrigger);
 
-        // 🔊 FALLBACK: si el Animation Event no llega, lo forzamos muy pronto
         if (reloadSfxFallbackRoutine != null) StopCoroutine(reloadSfxFallbackRoutine);
         reloadSfxFallbackRoutine = StartCoroutine(ReloadSfxFallback(0.06f));
 
@@ -692,9 +728,6 @@ public class PlayerMovement2D : MonoBehaviour
     {
         yield return new WaitForSeconds(Mathf.Max(0f, delay));
 
-        // si sigues recargando y nadie ha sonado por event, suena aquí
-        // (esto no impide que el event suene; pero normalmente el event llegará antes y oirás 1 solo)
-        // Para evitar dobles, el event cancela esta corrutina.
         if (isReloading && rechargeSFX != null)
         {
             rechargeSFX.Stop();
@@ -736,7 +769,6 @@ public class PlayerMovement2D : MonoBehaviour
         FinishReload();
     }
 
-    // ✅ Animation Event del clip Reload: llama a "Anim_PlayReloadSFX"
     public void Anim_PlayReloadSFX()
     {
         Debug.Log("[EVENT] Anim_PlayReloadSFX (PlayerMovement2D) llamado");
@@ -831,8 +863,8 @@ public class PlayerMovement2D : MonoBehaviour
                 break;
 
             case TipoPowerUp.Voto:
-                votos = Mathf.Clamp(votos + 1, 0, maxVotos);   // si quieres llevar contador
-                if (playerHealth != null) playerHealth.Heal(1); // ✅ esto es lo que faltaba
+                votos = Mathf.Clamp(votos + 1, 0, maxVotos);
+                if (playerHealth != null) playerHealth.Heal(1);
                 break;
 
             case TipoPowerUp.Municion:
@@ -947,14 +979,17 @@ public class PlayerMovement2D : MonoBehaviour
         heldDirSign = 0;
         movedThisHold = false;
         moveXForMotion = 0f;
+
+        // Reaplica Z (por si otros scripts lo dejaron a 0)
+        ApplyDepthZ();
     }
 
     void OnGUI()
     {
         if (!debugHUD) return;
 
-        GUI.Label(new Rect(10, 10, 700, 20), $"Grounded: {isGrounded}");
-        GUI.Label(new Rect(10, 30, 1500, 20),
+        GUI.Label(new Rect(10, 10, 900, 20), $"Grounded: {isGrounded}  Z:{transform.position.z:0.000}");
+        GUI.Label(new Rect(10, 30, 1600, 20),
             $"Move:{moveInput}  MoveXForMotion:{moveXForMotion:0.00}  Crouch:{isCrouching}  Attacking:{isAttacking}  Reloading:{isReloading}  Ammo:{ammoInMag}/{magSize}  Reserve:{ammoReserve}  Locked:{isMovementLocked}  Dead:{isDead}  AimUp:{aimUp}  Special:{specialMove1Active}");
     }
 }

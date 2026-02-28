@@ -2,6 +2,10 @@
 
 public class EnemyHealth : MonoBehaviour
 {
+    public int CurrentHealth => currentHealth;
+    public float Health01 => maxHealth <= 0 ? 0f : Mathf.Clamp01((float)currentHealth / maxHealth);
+    public bool IsDead => isDead;
+
     [Header("Health")]
     public int maxHealth = 3;
 
@@ -26,7 +30,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        // 🧱 Candado total: evita daño si ya murió
+        //Candado total: evita daño si ya murió
         if (isDead) return;
 
         currentHealth -= damage;
@@ -34,7 +38,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (currentHealth > 0)
         {
-            // 🔴 Solo animación de hurt si sigue vivo
+            // Solo animación de hurt si sigue vivo
             if (ai != null)
                 ai.PlayHurt();
 
@@ -46,11 +50,11 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
-        // 🧱 Evita doble muerte
+        //Evita doble muerte
         if (isDead) return;
         isDead = true;
 
-        // 💀 1) CONGELAR FÍSICA PRIMERO (evita micro-caída)
+        // 1) CONGELAR FÍSICA PRIMERO (evita micro-caída)
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
@@ -59,14 +63,14 @@ public class EnemyHealth : MonoBehaviour
             rb.bodyType = RigidbodyType2D.Kinematic;
         }
 
-        // 💀 2) DESACTIVAR TODOS LOS COLLIDERS DEL ENEMIGO
+        // 2) DESACTIVAR TODOS LOS COLLIDERS DEL ENEMIGO
         // (esto permite atravesarlo)
         Collider2D[] cols = GetComponentsInChildren<Collider2D>(true);
 
         foreach (var c in cols)
             c.enabled = false;
 
-        // 💀 3) Avisar a la IA para animación de muerte
+        // 3) Avisar a la IA para animación de muerte
         if (ai != null)
         {
             ai.DieFromHealth();
